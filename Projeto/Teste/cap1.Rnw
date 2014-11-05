@@ -7,9 +7,9 @@
 % Números das páginas em arábicos
 \pagenumbering{arabic}
 
-\chapter{Introdução (capítulo 1)}\label{intro}
+\chapter{INTRODUÇÃO}\label{intro}
 
-\section{Incluindo citações}\label{intro:historico}
+Há décadas diversas pesquisas teóricas têm focado na fundamentação microeconômica da rigidez de preços, um elemento chave nas explicações dos efeitos reais da política monetária. Por outro lado, a literatura empírica sobre rigidez de preços é pouco encontrada. Bils e Klenow (2004) fizeram uma importante contribuição ao estudar de forma desagregada dados do Consumer Price Index (CPI) dos EUA a partir de 1990 e mostrar que o preço médio mudou uma vez a cada 4.3 meses. Embora outras significantes contribuições seguiram este trabalho, importantes questões empíricas permanecem em grande parte sem resposta
 
 % O comando \label{nome} define o marcador da parte especificada.
 % Você pode citar esta seção usando o comando \ref{nome}.
