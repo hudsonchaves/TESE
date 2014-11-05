@@ -22,18 +22,18 @@
 
 % Classe do documento
 \documentclass[twoside,a4paper,11pt]{report}
-\SweaveOpts{concordance=TRUE}
+
 
 % Pacotes e comandos customizados
-\include{meta}
+\SweaveInput{meta.Rnw}
 
 % Início do texto
 \begin{document}
-
-\include{pre}   % Capa, prefácio e afins
-\include{cap1}  % Capítulo 1: Introdução
-\include{cap2}	% Capítulo 2: ...
-\include{final}	% Capítulo 3: Considerações Finais
+\SweaveOpts{concordance=TRUE}
+\SweaveInput{pre.Rnw}
+\SweaveInput{cap1.Rnw}
+\SweaveInput{cap2.Rnw}
+\SweaveInput{final.Rnw}
 
 % Formato da bibliografia
 \bibliographystyle{apalike}
@@ -42,7 +42,7 @@
 \bibliography{mestre}
 
 % Apêndice(s)
-\include{apendice}
+\SweaveInput{apendice}
 
 % Fim do texto
 \end{document}
