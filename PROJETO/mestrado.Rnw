@@ -33,7 +33,7 @@
 \SweaveInput{pre.Rnw}
 \SweaveInput{cap1.Rnw}
 \SweaveInput{cap2.Rnw}
-\SweaveInput{final.Rnw}
+% \SweaveInput{final.Rnw}
 
 % Formato da bibliografia
 \bibliographystyle{apalike}
