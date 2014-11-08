@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 12:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 13:53
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1161,7 +1161,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.484 \cleardoublepage
+l.463 \cleardoublepage
                        [1
 
 
@@ -1169,7 +1169,7 @@ l.484 \cleardoublepage
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.484 \cleardoublepage
+l.463 \cleardoublepage
                        [2]
 Cap\'{\i }tulo 2.
 [3
@@ -1188,7 +1188,25 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 Cap\'{\i }tulo 3.
 [7
 
-] (./mestrado.bbl [8]) [9
+] <WebScraping.jpeg, id=146, 1724.4425pt x 858.20625pt>
+File: WebScraping.jpeg Graphic file (type jpg)
+
+<use WebScraping.jpeg> [8 <./WebScraping.jpeg>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 523.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 523.
+
+! Undefined control sequence.
+l.526 ...}_{t}^{i}}{{p}_{t-1}^{i}}\right)}^{\sfrac
+                                                  {1}{{n}_{j,t}}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./mestrado.bbl [9]) [10
 
 ]
 Ap\^endice A.
@@ -1196,27 +1214,35 @@ Ap\^endice A.
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [10
+AED: lastpage setting LastPage [11
 
 ] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11656 strings out of 493848
- 171590 string characters out of 1152823
- 290434 words of memory out of 3000000
- 14295 multiletter control sequences out of 15000+50000
- 67944 words of font info for 278 fonts, out of 3000000 for 9000
+ 11785 strings out of 493848
+ 172975 string characters out of 1152823
+ 290537 words of memory out of 3000000
+ 14334 multiletter control sequences out of 15000+50000
+ 87692 words of font info for 335 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,11n,43p,1327b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb>
-Output written on mestrado.pdf (16 pages, 151260 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sh
+are/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm
+/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on mestrado.pdf (17 pages, 293220 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 36965 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 
