@@ -2,6 +2,6 @@
 \cleardoublepage
 \pagestyle{fancy}
 
-\chapter{Considerações Finais}
+\chapter{CONSIDERAÇÕES FINAIS}
 
 As vezes faz bem sentar e pensar nas considerações finais do seu trabalho, não só para os que lerão o texto, mas para aquele que o escreve.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 16:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 16:47
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1189,26 +1189,26 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 523.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 523.
- [9] (./mestrado.bbl [10])
-[11
+ [9] [10] (./mestrado.bbl
+[11] [12
 
-]
+]) [13]
 Ap\^endice A.
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [12
+AED: lastpage setting LastPage [14
 
 ] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11788 strings out of 493848
- 173010 string characters out of 1152823
- 290537 words of memory out of 3000000
- 14334 multiletter control sequences out of 15000+50000
+ 11820 strings out of 493848
+ 173729 string characters out of 1152823
+ 290763 words of memory out of 3000000
+ 14355 multiletter control sequences out of 15000+50000
  87692 words of font info for 335 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,43p,1327b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,43p,1327b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm
 /lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf
@@ -1226,9 +1226,9 @@ usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy8.pfb>
-Output written on mestrado.pdf (18 pages, 321187 bytes).
+Output written on mestrado.pdf (20 pages, 333753 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,9 +1,19 @@
 \begin{thebibliography}{}
 
+\bibitem[Barro, 1972]{barro1972theory}
+Barro, R.~J. (1972).
+\newblock A theory of monopolistic price adjustment.
+\newblock {\em The Review of Economic Studies}, pages 17--26.
+
 \bibitem[Bils and Klenow, 2004]{bils2004some}
 Bils, M. and Klenow, P.~J. (2004).
 \newblock Some evidence on the importance of sticky prices.
 \newblock {\em Journal of Political Economy}, 112(5):947--985.
+
+\bibitem[Calvo, 1983]{calvo1983staggered}
+Calvo, G.~A. (1983).
+\newblock Staggered prices in a utility-maximizing framework.
+\newblock {\em Journal of monetary Economics}, 12(3):383--398.
 
 \bibitem[Cavallo et~al., 2013]{cavallo2013prices}
 Cavallo, A., Cavallo, E., and Rigobon, R. (2013).
@@ -25,10 +35,37 @@ Cavallo, A.~F. (2010).
 \newblock {\em Scraped data and prices in macroeconomics}.
 \newblock Harvard University.
 
+\bibitem[Dotsey et~al., 1999]{dotsey1999state}
+Dotsey, M., King, R.~G., and Wolman, A.~L. (1999).
+\newblock State-dependent pricing and the general equilibrium dynamics of money
+  and output.
+\newblock {\em Quarterly journal of Economics}, pages 655--690.
+
+\bibitem[Golosov and Lucas~Jr, 2007]{golosov2007menu}
+Golosov, M. and Lucas~Jr, R.~E. (2007).
+\newblock Menu costs and phillips curves.
+\newblock {\em Journal of Political Economy}, 115(2).
+
+\bibitem[Klenow and Kryvtsov, 2008]{klenow2008state}
+Klenow, P.~J. and Kryvtsov, O. (2008).
+\newblock State-dependent or time-dependent pricing: Does it matter for recent
+  us inflation?
+\newblock {\em The Quarterly Journal of Economics}, 123(3):863--904.
+
 \bibitem[Manning et~al., 2008]{manning2008introduction}
 Manning, C.~D., Raghavan, P., and Sch{\"u}tze, H. (2008).
 \newblock {\em Introduction to information retrieval}, volume~1.
 \newblock Cambridge university press Cambridge.
+
+\bibitem[Sheshinski and Weiss, 1977]{sheshinski1977inflation}
+Sheshinski, E. and Weiss, Y. (1977).
+\newblock Inflation and costs of price adjustment.
+\newblock {\em The Review of Economic Studies}, pages 287--303.
+
+\bibitem[Taylor, 1980]{taylor1980aggregate}
+Taylor, J.~B. (1980).
+\newblock Aggregate dynamics and staggered contracts.
+\newblock {\em The Journal of Political Economy}, pages 1--23.
 
 \bibitem[Varian, 2014]{varian2014big}
 Varian, H.~R. (2014).
