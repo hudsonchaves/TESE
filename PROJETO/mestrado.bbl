@@ -1,32 +1,28 @@
 \begin{thebibliography}{}
 
-\bibitem[Day and Gastel, 2006]{Day2006}
-Day, R.~A. and Gastel, B. (2006).
-\newblock {\em {How to Write and Publish a Scientific Paper}}.
-\newblock Greenwood Press.
+\bibitem[Bils and Klenow, 2004]{bils2004some}
+Bils, M. and Klenow, P.~J. (2004).
+\newblock Some evidence on the importance of sticky prices.
+\newblock {\em Journal of Political Economy}, 112(5):947--985.
 
-\bibitem[Emlet, 1987]{Emlet1987}
-Emlet, R.~B. (1987).
-\newblock {\em {Echinoderm Larval Ecology from the Egg}}, volume~2, chapter~2,
-  pages 55--136.
-\newblock A. A. Balkema Publishers.
+\bibitem[Cavallo et~al., 2013]{cavallo2013prices}
+Cavallo, A., Cavallo, E., and Rigobon, R. (2013).
+\newblock Prices and supply disruptions during natural disasters.
+\newblock Technical report, National Bureau of Economic Research.
 
-\bibitem[Kirk, 2007]{Kirk2008}
-Kirk, R. (2007).
-\newblock {The inconceivability of zombies}.
-\newblock {\em Philosophical Studies}, 139(1):73--89.
+\bibitem[Cavallo et~al., 2012]{cavallo2012currency}
+Cavallo, A., Neiman, B., and Rigobon, R. (2012).
+\newblock Currency unions, product introductions, and the real exchange rate.
+\newblock Technical report, National Bureau of Economic Research.
 
-\bibitem[{R Development Core Team}, 2005]{R2005}
-{R Development Core Team} (2005).
-\newblock {R: A language and environment for statistical computing}.
+\bibitem[Cavallo et~al., 2014]{cavallo2014price}
+Cavallo, A., Neiman, B., and Rigobon, R. (2014).
+\newblock The price impact of joining a currency union: evidence from latvia.
+\newblock Technical report, National Bureau of Economic Research.
 
-\bibitem[Rasband, 1997]{Rasband1997}
-Rasband, W.~S. (1997).
-\newblock {ImageJ}.
-
-\bibitem[Sand-Jensen, 2007]{Sand-Jensen2007}
-Sand-Jensen, K. (2007).
-\newblock {How to write consistently boring scientific literature}.
-\newblock {\em Oikos}, 116(5):723–727.
+\bibitem[Cavallo, 2010]{cavallo2010scraped}
+Cavallo, A.~F. (2010).
+\newblock {\em Scraped data and prices in macroeconomics}.
+\newblock Harvard University.
 
 \end{thebibliography}

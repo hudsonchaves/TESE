@@ -39,7 +39,7 @@
 \bibliographystyle{apalike}
 
 % Arquivo .bib
-\bibliography{mestre}
+\bibliography{projeto}
 
 % Apêndice(s)
 \SweaveInput{apendice}
