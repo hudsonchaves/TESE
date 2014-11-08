@@ -25,4 +25,14 @@ Cavallo, A.~F. (2010).
 \newblock {\em Scraped data and prices in macroeconomics}.
 \newblock Harvard University.
 
+\bibitem[Manning et~al., 2008]{manning2008introduction}
+Manning, C.~D., Raghavan, P., and Sch{\"u}tze, H. (2008).
+\newblock {\em Introduction to information retrieval}, volume~1.
+\newblock Cambridge university press Cambridge.
+
+\bibitem[Varian, 2014]{varian2014big}
+Varian, H.~R. (2014).
+\newblock Big data: New tricks for econometrics.
+\newblock {\em The Journal of Economic Perspectives}, 28(2):3--27.
+
 \end{thebibliography}

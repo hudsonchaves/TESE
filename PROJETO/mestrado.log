@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 00:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 12:17
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1182,7 +1182,13 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./mestrado.bbl [5]) [6
+[4] [5] [6
+
+]
+Cap\'{\i }tulo 3.
+[7
+
+] (./mestrado.bbl [8]) [9
 
 ]
 Ap\^endice A.
@@ -1190,26 +1196,27 @@ Ap\^endice A.
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [7
+AED: lastpage setting LastPage [10
 
 ] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11597 strings out of 493848
- 170925 string characters out of 1152823
- 290338 words of memory out of 3000000
- 14283 multiletter control sequences out of 15000+50000
- 60326 words of font info for 242 fonts, out of 3000000 for 9000
+ 11656 strings out of 493848
+ 171590 string characters out of 1152823
+ 290434 words of memory out of 3000000
+ 14295 multiletter control sequences out of 15000+50000
+ 67944 words of font info for 278 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,11n,43p,1327b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on mestrado.pdf (13 pages, 132817 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb>
+Output written on mestrado.pdf (16 pages, 151260 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 35929 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 36965 words of extra memory for PDF output out of 42996 (max. 10000000)
 

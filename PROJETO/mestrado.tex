@@ -507,6 +507,24 @@ Recentemente, \citet{cavallo2014price} refletiram sobre as implicações de um p
 Utilizando preços de milhares de bens vendidos pela Zara (coletados via web scraper), a maior varejista de roupas do mundo, os autores observaram que a dispersão dos preços na Letónia desmoronou rapidamente após a adoção do euro. O percentual de bens com preços quase idênticos em Letónia e Alemanha aumentou de 6\% para 89\%. Por outro lado, a tamanho mediano do preço declinou de 7\% para 0\%. Se um número maior de firmas também se comporta desta maneira, esses resultados sugerem que se tornar membro de uma união monetária tem significante implicações para a taxa de câmbio real de países. 
 
 
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
+\chapter{METODOLOGIA}\label{cap3}
+
+\section*{WEB SCRAPING}
+
+O surgimento da internet, em particular a Web (\emph{Web Wide Word}) trouxe um crescimento exponencial nas disposições de informações. Embora muitas dessas informações sejam úteis, elas raramente estão de uma forma que podemos utilizá-las, pois ainda é comum pessoas gastarem horas na coleta manual de dados de páginas da web.
+Especificamente, apesar de disponibilidade, poucos trabalhos acadêmicos em Economia utilizam desta fonte de dados para análise econômica empírica. Tal característica pode ser dada pela dificuldade dos pesquisadores na área em lidar com linguagem de programação que demandam maior conhecimento de computação. Em recente publicação, \citet{varian2014big} salienta que as técnicas utilizadas na Ciência da Computação e outras áreas correlatas para manipular e analisar dados, têm muito a oferecer. \citet{varian2014big} defende que economistas deveriam conhecer melhor esses métodos e usá-los em seus trabalhos. Além disso, \citet{varian2014big} cita a comumente colaboração entre os departamentos de Ciência da Computação e Estatística nas universidades dos EUA. Porém, o autor espera que em um futuro próximo os estudantes de econometria tenham maior colaboração com esses perfis. 
+
+Uma metodologia que facilita o processo de coleta de dados da web é conhecida como \emph{web scraping} que envolve escrever algoritmos que executam automaticamente o que nós fazemos manualmente quando navegamos por uma página de um site de e-commerce, por exemplo. Outro ponto favorável é a pouca necessidade de conhecimentos prévios de programação. 
+
+Segundo \citet{manning2008introduction} \emph{web scraping} é o processo de tirar informações desestruturadas de páginas da web e transformá-las em informações estruturadas que podem ser usadas para análise.  Pelo fato do processo ser tão genérico, é difícil dizer quando o primeiro web scraper foi escrito. Assim, como \citet{cavallo2010scraped}, apresenta-se o \emph{web scraping} como uma alternativa para acessar preços de sites de supermercados, farmácias, postos de gasolina, bancos, imobiliárias, companhia de energia elétrica, lojas de e-commerce, lojas de roupas e calçados, consertos em geral, plano de saúde, escolas particulares, cursos de línguas, entre outros. 
+
+A tecnologia para coletar os preços é simples. A maior parte das páginas são construídas usando uma linguagem de codificação estruturada chamada de \emph{HyperText Markup Language} (HTML). Este código tem “\emph{tags}”, tais como $<center>$ e $<bold>$, que determinam o estilo e localização do texto em uma página. Estas \emph{tags} tendem a permanecer constantes ao longo do tempo, uma vez que proporcionam um “\emph{look and feel}” distinto para cada página. Por contraste, a informação dentro dessas \emph{tags}, tais como preço de produtos, mudam ao longo do tempo. O software de \emph{scraping} pode ser ensinado a utilizar as \emph{tags} em HTML pata localizar informações relevantes sobre um produto e guarda-las em um banco de dados. A repetição desse processo todos os dias produz um banco de dados em formato de painel com um registro por produto por dia. Em adição, o endereço da página (URL) onde cada produto é localizado pode ser usado para classificar produtos em categorias padronizadas. 
+
+
 % \SweaveInput{final.Rnw}
 
 % Formato da bibliografia
