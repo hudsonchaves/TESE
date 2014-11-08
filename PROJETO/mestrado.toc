@@ -1,2 +1,5 @@
 \select@language {brazilian}
-\contentsline {section}{Refer\^encias Bibliogr\'aficas}{9}{section*.11}
+\contentsline {chapter}{\numberline {1}REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}METODOLOGIA}{7}{chapter.2}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{12}{section*.11}
+\contentsline {chapter}{\numberline {A}Primeiro ap\IeC {\^e}ndice}{14}{appendix.A}
