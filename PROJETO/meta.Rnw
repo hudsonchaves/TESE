@@ -152,7 +152,7 @@
 % Omitir linha de separação entre rodapé e conteúdo
 \renewcommand{\footrulewidth}{0pt}
 % Altura do cabeçalho
-\headheight 13.6pt
+\headheight 15pt
 
 % Dados do projeto
 \newcommand{\nomedoaluno}{Hudson Chaves Costa}

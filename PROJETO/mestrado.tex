@@ -179,7 +179,7 @@
 % Omitir linha de separação entre rodapé e conteúdo
 \renewcommand{\footrulewidth}{0pt}
 % Altura do cabeçalho
-\headheight 13.6pt
+\headheight 15pt
 
 % Dados do projeto
 \newcommand{\nomedoaluno}{Hudson Chaves Costa}
@@ -522,13 +522,30 @@ Segundo \citet{cavallo2010scraped}, preços coletados da internet possuem duas d
   
   Assim, o índice de preços usa a combinação de dados online e as estruturas de ponderação oficiais do IBGE para as categorias da “cesta de mercadorias”\footnote[1]{Segundo o IBGE (2012) os índices constituem uma medida síntese de movimento de preços de um conjunto de bens e serviços, chamado “cesta de mercadorias”, representativo de um determinado grupo populacional, em certo período de tempo} de cada índice de inflação. Dados diários serão utilizados para construir o índice de preços online o que é útil para observar padrões de curto prazo nos dados que ajudam a validar as informações online. 
   
-  \begin{equation}\label{eq1}
-R_{t,t-1}^{j}=\prod_{i}{{\left(\frac{{p}_{t}^{i}}{{p}_{t-1}^{i}}\right)}^{\sfrac{1}{{n}_{j,t}}}} 
-\end{equation}
-
   O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
 Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$:
 
+\begin{equation}
+R_{t,t-1}^{j}=\prod_{i}\left(\frac{p_{t}^{t}}{p_{t-1}^{i}}\right)^{\nicefrac{1}{n_{j,t}}}
+\end{equation}
+
+\noindent onde $p_{t}^{i}$ é o preço do bem $i$ no tempo $t$, $n_{j,t}$ é o número de produtos na categoria $j$ que estão presentes na amostra neste dia. 
+
+O segundo passo é computar o índice em nível de categoria em $t$:
+
+\begin{equation}\label{eq2}
+I_{t}^{j}=R_{1,0}^{j}\ast{R}_{2,1}^{j}\ast{...}\ast{R}_{t,t-1}^{j}
+\end{equation}
+
+Finalmente, o índice de preços no tempo $t$ é a média aritmética ponderada de todos os índices das categorias:
+
+\begin{equation}
+IPO_{t}=\sum_{j}{\frac{w_{j}}{w}I_{t}^{j}} 
+\end{equation}
+
+\noindent onde $w^{j}$ é o peso oficial utilizado pelo IBGE para tal categoria e $W$ a soma de todos os pesos incluídos na amostra.
+
+A classificação de produtos e pesos de categorias é uma das partes mais complexas deste processo. Nos dados originais, cada produto é atrelado à um endereço de web (URL) que corresponde à página onde o produto é localizado. 
 
 %  O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
 % Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$

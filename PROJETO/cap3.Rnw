@@ -37,12 +37,43 @@ Segundo \citet{cavallo2010scraped}, preços coletados da internet possuem duas d
   O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
 Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$:
 
-%   \begin{equation}\label{eq1}
-% R_{t,t-1}^{j}=\prod_{i}{{\left(\frac{{p}_{t}^{i}}{{p}_{t-1}^{i}}\right)}^{\sfrac{1}{{n}_{j,t}}}} 
-% \end{equation}
+\begin{equation}
+R_{t,t-1}^{j}=\prod_{i}\left(\frac{p_{t}^{t}}{p_{t-1}^{i}}\right)^{\nicefrac{1}{n_{j,t}}}
+\end{equation}
 
-%  O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
-% Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$
+\noindent onde $p_{t}^{i}$ é o preço do bem $i$ no tempo $t$, $n_{j,t}$ é o número de produtos na categoria $j$ que estão presentes na amostra neste dia. 
+
+O segundo passo é computar o índice em nível de categoria em $t$:
+
+\begin{equation}\label{eq2}
+I_{t}^{j}=R_{1,0}^{j}\ast{R}_{2,1}^{j}\ast{...}\ast{R}_{t,t-1}^{j}
+\end{equation}
+
+Finalmente, o índice de preços no tempo $t$ é a média aritmética ponderada de todos os índices das categorias:
+
+\begin{equation}
+IPO_{t}=\sum_{j}{\frac{w_{j}}{w}I_{t}^{j}} 
+\end{equation}
+
+\noindent onde $w^{j}$ é o peso oficial utilizado pelo IBGE para tal categoria e $W$ a soma de todos os pesos incluídos na amostra.
+
+A classificação de produtos e pesos de categorias é uma das partes mais complexas deste processo. Nos dados originais, cada produto é atrelado à um endereço de web (URL) que corresponde à página onde o produto é localizado. 
+
+\section*{PREÇOS ONLINE E OFFLINE}
+
+Preços coletados de sites podem ser questionados pela sua representatividade em relação ao comportamento dos preços de um determinado país, região ou cidade. Isso ocorre em função do pequeno número de empresas que possuem produtos sendo vendidos pela internet. Assim, o montante de variações observadas nos preços da economia real pode não ser bem representado pelas movimentações dos preços oriundos da internet o que pode provocar um viés na análise de inflação ou rigidez de preços. 
+
+  Avaliações futuras precisarão ser feitas de forma que seja capaz explorar se os preços online e off-line se comportam similarmente. Preocupado com tal validação, \citet{cavallo2010scraped} fez pesquisa de preços nas lojas físicas dos supermercados utilizados para coleta de dados da internet. Desta forma, o autor examinou se os preços dos produtos nas lojas físicas eram similares aos preços nos sites. Uma importante característica é que um alto percentual de produtos vendidos nas lojas físicas também era comercializado nos sites em todos os países. O autor comparou os preços tanto em termo de nível quanto em tamanho e intervalo de tempo de alterações nos preços. Tal comportamento é muito importante para a avaliação de rigidez nos preços. Para tanto, o autor criou uma série de mudança de preços para cada produto que recebe valor 1 se o preço aumentou, 0 se o preço permaneceu constante e -1, caso contrário. 
+  
+  Assim, foi possível avaliar se os preços dos produtos nas lojas físicas são semelhantes em nível e em direção de mudança para cada produto e supermercado dos países avaliados por \citet{cavallo2010scraped}.
+
+\section*{RIGIDEZ DE PREÇOS}
+
+Muitos mecanismos microeconômicos têm sido propostos para explicar porque os preços são rígidos. A maior parte deles podem ser amplamente classificados em dois tipos de modelos: tempo-denpendente e estado-denpendente. Nos modelos tempo-denpendentes, o momento de ajustamento nos preços é determinado exogenamente. Uma firma é capaz de definir o preço ótimo depois de um dado número de períodos (conforme \citet{taylor1980aggregate}), ou aleatoriamente em cada período (conforme \citet{calvo1983staggered}). Com ajustamentos aleatórios, mudanças nos preços de qualquer tamanho são possíveis e existem uma fração estável de firmas ajustando em cada período, independentemente de quanto tempo já passou desde a última alteração no preço. 
+
+Modelos estado-dependentes, começam com os modelos de custo de menu de Barro (1972) e Sheshinski e Weiss (1977) e mais recentemente Dotsey, King e Wolman (1999) e Golosov e Lucas (2007), tendem a ter maior fundamentação microeconômica. Eles são baseados na hipótese de que firmas são capazes de mudar seus preços em qualquer momento, mas devem enfrentar custos de ajustamento para fazer isso. Tais custos podem incluir custos trabalhistas para fazer as alterações, custos gerenciais para tomar a decisão, ou mesmo custos de “ira do cliente” como reação do cliente após o ajustamento nos preços. Em modelos estado-dependentes existem algumas pequenas alterações (dado que não vale a pena pagar o custo de menu) e os ajustem tendem a ocorrer mais frequentemente em preços “velhos” (onde o desvio do ótimo é maior).
+
+Como Klenow e Kryvtsov (2008) explicaram, as implicações para o produto real e inflação podem diferir drasticamente em modelos estado e tempo-dependentes, de modo que é importante distinguir entre eles empiricamente. 
 
 
 
