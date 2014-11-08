@@ -35,16 +35,16 @@
 \usepackage[utf8]{inputenc}
 
 % Mapear caracteres especiais no PDF
-\usepackage{cmap} % INSTALAR
+\usepackage{cmap} 
 
 % Codificação da fonte
-\usepackage[T1]{fontenc} % INSTALAR
+\usepackage[T1]{fontenc}
 % Usa a lmodern por padrão (caso cm-super não esteja instalada).
-\usepackage{lmodern} % INSTALAR
+\usepackage{lmodern}
 
 %% Microtipografia
 % Utiliza recursos como espaçamento entre letras e entre linhas
-\usepackage{microtype} % INSTALAR
+\usepackage{microtype}
 % Habilita protrusão e expansão, ignorando
 % compatibilidade (ver documentação do pacote)
 \microtypesetup{activate={true,nocompatibility}}
@@ -75,7 +75,7 @@
 %\usepackage{layout}
 
 % Para definir espaçamento entre as linhas
-\usepackage{setspace} % INSTALAR
+\usepackage{setspace} 
 
 % Espaçamento do texto para o frame
 \setlength{\fboxsep}{1em}
@@ -85,7 +85,7 @@
 
 %% Elementos Gráficos
 % Para incluir figuras (pacote extendido)
-\usepackage[]{graphicx} % INSTALAR
+\usepackage[]{graphicx} 
 
 %% Suporte a cores
 \usepackage{color}
@@ -447,9 +447,18 @@
 % Números das páginas em arábicos
 \pagenumbering{arabic}
 
-\chapter{Introdução (capítulo 1)}\label{intro}
+\chapter{INTRODUÇÃO}\label{intro}
 
-\section{Incluindo citações}\label{intro:historico}
+Há décadas diversas pesquisas teóricas têm focado na fundamentação microeconômica da rigidez de preços, um elemento chave nas explicações dos efeitos reais da política monetária. Por outro lado, a literatura empírica sobre rigidez de preços é pouco encontrada. \citet{bils2004some} fizeram uma importante contribuição ao estudar de forma desagregada dados do \emph{Consumer Price Index} (CPI) dos EUA a partir de 1990 e mostrar que o preço médio mudou uma vez a cada 4.3 meses. Embora outras significantes contribuições seguiram este trabalho, importantes questões empíricas permanecem em grande parte sem resposta.
+
+\citet{cavallo2010scraped} em seu trabalho inovador, fez questionamentos sobre os fundamentos da rigidez de preços. Entre eles, se as decisões de preço são temporalmente dependentes ou relacionada ao estado econômico subjacente, se a rigidez de preços é realmente conduzida por custo de menu e assimetria de informação, o papel da competição e sincronização dos preços e como o ambiente econômico, experiências passadas de inflação e quadros institucionais influenciam na forma como os preços se ajustam.
+
+A principal restrição para pesquisa empírica é que os dados em nível de produto são limitados em termos de frequência, países e contextos em que eles são coletados. Dados do CPI dos EUA e Europa têm se tornado viáveis para pesquisadores em uma base limitada. Embora esses bancos de dados cubram uma vasta gama de produtos, eles são tipicamente viáveis para países desenvolvidos com ambiente macroeconômico estável, onde choques agregados são leves e os mecanismos relevantes em nível micro com objetivos macro são difíceis de identificar. 
+
+Por fim, para conseguir grande quantidade de informações em periodicidade diária, é preciso utilizar a capacidade que a tecnologia proporciona. Além disso, dados tradicionais de pesquisas de instituições públicas e privadas não possuem tais características e assim, são limitantes para pesquisas empíricas sobre o impacto de políticas monetárias e rigidez de preços.
+
+O presente projeto de tese propõe a utilização da tecnologia de web scraping assim como \citet{cavallo2010scraped} para coletar dados de sites de diversos setores da economia brasileira. Assim, pretende-se contribuir para a pesquisa empírica no mercado brasileiro no que tange à avaliação empírica da rigidez de preços e também gerar um índice de inflação que possa ser considerado proxy para os índices divulgados pelo governo. 
+
 
 % O comando \label{nome} define o marcador da parte especificada.
 % Você pode citar esta seção usando o comando \ref{nome}.

@@ -1,7 +1,6 @@
 \select@language {brazilian}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o (cap\IeC {\'\i }tulo 1)}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Incluindo cita\IeC {\c c}\IeC {\~o}es}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Referenciando se\IeC {\c c}\IeC {\~o}es do texto}{1}{section.1.2}
+\contentsline {chapter}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Referenciando se\IeC {\c c}\IeC {\~o}es do texto}{2}{section.1.1}
 \contentsline {chapter}{\numberline {2}Um assunto legal (cap\IeC {\'\i }tulo 2)}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Materiais e M\IeC {\'e}todos}{3}{section.2.2}

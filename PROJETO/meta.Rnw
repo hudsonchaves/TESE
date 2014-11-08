@@ -8,16 +8,16 @@
 \usepackage[utf8]{inputenc}
 
 % Mapear caracteres especiais no PDF
-\usepackage{cmap} % INSTALAR
+\usepackage{cmap} 
 
 % Codificação da fonte
-\usepackage[T1]{fontenc} % INSTALAR
+\usepackage[T1]{fontenc}
 % Usa a lmodern por padrão (caso cm-super não esteja instalada).
-\usepackage{lmodern} % INSTALAR
+\usepackage{lmodern}
 
 %% Microtipografia
 % Utiliza recursos como espaçamento entre letras e entre linhas
-\usepackage{microtype} % INSTALAR
+\usepackage{microtype}
 % Habilita protrusão e expansão, ignorando
 % compatibilidade (ver documentação do pacote)
 \microtypesetup{activate={true,nocompatibility}}
@@ -48,7 +48,7 @@
 %\usepackage{layout}
 
 % Para definir espaçamento entre as linhas
-\usepackage{setspace} % INSTALAR
+\usepackage{setspace} 
 
 % Espaçamento do texto para o frame
 \setlength{\fboxsep}{1em}
@@ -58,7 +58,7 @@
 
 %% Elementos Gráficos
 % Para incluir figuras (pacote extendido)
-\usepackage[]{graphicx} % INSTALAR
+\usepackage[]{graphicx} 
 
 %% Suporte a cores
 \usepackage{color}

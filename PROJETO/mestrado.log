@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  5 NOV 2014 21:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 00:01
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1161,45 +1161,62 @@ No file mestrado.nls.
 
 ]
 Cap\'{\i }tulo 1.
+
+Package natbib Warning: Citation `bils2004some' on page 1 undefined on input li
+ne 452.
+
+
+Package natbib Warning: Citation `cavallo2010scraped' on page 1 undefined on in
+put line 454.
+
+
+Package natbib Warning: Citation `cavallo2010scraped' on page 1 undefined on in
+put line 460.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.475 \cleardoublepage
-                       [1
+l.466 O
+        Capítulo~\ref{intro} é uma introdução ao contexto do projeto.
+[1
 
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.475 \cleardoublepage
-                       [2
 
 ]
+
+LaTeX Warning: Reference `intro:historico' on page 2 undefined on input line 48
+2.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.484 \cleardoublepage
+                       [2]
 Cap\'{\i }tulo 2.
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 492.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 501.
 
 (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 492.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 501.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 495.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 504.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 498.
+(Font)              <9> on input line 507.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 498.
+(Font)              <5> on input line 507.
  [3
 
+
 ]
-<lastgraph.jpg, id=191, 722.7pt x 164.0529pt>
+<lastgraph.jpg, id=185, 722.7pt x 164.0529pt>
 File: lastgraph.jpg Graphic file (type jpg)
  <use lastgraph.jpg> [4]
 File: lastgraph.jpg Graphic file (type jpg)
 
-<use lastgraph.jpg> <fsm.jpg, id=200, 401.5pt x 401.5pt>
+<use lastgraph.jpg> <fsm.jpg, id=194, 401.5pt x 401.5pt>
 File: fsm.jpg Graphic file (type jpg)
  <use fsm.jpg>
 File: fsm.jpg Graphic file (type jpg)
@@ -1220,35 +1237,43 @@ Cap\'{\i }tulo 3.
 Ap\^endice A.
 AED: lastpage setting LastPage [11
 
-] (./mestrado.aux) ) 
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./mestrado.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 11814 strings out of 493848
- 173855 string characters out of 1152823
- 292796 words of memory out of 3000000
- 14425 multiletter control sequences out of 15000+50000
- 81424 words of font info for 256 fonts, out of 3000000 for 9000
+ 11849 strings out of 493848
+ 174125 string characters out of 1152823
+ 292734 words of memory out of 3000000
+ 14426 multiletter control sequences out of 15000+50000
+ 84049 words of font info for 286 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,48p,361b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/
-texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm1095.pfb>
-Output written on mestrado.pdf (17 pages, 363944 bytes).
+ 44i,12n,48p,695b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.en
+c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm109
+5.pfb>
+Output written on mestrado.pdf (17 pages, 367556 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 52935 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 52927 words of extra memory for PDF output out of 61914 (max. 10000000)
 
