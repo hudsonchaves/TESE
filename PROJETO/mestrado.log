@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  11 NOV 2014 00:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  11 NOV 2014 11:38
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -959,7 +959,23 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./mestrado.aux)
+)))) (./mestrado.aux
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
 \openout1 = `mestrado.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
@@ -977,8 +993,7 @@ LaTeX Font Info:    ... okay on input line 221.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 221.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 221.
 
-
-(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+ (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 221.
@@ -1144,16 +1159,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ]
 Cap\'{\i }tulo 1.
 
-Package natbib Warning: Citation `bresser1968macroeconomia' on page 1 undefined
- on input line 452.
+Package natbib Warning: Citation `ball1994sticky' on page 1 undefined on input 
+line 452.
 
 
-Package natbib Warning: Citation `bresser1968macroeconomia' on page 1 undefined
- on input line 452.
-
-
-Package natbib Warning: Citation `datheinintroduccao' on page 1 undefined on in
-put line 456.
+Package natbib Warning: Author undefined for citation`datheinintroduccao' 
+(natbib)                on page 1 on input line 456.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1179,7 +1190,7 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [7
 
-] <WebScraping.jpeg, id=133, 1724.4425pt x 858.20625pt>
+] <WebScraping.jpeg, id=123, 1724.4425pt x 858.20625pt>
 File: WebScraping.jpeg Graphic file (type jpg)
 
 <use WebScraping.jpeg> [8 <./WebScraping.jpeg>]
@@ -1204,13 +1215,13 @@ Package natbib Warning: There were undefined citations.
 
 (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11811 strings out of 493848
- 173674 string characters out of 1152823
- 290763 words of memory out of 3000000
- 14357 multiletter control sequences out of 15000+50000
- 87692 words of font info for 335 fonts, out of 3000000 for 9000
+ 11839 strings out of 493848
+ 174038 string characters out of 1152823
+ 290820 words of memory out of 3000000
+ 14362 multiletter control sequences out of 15000+50000
+ 89732 words of font info for 353 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,43p,1327b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,47p,1327b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
 m-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-t
@@ -1228,9 +1239,9 @@ r/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 sy8.pfb>
-Output written on mestrado.pdf (18 pages, 335086 bytes).
+Output written on mestrado.pdf (18 pages, 332438 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 

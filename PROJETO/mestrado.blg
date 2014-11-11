@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: mestrado.aux
+The style file: apalike.bst
+Database file #1: projeto.bib
+Warning--I didn't find a database entry for "ball1994sticky"
+Warning--empty year in datheinintroduccao
+Warning--empty journal in datheinintroduccao
+You've used 16 entries,
+            1935 wiz_defined-function locations,
+            562 strings with 5821 characters,
+and the built_in function-call counts, 5779 in all, are:
+= -- 583
+> -- 191
+< -- 16
++ -- 64
+- -- 60
+* -- 439
+:= -- 1011
+add.period$ -- 46
+call.type$ -- 16
+change.case$ -- 111
+chr.to.int$ -- 16
+cite$ -- 18
+duplicate$ -- 239
+empty$ -- 406
+format.name$ -- 84
+if$ -- 1140
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 14
+newline$ -- 81
+num.names$ -- 48
+pop$ -- 94
+preamble$ -- 1
+purify$ -- 110
+quote$ -- 0
+skip$ -- 201
+stack$ -- 0
+substring$ -- 394
+swap$ -- 42
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 92
+warning$ -- 2
+while$ -- 52
+width$ -- 0
+write$ -- 202
+(There were 3 warnings)
