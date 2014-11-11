@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 23:04
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2014.11.5)  8 NOV 2014 23:11
 entering extended mode
  %&-line parsing enabled.
 **teste.tex
@@ -28,11 +28,11 @@ l.47 ^^M
 
  
 Here is how much of TeX's memory you used:
- 10 strings out of 493848
- 182 string characters out of 1152823
- 47808 words of memory out of 3000000
- 3384 multiletter control sequences out of 15000+50000
+ 9 strings out of 494665
+ 91 string characters out of 1166477
+ 47149 words of memory out of 3000000
+ 3337 multiletter control sequences out of 15000+50000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 10i,0n,7p,98b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 669 hyphenation exceptions out of 8191
+ 10i,0n,7p,93b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
