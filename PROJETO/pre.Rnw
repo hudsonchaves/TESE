@@ -201,15 +201,15 @@
 \microtypesetup{protrusion=false}
 
 % Lista de figuras
-\listoffigures
+%\listoffigures
 
 % Lista de tabelas
-\listoftables
+%\listoftables
 
 % Abreviações
 % Para imprimir as abreviações siga as instruções em 
 % http://code.google.com/p/mestre-em-latex/wiki/ListaDeAbreviaturas
-\printnomenclature
+%\printnomenclature
 
 % Índice
 \tableofcontents

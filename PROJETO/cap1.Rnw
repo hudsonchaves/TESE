@@ -7,7 +7,7 @@
 % Números das páginas em arábicos
 \pagenumbering{arabic}
 
-\section*{INTRODUÇÃO}\label{intro}
+\chapter{INTRODUÇÃO}\label{intro}
 
 \citet{bresser1968macroeconomia} salienta a importância da Teoria Econômica como parte central da Economia. Sabe-se que A Teria Econômica ortodoxa divide-se em dois grandes grupos: microeconomia e macroeconomia. Para \citet{bresser1968macroeconomia}, a primeira está focada na análise de funcionamento geral da economia por meio comportamento dos agentes econômicos individuais (consumidores e produtores). Já a segunda, realiza essa mesma análise, partindo do estudo de agregados econômicos, como a renda, o consumo, e o investimento agregados. 
 

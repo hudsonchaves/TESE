@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  8 NOV 2014 23:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  11 NOV 2014 00:37
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1134,59 +1134,59 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 (/usr/share/texmf-texlive/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1] (./mestrado.lof)
-\tf@lof=\write6
-\openout6 = `mestrado.lof'.
+) [1] (./mestrado.toc)
+\tf@toc=\write6
+\openout6 = `mestrado.toc'.
 
 
 [2
 
-] (./mestrado.lot)
-\tf@lot=\write7
-\openout7 = `mestrado.lot'.
+]
+Cap\'{\i }tulo 1.
+
+Package natbib Warning: Citation `bresser1968macroeconomia' on page 1 undefined
+ on input line 452.
 
 
-No file mestrado.nls.
-[3
+Package natbib Warning: Citation `bresser1968macroeconomia' on page 1 undefined
+ on input line 452.
 
-] (./mestrado.toc)
-\tf@toc=\write8
-\openout8 = `mestrado.toc'.
 
- [4
+Package natbib Warning: Citation `datheinintroduccao' on page 1 undefined on in
+put line 456.
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \cleardoublepage
-                       [1
+l.457 
+       [1
+
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \cleardoublepage
-                       [2
-
-]
-Cap\'{\i }tulo 1.
+l.469 \cleardoublepage
+                       [2]
+Cap\'{\i }tulo 2.
 [3
+
 
 ] [4] [5] [6
 
 ]
-Cap\'{\i }tulo 2.
+Cap\'{\i }tulo 3.
 [7
 
-] <WebScraping.jpeg, id=142, 1724.4425pt x 858.20625pt>
+] <WebScraping.jpeg, id=133, 1724.4425pt x 858.20625pt>
 File: WebScraping.jpeg Graphic file (type jpg)
 
 <use WebScraping.jpeg> [8 <./WebScraping.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 523.
+(Font)              <9> on input line 529.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 523.
+(Font)              <5> on input line 529.
  [9] [10] (./mestrado.bbl
 [11] [12
 
@@ -1198,35 +1198,39 @@ See the caption package documentation for explanation.
 
 AED: lastpage setting LastPage [14
 
-] (./mestrado.aux) ) 
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11819 strings out of 493848
- 173720 string characters out of 1152823
+ 11811 strings out of 493848
+ 173674 string characters out of 1152823
  290763 words of memory out of 3000000
- 14354 multiletter control sequences out of 15000+50000
+ 14357 multiletter control sequences out of 15000+50000
  87692 words of font info for 335 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,11n,43p,1327b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy8.pfb>
-Output written on mestrado.pdf (20 pages, 332312 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+sy8.pfb>
+Output written on mestrado.pdf (18 pages, 335086 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 51298 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 
