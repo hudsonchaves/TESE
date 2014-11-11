@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  11 NOV 2014 11:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  11 NOV 2014 12:41
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -970,7 +970,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.91 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1158,12 +1158,16 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Cap\'{\i }tulo 1.
+
+Package natbib Warning: Author undefined for citation`datheinintroduccao' 
+(natbib)                on page 1 on input line 456.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.469 \cleardoublepage
-                       [1
+l.457 
+       [1
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
@@ -1182,7 +1186,7 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [7
 
-] <WebScraping.jpeg, id=118, 1724.4425pt x 858.20625pt>
+] <WebScraping.jpeg, id=125, 1724.4425pt x 858.20625pt>
 File: WebScraping.jpeg Graphic file (type jpg)
 
 <use WebScraping.jpeg> [8 <./WebScraping.jpeg>]
@@ -1203,13 +1207,13 @@ AED: lastpage setting LastPage [14
 
 ] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11838 strings out of 493848
- 174022 string characters out of 1152823
- 290820 words of memory out of 3000000
- 14361 multiletter control sequences out of 15000+50000
+ 11842 strings out of 493848
+ 174107 string characters out of 1152823
+ 290854 words of memory out of 3000000
+ 14364 multiletter control sequences out of 15000+50000
  89732 words of font info for 353 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,47p,1327b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,43p,1327b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm
 /lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf
@@ -1227,9 +1231,9 @@ usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy8.pfb>
-Output written on mestrado.pdf (18 pages, 327619 bytes).
+Output written on mestrado.pdf (18 pages, 332835 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 
