@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  11 NOV 2014 12:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  12 NOV 2014 02:03
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -970,7 +970,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.90 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1094,13 +1094,12 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 221.
 LaTeX Info: Redefining \pageref on input line 221.
- (./mestrado.out)
-(./mestrado.out)
 \@outlinefile=\write5
 \openout5 = `mestrado.out'.
 
 \AtBeginShipoutBox=\box61
- (./mestrado-concordance.tex) [1
+
+(./mestrado-concordance.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
@@ -1111,6 +1110,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 269.
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 269.
+
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1159,14 +1159,30 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ]
 Cap\'{\i }tulo 1.
 
+Package natbib Warning: Citation `friedman1992money' on page 1 undefined on inp
+ut line 454.
+
+
+Package natbib Warning: Citation `lucas1972expectations' on page 1 undefined on
+ input line 456.
+
+
+Package natbib Warning: Citation `mccallum1998stickiness' on page 1 undefined o
+n input line 456.
+
+
+Package natbib Warning: Citation `blinder1983money' on page 1 undefined on inpu
+t line 458.
+
+
 Package natbib Warning: Author undefined for citation`datheinintroduccao' 
-(natbib)                on page 1 on input line 456.
+(natbib)                on page 1 on input line 458.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.457 
+l.459 
        [1
 
 
@@ -1174,66 +1190,87 @@ l.457
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.469 \cleardoublepage
-                       [2]
+l.473 
+       [2]
+! Undefined control sequence.
+l.476 ...: preços coletadas diretamente da \emphg
+                                                  {web} produzem índices de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3] [4
+
+]
 Cap\'{\i }tulo 2.
-[3
+[5
 
-
-] [4] [5] [6
+] [6] [7] [8
 
 ]
 Cap\'{\i }tulo 3.
-[7
+[9
 
-] <WebScraping.jpeg, id=125, 1724.4425pt x 858.20625pt>
+] <WebScraping.jpeg, id=120, 1724.4425pt x 858.20625pt>
 File: WebScraping.jpeg Graphic file (type jpg)
 
-<use WebScraping.jpeg> [8 <./WebScraping.jpeg>]
+<use WebScraping.jpeg> [10 <./WebScraping.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 529.
+(Font)              <9> on input line 542.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 529.
- [9] [10] (./mestrado.bbl
-[11] [12
+(Font)              <5> on input line 542.
+ [11] [12] (./mestrado.bbl
+[13] [14
 
-]) [13]
+]) [15]
 Ap\^endice A.
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [14
+AED: lastpage setting LastPage [16
 
-] (./mestrado.aux) ) 
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./mestrado.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 11842 strings out of 493848
- 174107 string characters out of 1152823
+ 11841 strings out of 493848
+ 174131 string characters out of 1152823
  290854 words of memory out of 3000000
- 14364 multiletter control sequences out of 15000+50000
+ 14362 multiletter control sequences out of 15000+50000
  89732 words of font info for 353 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,11n,43p,1327b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy8.pfb>
-Output written on mestrado.pdf (18 pages, 332835 bytes).
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/font
+s/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on mestrado.pdf (20 pages, 335111 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 51306 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 51266 words of extra memory for PDF output out of 51595 (max. 10000000)
 

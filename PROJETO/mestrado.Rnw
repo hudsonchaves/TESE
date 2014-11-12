@@ -43,7 +43,7 @@
 \bibliography{projeto}
 
 % Apêndice(s)
-\SweaveInput{apendice}
+%\SweaveInput{apendice}
 
 % Fim do texto
 \end{document}

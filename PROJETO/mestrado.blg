@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: mestrado.aux
+The style file: apalike.bst
+Database file #1: projeto.bib
+Repeated entry---line 213 of file projeto.bib
+ : @article{datheinintroduccao
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "friedman1992money"
+Warning--I didn't find a database entry for "lucas1972expectations"
+Warning--I didn't find a database entry for "mccallum1998stickiness"
+Warning--I didn't find a database entry for "blinder1983money"
+Warning--empty journal in ball1994sticky
+Warning--empty year in datheinintroduccao
+Warning--empty journal in datheinintroduccao
+You've used 17 entries,
+            1935 wiz_defined-function locations,
+            569 strings with 5961 characters,
+and the built_in function-call counts, 6088 in all, are:
+= -- 611
+> -- 204
+< -- 17
++ -- 70
+- -- 64
+* -- 463
+:= -- 1067
+add.period$ -- 48
+call.type$ -- 17
+change.case$ -- 118
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 252
+empty$ -- 426
+format.name$ -- 91
+if$ -- 1197
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 85
+num.names$ -- 51
+pop$ -- 102
+preamble$ -- 1
+purify$ -- 117
+quote$ -- 0
+skip$ -- 212
+stack$ -- 0
+substring$ -- 408
+swap$ -- 42
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 98
+warning$ -- 3
+while$ -- 54
+width$ -- 0
+write$ -- 212
+(There was 1 error message)

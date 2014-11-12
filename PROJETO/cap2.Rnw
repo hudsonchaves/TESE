@@ -4,7 +4,7 @@
 
 \chapter{REVISÃO BIBLIOGRÁFICA}\label{cap2}
 
-Como já mencionado anteriormente, pesquisas empíricas que busquem avaliar a rigidez de preços tem pouca audiência em função da dificuldade de acesso a dados de preços de produtos e serviços em uma frequência considerável. O presente projeto de tese tem como objetivo avaliar se dados coletados da nuvem de diversos sites (supermercados, postos de gasolina, farmácias, ...) são capazes de contribuir para o estudo empírico da rigidez de preços. 
+Como já mencionado anteriormente, pesquisas empíricas que busquem avaliar a rigidez de preços tem pouca audiência em função da dificuldade de acesso a dados de preços de produtos e serviços em uma frequência considerável. O presente projeto de tese tem como objetivo avaliar se dados coletados da nuvem de diversos sites (supermercados, postos de gasolina, farmácias, ...) são capazes de contribuir para o estudo empírico da rigidez de preços. Além disso, propor um índice de inflação que possa ser utilizado como \emph{proxy} para os índices divulgados pelos órgãos públicos e comumente usado no mercado.  
 
 O tema ainda é pouco explorado na academia, mas a difusão da internet e a facilidade de acesso via telefones celulares, por exemplo, são fatores que sinalizam para a importância que as informações armazenadas nas páginas de sites têm para estudos econômicos. 
 
