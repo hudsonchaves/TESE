@@ -33,7 +33,7 @@ Os preços são fundamentais para o funcionamento da economia. São diversas fon
 
 Assim, políticas monetárias e fiscais são usadas como forma de manter os preços sob controle e por conseguinte, influenciar o desempenho da economia. A qualidade das informações sobre os preços é um fator importante para que os órgãos públicos possam tomar decisões eficientes no que tange aos objetivos de controle de inflação. Estudos empiricos já mostraram a importância de dados coletados da \emph{web} na avaliação dos pressupostos de rigidez de preços e proposição de medida de inflação oriunda de informações \emph{online}.
 
-O presente projeto de tese apresenta o seguinte problema de pesquisa: preços coletadas diretamente da \emphg{web} produzem índices de inflação que são condizentes com os publicados pelos órgãos públicos brasileiros? Empiricamente, a rigidez de preços pode ser mensudarada e avaliada tanto qualitativamente quanto estatisticamente na economia brasileira?  
+O presente projeto de tese apresenta o seguinte problema de pesquisa: preços coletadas diretamente da \emphg{web} produzem índices de inflação que são condizentes com os publicados pelos órgãos públicos brasileiros? Empiricamente, a rigidez de preços pode ser mensudarada e avaliada tanto qualitativamente quanto estatisticamente na economia brasileira? É possível avaliar o impacto das políticas públicas sobre os preços em diferentes regiões do páis?
 
 
 \section*{OBJETIVOS}
