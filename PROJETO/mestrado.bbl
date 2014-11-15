@@ -14,6 +14,10 @@ Bils, M. and Klenow, P.~J. (2004).
 \newblock Some evidence on the importance of sticky prices.
 \newblock {\em Journal of Political Economy}, 112(5):947--985.
 
+\bibitem[Blinder and Stiglitz, 1983]{blinder1983money}
+Blinder, A.~S. and Stiglitz, J.~E. (1983).
+\newblock Money, credit constraints, and economic activity.
+
 \bibitem[Bresser-Pereira, 1968]{bresser1968macroeconomia}
 Bresser-Pereira, L.~C. (1968).
 \newblock Da macroeconomia cl{\'a}ssica {\`a} keynesiana.
@@ -43,15 +47,23 @@ Cavallo, A.~F. (2010).
 \newblock {\em Scraped data and prices in macroeconomics}.
 \newblock Harvard University.
 
-\bibitem[Dathein, ]{datheinintroduccao}
-Dathein, R.
-\newblock Uma introdu{\c{c}}{\~a}o {\`a} teoria novo-keynesiana.
+\bibitem[Dathein, 2000]{dathein2000crescimento}
+Dathein, R. (2000).
+\newblock O crescimento do desemprego nos pa{\'\i}ses desenvolvidos e sua
+  interpreta{\c{c}}{\~a}o pela teoria econ{\^o}mica: as abordagens
+  neocl{\'a}ssica, keynesiana e schumpeteriana. campinas.
+\newblock {\em Campinas, SP: IE. UNICAMP, 2000.(Tese de Doutoramento)}.
 
 \bibitem[Dotsey et~al., 1999]{dotsey1999state}
 Dotsey, M., King, R.~G., and Wolman, A.~L. (1999).
 \newblock State-dependent pricing and the general equilibrium dynamics of money
   and output.
 \newblock {\em Quarterly journal of Economics}, pages 655--690.
+
+\bibitem[Friedman and Kuttner, 1992]{friedman1992money}
+Friedman, B.~M. and Kuttner, K.~N. (1992).
+\newblock Money, income, prices, and interest rates.
+\newblock {\em The American Economic Review}, pages 472--492.
 
 \bibitem[Golosov and Lucas~Jr, 2007]{golosov2007menu}
 Golosov, M. and Lucas~Jr, R.~E. (2007).
@@ -64,10 +76,21 @@ Klenow, P.~J. and Kryvtsov, O. (2008).
   us inflation?
 \newblock {\em The Quarterly Journal of Economics}, 123(3):863--904.
 
+\bibitem[Lucas~Jr, 1972]{lucas1972expectations}
+Lucas~Jr, R.~E. (1972).
+\newblock Expectations and the neutrality of money.
+\newblock {\em Journal of economic theory}, 4(2):103--124.
+
 \bibitem[Manning et~al., 2008]{manning2008introduction}
 Manning, C.~D., Raghavan, P., and Sch{\"u}tze, H. (2008).
 \newblock {\em Introduction to information retrieval}, volume~1.
 \newblock Cambridge university press Cambridge.
+
+\bibitem[McCallum, 1998]{mccallum1998stickiness}
+McCallum, B. (1998).
+\newblock Stickiness: A comment.
+\newblock In {\em Carnegie-Rochester Conference Series on Public Policy},
+  volume~49, pages 357--363. Elsevier.
 
 \bibitem[Sheshinski and Weiss, 1977]{sheshinski1977inflation}
 Sheshinski, E. and Weiss, Y. (1977).

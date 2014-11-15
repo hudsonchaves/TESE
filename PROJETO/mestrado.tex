@@ -145,8 +145,8 @@
 
 %% Referências bibliográficas e afins
 % Formatar as citações no texto e a lista de referências
-\usepackage{natbib}
-
+%\usepackage{natbib}
+\usepackage[authoryear,round,longnamesfirst]{natbib}
 % Adicionar bibliografia, índice e conteúdo na Tabela de conteúdo
 % Não inclui lista de tabelas e figuras no índice
 \usepackage[nottoc,notlof,notlot]{tocbibind}
@@ -183,7 +183,7 @@
 
 % Dados do projeto
 \newcommand{\nomedoaluno}{Hudson Chaves Costa}
-\newcommand{\titulo}{Três Ensaios em Microfinanças e Inclusão Financeira}
+\newcommand{\titulo}{Três Ensaios em Comportamento Empírico dos Preços na Economia Brasileira}
 
 %% Links dinâmicos
 % Suporte para hipertexto, links para referências e figuras
@@ -455,7 +455,7 @@ A partir de Keynes, a teoria macroeconômica evoluiu em diversos caminhos. Em 19
 
 Não obstante, as críticas de \citet{lucas1972expectations} que deram origem à macroeconomia novo-classica, são consideradas como importantes para o pouco sucesso do monetarismo.  Porém, devido às deficiências internas e pela falta de aderência dos modelos à realidade empírica, criticas surgiram sobre a macroeconomia novo-clássica (\citet{mccallum1998stickiness}).
 
-Nos anos 1980, vários autores neoclássicos  questionaram fortemente a teoria Novo-Clássica e elaboraram um retorno ao keynesianismo neoclássico, com a teoria Novo-Keynesiana (\citet{blinder1983money}). Segundo \citet{datheinintroduccao} em nível microeconômico, a teoria Novo-Keynesiana adota os fundamentos neoclássicos de agentes maximizadores fazendo o melhor uso das informações disponíveis. Em relação aos microfundamentos da macroeconomia, destacam-se as falhas ou barreiras de mercado. Dessa forma, constata-se a existência de falhas de coordenação de forma que decisões individuais podem gerar externalidades macroeconômicas. Por outro lado, no contexto econômico existe concorrência imperfeita, havendo agentes formadores, e não simplesmente tomadores, de preços e salários. Então, para os agentes econômicos, existe rigidez de preços e salários originada por assimetrias de mercado, heterogeneidade de bens e fatores e informações imperfeitas. A competição imperfeita, por outro lado, cria externalidades de demanda agregada que levam a que os custos sociais da rigidez de preços sejam maiores que os custos privados. 
+Nos anos 1980, vários autores neoclássicos  questionaram fortemente a teoria Novo-Clássica e elaboraram um retorno ao keynesianismo neoclássico, com a teoria Novo-Keynesiana (\citet{blinder1983money}). Segundo \citet{dathein2000crescimento} em nível microeconômico, a teoria Novo-Keynesiana adota os fundamentos neoclássicos de agentes maximizadores fazendo o melhor uso das informações disponíveis. Em relação aos microfundamentos da macroeconomia, destacam-se as falhas ou barreiras de mercado. Dessa forma, constata-se a existência de falhas de coordenação de forma que decisões individuais podem gerar externalidades macroeconômicas. Por outro lado, no contexto econômico existe concorrência imperfeita, havendo agentes formadores, e não simplesmente tomadores, de preços e salários. Então, para os agentes econômicos, existe rigidez de preços e salários originada por assimetrias de mercado, heterogeneidade de bens e fatores e informações imperfeitas. A competição imperfeita, por outro lado, cria externalidades de demanda agregada que levam a que os custos sociais da rigidez de preços sejam maiores que os custos privados. 
 
 Há décadas diversas pesquisas teóricas têm focado na fundamentação microeconômica da rigidez de preços, um elemento chave nas explicações dos efeitos reais da política monetária. Por outro lado, a literatura empírica sobre rigidez de preços é pouco encontrada. \citet{bils2004some} fizeram uma importante contribuição ao estudar de forma desagregada dados do \emph{Consumer Price Index} (CPI) dos EUA a partir de 1990 e mostrar que o preço médio mudou uma vez a cada 4.3 meses. Embora outras significantes contribuições seguiram este trabalho, importantes questões empíricas permanecem em grande parte sem resposta.
 
@@ -473,11 +473,14 @@ Os preços são fundamentais para o funcionamento da economia. São diversas fon
 
 Assim, políticas monetárias e fiscais são usadas como forma de manter os preços sob controle e por conseguinte, influenciar o desempenho da economia. A qualidade das informações sobre os preços é um fator importante para que os órgãos públicos possam tomar decisões eficientes no que tange aos objetivos de controle de inflação. Estudos empiricos já mostraram a importância de dados coletados da \emph{web} na avaliação dos pressupostos de rigidez de preços e proposição de medida de inflação oriunda de informações \emph{online}.
 
-O presente projeto de tese apresenta o seguinte problema de pesquisa: preços coletadas diretamente da \emphg{web} produzem índices de inflação que são condizentes com os publicados pelos órgãos públicos brasileiros? Empiricamente, a rigidez de preços pode ser mensudarada e avaliada tanto qualitativamente quanto estatisticamente na economia brasileira?  
+O presente projeto de tese apresenta o seguinte problema de pesquisa: preços coletadas diretamente da \emphg{web} produzem índices de inflação que são condizentes com os publicados pelos órgãos públicos brasileiros? Empiricamente, a rigidez de preços pode ser mensudarada e avaliada tanto qualitativamente quanto estatisticamente? É possível avaliar o impacto das políticas públicas sobre os preços em diferentes regiões do país ou até mesmo setores da economia?
 
 
 \section*{OBJETIVOS}
 
+O objetivo geral deste projeto é avaliar empiricamente a rigidez de preços na economia brasileira, bem como, propor um índice de inflação oriundo de preços coletados da \emph{web}.
+
+Dentro deste escopo, os objetivos específicos são: melhor compreensão do comportamento microeconômico dos preços e suas implicações para a economia. Tal ponto pode ser um fator vital para a construção de políticas públicas mais eficientes tanto em âmbito regional quanto em setores diversos da economia.  
 \pagestyle{empty}
 \cleardoublepage
 \pagestyle{fancy}
@@ -593,11 +596,7 @@ Como \citet{klenow2008state} explicaram, as implicações para o produto real e 
 \bibliography{projeto}
 
 % Apêndice(s)
-\appendix
-
-\chapter{Primeiro apêndice}\label{ap2}
-
-Apêndices são opcionais, mas podem ser usados, por exemplo, para incluir tabelas com os dados brutos.
+%\SweaveInput{apendice}
 
 % Fim do texto
 \end{document}

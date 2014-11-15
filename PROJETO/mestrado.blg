@@ -2,56 +2,47 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: mestrado.aux
 The style file: apalike.bst
 Database file #1: projeto.bib
-Repeated entry---line 213 of file projeto.bib
- : @article{datheinintroduccao
- :                            ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "friedman1992money"
-Warning--I didn't find a database entry for "lucas1972expectations"
-Warning--I didn't find a database entry for "mccallum1998stickiness"
-Warning--I didn't find a database entry for "blinder1983money"
 Warning--empty journal in ball1994sticky
-Warning--empty year in datheinintroduccao
-Warning--empty journal in datheinintroduccao
-You've used 17 entries,
+Warning--can't use both volume and number fields in mccallum1998stickiness
+You've used 21 entries,
             1935 wiz_defined-function locations,
-            569 strings with 5961 characters,
-and the built_in function-call counts, 6088 in all, are:
-= -- 611
-> -- 204
-< -- 17
-+ -- 70
-- -- 64
-* -- 463
-:= -- 1067
-add.period$ -- 48
-call.type$ -- 17
-change.case$ -- 118
-chr.to.int$ -- 17
-cite$ -- 20
-duplicate$ -- 252
-empty$ -- 426
-format.name$ -- 91
-if$ -- 1197
+            589 strings with 6618 characters,
+and the built_in function-call counts, 7738 in all, are:
+= -- 789
+> -- 244
+< -- 24
++ -- 82
+- -- 76
+* -- 586
+:= -- 1331
+add.period$ -- 61
+call.type$ -- 21
+change.case$ -- 144
+chr.to.int$ -- 21
+cite$ -- 23
+duplicate$ -- 326
+empty$ -- 548
+format.name$ -- 111
+if$ -- 1543
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 85
-num.names$ -- 51
-pop$ -- 102
+missing$ -- 18
+newline$ -- 105
+num.names$ -- 63
+pop$ -- 118
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 143
 quote$ -- 0
-skip$ -- 212
+skip$ -- 280
 stack$ -- 0
-substring$ -- 408
-swap$ -- 42
-text.length$ -- 5
+substring$ -- 545
+swap$ -- 66
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
-warning$ -- 3
-while$ -- 54
+type$ -- 122
+warning$ -- 2
+while$ -- 70
 width$ -- 0
-write$ -- 212
-(There was 1 error message)
+write$ -- 266
+(There were 2 warnings)

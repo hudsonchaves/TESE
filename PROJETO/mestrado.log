@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  12 NOV 2014 02:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  12 NOV 2014 11:04
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -959,23 +959,7 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./mestrado.aux
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
+)))) (./mestrado.aux)
 \openout1 = `mestrado.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
@@ -993,7 +977,8 @@ LaTeX Font Info:    ... okay on input line 221.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 221.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 221.
 
- (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 221.
@@ -1094,12 +1079,13 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 221.
 LaTeX Info: Redefining \pageref on input line 221.
+ (./mestrado.out)
+(./mestrado.out)
 \@outlinefile=\write5
 \openout5 = `mestrado.out'.
 
 \AtBeginShipoutBox=\box61
-
-(./mestrado-concordance.tex) [1
+ (./mestrado-concordance.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
@@ -1110,7 +1096,6 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 269.
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 269.
-
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1158,26 +1143,6 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Cap\'{\i }tulo 1.
-
-Package natbib Warning: Citation `friedman1992money' on page 1 undefined on inp
-ut line 454.
-
-
-Package natbib Warning: Citation `lucas1972expectations' on page 1 undefined on
- input line 456.
-
-
-Package natbib Warning: Citation `mccallum1998stickiness' on page 1 undefined o
-n input line 456.
-
-
-Package natbib Warning: Citation `blinder1983money' on page 1 undefined on inpu
-t line 458.
-
-
-Package natbib Warning: Author undefined for citation`datheinintroduccao' 
-(natbib)                on page 1 on input line 458.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1213,64 +1178,51 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [9
 
-] <WebScraping.jpeg, id=120, 1724.4425pt x 858.20625pt>
+] <WebScraping.jpeg, id=159, 1724.4425pt x 858.20625pt>
 File: WebScraping.jpeg Graphic file (type jpg)
 
 <use WebScraping.jpeg> [10 <./WebScraping.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 542.
+(Font)              <9> on input line 545.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 542.
+(Font)              <5> on input line 545.
  [11] [12] (./mestrado.bbl
 [13] [14
 
-]) [15]
-Ap\^endice A.
+])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [16
-
-]
-
-Package natbib Warning: There were undefined citations.
-
-(./mestrado.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+AED: lastpage setting LastPage [15] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11841 strings out of 493848
- 174131 string characters out of 1152823
- 290854 words of memory out of 3000000
- 14362 multiletter control sequences out of 15000+50000
- 89732 words of font info for 353 fonts, out of 3000000 for 9000
+ 11864 strings out of 493848
+ 174854 string characters out of 1152823
+ 292027 words of memory out of 3000000
+ 14394 multiletter control sequences out of 15000+50000
+ 88372 words of font info for 341 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,43p,1327b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.3} has been referenced but does no
-t exist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
-i6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on mestrado.pdf (20 pages, 335111 bytes).
+ 44i,11n,43p,1328b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/e
+nc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/
+usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/
+lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on mestrado.pdf (19 pages, 344339 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 51266 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 51290 words of extra memory for PDF output out of 51595 (max. 10000000)
 

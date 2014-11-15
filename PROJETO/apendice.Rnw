@@ -1,5 +1,5 @@
 \appendix
 
-\chapter{Primeiro apêndice}\label{ap2}
+\chapter{APÊNDICE A}\label{ap1}
 
-Apêndices são opcionais, mas podem ser usados, por exemplo, para incluir tabelas com os dados brutos.
+O Sistema Nacional de Preços ao Consumidor (SNIPC) efetua a produção e sistemática de índices de preços ao consumidor tendo como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para levantamento de aluguel e condomínio). 
