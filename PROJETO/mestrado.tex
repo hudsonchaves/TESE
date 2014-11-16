@@ -596,7 +596,76 @@ Como \citet{klenow2008state} explicaram, as implicações para o produto real e 
 \bibliography{projeto}
 
 % Apêndice(s)
-%\SweaveInput{apendice}
+\appendix
+
+\chapter{APÊNDICE A}\label{ap1}
+
+O Sistema Nacional de Preços ao Consumidor (SNIPC) efetua a produção e sistemática de índices de preços ao consumidor tendo como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para levantamento de aluguel e condomínio). O sistema abrange as regiões metropolitanas do Rio de Janeiro, Porto Alegre, Belo Horizonte, Recife, São Paulo, Belém, Fortaleza, Salvador e Curitiba, além do Distrito Federal e do município de Goiânia. A partir de janeiro de 2014, o SNIPC passou a incorporar a Regiâo Metropolitana de Vitória/ES e o município de Campo Grande/MS. Utilizar os pesos regionais conforme a tabela ~\ref{table:01} permite agregar os índices regionais referentes a uma mesma faixa de renda e obter o índice nacional. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\hline
+\multicolumn{1}{l|}{Regiões} & \multicolumn{1}{l|}{IPCA} & INPC  \\ \hline
+Belém                      & 4,65                      & 7,03  \\
+Fortaleza                  & 3,49                      & 6,61  \\
+Recife                     & 5,05                      & 7,17  \\
+Salvador                   & 7,35                      & 10,67 \\
+Belo Horizonte             & 10,86                     & 10,60 \\
+Vitória                    & 1,78                      & 1,83  \\
+Rio de Janeiro             & 12,06                     & 9,51  \\
+São Paulo                  & 30,67                     & 24,24 \\
+Curitiva                   & 7,79                      & 7,29  \\
+Porto Alegre               & 8,40                      & 7,38  \\
+Campo Grande               & 1,51                      & 1,64  \\
+Goiânia                    & 3,59                      & 4,15  \\
+Brasília                   & 2,80                      & 1,88  \\ \hline
+\end{tabular}
+\caption{Participação do índice regional no agregado nacional}
+\label{table:01}
+\end{table}
+
+
+O INPC e o IPCA são calculados de forma contínua e sistemática para as áreas abrangidas pelo sistema. A população-objetivo do INPC é referente a famílias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 6 salários-mínimos e cujos chefes são assalariados; e a do IPCA é referente a familias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 40 salários-mínimos, qualquer que seja a fonte de rendimentos.
+
+A tabela ~\ref{table:02}, apresenta um resumo das fontes de informações relevantes para os índices de preços: Pesquisa de Orçamentos Familiares (POF), Pesquisa de Locais de Compra (PLC) e Pesquisa de Espicificação de Produtos e Serviços (PEPS).
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lc}
+\hline
+\multicolumn{2}{c}{PESQUISAS BÁSICAS}                                            \\ \hline
+POF & Fornece as estruturas de ponderação para cada grupo de bens e serviços).   \\
+PLC & Fornece o cadastro de informantes da pesquisa que tem manutenção constante.\\ 
+PEPS & Fornece o cadastro de produtos e serviços a serem pesquisados.            \\ \hline
+\end{tabular}
+\caption{Principais Pesquisas Utilizadas na Metodologia}
+\label{table:02}
+\end{table}
+
+A partir de Janeiro de 2012, o IPCA passou a ser calculado com base nos valores de despesa obtidos na Pesquisa de Orçamentos Familiares (POF 2008-2009) . A POF é realizada a cada cinco anos pelo IBGE em todo o território brasileiro o que permite atualizar os pesos dos produtos e serviços nos orçamentos das famílias. Na tabela abaixo, os pesos antigos e atuais de cada produto e serviço.
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\hline
+\multicolumn{3}{c}{PESO POR GRUPO DE PRODUTO E SERVIÇO} \\ \hline
+\multicolumn{1}{c}{TIPO DE GASTO} & \begin{tabular}[c]{@{}c@{}}ATÉ 31.12.2011\\ (\%)\end{tabular} & \begin{tabular}[c]{@{}c@{}}A PARTIR 01.01.2012\\ (\%)\end{tabular}  \\ hline
+Alimentação e Bebidas     & 23,46 & 23,12  \\
+Transportes               & 18,69 & 20,54  \\
+Habitação                 & 13,25 & 14,62  \\
+Saúde e cuidados pessoais & 10,76 & 11,09  \\
+Despesas Pessoais         & 10,54 & 9,94   \\
+Vestuário                 & 6,94  & 6,67   \\
+Comunicação               & 5,25  & 4,96   \\
+Artigos de Residência     & 3,90  & 4,69   \\
+Educação                  & 7,21  & 4,37   \\
+\textbf{TOTAL}            & \textbf{100} & \textbf{100} \\ \hline                                                     
+\end{tabular}
+\caption{Pesos por tipo de gasto}
+\label{table:03}
+\end{table}
 
 % Fim do texto
 \end{document}
