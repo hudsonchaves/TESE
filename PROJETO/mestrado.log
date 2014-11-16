@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  16 NOV 2014 02:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  16 NOV 2014 13:38
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1194,43 +1194,46 @@ Ap\^endice A.
 [16
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 635--642
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 657--664
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [17] (./mestrado.aux) ) 
+AED: lastpage setting LastPage [17] [18] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11876 strings out of 493848
- 174990 string characters out of 1152823
- 292293 words of memory out of 3000000
- 14400 multiletter control sequences out of 15000+50000
+ 11892 strings out of 493848
+ 175105 string characters out of 1152823
+ 293293 words of memory out of 3000000
+ 14403 multiletter control sequences out of 15000+50000
  88372 words of font info for 341 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,14n,43p,1328b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/
-usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/
-lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on mestrado.pdf (21 pages, 352375 bytes).
+{/usr/share/texmf/fo
+nts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.e
+nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/font
+s/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on mestrado.pdf (22 pages, 355530 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 

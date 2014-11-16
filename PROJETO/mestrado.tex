@@ -600,7 +600,7 @@ Como \citet{klenow2008state} explicaram, as implicações para o produto real e 
 
 \chapter{APÊNDICE A}\label{ap1}
 
-O Sistema Nacional de Preços ao Consumidor (SNIPC) efetua a produção e sistemática de índices de preços ao consumidor tendo como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para levantamento de aluguel e condomínio). O sistema abrange as regiões metropolitanas do Rio de Janeiro, Porto Alegre, Belo Horizonte, Recife, São Paulo, Belém, Fortaleza, Salvador e Curitiba, além do Distrito Federal e do município de Goiânia. A partir de janeiro de 2014, o SNIPC passou a incorporar a Regiâo Metropolitana de Vitória/ES e o município de Campo Grande/MS. Utilizar os pesos regionais conforme a tabela ~\ref{table:01} permite agregar os índices regionais referentes a uma mesma faixa de renda e obter o índice nacional. 
+O Sistema Nacional de Preços ao Consumidor (SNIPC) efetua a produção e sistemática de índices de preços ao consumidor tendo como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para levantamento de aluguel e condomínio). O sistema abrange as regiões metropolitanas do Rio de Janeiro, Porto Alegre, Belo Horizonte, Recife, São Paulo, Belém, Fortaleza, Salvador e Curitiba, além do Distrito Federal e do município de Goiânia. A partir de janeiro de 2014, o SNIPC passou a incorporar a Regiâo Metropolitana de Vitória/ES e o município de Campo Grande/MS. Utilizar os pesos regionais conforme a tabela ~\ref{table:01} permite agregar os índices regionais referentes a uma mesma faixa de renda e obter o índice nacional. As motivações para criação do Índice Nacional de Preços ao Consumidor Amplo (IPCA) e Índice Nacional de Preços ao Consumidor (INPC) foram a obtenção de medida geral de inflação e a indexação salarial, respectivamente.
 
 \begin{table}[h]
 \centering
@@ -625,8 +625,30 @@ Brasília                   & 2,80                      & 1,88  \\ \hline
 \label{table:01}
 \end{table}
 
+As etapas para a construção dos índices de preços são elencadas abaixo. Para maiores detalhes, consultar 
 
-O INPC e o IPCA são calculados de forma contínua e sistemática para as áreas abrangidas pelo sistema. A população-objetivo do INPC é referente a famílias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 6 salários-mínimos e cujos chefes são assalariados; e a do IPCA é referente a familias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 40 salários-mínimos, qualquer que seja a fonte de rendimentos.
+\begin{enumerate}
+  \item Definição da população objetivo: 
+  \begin{enumerate} 
+    \item Para o INPC são a famílias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 6 salários-mínimos e cujos chefes são assalariados; 
+    \item Para o IPCA, as familias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 40 salários-mínimos, qualquer que seja a fonte de rendimentos.
+  \end{enumerate}
+  \item Estruturas de Ponderação: O conjunto de bens e serviços representativos do consumo dos grupos e os valores de despesa que lhes são associados. 
+  \begin{enumerate}
+    \item Pode ser diferente para uma determinada população-objetivo;
+    \item São resultado da consolidação dos orçamentos familiares levantados pela POF;
+    \item São montadas de forma que categorias de consumo de mesma natureza fiquem juntas. Hierarquicamente: 
+    \begin{enumerate}
+      \item Grupo
+      \item Subgrupo
+      \item Item
+      \item Subitem
+    \end{enumerate}
+  \item Cálculos dos Pesos
+  \end{enumerate}
+\end{enumerate}
+
+O INPC e o IPCA são calculados de forma contínua e sistemática para as áreas abrangidas pelo sistema. 
 
 A tabela ~\ref{table:02}, apresenta um resumo das fontes de informações relevantes para os índices de preços: Pesquisa de Orçamentos Familiares (POF), Pesquisa de Locais de Compra (PLC) e Pesquisa de Espicificação de Produtos e Serviços (PEPS).
 
