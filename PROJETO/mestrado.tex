@@ -21,7 +21,7 @@
 % Para mais informações visite http://nelas.github.com/mestre-em-latex/
 
 % Classe do documento
-\documentclass[twoside,a4paper,12pt]{report}
+\documentclass[twoside,a4paper,11pt]{report}
 
 
 % Pacotes e comandos customizados
@@ -598,7 +598,7 @@ Como \citet{klenow2008state} explicaram, as implicações para o produto real e 
 % Apêndice(s)
 \appendix
 
-\chapter{APÊNDICE A}\label{ap1}
+\chapter{METODOLOGIA IBGE}\label{ap1}
 
 O Sistema Nacional de Preços ao Consumidor (SNIPC) efetua a produção e sistemática de índices de preços ao consumidor tendo como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para levantamento de aluguel e condomínio). O sistema abrange as regiões metropolitanas do Rio de Janeiro, Porto Alegre, Belo Horizonte, Recife, São Paulo, Belém, Fortaleza, Salvador e Curitiba, além do Distrito Federal e do município de Goiânia. A partir de janeiro de 2014, o SNIPC passou a incorporar a Regiâo Metropolitana de Vitória/ES e o município de Campo Grande/MS. 
 
@@ -666,7 +666,7 @@ As etapas para a construção dos índices de preços são elencadas abaixo. Par
   \item Coletar preços: Tarefa contínua, realizada mensalmente, nas áreas de cobertura da pesquisa, ao longo do mês. Para viabilizá-la existem pesquisadores de campo dedicados à coleta de informações necessárias à produção dos índices. Questionário eletrônico de coleta instalado em computador de mão, no qual estão descritas as características dos produtos ou serviços nele investigados.
 \end{enumerate}
 
-A tabela ~\ref{table:01}, apresenta um resumo das fontes de informações relevantes para os índices de preços: Pesquisa de Orçamentos Familiares (POF), Pesquisa de Locais de Compra (PLC) e Pesquisa de Espicificação de Produtos e Serviços (PEPS).
+A tabela~\ref{table:01}, apresenta um resumo das fontes de informações relevantes para os índices de preços: Pesquisa de Orçamentos Familiares (POF), Pesquisa de Locais de Compra (PLC) e Pesquisa de Espicificação de Produtos e Serviços (PEPS).
 
 \begin{table}[h]
 \centering
@@ -699,19 +699,19 @@ Por conseguinte, o próximo passo é a agregação no nível de subitem. Para ta
 {R}_{t-1,t}^{k}=\sqrt[{m}_{k}]{\prod_{j=1}^{{m}_{k}}{{R}_{t-1,t}^{j}}} 
 \end{equation}
 
-\noindent onde ${R}_{t-1,t}^{k}$ é a variação média de preços entre os meses $t-1$ e $t$ dos produtos que compõem o subitem $k$, ${R}_{t-1,t}^{j}$ é a variação do preço do produto $j$ entre os meses $t-1$ e $t$ (fórmula ~\ref{eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa-se da equação ~\ref{eq4}, todos os produtos participam do resultado do subitem com a mesma ponderação.
+\noindent onde ${R}_{t-1,t}^{k}$ é a variação média de preços entre os meses $t-1$ e $t$ dos produtos que compõem o subitem $k$, ${R}_{t-1,t}^{j}$ é a variação do preço do produto $j$ entre os meses $t-1$ e $t$ (fórmula~\ref{eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa-se da equação~\ref{eq4}, todos os produtos participam do resultado do subitem com a mesma ponderação.
 
 No que diz respeito aos resultados ao longo do tempo, evidencia-se a importância de manter-se o painel de produtos fixos, a exemplo do que ocorre com o painel de locais, sob pena de incorporar falsas variações de preços. Desta forma, o IBGE imputa o preço de um produto para determinado local ou subitem. Para maiores informações de como é feito esse processo, consultar \citet{ibgemetodos}.
 
 \section*{Cálculo no nível de item}
 
-Usa-se a fórmula de Laspeyres que expressa a razão entre o gasto efetuado no momento $t$, necessário para consumir as mesmas quantidades do momento $0$, e o gasto efetuado no momento $0$. A fórmula ~\ref{eq5} representa o índice:
+Usa-se a fórmula de Laspeyres que expressa a razão entre o gasto efetuado no momento $t$, necessário para consumir as mesmas quantidades do momento $0$, e o gasto efetuado no momento $0$. A fórmula~\ref{eq5} representa o índice:
 
 \begin{equation}\label{eq5}
 {L}_{0,t}=\sum_{i=1}^{n}{\left(\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}\right)}\left(\frac{{p}_{t}^{i}}{{p}_{0}^{i}}\right) 
 \end{equation}
 
-\noindent onde $\frac{{p}_{t}^{i}}{{p}_{0}^{i}}=R_{0,t}^{i}$ é o estimador da variação de preços do subitem $i$ entre os momentos $0$ e $t$ e $\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}=W_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF. Observe-se que tanto $R_{0,t}^{i}$ como $W_{0}^{i}$ referem-se, na prática, a pequenos agregados de produtos. Para se conhecer a variação de preços do item $m$ para uma determinada área e faixa de rendimento em ciclos mensais utiliza-se a fórmula ~\ref{eq6}.
+\noindent onde $\frac{{p}_{t}^{i}}{{p}_{0}^{i}}=R_{0,t}^{i}$ é o estimador da variação de preços do subitem $i$ entre os momentos $0$ e $t$ e $\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}=W_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF. Observe-se que tanto $R_{0,t}^{i}$ como $W_{0}^{i}$ referem-se, na prática, a pequenos agregados de produtos. Para se conhecer a variação de preços do item $m$ para uma determinada área e faixa de rendimento em ciclos mensais utiliza-se a fórmula~\ref{eq6}.
 
 \begin{equation}\label{eq6}
 {I}_{t-1,t}^{m}=\frac{\sum_{i=1}^{n}{{W}_{t-1}^{i}{R}_{t-1,t}^{i}}}{\sum_{i=1}^{n}{{W}_{t-1}^{i}}} 
@@ -733,7 +733,7 @@ O resultado mensal para a área $A$ e população-objetivo $F$ é dado por:
 {IPC}_{t-1,t}^{A,F}=\sum_{m}^{M}{{W}_{t-1}^{m}{I}_{t-1,t}^{m}} 
 \end{equation}
 
-\noindent onde ${I}_{t-1,t}^{m}$ é o índice do item $m$ obtido conforme a equação ~\ref{eq6} e ${W}_{t-1}^{m}$ corresponde ao peso de cada item e é obtido somando-se os pesos no período $t-1$ por meio da equação ~\ref{eq7} utilizando todos os subitens que compõem o respectivo item $m$.
+\noindent onde ${I}_{t-1,t}^{m}$ é o índice do item $m$ obtido conforme a equação~\ref{eq6} e ${W}_{t-1}^{m}$ corresponde ao peso de cada item e é obtido somando-se os pesos no período $t-1$ por meio da equação~\ref{eq7} utilizando todos os subitens que compõem o respectivo item $m$.
 
 \section*{Cálculo dos índices nacionais}
 
@@ -743,7 +743,7 @@ Os índices nacionais são obtidos a partir dos índices regionais. O método em
 {INPC}_{t-1,t}=\sum_{A=1}^{11}{{W}^{A,F}{IPC}_{t-1,t}^{A,F}}
 \end{equation}
 
-\noindent onde ${INPC}_{t-1,t}$ é o índice nacional referente à variação de preços entre os meses $t-1$ e $t$, ${IPC}_{t-1,t}^{A,F}$ é o índice da área $A$, população-objetivo $F$, obtido via ~\ref{eq8}. Além disso, ${W}^{A,F}$ é o peso da área $A$, população-objetivo $F$. Na mais recente atualização, tendo como fonte a POF 2008-2009, os pesos das regiões foram obtidos com base nas estimativas da população urbana para os estados, Grandes Regiões e Brasil. A tabela ~\ref{table:02}, apresenta os índices regionais antes e após a alteração. 
+\noindent onde ${INPC}_{t-1,t}$ é o índice nacional referente à variação de preços entre os meses $t-1$ e $t$, ${IPC}_{t-1,t}^{A,F}$ é o índice da área $A$, população-objetivo $F$, obtido via~\ref{eq8}. Além disso, ${W}^{A,F}$ é o peso da área $A$, população-objetivo $F$. Na mais recente atualização, tendo como fonte a POF 2008-2009, os pesos das regiões foram obtidos com base nas estimativas da população urbana para os estados, Grandes Regiões e Brasil. A tabela~\ref{table:02}, apresenta os índices regionais antes e após a alteração. 
 
 \begin{table}[h]
 \centering
