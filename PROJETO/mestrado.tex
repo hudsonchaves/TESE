@@ -21,7 +21,7 @@
 % Para mais informações visite http://nelas.github.com/mestre-em-latex/
 
 % Classe do documento
-\documentclass[twoside,a4paper,11pt]{report}
+\documentclass[twoside,a4paper,12pt]{report}
 
 
 % Pacotes e comandos customizados
@@ -688,10 +688,10 @@ Por fim, temos a metodologia de cálculo dos índices de preços. Sinteticamente
 Primeiro, calcula-se mensalmente o relativo de preços referentes a dois meses e temos a estimativa da variação mensal dos preços do produto $j$, ou relativo do produto $j$, conforme:
 
 \begin{equation}\label{eq3}
-{R}_{t-1,t}^{j}=\frac{{\overline{P}}_{t}^{j}}{{\overline{P}}_{t-1}^{j}}=\frac{\frac{1}{{n}_{t}}\sum_{L=1}^{{n}_{t}}{{p}_{t}^{j,L}}}{\frac{1}{{n}_{t-1}}\sum_{L=1}^{{n }_{t-1}}{{p}_{t-1}^{j,L}}} 
+{R}_{t-1,t}^{j}=\frac{{\overline{P}}_{t}^{j}}{{\overline{P}}_{t-1}^{j}}=\frac{\frac{1}{{n}_{t}}\sum_{L=1}^{{n}_{t}}{{p}_{t}^{j,L}}}{\frac{1}{{n}_{t-1}}\sum_{L=1}^{{n}_{t-1}}{{p}_{t-1}^{j,L}}} 
 \end{equation}
 
-\noindent onde ${R}_{t-1,t}^{j}$ é a medida da variação de preços do produto $j$ entre os meses $t-1$ e $t$, ${\overline{P}}_{t}^{j}$ e {\overline{P}}_{t-1}^{j} os preços médio do produto $j$ nos meses $t$ e $t-1$, respectivamente, assim como ${p}_{t}^{j,L}$ e ${p}_{t-1}^{j,L}$ são os preços do produto $j$ no local $L$ nos meses $t$e $t-1$. Por fim, ${n}_{t}$ e ${n}_{t-1}$ são os números de locais que compõem a amostra do produto nos meses $t$ e $t-1$.
+\noindent onde ${R}_{t-1,t}^{j}$ é a medida da variação de preços do produto $j$ entre os meses $t-1$ e $t$, ${\overline{P}}_{t}^{j}$ e ${\overline{P}}_{t-1}^{j}$ os preços médio do produto $j$ nos meses $t$ e $t-1$, respectivamente, assim como ${p}_{t}^{j,L}$ e ${p}_{t-1}^{j,L}$ são os preços do produto $j$ no local $L$ nos meses $t$e $t-1$. Por fim, ${n}_{t}$ e ${n}_{t-1}$ são os números de locais que compõem a amostra do produto nos meses $t$ e $t-1$.
 
 Por conseguinte, o próximo passo é a agregação no nível de subitem. Para tanto, calcula-se a média geométrica dos resultados obtidos para cada produto que compõe o subitem. Assim, 
 
@@ -699,7 +699,7 @@ Por conseguinte, o próximo passo é a agregação no nível de subitem. Para ta
 {R}_{t-1,t}^{k}=\sqrt[{m}_{k}]{\prod_{j=1}^{{m}_{k}}{{R}_{t-1,t}^{j}}} 
 \end{equation}
 
-\noindent onde ${R}_{t-1,t}^{k}$ é a variação média de preços entre os meses $t-1$ e $t$ dos produtos que compõem o subitem $k$, ${R}_{t-1,t}^{j}}$ é a variação do preço do produto $j$ entre os meses $t-1$ e $t$ (fórmula ~\ref{eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa-se da equação ~\ref{eq4}, todos os produtos participam do resultado do subitem com a mesma ponderação.
+\noindent onde ${R}_{t-1,t}^{k}$ é a variação média de preços entre os meses $t-1$ e $t$ dos produtos que compõem o subitem $k$, ${R}_{t-1,t}^{j}$ é a variação do preço do produto $j$ entre os meses $t-1$ e $t$ (fórmula ~\ref{eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa-se da equação ~\ref{eq4}, todos os produtos participam do resultado do subitem com a mesma ponderação.
 
 No que diz respeito aos resultados ao longo do tempo, evidencia-se a importância de manter-se o painel de produtos fixos, a exemplo do que ocorre com o painel de locais, sob pena de incorporar falsas variações de preços. Desta forma, o IBGE imputa o preço de um produto para determinado local ou subitem. Para maiores informações de como é feito esse processo, consultar \citet{ibgemetodos}.
 
@@ -710,7 +710,7 @@ Usa-se a fórmula de Laspeyres que expressa a razão entre o gasto efetuado no m
 \begin{equation}\label{eq5}
 {L}_{0,t}=\sum_{i=1}^{n}{\left(\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}\right)}\left(\frac{{p}_{t}^{i}}{{p}_{0}^{i}}\right) 
 \end{equation}
- e 
+
 \noindent onde $\frac{{p}_{t}^{i}}{{p}_{0}^{i}}=R_{0,t}^{i}$ é o estimador da variação de preços do subitem $i$ entre os momentos $0$ e $t$ e $\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}=W_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF. Observe-se que tanto $R_{0,t}^{i}$ como $W_{0}^{i}$ referem-se, na prática, a pequenos agregados de produtos. Para se conhecer a variação de preços do item $m$ para uma determinada área e faixa de rendimento em ciclos mensais utiliza-se a fórmula ~\ref{eq6}.
 
 \begin{equation}\label{eq6}
@@ -723,7 +723,7 @@ Usa-se a fórmula de Laspeyres que expressa a razão entre o gasto efetuado no m
 {W}_{t-1}^{i}={W}_{0}^{i}\prod_{j=0}^{t-2}{\frac{{R}_{j,j+1}^{i}}{{I}_{j,j+1}}} 
 \end{equation}
 
-\noindent onde $W}_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF, ${R}_{j,j+1}^{i}$ é o relativo do subitem $i$ entre os meses $j$ e $j+1$ e ${I}_{j,j+1}$ é o resultado do índice geral entre os meses $j$ e $j+1$.
+\noindent onde ${W}_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF, ${R}_{j,j+1}^{i}$ é o relativo do subitem $i$ entre os meses $j$ e $j+1$ e ${I}_{j,j+1}$ é o resultado do índice geral entre os meses $j$ e $j+1$.
 
 \section*{Cálculo dos índices regionais}
 
