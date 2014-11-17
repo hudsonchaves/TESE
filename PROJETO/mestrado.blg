@@ -3,46 +3,47 @@ The top-level auxiliary file: mestrado.aux
 The style file: apalike.bst
 Database file #1: projeto.bib
 Warning--empty journal in ball1994sticky
+Warning--can't use both author and editor fields in ibgemetodos
 Warning--can't use both volume and number fields in mccallum1998stickiness
-You've used 21 entries,
+You've used 22 entries,
             1935 wiz_defined-function locations,
-            589 strings with 6618 characters,
-and the built_in function-call counts, 7738 in all, are:
-= -- 789
-> -- 244
-< -- 24
-+ -- 82
-- -- 76
-* -- 586
-:= -- 1331
-add.period$ -- 61
-call.type$ -- 21
-change.case$ -- 144
-chr.to.int$ -- 21
-cite$ -- 23
-duplicate$ -- 326
-empty$ -- 548
-format.name$ -- 111
-if$ -- 1543
+            594 strings with 6793 characters,
+and the built_in function-call counts, 8018 in all, are:
+= -- 814
+> -- 251
+< -- 25
++ -- 84
+- -- 78
+* -- 606
+:= -- 1382
+add.period$ -- 64
+call.type$ -- 22
+change.case$ -- 149
+chr.to.int$ -- 22
+cite$ -- 25
+duplicate$ -- 340
+empty$ -- 571
+format.name$ -- 114
+if$ -- 1597
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 105
-num.names$ -- 63
-pop$ -- 118
+missing$ -- 20
+newline$ -- 110
+num.names$ -- 66
+pop$ -- 125
 preamble$ -- 1
-purify$ -- 143
+purify$ -- 149
 quote$ -- 0
-skip$ -- 280
+skip$ -- 290
 stack$ -- 0
-substring$ -- 545
-swap$ -- 66
+substring$ -- 557
+swap$ -- 68
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 122
-warning$ -- 2
-while$ -- 70
+type$ -- 126
+warning$ -- 3
+while$ -- 72
 width$ -- 0
-write$ -- 266
-(There were 2 warnings)
+write$ -- 278
+(There were 3 warnings)

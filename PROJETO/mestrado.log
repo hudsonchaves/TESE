@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  16 NOV 2014 13:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  17 NOV 2014 00:09
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1187,53 +1187,184 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 545.
  [11] [12] (./mestrado.bbl
-[13] [14
+[13]
+
+! Package inputenc Error: Unicode char \u8:Õn not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \newblock {\em Sistema Nacional de Õn
+                                          dices de PreÁos ao Consumidor - MÈ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:Áos not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 ...{\em Sistema Nacional de Õndices de PreÁos
+                                                   ao Consumidor - MÈtodos de
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:Èto not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 ... de Õndices de PreÁos ao Consumidor - MÈto
+                                                  dos de
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:·lc not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76   C·lc
+           ulo}.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:Ìst not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78   EstatÌst
+               ica (IBGE).
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[14
 
 ]) [15]
 Ap\^endice A.
 [16
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 657--664
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 673--680
  [][] 
  []
 
+[17]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.694 ... ${\overline{P}}_{t}^{j}$ e {\overline{P}
+                                                  }_{t-1}^{j} os pre√ßos m√©...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+! Extra }, or forgotten $.
+l.694 ...${\overline{P}}_{t}^{j}$ e {\overline{P}}
+                                                  _{t-1}^{j} os pre√ßos m√©d...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+
+LaTeX Warning: Command \c invalid in math mode on input line 694.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 694.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.694 ... $t-1$, respectivamente, assim como ${p}_
+                                                  {t}^{j,L}$ e ${p}_{t-1}^{j...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.702 ...comp√µem o subitem $k$, ${R}_{t-1,t}^{j}}
+                                                  $ √© a varia√ß√£o do pre√ß...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{eq3) e $m_{k}$ √© o n√∫mero de produtos do subitem $k$. Como observa\ETC.
+! Paragraph ended before \T@ref was complete.
+<to be read again> 
+                   \par 
+l.703 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[18]
+! Extra }, or forgotten $.
+l.726 \noindent onde $W}
+                        _{0}^{i}$ √© o peso do subitem $i$ obtido a partir d...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[19]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [17] [18] (./mestrado.aux) ) 
+AED: lastpage setting LastPage [20] (./mestrado.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 694 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 11892 strings out of 493848
- 175105 string characters out of 1152823
- 293293 words of memory out of 3000000
- 14403 multiletter control sequences out of 15000+50000
- 88372 words of font info for 341 fonts, out of 3000000 for 9000
+ 11947 strings out of 493848
+ 175651 string characters out of 1152823
+ 294738 words of memory out of 3000000
+ 14428 multiletter control sequences out of 15000+50000
+ 88830 words of font info for 346 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,14n,43p,1328b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fo
-nts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.e
-nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on mestrado.pdf (22 pages, 355530 bytes).
+ 44i,11n,43p,1328b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/
+texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
+6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on mestrado.pdf (24 pages, 405092 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
+ 407 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 
