@@ -15,7 +15,7 @@ Segundo \citet{manning2008introduction} \emph{web scraping} é o processo de tir
 
 A tecnologia para coletar os preços é simples. A maior parte das páginas são construídas usando uma linguagem de codificação estruturada chamada de \emph{HyperText Markup Language} (HTML). Este código tem “\emph{tags}”, tais como $<center>$ e $<bold>$, que determinam o estilo e localização do texto em uma página. Estas \emph{tags} tendem a permanecer constantes ao longo do tempo, uma vez que proporcionam um “\emph{look and feel}” distinto para cada página. Por contraste, a informação dentro dessas \emph{tags}, tais como preço de produtos, mudam ao longo do tempo. O software de \emph{scraping} pode ser ensinado a utilizar as \emph{tags} em HTML pata localizar informações relevantes sobre um produto e guarda-las em um banco de dados. A repetição desse processo todos os dias produz um banco de dados em formato de painel com um registro por produto por dia. Em adição, o endereço da página (URL) onde cada produto é localizado pode ser usado para classificar produtos em categorias padronizadas. 
 
-Na figura ~\ref{fig:01}, mostramos como o processo de coletar os preços ocorrerá:
+Na figura~\ref{fig:01}, mostramos como o processo de coletar os preços ocorrerá:
 
 \begin{figure}[htbp]
   \centering
@@ -26,13 +26,15 @@ Na figura ~\ref{fig:01}, mostramos como o processo de coletar os preços ocorrer
 
 Segundo \citet{cavallo2010scraped}, preços coletados da internet possuem duas desvantagens: Primeiro, percentual menor de empresas disponibiliza seus produtos e preços na internet em comparação com as lojas físicas. Tal limitação pode ser minimizada ao longo do tempo com uma maior oferta de produtos e serviços na internet. Segundo, os preços coletados da internet não incluem informações sobre as quantidades vendidas o que impede de obter market share e estimativas de elasticidade.
 
-  Não obstante, \citet{cavallo2010scraped} apresenta algumas vantagens dos preços coletados da internet que os fazem uma fonte única de informação para análise de rigidez nos preços. Primeiro, pode-se obter preços diários para os produtos e serviços e por conseguinte, reduzir medidas de erro em relação à frequência de cálculo da inflação, analisar promoções de produtos, controles e sincronização nos preços. Segundo, os dados estão disponíveis para vários países, com maior facilidade de acesso e possibilidade de comparação entre países. Terceiro, existem informações detalhadas sobre cada produto e não há substituições forçada de itens como ocorre em estatísticas oficiais de inflação. Por fim, preços coletados da internet estão viáveis em tempo real, sem qualquer atraso para acessá-los. Isto pode ser usado para providenciar estimativas de rigidez nos preços em tempo real.
+Avaliações futuras precisarão ser feitas de forma que seja capaz explorar se os preços online e off-line se comportam similarmente. Preocupado com tal validação, \citet{cavallo2010scraped} fez pesquisa de preços nas lojas físicas dos supermercados utilizados para coleta de dados da internet. Desta forma, o autor examinou se os preços dos produtos nas lojas físicas eram similares aos preços nos sites. Uma importante característica é que um alto percentual de produtos vendidos nas lojas físicas também era comercializado nos sites em todos os países. O autor comparou os preços tanto em termo de nível quanto em tamanho e intervalo de tempo de alterações nos preços. Tal comportamento é muito importante para a avaliação de rigidez nos preços. Para tanto, o autor criou uma série de mudança de preços para cada produto que recebe valor 1 se o preço aumentou, 0 se o preço permaneceu constante e -1, caso contrário.  Assim, foi possível avaliar se os preços dos produtos nas lojas físicas são semelhantes em nível e em direção de mudança para cada produto e supermercado dos países avaliados por \citet{cavallo2010scraped}.
+
+Não obstante, \citet{cavallo2010scraped} apresenta algumas vantagens dos preços coletados da internet que os fazem uma fonte única de informação para análise de rigidez nos preços. Primeiro, pode-se obter preços diários para os produtos e serviços e por conseguinte, reduzir medidas de erro em relação à frequência de cálculo da inflação, analisar promoções de produtos, controles e sincronização nos preços. Segundo, os dados estão disponíveis para vários países, com maior facilidade de acesso e possibilidade de comparação entre países. Terceiro, existem informações detalhadas sobre cada produto e não há substituições forçada de itens como ocorre em estatísticas oficiais de inflação. Por fim, preços coletados da internet estão viáveis em tempo real, sem qualquer atraso para acessá-los. Isto pode ser usado para providenciar estimativas de rigidez nos preços em tempo real.
   
 \section*{ÍNDICE DE PREÇOS ONLINE}
   
-  Para calcular o índice de preços online que será comparado com o Índice Nacional de Preços ao Consumidor Amplo (IPCA) Índice Nacional de Preços ao Consumidor (INPC) divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE), utilizaremos a abordagem proposta por \citet{cavallo2010scraped}.
+  Para calcular o índice de preços online que será comparado com o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e Índice Nacional de Preços ao Consumidor (INPC) divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE), utilizaremos a abordagem proposta por \citet{cavallo2010scraped}.
   
-  Assim, o índice de preços usa a combinação de dados online e as estruturas de ponderação oficiais do IBGE para as categorias da “cesta de mercadorias”\footnote[1]{Segundo o \citet{ibgemetodos} os índices constituem uma medida síntese de movimento de preços de um conjunto de bens e serviços, chamado “cesta de mercadorias”, representativo de um determinado grupo populacional, em certo período de tempo} de cada índice de inflação. Dados diários serão utilizados para construir o índice de preços online o que é útil para observar padrões de curto prazo nos dados que ajudam a validar as informações online. 
+  Assim, o índice de preços usa a combinação de dados online e as estruturas de ponderação oficiais do IBGE para as categorias da “cesta de mercadorias”\footnote[1]{Segundo o \citet{ibgemetodos} os índices constituem uma medida síntese de movimento de preços de um conjunto de bens e serviços, chamado “cesta de mercadorias”, representativo de um determinado grupo populacional, em certo período de tempo} de cada índice de inflação. Maiores detalhes sobre a metodologia de coleta e cálculo do IPCA e INPC podem ser obtidas no~\ref{ap1}. Dados diários serão utilizados para construir o índice de preços online o que é útil para observar padrões de curto prazo nos dados que ajudam a validar as informações online. 
   
   O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
 Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$:
@@ -59,21 +61,48 @@ IPO_{t}=\sum_{j}{\frac{w_{j}}{w}I_{t}^{j}}
 
 A classificação de produtos e pesos de categorias é uma das partes mais complexas deste processo. Nos dados originais, cada produto é atrelado à um endereço de web (URL) que corresponde à página onde o produto é localizado. 
 
-\section*{PREÇOS ONLINE E OFFLINE}
-
-Preços coletados de sites podem ser questionados pela sua representatividade em relação ao comportamento dos preços de um determinado país, região ou cidade. Isso ocorre em função do pequeno número de empresas que possuem produtos sendo vendidos pela internet. Assim, o montante de variações observadas nos preços da economia real pode não ser bem representado pelas movimentações dos preços oriundos da internet o que pode provocar um viés na análise de inflação ou rigidez de preços. 
-
-  Avaliações futuras precisarão ser feitas de forma que seja capaz explorar se os preços online e off-line se comportam similarmente. Preocupado com tal validação, \citet{cavallo2010scraped} fez pesquisa de preços nas lojas físicas dos supermercados utilizados para coleta de dados da internet. Desta forma, o autor examinou se os preços dos produtos nas lojas físicas eram similares aos preços nos sites. Uma importante característica é que um alto percentual de produtos vendidos nas lojas físicas também era comercializado nos sites em todos os países. O autor comparou os preços tanto em termo de nível quanto em tamanho e intervalo de tempo de alterações nos preços. Tal comportamento é muito importante para a avaliação de rigidez nos preços. Para tanto, o autor criou uma série de mudança de preços para cada produto que recebe valor 1 se o preço aumentou, 0 se o preço permaneceu constante e -1, caso contrário. 
-  
-  Assim, foi possível avaliar se os preços dos produtos nas lojas físicas são semelhantes em nível e em direção de mudança para cada produto e supermercado dos países avaliados por \citet{cavallo2010scraped}.
-
 \section*{RIGIDEZ DE PREÇOS}
 
-Muitos mecanismos microeconômicos têm sido propostos para explicar porque os preços são rígidos. A maior parte deles podem ser amplamente classificados em dois tipos de modelos: tempo-denpendente e estado-denpendente. Nos modelos tempo-denpendentes, o momento de ajustamento nos preços é determinado exogenamente. Uma firma é capaz de definir o preço ótimo depois de um dado número de períodos (conforme \citet{taylor1980aggregate}), ou aleatoriamente em cada período (conforme \citet{calvo1983staggered}). Com ajustamentos aleatórios, mudanças nos preços de qualquer tamanho são possíveis e existem uma fração estável de firmas ajustando em cada período, independentemente de quanto tempo já passou desde a última alteração no preço. 
+ Diversas estatísticas poderão ser utilizadas para a análise da rigidez de preços coletados da internet, como por exemplo: frequência de produtos com alterações diarias e frequências de alta e baixa em relação ao total de alterações nos preços em um dia. Assim, teremos um parâmetro que reflete a probabilidade incondicional de mudança no preço de uma firma ao longo de um dado período de tempo. Porém, a análise da frequência apresenta uma visão parcial do comportamento dos preços e faz-se necessário avaliar o tamanho da mudança dos preços por meio do valor absoluto da alteração no preço de um determinado produto (tambéma o tamanho das mudanças positivas e negativas) e avaliação da sua distribuição de probabilidade. Desta forma, poder-se-a comparar o comportamento da inflação em determinadas regiões, municípios e estados em relação ao tamanho da mudança nos preços nestes locais. 
+ 
+\citet{cavallo2010scraped} encontrou uma característica bimodal na distribuição do tamanho das alterações nos preços e uma forte queda da densidade das alterações próximo a 0\% em alguns países, o que é consistente com os modelos de custo de menu que mudanças muito pequenas não são ótimas na presença de custo de ajuste. Outro tipo de análise é a avaliação da assimetria na densidade das alterações que pode refletir maior quantidade de preços crescendo que diminuíndo. 
+ 
+\subsection*{Análise de Sobrevida}
 
-Modelos estado-dependentes, começam com os modelos de custo de menu de \citet{barro1972theory} e \citet{sheshinski1977inflation} e mais recentemente \citet{dotsey1999state} e \citet{golosov2007menu}, tendem a ter maior fundamentação microeconômica. Eles são baseados na hipótese de que firmas são capazes de mudar seus preços em qualquer momento, mas devem enfrentar custos de ajustamento para fazer isso. Tais custos podem incluir custos trabalhistas para fazer as alterações, custos gerenciais para tomar a decisão, ou mesmo custos de “ira do cliente” como reação do cliente após o ajustamento nos preços. Em modelos estado-dependentes existem algumas pequenas alterações (dado que não vale a pena pagar o custo de menu) e os ajustem tendem a ocorrer mais frequentemente em preços “velhos” (onde o desvio do ótimo é maior).
+A análse de frequência ajudará na avaliação da rigidez de preços, mas ela sugere que a probabilidade de um preço se alterar é independente do tempo que uma mudança ocorre em relação à última alteração no preço. Ainda, a taxa de risco do preço se alterar é constante ao longo do tempo durante todo o período amostral. Embora esse método seja simples e efetivo para a comparação do grau de rigidez entre setores, regiões, cidades e países, um importante ponto reside sobre a forma da função risco. 
 
-Como \citet{klenow2008state} explicaram, as implicações para o produto real e inflação podem diferir drasticamente em modelos estado e tempo-dependentes, de modo que é importante distinguir entre eles empiricamente. 
+O risco é a prbabilidade instantânea do preço mudar em $t$, condicional sobre o preço não se alterar até este ponto no tempo. Conforme \citet{cavallo2010scraped}, a função risco é constante por causa da probabilidade dos preços mudar é fixa e exogeneamente determinada. 
 
+Para avaliar a função risco utilizaremos a Análise de Sobrevida assim como \citet{cavallo2010scraped}. Esta técnica é comumente utilizada quando o tempo for o objeto de interesse, seja este interpretado como o tempo até a ocorrência de um evento ou o risco de ocorrência de um evento por unidade de tempo.  Em ciências médicas é comum o uso do método para a avaliação do tempo até a morte, transplante, doença, cura  entre outros. No contexto de preços, estamos interessados no tempo entre o ajuste do preço. Assim, tanto o aparecimento do risco e o evento de falha ocorrem quando uma firma muda seus preços.  
+
+A função risco é fundamental na Análise de Sobrevida. Formalmente, se $T$ é a variável aleatória que mede a duração do preço, com função densidade $f\left(t\right)$ e densidade acumulada $F\left(t\right)$, o risco $h\left(t\right)$ é a probabilidade limite de que a mudança no preço ocorra em $t$, condicional ao preço não se alterar até este momento. 
+
+\begin{equation}
+h\left(t\right)=\lim_{\Delta t\rightarrow 0}{\frac{Pr\left(t<T<t+\Delta t|t<T\right)}{\Delta t}=\frac{f\left(t\right)}{1-F\left(t\right)}} 
+\end{equation}
+
+Esta função risco mede o risco instantâneo de um preço se alterar, condicionado à sobrevida. Podemos adicionar todas as taxas de risco ao longo do tempo e obter o risco total de um preço alterar acumulado até o tempo $t$. Isto é representado pelo função risco acumulado, $H(t)$:
+
+\begin{equation}
+H\left(t\right)=\int_{0}^{t}{h\left(u\right)du=-\ln{\left(1-F\left(t\right)\right)}} 
+\end{equation}
+
+$H(t)$ é um aumento, função imilitada de $t$, que acumula a probabilidade condicional do preço mudar ao longo do tempo. No contexto de repetidas "falhas" (preço se alterar), ela pode ser interpretada com o número esperado de ajustamento nos preços de $0$ à $t$. O risco acumulado recebe grande atenção na Análise de Sobrevida porque ele é mais fácil de estimar do que a função risco sózinha. 
+
+Para estimar $H(t)$ e $h(t)$ empiricamente, usaremos conforme \citet{cavallo2010scraped} uma abordagem não paramétrica dada por Nelson (1972) e Aalen (1978), que não requer hipóteses de distribuição de probabilidade. Métodos semi-paramétricos como o modelo Cox podem ser utilizadas futuramente uma vez que permitem a incorporação de variáveis explicativas e considerar a heterogeneidade não observável em nível de categoria de preços. Uma estimativa simples da função risco acumulado, $H(t)$, é dado por:
+
+\begin{equation}
+\hat { H } \left( t \right) =\sum _{ j|{ t }_{ j }\le t }{ \frac { { c }_{ j } }{ { n }_{ j } }  } 
+\end{equation}
+
+\noindent onde ${c}_{j}$ é o número de preços que mudaram no tempo ${t}_{j}$ e ${n}_{j}$ é o número de preços que ainda podem mudar no tempo ${t}_{j}$. O passo incremental $\frac{{c}_{j}}{{n}_{j}}$ é uma estimativa para a probabilidade do preço mudar em ${t}_{j}$, levando em consideração apenas aqueles preços que sobreviveram até este ponto no tempo. 
+
+Para obter a função risco suavizada $\hat{h}\left(t\right)$, pode-se usar a seguinte equação:
+
+\begin{equation}
+\hat { h } \left( t \right) =\frac { 1 }{ b } \sum _{ j\epsilon D }{ K } \left( \frac { t-{ t }_{ j } }{ b }  \right) \Delta \hat { H } \left( { t }_{ j } \right) 
+\end{equation}
+
+\noindent onde $K$ é um kernel com densidade simétrica, $b$ é a \emph{bandwidth} de suavização e $D$ é o conjunto de vezes com mudança de preços. 
 
 

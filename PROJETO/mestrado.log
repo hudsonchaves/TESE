@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  17 NOV 2014 11:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  18 NOV 2014 02:59
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1178,52 +1178,51 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [9
 
-] <WebScraping.jpeg, id=166, 1724.4425pt x 858.20625pt>
+] <WebScraping.jpeg, id=185, 1724.4425pt x 858.20625pt>
 File: WebScraping.jpeg Graphic file (type jpg)
 
 <use WebScraping.jpeg> [10 <./WebScraping.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 545.
+(Font)              <9> on input line 551.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 545.
- [11] [12] (./mestrado.bbl
-[13] [14
+(Font)              <5> on input line 551.
+ [11] [12] [13] (./mestrado.bbl [14] [15
 
-]) [15]
+]) [16]
 Ap\^endice A.
-[16
+[17
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 673--680
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 706--713
  [][] 
  []
 
-[17]
+[18]
 Runaway argument?
 {eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa\ETC.
 ! Paragraph ended before \T@ref was complete.
 <to be read again> 
                    \par 
-l.703 
+l.736 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[18] [19]
+[19] [20]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [20] (./mestrado.aux) ) 
+AED: lastpage setting LastPage [21] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11942 strings out of 493848
- 175622 string characters out of 1152823
- 293743 words of memory out of 3000000
- 14423 multiletter control sequences out of 15000+50000
- 88830 words of font info for 346 fonts, out of 3000000 for 9000
+ 11958 strings out of 493848
+ 175722 string characters out of 1152823
+ 294679 words of memory out of 3000000
+ 14421 multiletter control sequences out of 15000+50000
+ 90190 words of font info for 358 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,43p,1328b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,43p,1328b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/e
 nc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/
 usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/
@@ -1242,9 +1241,9 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy8.pfb>
-Output written on mestrado.pdf (24 pages, 401667 bytes).
+Output written on mestrado.pdf (25 pages, 419958 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
+ 423 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 

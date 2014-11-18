@@ -5,45 +5,45 @@ Database file #1: projeto.bib
 Warning--empty journal in ball1994sticky
 Warning--can't use both author and editor fields in ibgemetodos
 Warning--can't use both volume and number fields in mccallum1998stickiness
-You've used 22 entries,
+You've used 21 entries,
             1935 wiz_defined-function locations,
-            594 strings with 6814 characters,
-and the built_in function-call counts, 8018 in all, are:
-= -- 814
-> -- 251
-< -- 25
-+ -- 84
-- -- 78
-* -- 606
-:= -- 1382
-add.period$ -- 64
-call.type$ -- 22
-change.case$ -- 149
-chr.to.int$ -- 22
-cite$ -- 25
-duplicate$ -- 340
-empty$ -- 571
-format.name$ -- 114
-if$ -- 1597
+            587 strings with 6609 characters,
+and the built_in function-call counts, 7614 in all, are:
+= -- 772
+> -- 238
+< -- 24
++ -- 80
+- -- 74
+* -- 569
+:= -- 1314
+add.period$ -- 61
+call.type$ -- 21
+change.case$ -- 142
+chr.to.int$ -- 21
+cite$ -- 24
+duplicate$ -- 326
+empty$ -- 541
+format.name$ -- 107
+if$ -- 1518
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 110
-num.names$ -- 66
-pop$ -- 125
+missing$ -- 19
+newline$ -- 105
+num.names$ -- 63
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 149
+purify$ -- 142
 quote$ -- 0
-skip$ -- 290
+skip$ -- 279
 stack$ -- 0
-substring$ -- 557
-swap$ -- 68
+substring$ -- 520
+swap$ -- 67
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 126
+type$ -- 120
 warning$ -- 3
-while$ -- 72
+while$ -- 68
 width$ -- 0
-write$ -- 278
+write$ -- 265
 (There were 3 warnings)

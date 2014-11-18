@@ -156,7 +156,7 @@
 
 % Dados do projeto
 \newcommand{\nomedoaluno}{Hudson Chaves Costa}
-\newcommand{\titulo}{Três Ensaios em Comportamento Empírico dos Preços na Economia Brasileira}
+\newcommand{\titulo}{Três Ensaios em Comportamento dos Preços na Economia Brasileira}
 
 %% Links dinâmicos
 % Suporte para hipertexto, links para referências e figuras
