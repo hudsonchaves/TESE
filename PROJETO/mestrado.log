@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  19 NOV 2014 13:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  19 NOV 2014 21:40
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -944,11 +944,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count140
 \FV@StepNumber=\count141
 \FV@OutFile=\write4
-) (/usr/share/R/share/texmf/tex/latex/upquote.sty
-Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
-atim and verb
-)
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+) (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texmf-texlive/tex/latex/base/t1enc.def
@@ -1188,51 +1184,55 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [9
 
-] <WebScraping.jpeg, id=185, 1724.4425pt x 858.20625pt>
-File: WebScraping.jpeg Graphic file (type jpg)
+] <WebScraping.png, id=183, 1844.8925pt x 1324.95pt>
+File: WebScraping.png Graphic file (type png)
+ <use WebScraping.png>
+[10 <./WebScraping.png (PNG copy)>]
+Underfull \vbox (badness 3000) has occurred while \output is active []
 
-<use WebScraping.jpeg> [10 <./WebScraping.jpeg>]
+ [11]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 551.
+(Font)              <9> on input line 552.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 551.
- [11] [12] [13] (./mestrado.bbl [14] [15
+(Font)              <5> on input line 552.
 
-]) [16]
+[12] [13] [14] (./mestrado.bbl [15] [16
+
+]) [17]
 Ap\^endice A.
-[17
+[18
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 708--715
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 707--714
  [][] 
  []
 
-[18]
+[19]
 Runaway argument?
 {eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa\ETC.
 ! Paragraph ended before \T@ref was complete.
 <to be read again> 
                    \par 
-l.738 
+l.737 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[19] [20]
+[20] [21]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 98.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [21] (./mestrado.aux) ) 
+AED: lastpage setting LastPage [22] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11986 strings out of 493848
- 176333 string characters out of 1152823
- 295445 words of memory out of 3000000
- 14442 multiletter control sequences out of 15000+50000
- 90190 words of font info for 358 fonts, out of 3000000 for 9000
+ 11975 strings out of 493848
+ 176201 string characters out of 1152823
+ 294085 words of memory out of 3000000
+ 14443 multiletter control sequences out of 15000+50000
+ 89510 words of font info for 352 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,12n,43p,1328b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,43p,2013b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/e
 nc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/
 usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/
@@ -1251,9 +1251,9 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy8.pfb>
-Output written on mestrado.pdf (25 pages, 422118 bytes).
+Output written on mestrado.pdf (26 pages, 409835 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
+ 430 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 
