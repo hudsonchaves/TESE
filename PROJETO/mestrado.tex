@@ -32,7 +32,7 @@
 \usepackage[english,brazilian]{babel}
 
 % Codificação do arquivo
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenx}
 
 % Mapear caracteres especiais no PDF
 \usepackage{cmap} 
@@ -587,9 +587,11 @@ A análse de frequência ajudará na avaliação da rigidez de preços, mas ela 
 
 O risco é a prbabilidade instantânea do preço mudar em $t$, condicional sobre o preço não se alterar até este ponto no tempo. Conforme \citet{cavallo2010scraped}, a função risco é constante por causa da probabilidade dos preços mudar é fixa e exogeneamente determinada. 
 
-Para avaliar a função risco utilizaremos a Análise de Sobrevida assim como \citet{cavallo2010scraped}. Esta técnica é comumente utilizada quando o tempo for o objeto de interesse, seja este interpretado como o tempo até a ocorrência de um evento ou o risco de ocorrência de um evento por unidade de tempo.  Em ciências médicas é comum o uso do método para a avaliação do tempo até a morte, transplante, doença, cura  entre outros. No contexto de preços, estamos interessados no tempo entre o ajuste do preço. Assim, tanto o aparecimento do risco e o evento de falha ocorrem quando uma firma muda seus preços.  
+Para avaliar a função risco utilizaremos a Análise de Sobrevida assim como \citet{cavallo2010scraped}. Conforme \citet{colosimo2006analise}, em análise de sobrevivência, a variável resposta é, geralmente, o tempo até a ocorrência de um evento de interesse. Tal tempo é comumente conhecido como tempo de falha. Em medicina é comum o uso do método para a avaliação do tempo até a morte, transplante, doença, cura  entre outros. No contexto de preços, estamos interessados no tempo até o ajuste do preço. Assim, tanto o aparecimento do risco e o evento de falha ocorrem quando uma firma muda seus preços.  
 
-A função risco é fundamental na Análise de Sobrevida. Formalmente, se $T$ é a variável aleatória que mede a duração do preço, com função densidade $f\left(t\right)$ e densidade acumulada $F\left(t\right)$, o risco $h\left(t\right)$ é a probabilidade limite de que a mudança no preço ocorra em $t$, condicional ao preço não se alterar até este momento. 
+A principal característica de dados de sobrevivência é a presença de censura que é a observação parcial da resposta. Isto se refere a situações em que por alguma razão, o acompanhamento do preço foi interrompido, seja porque a firma não vende mais um produto ou este não é produzido. A variável aleatória não-negativa $T$, usualmente contínua, que representa o tempo de falha, é geralmente especificada em análise de sobrevivência pela sua função de sobrevivência ou pela função de risco (tempo de falha). Estas duas funções são extensivamente usadas na análise de dados de sobrevivência. 
+
+Segundo \citet{colosimo2006analise}, a função de sobrevivência é definida como a probabilidade de uma observação não falhar até um certo tempo $t$, ou seja, a probabilidade de uma observação sobreviver (preço não se alterar) ao tempo $t$. Por outro lado, se $T$ é a variável aleatória que mede a duração do preço, com função densidade $f\left(t\right)$ e densidade acumulada $F\left(t\right)$, o risco $h\left(t\right)$ é a probabilidade limite de que a mudança no preço ocorra em $t$, condicional ao preço não se alterar até este momento. 
 
 \begin{equation}
 h\left(t\right)=\lim_{\Delta t\rightarrow 0}{\frac{Pr\left(t<T<t+\Delta t|t<T\right)}{\Delta t}=\frac{f\left(t\right)}{1-F\left(t\right)}} 

@@ -5,7 +5,7 @@
 \usepackage[english,brazilian]{babel}
 
 % Codificação do arquivo
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenx}
 
 % Mapear caracteres especiais no PDF
 \usepackage{cmap} 

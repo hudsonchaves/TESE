@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  18 NOV 2014 02:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  19 NOV 2014 13:10
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -50,6 +50,16 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 \l@brazilian = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 ))
+(/usr/share/texmf-texlive/tex/latex/oberdiek/inputenx.sty
+Package: inputenx 2009/08/13 v1.4 Enhanced input encoding handling (HO)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/ix-alias.def
+File: ix-alias.def 2009/08/13 v1.4 Alias list (inputenx)
+)
+Package inputenx Info: Encoding name: utf8
+(inputenx)             Encoding file: utf8.def
+(inputenx)              on input line 132.
+
 (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
@@ -266,7 +276,7 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
+)))
 (/usr/share/texmf-texlive/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
 )
@@ -1193,7 +1203,7 @@ Ap\^endice A.
 [17
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 706--713
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 708--715
  [][] 
  []
 
@@ -1203,7 +1213,7 @@ Runaway argument?
 ! Paragraph ended before \T@ref was complete.
 <to be read again> 
                    \par 
-l.736 
+l.738 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1216,10 +1226,10 @@ See the caption package documentation for explanation.
 
 AED: lastpage setting LastPage [21] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 11958 strings out of 493848
- 175722 string characters out of 1152823
- 294679 words of memory out of 3000000
- 14421 multiletter control sequences out of 15000+50000
+ 11986 strings out of 493848
+ 176333 string characters out of 1152823
+ 295445 words of memory out of 3000000
+ 14442 multiletter control sequences out of 15000+50000
  90190 words of font info for 358 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,12n,43p,1328b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1241,9 +1251,9 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy8.pfb>
-Output written on mestrado.pdf (25 pages, 419958 bytes).
+Output written on mestrado.pdf (25 pages, 422118 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
  51306 words of extra memory for PDF output out of 51595 (max. 10000000)
 
