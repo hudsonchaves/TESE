@@ -44,6 +44,7 @@
 
 % Apêndice(s)
 \SweaveInput{apendice}
+\SweaveInput{apendice2}
 
 % Fim do texto
 \end{document}
