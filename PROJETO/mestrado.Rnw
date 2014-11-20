@@ -23,7 +23,6 @@
 % Classe do documento
 \documentclass[twoside,a4paper,11pt]{report}
 
-
 % Pacotes e comandos customizados
 \SweaveInput{meta.Rnw}
 
@@ -34,6 +33,7 @@
 \SweaveInput{cap1.Rnw}
 \SweaveInput{cap2.Rnw}
 \SweaveInput{cap3.Rnw}
+\SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 
 % Formato da bibliografia
@@ -44,7 +44,7 @@
 
 % Apêndice(s)
 \SweaveInput{apendice}
-\SweaveInput{apendice2}
+% \SweaveInput{apendice2}
 
 % Fim do texto
 \end{document}

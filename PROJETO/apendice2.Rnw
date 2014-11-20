@@ -1,77 +1,78 @@
 \appendix
 
-\chapter{ARQUITETURA E EXEMPLO DE COLETA}\label{ap2}
+\chapter{EXEMPLO DE COLETA}\label{ap2}
 
-<<results=tex,echo=TRUE>>=
-library(devtools)
-install_github("hadley/rvest")
-
-
-library(rvest)
-
-# biscoitos <- html("http://www.paodeacucar.com.br/secoes/C4228_C4371/biscoitos-salgados")
-# preco <-  biscoitos %>% 
-#   html_nodes("h3 a") %>% 
-#   html_text() # aqui, o valor final da tag a dentro de h3
-# preco
-
-paoacucar <- html("http://www.paodeacucar.com.br/") # pegar o código html da página
-
-secoes <-  paoacucar %>% 
-  html_nodes("li a") %>% # dentro do nó "li" pego a tag "a"
-  html_attr("href") # aqui extração de atributo da tag "a"
-secoes
-
-# Porém, dentro do nó "li" pode existir outras coisas além das seções de produtos do supermercado.
-# Assim, utilizo o código abaixo para extrair de "secoes" apenas as strings que têm a palavra secoes.
-# Para tanto utilizo a função grepl.
-
-filtered_secoes <- secoes[grepl(".*secoes.*", secoes)]
-
-
-# Agora, utilizo as seções filtradas para coletar os preços e os nomes dos produtos. O for abaixo 
-# realiza essa tarefa. Cada seção pode ter um número x de páginas que contêm os preços e nomes dos 
-# produtos. O código abaixo utiliza o "while" para realizar a extração enquanto houver nova página,
-# caso contrário, ele para. 
-
-dataframe <- data.frame()
-line_index <- 0
-
-for(url in filtered_secoes) {
-  page_number <- 0
-  while(TRUE) {
-    url_formatted <- paste(paste(paste(url,'?p=', sep=''), page_number, sep=''), '&qt=36', sep='') # criação da url que será utilizada para coleta
-    print (url_formatted)
-    html_page <- html(url_formatted)
-    
-    preco <-  html_page %>% 
-      html_nodes("p a span") %>% # Navegação pelos nós "p" e "a" para chegar na tag "span" para extrair apenas essa parte do html.
-      html_text() # extração do valor da "tag"
-    print(preco) # mostrar os preços da página
-    
-    name <-  html_page %>% 
-      html_nodes("h3 a") %>% # navegação pelo nó "h3"
-      html_text() # extrair os nomes de cada seção
-    print(name) # mostrar os nomes dos produtos
-    
-    if (length(preco) == 0) { # condição para parar a coleta da seção (em uma determinada página não terá preço)
-      break
-    }
-    
-    for(i in 1:length(preco)) {
-      line_index <- line_index + 1
-      dataframe[line_index,1]  <- name[i]
-      dataframe[line_index,2] <-  preco[i]
-    }
-    
-    page_number <- page_number + 1
-    
-    # Save data at MongDB
-    # Start mongodb
-    
-  }
-}
-
-write.csv2(dataframe, file='dataframe2.csv')
+\begin{small}
+<<results=tex,echo=TRUE,width=10>>=
+# library(devtools)
+# install_github("hadley/rvest")
+# 
+# 
+# library(rvest)
+# 
+# # biscoitos <- html("http://www.paodeacucar.com.br/secoes/C4228_C4371/biscoitos-salgados")
+# # preco <-  biscoitos %>% 
+# #   html_nodes("h3 a") %>% 
+# #   html_text() # aqui, o valor final da tag a dentro de h3
+# # preco
+# 
+# paoacucar <- html("http://www.paodeacucar.com.br/") # pegar o código html da página
+# 
+# secoes <-  paoacucar %>% 
+#   html_nodes("li a") %>% # dentro do nó "li" pego a tag "a"
+#   html_attr("href") # aqui extração de atributo da tag "a"
+# secoes
+# 
+# # Porém, dentro do nó "li" pode existir outras coisas além das seções de produtos do supermercado.
+# # Assim, utilizo o código abaixo para extrair de "secoes" apenas as strings que têm a palavra secoes.
+# # Para tanto utilizo a função grepl.
+# 
+# filtered_secoes <- secoes[grepl(".*secoes.*", secoes)]
+# 
+# 
+# # Agora, utilizo as seções filtradas para coletar os preços e os nomes dos produtos. O for abaixo 
+# # realiza essa tarefa. Cada seção pode ter um número x de páginas que contêm os preços e nomes dos 
+# # produtos. O código abaixo utiliza o "while" para realizar a extração enquanto houver nova página,
+# # caso contrário, ele para. 
+# 
+# dataframe <- data.frame()
+# line_index <- 0
+# 
+# for(url in filtered_secoes) {
+#   page_number <- 0
+#   while(TRUE) {
+#     url_formatted <- paste(paste(paste(url,'?p=', sep=''), page_number, sep=''), '&qt=36', sep='') # criação da url que será utilizada para coleta
+#     print (url_formatted)
+#     html_page <- html(url_formatted)
+#     
+#     preco <-  html_page %>% 
+#       html_nodes("p a span") %>% # Navegação pelos nós "p" e "a" para chegar na tag "span" para extrair apenas essa parte do html.
+#       html_text() # extração do valor da "tag"
+#     print(preco) # mostrar os preços da página
+#     
+#     name <-  html_page %>% 
+#       html_nodes("h3 a") %>% # navegação pelo nó "h3"
+#       html_text() # extrair os nomes de cada seção
+#     print(name) # mostrar os nomes dos produtos
+#     
+#     if (length(preco) == 0) { # condição para parar a coleta da seção (em uma determinada página não terá preço)
+#       break
+#     }
+#     
+#     for(i in 1:length(preco)) {
+#       line_index <- line_index + 1
+#       dataframe[line_index,1]  <- name[i]
+#       dataframe[line_index,2] <-  preco[i]
+#     }
+#     
+#     page_number <- page_number + 1
+#     
+#     # Save data at MongDB
+#     # Start mongodb
+#     
+#   }
+# }
+# 
+# write.csv2(dataframe, file='dataframe2.csv')
 @
-
+\end{small}

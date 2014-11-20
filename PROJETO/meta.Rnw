@@ -188,3 +188,4 @@
 % Para não sobrar espaços em branco estranhos
 %\widowpenalty=1000
 %\clubpenalty=1000
+\usepackage{listings}

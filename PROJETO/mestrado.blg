@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: mestrado.aux
+The style file: apalike.bst
+Database file #1: projeto.bib
+Warning--empty journal in ball1994sticky
+Warning--can't use both author and editor fields in ibgemetodos
+Warning--can't use both volume and number fields in mccallum1998stickiness
+You've used 22 entries,
+            1935 wiz_defined-function locations,
+            593 strings with 6759 characters,
+and the built_in function-call counts, 7972 in all, are:
+= -- 807
+> -- 251
+< -- 25
++ -- 84
+- -- 78
+* -- 594
+:= -- 1376
+add.period$ -- 65
+call.type$ -- 22
+change.case$ -- 149
+chr.to.int$ -- 22
+cite$ -- 25
+duplicate$ -- 344
+empty$ -- 572
+format.name$ -- 114
+if$ -- 1593
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 110
+num.names$ -- 66
+pop$ -- 131
+preamble$ -- 1
+purify$ -- 149
+quote$ -- 0
+skip$ -- 288
+stack$ -- 0
+substring$ -- 532
+swap$ -- 68
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 126
+warning$ -- 3
+while$ -- 70
+width$ -- 0
+write$ -- 278
+(There were 3 warnings)
