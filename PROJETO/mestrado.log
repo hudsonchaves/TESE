@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  20 NOV 2014 15:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  20 NOV 2014 15:42
 entering extended mode
  %&-line parsing enabled.
 **mestrado.tex
@@ -1211,7 +1211,7 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [9
 
-] <WebScraping.png, id=194, 1844.8925pt x 1324.95pt>
+] <WebScraping.png, id=188, 1844.8925pt x 1324.95pt>
 File: WebScraping.png Graphic file (type png)
  <use WebScraping.png>
 [10 <./WebScraping.png (PNG copy)>]
@@ -1223,85 +1223,80 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 552.
 
-[12] [13] [14] [15] [16
+[12] [13] [14]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 630.
 
-]
-Cap\'{\i }tulo 4.
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 635.
-
-(/usr/share/R/share/texmf/tex/latex/ts1aer.fd
+ (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 635.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 630.
 
-Overfull \hbox (342.94362pt too wide) in paragraph at lines 633--645
+Overfull \hbox (342.94362pt too wide) in paragraph at lines 628--640
 [][] 
  []
 
-(./mestrado.bbl [17
+(./mestrado.bbl [15] [16
 
-] [18
-
-]) [19]
+]) [17]
 Ap\^endice A.
-[20
+[18
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 730--737
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 726--733
  [][] 
  []
 
-[21]
+[19]
 Runaway argument?
 {eq3) e $m_{k}$ é o número de produtos do subitem $k$. Como observa\ETC.
 ! Paragraph ended before \T@ref was complete.
 <to be read again> 
                    \par 
-l.760 
+l.756 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[22] [23] [24]
+[20] [21] [22]
 Ap\^endice B.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 832.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 828.
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
- [25
+ [23
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+aett on input line 870
+LaTeX Font Info:    Try loading font information for TS1+aett on input line 866
 .
 
 (/usr/share/R/share/texmf/tex/latex/ts1aett.fd
 File: ts1aett.fd 
 )
-LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 870
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 866
 .
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `TS1/aett/m/sl' in size <10> not available
-(Font)              Font shape `TS1/cmtt/m/sl' tried instead on input line 870.
+(Font)              Font shape `TS1/cmtt/m/sl' tried instead on input line 866.
 
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 97.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [26] (./mestrado.aux) ) 
+AED: lastpage setting LastPage [24] (./mestrado.aux) ) 
 Here is how much of TeX's memory you used:
- 13396 strings out of 493848
- 196663 string characters out of 1152823
- 312752 words of memory out of 3000000
- 15815 multiletter control sequences out of 15000+50000
+ 13392 strings out of 493848
+ 196634 string characters out of 1152823
+ 312717 words of memory out of 3000000
+ 15813 multiletter control sequences out of 15000+50000
  92942 words of font info for 361 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,12n,43p,2020b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1326,9 +1321,9 @@ share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfst1000.pfb>
-Output written on mestrado.pdf (30 pages, 450953 bytes).
+Output written on mestrado.pdf (28 pages, 449059 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 55422 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 55410 words of extra memory for PDF output out of 61914 (max. 10000000)
 

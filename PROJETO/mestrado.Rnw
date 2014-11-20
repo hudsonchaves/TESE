@@ -33,7 +33,7 @@
 \SweaveInput{cap1.Rnw}
 \SweaveInput{cap2.Rnw}
 \SweaveInput{cap3.Rnw}
-\SweaveInput{cap4.Rnw}
+% \SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 
 % Formato da bibliografia
