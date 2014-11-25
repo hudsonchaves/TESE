@@ -1,0 +1,560 @@
+% Mestre em LaTeX - v0.5
+% Copyleft 2008-2013 Bruno C. Vellutini - http://organelas.com/
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+% THE SOFTWARE.
+%
+% Ou seja, utilize e modifique os arquivos como desejar.
+% 
+% Para mais informações visite http://nelas.github.com/mestre-em-latex/
+
+% Classe do documento
+\documentclass[twoside,a4paper,11pt]{report}
+
+% Pacotes e comandos customizados
+%%% Pacotes utilizados %%%
+
+%% Codificação e formatação básica do LaTeX
+% Suporte para português (hifenação e caracteres especiais)
+\usepackage[english,brazilian]{babel}
+
+% Codificação do arquivo
+\usepackage[utf8]{inputenx}
+
+% Mapear caracteres especiais no PDF
+\usepackage{cmap} 
+
+% Codificação da fonte
+\usepackage[T1]{fontenc}
+% Usa a lmodern por padrão (caso cm-super não esteja instalada).
+\usepackage{lmodern}
+
+%% Microtipografia
+% Utiliza recursos como espaçamento entre letras e entre linhas
+\usepackage{microtype}
+% Habilita protrusão e expansão, ignorando
+% compatibilidade (ver documentação do pacote)
+\microtypesetup{activate={true,nocompatibility}}
+% factor=1100 aumenta a protrusão (default 1000)
+% stretch=10 diminui o valor máximo de expansão (default 20)
+% shrink=10 diminui o valor máximo de encolhimento (default 20)
+\microtypesetup{factor=1100, stretch=10, shrink=10}
+% Tracking, espaçamento entre palavras, kerning
+\microtypesetup{tracking=true, spacing=true, kerning=true}
+% Remover tracking para Small Caps
+\SetTracking{encoding={T1}, shape=sc}{0}
+% Remove ligaduras para o 'f'. Se necessário, adicionar letras
+% separadas por vírgulas
+\DisableLigatures[f]{encoding={T1}}
+% Documento em versão "final", suporte para outros idiomas
+\microtypesetup{final, babel}
+
+% Essencial para colocar funções e outros símbolos matemáticos
+\usepackage{amsmath,amssymb,amsfonts,textcomp}
+
+%% Layout
+% Customização do layout da página, margens espelhadas
+\usepackage[twoside]{geometry}
+% Aumenta as margens internas para espiral
+\geometry{bindingoffset=10pt}
+% Só pra ajustar o layout
+\setlength{\marginparwidth}{90pt}
+%\usepackage{layout}
+
+% Para definir espaçamento entre as linhas
+\usepackage{setspace} 
+
+% Espaçamento do texto para o frame
+\setlength{\fboxsep}{1em}
+
+% Faz com que as margens tenham o mesmo tamanho horizontalmente
+%\geometry{hcentering}
+
+%% Elementos Gráficos
+% Para incluir figuras (pacote extendido)
+\usepackage[]{graphicx} 
+
+%% Suporte a cores
+\usepackage{color}
+% Os argumentos declaram nomes novos, como Cyan e Crimson
+% (ver documentação do pacote).
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+% Criar figura dividida em subfiguras
+\usepackage{subfig}
+\captionsetup[subfigure]{style=default, margin=0pt, parskip=0pt, hangindent=0pt, indention=0pt, singlelinecheck=true, labelformat=parens, labelsep=space}
+
+% Caso queira guardar as figuras em uma pasta separada
+% (descomente e) defina o caminho para o diretório:
+%\graphicspath{{./figuras/}}
+
+% Customizar as legendas de figuras e tabelas
+\usepackage{caption}
+
+% Criar ambientes com 2 ou mais colunas
+\usepackage{multicol}
+
+% Ative o comando abaixo se quiser colocar figuras de fundo (e.g., capa)
+%\usepackage{wallpaper}
+% Exemplo para inserir a figura na capa está no arquivo pre.tex (linha 7)
+% Ajuste da posição da figura no eixo Y
+%\addtolength{\wpYoffset}{-140pt}
+% Ajuste da posição da figura no eixo X
+%\addtolength{\wpXoffset}{36pt}
+
+%% Tabelas
+% Elementos extras para formatação de tabelas
+\usepackage{array}
+
+% Tabelas com qualidade de publicação
+\usepackage{booktabs}
+
+% Para criar tabelas maiores que uma página
+\usepackage{longtable}
+
+% adicionar tabelas e figuras como landscape
+\usepackage{lscape}
+
+%% Lista de Abreviações
+% Cria lista de abreviações
+\usepackage[notintoc,portuguese]{nomencl}
+\makenomenclature
+
+%% Notas de rodapé
+% Lidar com notas de rodapé em diversas situações
+\usepackage{footnote}
+
+% Notas criadas nas tabelas ficam no fim das tabelas
+\makesavenoteenv{tabular}
+
+% Conta o número de páginas
+\usepackage{lastpage}
+
+%% Referências bibliográficas e afins
+% Formatar as citações no texto e a lista de referências
+%\usepackage{natbib}
+\usepackage[authoryear,round,longnamesfirst]{natbib}
+% Adicionar bibliografia, índice e conteúdo na Tabela de conteúdo
+% Não inclui lista de tabelas e figuras no índice
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+
+%% Pontuação e unidades
+% Posicionar inteligentemente a vírgula como separador decimal
+\usepackage{icomma}
+
+% Formatar as unidades com as distâncias corretas
+\usepackage[tight]{units}
+
+%% Cabeçalho e rodapé
+% Controlar os cabeçalhos e rodapés
+\usepackage{fancyhdr}
+% Usar os estilos do pacote fancyhdr
+\pagestyle{fancy}
+\fancypagestyle{plain}{\fancyhf{}}
+% Limpar os campos do cabeçalho atual
+\fancyhead{}
+% Número da página do lado esquerdo [L] nas páginas ímpares [O] e do lado direito [R] nas páginas pares [E]
+\fancyhead[LO,RE]{\thepage}
+% Nome da seção do lado direito em páginas ímpares
+\fancyhead[RO]{\nouppercase{\rightmark}}
+% Nome do capítulo do lado esquerdo em páginas pares
+\fancyhead[LE]{\nouppercase{\leftmark}}
+% Limpar os campos do rodapé
+\fancyfoot{}
+% Omitir linha de separação entre cabeçalho e conteúdo
+\renewcommand{\headrulewidth}{0pt}
+% Omitir linha de separação entre rodapé e conteúdo
+\renewcommand{\footrulewidth}{0pt}
+% Altura do cabeçalho
+\headheight 15pt
+
+% Dados do projeto
+\newcommand{\nomedoaluno}{Hudson Chaves Costa}
+\newcommand{\titulo}{Três Ensaios em Comportamento dos Preços na Economia Brasileira}
+
+%% Links dinâmicos
+% Suporte para hipertexto, links para referências e figuras
+\usepackage{hyperref}
+% Configurações dos links e metatags do PDF a ser gerado
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, pagecolor=blue, urlcolor=green,
+            pdfauthor={\nomedoaluno},
+            pdftitle={\titulo},
+            pdfsubject={Assunto do Projeto},
+            pdfkeywords={palavra-chave, palavra-chave, palavra-chave},
+            pdfproducer={LaTeX},
+            pdfcreator={pdfTeX}}
+
+%% Inserir comentários no texto
+% Marcar mudanças e fazer comentários
+%\usepackage[margins]{trackchanges}
+% Iniciais do autor
+%\renewcommand{\initialsTwo}{bcv}
+% Notas na margem interna
+%\reversemarginpar
+
+%% Comandos customizados
+
+% Espécie e abreviação
+\newcommand{\subde}{\emph{Clypeaster subdepressus}}
+\newcommand{\subsus}{\emph{C.~subdepressus}}
+
+%% Pacotes não implementados
+% Para não sobrar espaços em branco estranhos
+%\widowpenalty=1000
+%\clubpenalty=1000
+\usepackage{listings}
+
+% Início do texto
+\usepackage{Sweave}
+\begin{document}
+\input{ensaio01-concordance}
+
+% Limpa cabeçalhos.
+% (solução para lidar com a númeração das páginas pré-textuais).
+\pagestyle{empty}
+
+%% Capa
+\begin{titlepage}
+
+% Se quiser uma figura de fundo na capa ative o pacote wallpaper
+% e descomente a linha abaixo.
+% \ThisCenterWallPaper{0.8}{nomedafigura}
+
+\begin{center}
+{\LARGE \nomedoaluno}
+\par
+\vspace{200pt}
+{\Huge \titulo}
+\par
+\vfill
+\textbf{{\large Porto Alegre}\\
+{\large \the\year}}
+\end{center}
+\end{titlepage}
+
+% Faz com que a página seguinte sempre seja ímpar (insere pg em branco)
+\cleardoublepage
+
+% Numeração em elementos pré-textuais é opcional (ativada por padrão).
+% Para desativá-la comente a linha abaixo.
+%\pagestyle{fancy}
+
+% Números das páginas em algarismos romanos
+\pagenumbering{roman}
+
+%% Página de Rosto
+
+% Numeração não deve aparecer na página de rosto.
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE \nomedoaluno}
+\par
+\vspace{200pt}
+{\Huge \titulo}
+\end{center}
+\par
+\vspace{90pt}
+\hspace*{175pt}\parbox{7.6cm}{{\large Projeto de Tese apresentado ao Programa de Pós-Graduação em Economia da Universidade Federal do Rio Grande do Sul na Área de Economia Aplicada.}}
+
+\par
+\vspace{1em}
+\hspace*{175pt}\parbox{7.6cm}{{\large Orientador: Prof. Dr. Sabino Porto da Silva Júnior}}
+
+\par
+\vfill
+\begin{center}
+\textbf{{\large Porto Alegre}\\
+{\large \the\year}}
+\end{center}
+
+\newpage
+
+% Ficha Catalográfica
+%\hspace{8em}\fbox{\begin{minipage}{10cm}
+%Aluno, Nome C.
+
+%\hspace{2em}\titulo
+
+%\hspace{2em}\pageref{LastPage} páginas
+
+%\hspace{2em}Dissertação (Mestrado) - Instituto de Biociências da Universidade de São Paulo. Departamento de XXXXXXXX.
+
+%\begin{enumerate}
+%\item Palavra-chave
+%\item Palavra-chave
+%\item Palavra-chave
+%\end{enumerate}
+%I. Universidade de São Paulo. Instituto de Biociências. Departamento de XXXXXXXX.
+
+%\end{minipage}}
+%\par
+%\vspace{2em}
+%\begin{center}
+%{\LARGE\textbf{Comissão Julgadora:}}
+
+%\par
+%\vspace{10em}
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l}
+%\rule{16em}{1px}   & \rule{16em}{1px} \\
+%Prof. Dr.   	& Prof. Dr. \\
+%Nome			& Nome
+%\end{tabular*}
+
+%\par
+%\vspace{10em}
+
+%\parbox{16em}{\rule{16em}{1px} \\
+%Prof. Dr. \\
+%Nome do Orientador}
+%\end{center}
+
+%\newpage
+
+% Dedicatória
+% Posição do texto na página
+%\vspace*{0.75\textheight}
+%\begin{flushright}
+  %\emph{Dedicatória...}
+%\end{flushright}
+
+%\newpage
+
+% Epígrafe
+%\vspace*{0.4\textheight}
+%\noindent{\LARGE\textbf{Exemplo de epígrafe}}
+% Tudo que você escreve no verbatim é renderizado literalmente (comandos não são interpretados e os espaços são respeitados)
+%\begin{verbatim}
+%O que é bonito?
+%É o que persegue o infinito;
+%Mas eu não sou
+%Eu não sou, não…
+%Eu gosto é do inacabado,
+%O imperfeito, o estragado, o que dançou
+%O que dançou…
+%Eu quero mais erosão
+%Menos granito.
+%Namorar o zero e o não,
+%Escrever tudo o que desprezo
+%E desprezar tudo o que acredito.
+%Eu não quero a gravação, não,
+%Eu quero o grito.
+%Que a gente vai, a gente vai
+%E fica a obra,
+%Mas eu persigo o que falta
+%Não o que sobra.
+%Eu quero tudo que dá e passa.
+%Quero tudo que se despe,
+%Se despede, e despedaça.
+%O que é bonito…
+%\end{verbatim}
+%\begin{flushright}
+%Lenine e Bráulio Tavares
+%\end{flushright}
+
+%\newpage
+
+% Agradecimentos
+
+% Espaçamento duplo
+%\doublespacing
+
+%\noindent{\LARGE\textbf{Agradecimentos}}
+
+%Agradeço ao meu orientador, ao meu co-orientador, aos meus colaboradores, aos técnicos, à seção administrativa, à fundação que liberou verba para minhas pesquisas, aos meus amigos, à minha família e ao meu grande amor.
+
+%\newpage
+
+%\vspace*{10pt}
+% Abstract
+%\begin{center}
+  %\emph{\begin{large}Resumo\end{large}}\label{resumo}
+%\vspace{2pt}
+%\end{center}
+% Pode parecer estranho, mas colocar uma frase por linha ajuda a organizar e reescrever o texto quando necessário.
+% Além disso, ajuda se você estiver comparando versões diferentes do mesmo texto.
+% Para separar parágrafos utilize uma linha em branco.
+%\noindent
+%Esta, quem sabe, é a parte mais importante do seu trabalho.
+%É o que a maioria das pessoas vai ler (além do título).
+%Seja objetivo sem perder conteúdo.
+%Um bom resumo explica porquê este trabalho é interessante, relata como foi feito, o que foi encontrado, contextualiza os resultados e delineia conclusões.
+%\par
+%\vspace{1em}
+%\noindent\textbf{Palavras-chave:} palavra1, palavra2, palavra3
+%\newpage
+
+% Criei a página do abstract na mão, por isso tem bem mais comandos do que o resumo acima, apesar de serem idênticas.
+%\vspace*{10pt}
+% Abstract
+%\begin{center}
+  %\emph{\begin{large}Abstract\end{large}}\label{abstract}
+%\vspace{2pt}
+%\end{center}
+
+% Selecionar a linguagem acerta os padrões de hifenação diferentes entre inglês e português.
+%\selectlanguage{english}
+%\noindent
+%This is the most important part of your work.
+%This is what most people will read.
+%Be concise without omitting content.
+%A good abstract explains why this is an interesting study, tells how it was done, what was found, contextualizes the results and set conclusions.
+%\par
+%\vspace{1em}
+%\noindent\textbf{Keywords:} word1, word2, word3
+
+% Voltando ao português...
+%\selectlanguage{brazilian}
+
+%\newpage
+
+% Desabilitar protrusão para listas e índice
+\microtypesetup{protrusion=false}
+
+% Lista de figuras
+%\listoffigures
+
+% Lista de tabelas
+%\listoftables
+
+% Abreviações
+% Para imprimir as abreviações siga as instruções em 
+% http://code.google.com/p/mestre-em-latex/wiki/ListaDeAbreviaturas
+%\printnomenclature
+
+% Índice
+\tableofcontents
+
+% Re-habilita protrusão novamente
+\microtypesetup{protrusion=true}
+% Faz com que o ínicio do capítulo sempre seja uma página ímpar
+\cleardoublepage
+
+% Inclui o cabeçalho definido no meta.tex
+\pagestyle{fancy}
+
+% Números das páginas em arábicos
+\pagenumbering{arabic}
+
+\chapter{INTRODUÇÃO/MOTIVAÇÃO}\label{intro}
+
+% É sabido da importância dos preços para a alocação de recursos, dado que na ocorrência de rigidez de preços, a alocação ineficiente é uma consequência. O grau da rigidez para diferentes produtos alinhado a uma política monetária expansionista impactarão os preços relativos que por sua vez influenciarão a economia real. O estudo da rigidez de preços é tema importante para a avaliação do comportamento da inflação que permite analisar o grau de persistência inflacionária e assim, melhor uso dos instrumentos de política monetária. Em resposta à relevância do tema, modelos macroeconômicos de preços rígidos têm sido desenvolvidos e fundamentam-se, em grande medida, no comportamento microeconômico de determinação de preços adotado pelos agentes. 
+
+% Ainda, muito da macroeconomia se baseia em alguma fonte de rigidez para gerar desempenho ineficiente.
+% Além disso, estudar a rigidez de preços é fundamental para a análise do comportamento da inflação
+
+% Não obstante, sabemos que os preços geralmente são considerados rígidos ou lentos para se ajustarem, pois a presença de algum tipo de restrição, frequentemente denominada de rigidez nominal, implica em dificuldade de ajustamento instantâneo ou sem qualquer custo. Diversos modelos econômicos incluem mecanismos para incorporar essa rigidez nominal. Além disso, um número de diferentes mecanismos tem sido propostos e podem ser divididos em dois principais grupos: preços tempo-dependentes e estado-dependentes
+
+% Examinar como os preços se comportam pode ajudar a identificar qual destes modelos teóricos são mais relevantes para a economia real. 
+% Assim, conhecer mais sobre quão frequentemente os preços indivíduais mudam e a magnitute das variações é essencial para os toamdores de decisões e ponto de partica para modeloes microfundamentados.
+
+% Na maneira mais simples do modelo proposto por \citet{calvo1983staggered}, firmas homogêneas têm uma probabilidade fixa de mudar seus preços em cada período (isto é, a probabilidade de um preço mudar não depende de quando a alteração anterior ocorreu). Modelos tempo-dependentes alternativos salientam que os preços são fixos em função da existência de contratos que se sobrepõem dado que eles não começam e finalizam ao mesmo tempo (\citet{taylor1980aggregate}).
+
+Firmas individuais não ajustam seus preços em contrapartida de choques relevantes na economia. Este fato não é controvérsia e é uma hipótese padrão em modelagem macroeconômica que permite choques nominais influenciar as variáveis reais. Uma grande vertente da literatura analisou as implicações de alternativas formas de rigidez nominal sobre a dinâmica do comportamento da inflação e produto em níveis agregados. Não obstante, em resposta à relevância do tema, modelos macroeconômicos de preços rígidos têm sido desenvolvidos e fundamentam-se, em grande medida, no comportamento microeconômico de determinação de preços adotado pelos agentes. 
+
+É possível dividir os diferentes mecanismos propostos para incorporar a rigidez nominal dos preços em dois grupos: preços tempo-dependentes e preços estado-dependentes. Em um modelo de precificação tempo-dependente, a possibilidade de um preço mudar pode ser afetada apenas pelo tempo desde a mudança anterior e não pelo estado das vendas de uma firma, a economia ou outros fatores. Já em modelos estado-dependentes, a decisão de mudar os preços depende do estado da economia e o mercado enfrentado pela firma. Firmas enfrentam custos caso ajustem seus preços e exemplos destes custos incluem custos fixos (custo de menu, \citet{mankiw1985small}) ou a desutilidade associada à fazer grandes alteraçõeses de preços se as firmas temem que tais mudanças podem contrariar seus clientes (\citet{rotemberg1982sticky}). 
+
+Na mesma direção da preocução teórica em relação ao comportamento dos preços, muitos Bancos Centrais têm adotado a política de metas de inflação como um fator relevante para a política monetária. Tipicamente, a meta é definida em termos de um índice de preço agregado, tal como o Índice Nacional de Preços ao Consumidor Amplo (IPCA) no Brasil. Dado que este índice agregado é uma soma ponderada dos preços individuais, mudanças nestes preços terão importantes implicações para o nível de preço geral e preços relativos. A partir disso, foi natural o surgimento de pesquisas com o objetivode diferir a análise empírica da rigidez nominal dos preços baseada em dados agregados da avaliação do comportamento dos preços por meio de microfundamentos. 
+
+Por conseguinte, recentes estudos internacionais e nacionais têm usado de grandes bancos de dados de preços individuais (microdados) para examinar como os preços ao consumidor comportam em nível de produto. Em particular, \citet{bils2004some}, \citet{nakamura2008five} e \citet{klenow2008state} para os EUA, \citet{dhyne2006price} para a Zona do Euro, \citet{gouvea2007nominal}, \citet{matos2009comportamento} e \citet{lopes2008rigidez} para o Brasil e \citet{bunn2012examining} para o Reino Unido. Apesar de pesquisas brasileiras terem utilizado de microdados para a avaliação empirica da rigidez dos preços, nenhuma delas conseguiu alta granularidade no que tange à periodicidade dos preços coletados bem como em relação às regiões em que a rigidez foi avaliada. Tal característica é oriunda da fontes de dados usadas (IBRE/FGV e IPC/FIPE). 
+
+A partir disso, este ensaio do projeto de tese, busca aplicar a teconologia de \emph{web scraping} na avaliação de como os preços individuais ao consumidor tipicamente se comportam e se existe rigidez de preços nos principais mercados brasileiros\footnote{A princípio serão coletados preços dos principais sites das regiões metropolitanas e cidades que participam do IPCA e INPC}. Isto permitirá uma períodicidade diária na coleta de preços e maior quantidade de preços coletados em comparação com os tradicionais índices de preços.  
+
+Motivado por tais apontamentos, o presente ensaio explorará preços coletados de sites (supermercados, farmácias, lojas de eletrodomésticos, construção civil, ....) como uma alternativa à dificuldade em obter microdados de preços. A teconologia de \emph{web scraping} que será utilizada tem se tornado uma alternativa para o acesso a diversas fontes de dados para análise econômica empírica. Pretende-se contribuir para o estudo empírico da rigidez nominal nos preços por meio da estimação de funções de risco de alterações nos preços. Esta função é definida como a probabilidade condicional dos preços se alterarem em relação ao tempo, um conceito chave em entender o comportamento dos preços. Ela está relacionada aos modelos microfundamentados. Por exemplo, os modelos de \citet{calvo1983staggered} e \citet{taylor1980aggregate} têm função de risco constante. A probabilidade de alterações nos preços depende apenas do tempo, independentemente de mudanças em variáveis de estado. Por outro lado, o modelo de \citet{dotsey1999state} tem uma função de risco crescente que muda dependendo das variáveis de estado. Ele é um dos mais populares modelos estado-dependentes em um framework de equilibrio geral. 
+
+Este ensaio é organizado da seguinte forma: além deste primeiro capítulo que faz uma breve apresentaçãoo do tema, justificativa e objetivos do ensaio, o capítulo 2 mostra o referencial teórico sobre modelos de rigidez de preços e por fim no capítulo 3 a metodologia a ser utilizada bem como o cronograma da pesquisa são descritos.
+
+\subsection*{JUSTIFICATIVA}
+
+A dinâmica do comportamento dos preços individuais proporciona vários desdobramentos que são bastante debatidos na literatura dado os impactos que podem causar. Não compreender este tipo de comportamento levou a distintas abordagens para a análise da velocidade e intensidade de transmissão da política monetária. Além disso, compreender as estratégias de definição de preços das firmas levaria ao aprimoramento de modelos teóricos cujas abordagens e conclusões podem sofrer alterações expressivas na presença de fatos estilizados. 
+
+A falta de estudos que gerassem empiricamente um diagnóstico da definição e grau de rigidez de preços individuais foi um limitador por diversas décadas em função da falta de informações estatísticas no nível de microdados que pudessem servir de base para estas análises. Porém, há alguns anos a disponibilização de preços coletados pelos órgãos governamentais tanto nacionais quanto internacionais, proporcionaram o surgimento de pesquisas que avaliassem o comportamento dos preços em nível de microdados (\citet{bils2004some,nakamura2008five,klenow2008state,dhyne2006price,gouvea2007nominal,matos2009comportamento,lopes2008rigidez,bunn2012examining}). 
+
+Porém, ainda existe um fator limitante nestes estudos, pois concentram-se em mercados específicos, não possibilitando análises generalizadas aos diversos setores da economia, pois as pesquisas são reféns das características dos dados utilizados. Também, dada a importância do tema para os tomadores de decisão em nível de política monetária, é preciso maior dinâmica na análise e não apenas um olhar para o passado. 
+
+Assim, o presente ensaio do projeto de tese apresenta o uso da tecnologia de \emph{web scraping} para coletar preços diretamente das páginas das empresas que possuem sites de vendas e por conseguinte, contribuir para a avaliação da rigidez de preços de uma forma mais dinâmica dadas as características do processo de coleta. Estudos empiricos já mostraram a importância de dados coletados da \emph{web} na avaliação dos pressupostos de rigidez de preços e proposição de medida de inflação oriunda de informações \emph{online} (\citet{cavallo2010scraped}).
+
+\subsection*{OBJETIVOS}
+
+O objetivo geral deste projeto é avaliar empiricamente a rigidez nominal dos preços na economia brasileira por meio de dados coletados da \emph{web}, bem como, propor um índice de inflação oriundo da mesma fonte de dados que seja estatisticamente significante para o uso dos tomadores de decisões econômicas.
+
+Dentro deste escopo, os objetivos específicos são: melhor compreensão do comportamento microeconômico dos preços e suas implicações para a economia. 
+
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
+\chapter{REVISÃO BIBLIOGRÁFICA}\label{cap2}
+
+\section*{Rigidez de preços e Preços flexíveis}
+
+\citet{ball1994sticky} argumentam que a politica monetária afeta a atividade econômica real e que a principal razão para essa afirmação são as evidências históricas, especialmente os inúmeros episódios em que as contrações monetárias causaram recessões. Uma vez assumida a hipótese de não-neutralidade monetária, os macroeconomistas dividem-se quanto à melhor maneira de explicar flutuações econômicas de curto prazo. \citet{ball1994sticky} acreditam que a rigidez nominal dos preços fornece a explicação mais natural para a não-neutralidade monetária, dadas as evidências microeconômicas de que muitos preços são, de fato, rígidos. Outros economistas, entretanto, desenvolveram modelos com preços flexíveis e substituíram a rigidez nominal dos preços por alguma outra imperfeição nominal para geral o resultado de não-neutralidade monetária. 
+
+A alternativa mais famosa aos modelos de preços rígidos é o moelo de \citet{lucas1972expectations}. Nesse modelo os preços são flexíveis e a imperfeição nominal é informacional, sendo possivel gerar o resultado de não-neutralidade monetária. O modelo de \citet{lucas1972expectations} de iformação imperfeita baseia-se na ideia de que quando um produtos observa uma mudança no preço de seu produto ele não sabe distinguir se isso é resultado de uma mudança no preço relativo de seu produto ou se é resultado de uma mudança no nvel agregado de preços. Uma mudança nos preços relativos altera a quantidade ótima a produzir, enquanto que uma mudança no nível de preço agregado deixa a quantidade ótima de produção inalterada. Considerando-se uma expansão monetária não-observada, o melhor que cada produtor pode fazer é admitir que uma parte do aumento da demanda por seu produto reflete um choque de preços relativos. Então, produtores elevam seus produtos e a expansão monetária tem efeitos reais e não apenas efeitos nominais sobre os preços. A fragilidade do modelo de \citet{lucas1972expectations} esta no fato de que é difícil compreender como nas economias modernas produtores poderiam confundir movimentos nos preços relativos com movimentos no nível de preços agregado, dado o grande volume de informações. \citet{ball1994sticky} conclui que o modelo de Lucas não é um substituto convincente para os modelos de preços rígidos.
+
+A vertente novo-keynesiana estabelece a hipótese de existência de rigidez nominal tanto nos preços quanto nos salários. Essas variáveis nominais teriam dificuldades em se ajustar dada a ocorrência de mudanças na política monetária o que, por conseguinte, provocaria impactos reais sobre o produto. Assim, a expansão monetária pode provocar diferentes impactos sobre cada preço da economia dependendo do grau de rigidez nominal de cada bem. Tal rigidez se for diversificada, resultará em alterações nos preços relativos provocando impactos reais.
+
+Neste contexto, muitos modelos macroeconômicos de preços rígidos baseados em fundamentos microeconômicos têm sido desenvolvidos. As hipóteses desses modelos envolvem, em grande medida, características acerca do comportamento microeconômico de determinação de preços adotados pelos agentes. A busca da construção de modelos macroeconômicos cada vez mais apurados fez emergir a necessidade de verificar empiricamente alguns dos aspectos microeconômicos constantes nesses modelos. 
+
+\section*{Modelos Tempo-Dependentes e Modelos Estado-Dependentes}
+
+% Em modelos de rigidez de preços tempo-dependentes, o tempo de mudança no preço é exógeno. Em particular, uma firma pode definir seu preço $N$ períodos à frente (Fisher, 1977), apenas a cada $N$ períodos (\citet{taylor1980aggregate}) ou aleatoriamente (\citet{calvo1983staggered}). Os modelos de Taylor e Calvo apresentam escalonamento exógeno das variações de preços entre empresas na economia. Ou seja, os preços s?o reajustados de forma não coincidente. Como um resultado deste escalonamento, a fração de firmas ajustando seus preços é constante de período a período. Quando a demanda aumenta após uma expansão monetária, apenas uma fração de todos os preços aumentam e assim, o produto agregado real cresce. 
+% 
+% Modelos tempo-dependentes não têm fundamentos microeconômicos. Isto levou a a modelos de precificação estado-dependentes em que as empresas escolhem quando mudar seus preços sujeito à "custo de menu". As implicações desses modelos para o produto real e inflação podem diferir drasticamente dos modelos tempo-dependentes. Caplin e Spulber (1987), consideram um modelo de ajuste de preços endógeno em que, sobre certas hipóteses no processo monetário e distribuição dos preços, a moeda não tem efeito real, Subsequente pesquisa de Caballero e Engel (1993) e Caplin e Leahy (1991,1997) examinaram 
+% 
+% #################
+% ### CONTINUAR AQUI COM O ARTIGO STATE-DEPENDENT OR TIME-DEPENDENT PRICING : DOES IT MATTER FOR RECENT U.S. INFLATION?
+% #################
+
+Em geral, modelos de precificação microfundamentados são classificados em dois tipos: modelos estado-dependentes e modelos tempo-dependentes. Nos modelos tempo-dependentes, a probabilidade dos preços mudarem depende apenas do período pelo qual o preço está fixo. Então, a função risco deste modelo tem uma certa forma constante em relação à duração dos preços. Por exemplo, o modelo \citet{calvo1983staggered} tem uma função de risco plana e assume que a oportunidade de um preço variar segue um processo Poisson. A hipótese significa que um formador de preço tem uma oportunidade de alterar os preços com uma probabilidade constante em cada período. É bem conhecido que a curva de Phillips novo-keynesiana é derivada do modelo de Calvo com competição monopolística. Também, o modelo de \citet{taylor1980aggregate} tem uma função risco constante que assume 100\% em certos períodos e 0\% por outro lado. Ele assume que o formador de preços muda seus preços apenas no começo do contrato e não muda dentro do período de durabilidade do contrato. Então, sua taxa de risco toma o valor da unidade no começo do contrato e $0$ por outro lado. 
+
+Em adição aos modelos de Calvo e Taylor, Mash (2004) e \citet{coenen2007identifying} generalizaram o modelo de Calvo. Eles atribuem diferentes probabilidades em distintos períodos, permitindo a função risco ter qualquer forma funcional incluindo riscos crescentes e decrescentes. Eles mostram que as curvas de Phillips derivadas de seus modelos dependem não apenas do corrente \emph{gap} no produto e a inflação esperada para o próximo período como a curva de Phillips novo-keynesiana, mas também sobre as taxas de inflação esperadas em algum período passado e futuro. 
+
+Em modelos estado-dependentes, a probabilidade condicional do preço alterar depende das variáveis de estado, preços relativos e taxas de inflação. Então, a função risco no modelo estado-dependente pode mudar sua forma em resposta à choques reais ou monetários em um transição, enquanto ela tem uma forma constante em \emph{steady state}. Por exemplo, \citet{dotsey1999state} desenvolveram um modelo de precificação estado-dependente ampliando o básico modelo de custo de menu de \citet{blanchard1987monopolistic}. Eles assumiram que o custo de menu seque um processo aleatório e varia entre formadores de preços. Neste caso, eles mostraram que uma função risco depende das taxas de inflação e a distribuição do processo aleatório. Em adição, eles mostraram que a forma de uma função risco é crescente em um \emph{steady state}. Em um \emph{steady state}, quanto mais tempo o preço permanece fixo, mais o preço relativo desvia do preço relativo ótimo devido a choques de produtividade acumulados. Então, a probabilidade condicional de mudanças nos preços sobe equanto o preço permanece fixo. 
+
+Bakhshi et al. (2004) mostrou que a curva de Phillips derivada do modelo de \citet{dotsey1999state} tem uam forma complexa. Ela depende não apenas dos correntes \emph{gaps} do produto e a taxa de inflação esperada no próximo período, mas também sobre as taxas de inflação esperada em alguns períodos passados e futuros. Assim, independentemente de modelos tempo-dependentes ou estado-dependenetes, a curva de Phillips tem a forma complexa se uma função risco não é plana como no modelo de Calvo.
+
+\section*{Trabalhos Utilizando Microdados para avaliação da rigidez de preços}
+
+Conforma salientado, existem trabalhos nacionais e internacionais que utilizaram microdados de preços ao consumidor para analisar a rigidez nominal nos preços. Um ponto forte deste tipo de trabalho é a viabilidade no acompanhamento do preço de um determinado produto vendido em uma loja específica ao longo do tempo. Assim, é possível comparar o grau de rigidez em vários níveis (setores, cidades, economia como um todo, produtos, ...). 
+
+
+\section*{Função Risco}
+
+A função risco representa a distribuição do período de tempo que decorre entre o início de algum evento até seu fim. Para a sua utilidade, funções de risco são frequentemente usadas em análise de sobrevida de produtos, análise de quebra de firmas e análise biológica. Neste ensaio a função de risco dependerá da duração dos preços (também chamado de sobrevida dos preços), denotato por $T$. A função risco produz uma probabilidade de um preço mudar condicional sobre o evento que o preço está fixo até os períodos $T-1$ anteriores. Sua saída é chamada de taxa de risco. Por exemplo, a taxa de risco com $T=5$ significa a probabilidade de um preço alterar no período $5$ condicional ao evento de que o preço está fixado nos $4$ períodos anteriores. 
+
+A figura abaixo mostra a sequência de mudanças nos preços. O tempo zero e o tempo $T$ mostram o começo e o fim do período amostral, respectivamente. O termo \emph{spell} significa a duração dos preços, ou seja, o tamanho do tempo no qual o preço é fixo. O primeiro \emph{spell} $t_{0}$ e o final, $t_{K}$ na figura são chamados de dados censurados da esquerda e direita, respectivamente. A duração dos dados censurados da esquerda é incerta uma vez que o periodo da última mudança é desconhecido. Também, a duração dos dados da direita censurados é incerta, pois a próxima mudança é desconhecida. Os dados censurados da esquerda normalmente são excluídos da amostra de dados. Porém, os dados censurados da direita são incluídos como amostra, pois são usados para calcular as probabilidade de sobrevida. A sequência de \emph{spells} é chamada de trajetória. Na figura abaixo, a trajetória de preços é o conjunto $(t_{1},t_{2},...,t_{K})$. Os dados censurados da esquerda são excluídos da trajetória.
+
+% \subsection*{Modelo de Calvo}
+% 
+% Uma abordagem que se tornou padrão para a modelagem de rigidez nominal de preços devido a sua simplicidade é devida a Calvo. Neste modelo, uma fração $0<\alpha<1$ de preços permanecem inalterados a cada período, enquanto novos preços são escolhidos para os demais $1???\alpha$ bens. Assim sendo, assume-se que a probabilidade de que um dado preço seja ajustado em qualquer período seja $1-\alpha$, independentemente não apenas do tempo transcorrido desde a sua última atualização como também do valor corrente do mesmo.
+
+
+% \SweaveInput{cap3.Rnw}
+% \SweaveInput{cap4.Rnw}
+% \SweaveInput{final.Rnw}
+
+% Formato da bibliografia
+\bibliographystyle{apalike}
+
+% Arquivo .bib
+\bibliography{projeto}
+
+% Apêndice(s)
+% \SweaveInput{apendice}
+% \SweaveInput{apendice2}
+
+% Fim do texto
+\end{document}

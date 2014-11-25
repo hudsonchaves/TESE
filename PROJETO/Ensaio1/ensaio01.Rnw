@@ -1,0 +1,51 @@
+% Mestre em LaTeX - v0.5
+% Copyleft 2008-2013 Bruno C. Vellutini - http://organelas.com/
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+% THE SOFTWARE.
+%
+% Ou seja, utilize e modifique os arquivos como desejar.
+% 
+% Para mais informações visite http://nelas.github.com/mestre-em-latex/
+
+% Classe do documento
+\documentclass[twoside,a4paper,11pt]{report}
+
+% Pacotes e comandos customizados
+\SweaveInput{metaen01.Rnw}
+
+% Início do texto
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\SweaveOpts{concordance=TRUE}
+\SweaveInput{preen01.Rnw}
+\SweaveInput{cap1en01.Rnw}
+\SweaveInput{cap2en01.Rnw}
+% \SweaveInput{cap3.Rnw}
+% \SweaveInput{cap4.Rnw}
+% \SweaveInput{final.Rnw}
+
+% Formato da bibliografia
+\bibliographystyle{apalike}
+
+% Arquivo .bib
+\bibliography{projeto}
+
+% Apêndice(s)
+% \SweaveInput{apendice}
+% \SweaveInput{apendice2}
+
+% Fim do texto
+\end{document}
