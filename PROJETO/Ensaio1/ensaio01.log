@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  25 NOV 2014 03:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  25 NOV 2014 15:26
 entering extended mode
  %&-line parsing enabled.
 **ensaio01.tex
@@ -1200,44 +1200,75 @@ l.484
 Cap\'{\i }tulo 2.
 [5
 
-]
-Overfull \hbox (17.70297pt too wide) in paragraph at lines 511--511
-[]\T1/aer/bx/n/14.4 Modelos Tempo-Dependentes e Mo-de-los Estado-Dependentes 
- []
+] [6] [7]
+! Undefined control sequence.
+l.539 ... do \emph{Consumer Price Indices} e \epmh
+                                                  {Harmonized Consumer Price...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[6] [7] (./ensaio01.bbl [8] [9
+
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+ [8]
+[9] [10
+
+]
+Cap\'{\i }tulo 3.
+[11
+
+] <WebScraping.png, id=242, 1844.8925pt x 1324.95pt>
+File: WebScraping.png Graphic file (type png)
+ <use WebScraping.png>
+[12 <./WebScraping.png (PNG copy)>]
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+ [13]
+
+LaTeX Warning: Reference `ap1' on page 14 undefined on input line 595.
+
+[14] [15] [16] (./ensaio01.bbl [17] [18
 
 ])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 97.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [10] (./ensaio01.aux) ) 
+AED: lastpage setting LastPage [19] (./ensaio01.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 13154 strings out of 493848
- 193139 string characters out of 1152823
- 310719 words of memory out of 3000000
- 15687 multiletter control sequences out of 15000+50000
- 88685 words of font info for 341 fonts, out of 3000000 for 9000
+ 13250 strings out of 493848
+ 194585 string characters out of 1152823
+ 311144 words of memory out of 3000000
+ 15733 multiletter control sequences out of 15000+50000
+ 90190 words of font info for 358 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,11n,43p,1523b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/
-share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmsy10.pfb>
-Output written on ensaio01.pdf (14 pages, 244017 bytes).
+ 44i,12n,47p,2020b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on ensaio01.pdf (23 pages, 394218 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 51273 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 51290 words of extra memory for PDF output out of 51595 (max. 10000000)
 

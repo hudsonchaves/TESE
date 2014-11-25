@@ -33,7 +33,7 @@
 \SweaveInput{preen01.Rnw}
 \SweaveInput{cap1en01.Rnw}
 \SweaveInput{cap2en01.Rnw}
-% \SweaveInput{cap3.Rnw}
+\SweaveInput{cap3en01.Rnw}
 % \SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 

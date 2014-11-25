@@ -4,6 +4,11 @@
 Ball, L. and Mankiw, N.~G. (1994).
 \newblock A sticky-price manifesto.
 
+\bibitem[Barro, 1972]{barro1972theory}
+Barro, R.~J. (1972).
+\newblock A theory of monopolistic price adjustment.
+\newblock {\em The Review of Economic Studies}, pages 17--26.
+
 \bibitem[Bils and Klenow, 2004]{bils2004some}
 Bils, M. and Klenow, P.~J. (2004).
 \newblock Some evidence on the importance of sticky prices.
@@ -35,6 +40,11 @@ Coenen, G., Levin, A.~T., and Christoffel, K. (2007).
   aggregate price-setting behavior.
 \newblock {\em Journal of Monetary Economics}, 54(8):2439--2466.
 
+\bibitem[Colosimo and Giolo, 2006]{colosimo2006analise}
+Colosimo, E.~A. and Giolo, S.~R. (2006).
+\newblock An{\'a}lise de sobreviv{\^e}ncia aplicada.
+\newblock In {\em ABE-Projeto Fisher}. Edgard Bl{\"u}cher.
+
 \bibitem[Dhyne et~al., 2006]{dhyne2006price}
 Dhyne, E., Alvarez, L.~J., Le~Bihan, H., Veronese, G., Dias, D., Hoffmann, J.,
   Jonker, N., L{\"u}nnemann, P., Rumler, F., and Vilmunen, J. (2006).
@@ -48,10 +58,22 @@ Dotsey, M., King, R.~G., and Wolman, A.~L. (1999).
   and output.
 \newblock {\em Quarterly journal of Economics}, pages 655--690.
 
+\bibitem[Golosov and Lucas~Jr, 2007]{golosov2007menu}
+Golosov, M. and Lucas~Jr, R.~E. (2007).
+\newblock Menu costs and phillips curves.
+\newblock {\em Journal of Political Economy}, 115(2).
+
 \bibitem[Gouvea, 2007]{gouvea2007nominal}
 Gouvea, S. (2007).
 \newblock Nominal price rigidity in brazil: A micro evidence approach.
 \newblock Technical report, Mimeo. Banco Central do Brasil.
+
+\bibitem[IBGE, 2013]{ibgemetodos}
+IBGE (2013).
+\newblock {\em Sistema Nacional de {\'I}ndices de Pre{\c{c}}os ao Consumidor -
+  M{\'e}todos de C{\'a}lculo}.
+\newblock Diretoria de Pesquisas - Instituto Brasileiro de Geografia e
+  Estat{\'i}stica (IBGE).
 
 \bibitem[Klenow and Kryvtsov, 2008]{klenow2008state}
 Klenow, P.~J. and Kryvtsov, O. (2008).
@@ -78,6 +100,11 @@ Mankiw, N.~G. (1985).
   monopoly.
 \newblock {\em The Quarterly Journal of Economics}, pages 529--537.
 
+\bibitem[Manning et~al., 2008]{manning2008introduction}
+Manning, C.~D., Raghavan, P., and Sch{\"u}tze, H. (2008).
+\newblock {\em Introduction to information retrieval}, volume~1.
+\newblock Cambridge university press Cambridge.
+
 \bibitem[Matos and Barros, 2009]{matos2009comportamento}
 Matos, S. and Barros, R. (2009).
 \newblock Comportamento dos pre{\c{c}}os no brasil: evid{\^e}ncias utilizando
@@ -94,9 +121,19 @@ Rotemberg, J.~J. (1982).
 \newblock Sticky prices in the united states.
 \newblock {\em The Journal of Political Economy}, pages 1187--1211.
 
+\bibitem[Sheshinski and Weiss, 1977]{sheshinski1977inflation}
+Sheshinski, E. and Weiss, Y. (1977).
+\newblock Inflation and costs of price adjustment.
+\newblock {\em The Review of Economic Studies}, pages 287--303.
+
 \bibitem[Taylor, 1980]{taylor1980aggregate}
 Taylor, J.~B. (1980).
 \newblock Aggregate dynamics and staggered contracts.
 \newblock {\em The Journal of Political Economy}, pages 1--23.
+
+\bibitem[Varian, 2014]{varian2014big}
+Varian, H.~R. (2014).
+\newblock Big data: New tricks for econometrics.
+\newblock {\em The Journal of Economic Perspectives}, 28(2):3--27.
 
 \end{thebibliography}
