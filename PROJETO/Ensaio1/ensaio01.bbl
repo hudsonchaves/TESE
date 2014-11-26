@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Aucremanne and Dhyne, 2005]{aucremanne2005time}
+Aucremanne, L. and Dhyne, E. (2005).
+\newblock Time-dependent versus state-dependent pricing: a panel data approach
+  to the determinants of belgian consumer price changes.
+
 \bibitem[Ball and Mankiw, 1994]{ball1994sticky}
 Ball, L. and Mankiw, N.~G. (1994).
 \newblock A sticky-price manifesto.
@@ -8,6 +13,17 @@ Ball, L. and Mankiw, N.~G. (1994).
 Barro, R.~J. (1972).
 \newblock A theory of monopolistic price adjustment.
 \newblock {\em The Review of Economic Studies}, pages 17--26.
+
+\bibitem[Baudry et~al., 2004]{baudry2004price}
+Baudry, L., Le~Bihan, H., Sevestre, P., and Tarrieu, S. (2004).
+\newblock Price rigidity in france--evidence from consumer price micro-data.
+\newblock Technical report, ECB Working Paper.
+
+\bibitem[Baumgartner et~al., 2005]{baumgartner2005frequently}
+Baumgartner, J., Glatzer, E., Rumler, F., and Stiglbauer, A. (2005).
+\newblock How frequently do consumer prices change in austria?: evidence from
+  micro cpi data.
+\newblock Technical report, Citeseer.
 
 \bibitem[Bils and Klenow, 2004]{bils2004some}
 Bils, M. and Klenow, P.~J. (2004).
@@ -33,6 +49,12 @@ Calvo, G.~A. (1983).
 Cavallo, A.~F. (2010).
 \newblock {\em Scraped data and prices in macroeconomics}.
 \newblock Harvard University.
+
+\bibitem[Cecchetti, 1986]{cecchetti1986frequency}
+Cecchetti, S.~G. (1986).
+\newblock The frequency of price adjustment: A study of the newsstand prices of
+  magazines.
+\newblock {\em Journal of Econometrics}, 31(3):255--274.
 
 \bibitem[Coenen et~al., 2007]{coenen2007identifying}
 Coenen, G., Levin, A.~T., and Christoffel, K. (2007).
@@ -81,8 +103,8 @@ Klenow, P.~J. and Kryvtsov, O. (2008).
   us inflation?
 \newblock {\em The Quarterly Journal of Economics}, 123(3):863--904.
 
-\bibitem[LOPES, 2008]{lopes2008rigidez}
-LOPES, L. (2008).
+\bibitem[Lopes, 2008]{lopes2008rigidez}
+Lopes, L. (2008).
 \newblock {\em A rigidez nominal de pre{\c{c}}os na cidade de S{\~a}o Paulo:
   evid{\^e}ncias baseadas em microdados do {\'\i}ndice de pre{\c{c}}os ao
   consumidor da Fipe. 2008}.
@@ -93,6 +115,10 @@ LOPES, L. (2008).
 Lucas, R.~E. (1972).
 \newblock Expectations and the neutrality of money.
 \newblock {\em Journal of economic theory}, 4(2):103--124.
+
+\bibitem[Lunnemann and Math{\"a}, 2005]{lunnemann2005consumer}
+Lunnemann, P. and Math{\"a}, T.~Y. (2005).
+\newblock Consumer price behaviour in luxembourg: evidence from micro cpi data.
 
 \bibitem[Mankiw, 1985]{mankiw1985small}
 Mankiw, N.~G. (1985).
