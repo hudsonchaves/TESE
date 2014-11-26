@@ -4,7 +4,43 @@
 
 \chapter{REVISÃO BIBLIOGRÁFICA}\label{cap2}
 
-\section*{Preços Rígidos e Preços Flexíveis}
+\section*{MODELOS DE PRECIFICAÇÃO}
+
+Existem diversas abordagens teóricas na literatura de modelos de rigidez nominal em nível individual. Eles são baseados em várias hipóteses para os preços não se ajustarem: Contratos de Calvo/Taylor, Custo de Menu, Informação Rígida, Ira do Cliente. Na sequência, revisamos cada uma destas hipóteses e suas implicações para os modelos de precificação.
+
+\subsection*{Contratos de Calvo/Taylor}
+
+Preços nominais de acordo com \citet{taylor1980aggregate} são fixos por um certo número de períodos. Se as alterações nos preços fossem perfeitamente escalonados ao longo do tempo, a duração dos preços nominais permaneceriam constantes para todas as firmas. No modelo de Taylor, os preços são fixos por $N$ períodos e a taxa de risco é zero para todas as durações exceto $N$. 
+
+No modelo de \citet{calvo1983staggered} a probabilidade de um preço mudar é constante. Em cada período, uma proporção fixa de firmas podem alterar seus preços, as firmas remanescentes mantêm seus preços nominais fixos. A probabilidade de ser capaz de mudar preços é a mesma para todas as firmas, independemente de quando elas mudaram seus preços pela última vez. Isto significa que a função risco é constante. 
+
+Os modelos de Taylor e Calvo são insuficientes para gerar bastante persistência do produto e da inflação a choques de política monetária (Moore,1995;Chari et al., 2000; Christian et al., 2005) . 
+
+Uma popular justificativa teórica é adicionar indexação ao modelo de Calvo (Smets e Wouters, 2003;Woodfor, 2003; Christiano et al., 2005). O preço é definido no começo do contrato e para a duração do contrato este é aumentado pela inflação do período. Embora seja possível o modelo de Calvo com indexação modelar a persistência da inflação e do produto, ele tem o custo de ter os preços alterando em todo o período. 
+
+Os modelos de Taylo e Calvo generalizados são introduzidos para explicar a persistência da inflação e do produto sendo consistentes com a evidência micro de rigidez nominal. No modelo generalizado de Taylor, existem muitos setores com diferentes tamanho de preços e dentro de cada setor existem um simples processo de Taylor. No modelo generalizado de Calvo, a probabilidade de reposição é dependente da duração. Adicionalmente, podemos modelar a estratégia de definição dos preços como um modelo de Calvo com múltiplos setores, que é um caso especial do modelo generalizado de Calvo. Uma característica chave desses modelos generalizados é que eles refletem a grande heterogeneidade observada em dados individuais. A rigidez de preços varia entre setores. Na presença de complementariedade nos preços os setores de baixo ajuste tem um efeito maior e disproporcional sobre todos os ajustes de preços, retardando a resposta do preço e aumentando a resposta do produto a choques. Quando uma economia heterogênea é atingida por um choque, o ajustamento inicial ocorre principalmente em empresas de setores com ajuste rápido. Com o passar do tempo, uma grande proporção das firmas que ainda tem que ajustar são firmas de setores com ajustamento mais lento. Em outras palavras, o processo de ajuste é dominado inicialmente por ajustes de alta frequência e depois por ajustes de baixa frequência. 
+
+Como proposto por Dixon (2012), pode-se relacionar o modelo generalizado de Taylor com dados individuais e olhar a distribuição cross-sectional da duração entre firmas e atrelar o modelo generalizado de Calvo através da função de risco. 
+
+\subsection*{Custo de Menu}
+
+Os modelos de custo de menu assumem que a mudança no preço é custosa e esse custo impede que as firmas mudem seus preços continuamente. Sheshinki e Weiss (1977) mostraram que na presença de custo de alteração nos preços, a política ótima de preços é a do tipo $(S,s)$. $S$ e $s$ indicam o limite superior e inferior para o preço real, respectivamente. Uma vez que o preço real encontra-se dentro dos limites, o preço nominal será mantido constante. Durante o período de precificação, a política ótima é um tipo de política estado-contingente.
+
+Os modelos de custo de menu usualmente são resolvidos usando métodos numéricos, assim não há expressão analítica para a taxa de risco. Na maioria das calibrações realizadas por investigações anteriores, o risco é crescente com a duração.
+
+\subsection*{Informção Rígida}
+
+Assumem que é custoso para as firmas coletar informações sobre as condições econômicas correntes (Mankiw e Reis, 2002). Novas informações sobre o estado da economia tem sido adotadas e um novo padrão de preços ótimos são atualizadas em cada período. Informações desatualizadas são usadas para tomar decisões de preço pelo resto das empresas. A inflação, portanto, depende das expectativas anteriores da inflação e produto correntes.
+
+Em função dos efeitos reais substancialmente maiores e persistentes serem resultados de choques monetários, o modelo de informação rígida ajusta fatores macroeconômicos melhores. Contudo, na ausência de outras fricções, alguma forma de indexação não importando se é geral, setorial ou em nível de preços, é envolvida no planejamento do preço ótimo das firmas. Portanto, todas as firmas mudam seus preços em todo o tempo em modelos de rigidez de informação. Este argumento, contudo, é contraditório nas evidências empíricas baseadas sobre dados individuais. Estudos anteriores fazem tentativas para resolver este problema por combinar rigidez de informação com custo de menu (klenow e Willis, 2006; Knotek, 2006). Uma economia em que as firmas se deparam tanto com custo de menu e o custo de conhecer as condições macroeconômicas precisa ser considerada. Dois métodos que as firmas podem adotar para obter informações é pagar os custos ou aprender as ações de outras empresas. Isto resulta em uma externalidade da informação e encoraja as firmas a atrasar o ajuste de preço.
+
+\subsection*{Ira do Cliente}
+
+Rotemberg (2005) desenvolveu um modelo para explicar a rigidez de preços. Este modelo indica que clientes sempre analisam as decisões de precificação das firmas dependendo da percepção de justiça. Se os clientes estão convictos que os preços não são justos, eles terão reações adversas para produtos ou serviços relevantes. Assim, firmas podem abandonar alterações nos preços para evitar a ira do cliente. 
+
+Porém, consumidores não terão reação negativa e aceitam os ajustes de preços sobre as circuntâncias de rápida inflação. As empresas alterarão seus preços dentro de um calendário pertinente de forma que os clientes desenvolvam suas crenças.xvi 
+
+\section*{PREÇOS RÍGIDOS E PREÇOS FLEXÍVEIS}
 
 \citet{ball1994sticky} argumentam que a politica monetária afeta a atividade econômica real e que a principal razão para essa afirmação são as evidências históricas, especialmente os inúmeros episódios em que as contrações monetárias causaram recessões. Uma vez assumida a hipótese de não-neutralidade monetária, os macroeconomistas dividem-se quanto à melhor maneira de explicar flutuações econômicas de curto prazo. \citet{ball1994sticky} acreditam que a rigidez nominal dos preços fornece a explicação mais natural para a não-neutralidade monetária, dadas as evidências microeconômicas de que muitos preços são, de fato, rígidos. Outros economistas, entretanto, desenvolveram modelos com preços flexíveis e substituíram a rigidez nominal dos preços por alguma outra imperfeição nominal para geral o resultado de não-neutralidade monetária. 
 
@@ -14,7 +50,7 @@ A vertente novo-keynesiana estabelece a hipótese de existência de rigidez nomi
 
 Neste contexto, muitos modelos macroeconômicos de preços rígidos baseados em fundamentos microeconômicos têm sido desenvolvidos. As hipóteses desses modelos envolvem, em grande medida, características acerca do comportamento microeconômico de determinação de preços adotados pelos agentes. A busca da construção de modelos macroeconômicos cada vez mais apurados fez emergir a necessidade de verificar empiricamente alguns dos aspectos microeconômicos constantes nesses modelos. 
 
-\section*{Tempo-Dependentes e Estado-Dependentes}
+\section*{MODELOS TEMPO-DEPENDENTE E ESTADO-DEPENDENTE}
 
 % Em modelos de rigidez de preços tempo-dependentes, o tempo de mudança no preço é exógeno. Em particular, uma firma pode definir seu preço $N$ períodos à frente (Fisher, 1977), apenas a cada $N$ períodos (\citet{taylor1980aggregate}) ou aleatoriamente (\citet{calvo1983staggered}). Os modelos de Taylor e Calvo apresentam escalonamento exógeno das variações de preços entre empresas na economia. Ou seja, os preços s?o reajustados de forma não coincidente. Como um resultado deste escalonamento, a fração de firmas ajustando seus preços é constante de período a período. Quando a demanda aumenta após uma expansão monetária, apenas uma fração de todos os preços aumentam e assim, o produto agregado real cresce. 
 % 
@@ -32,7 +68,7 @@ Modelos estado-dependentes, começam com os modelos de custo de menu de \citet{b
 
 Bakhshi et al. (2004) mostraram que a curva de Phillips derivada do modelo de \citet{dotsey1999state} tem uam forma complexa. Ela depende não apenas dos correntes \emph{gaps} do produto e a taxa de inflação esperada no próximo período, mas também sobre as taxas de inflação esperada em alguns períodos passados e futuros. Assim, independentemente de modelos tempo-dependentes ou estado-dependenetes, a curva de Phillips tem a forma complexa se uma função risco não é plana como no modelo de Calvo.
 
-\section*{Trabalhos Utilizando Microdados para avaliação da rigidez de preços}
+\section*{ESTUDOS EMPÍRICOS}
 
 Conforma salientado, existem trabalhos nacionais e internacionais que utilizaram microdados de preços ao consumidor para analisar a rigidez nominal nos preços. Um ponto forte deste tipo de trabalho é a viabilidade no acompanhamento do preço de um determinado produto vendido em uma loja específica ao longo do tempo. Assim, é possível comparar o grau de rigidez em vários níveis (setores, cidades, economia como um todo, produtos, ...).
 
