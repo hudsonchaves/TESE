@@ -1,0 +1,50 @@
+% Faz com que o ínicio do capítulo sempre seja uma página ímpar
+\cleardoublepage
+
+% Inclui o cabeçalho definido no meta.tex
+\pagestyle{fancy}
+
+% Números das páginas em arábicos
+\pagenumbering{arabic}
+
+\chapter{INTRODUÇÃO/MOTIVAÇÃO}\label{introen02}
+
+Na atual geração de modelo monetários os efeitos de política monetária estão relacionados à velocidade da reação do nível de preços agregado à um disturbio nominal. O ajustamento dos preços agregados por sua vez, depende de dois fatores. Um é o preço definido ótimo que é o ajuste escolhido pelas empresas e o outro é a fração de firmas que estão alterando seus preços. Com a exceção de alguns modelos estado-dependentes microfundamentados, a maioria das pesquisas sobre rigidez de preços limita-se em abordar a decisão de alteração ótima nos preços, mas deixando o tempo de ajustamento ser exógeneamente dado por alguma hipótese simplificadora (ex.: modelos incorporando as hipótese de \citet{taylor1980aggregate} ou \citet{calvo1983staggered}). Em termos mais técnicos, isso equivale a restringir a função de risco de alterar os preços à uma forma específica e estudar outras características sobre as bases destas hipóteses. 
+
+Recentemente, a função de risco agregado de alteração nos preços permanece um tópico ignorado na literatura macroeconômica. Ela começa a chamar a atenção porque os concorrentes modelos teóricos de rigidez de preços fornecem uma clara correspondência entre específicas funções de risco agregadas e implicações para a dinâmica macroeconômica e política monetária. Um trabalho pioneiro de \citet{wolman1999sticky} e \citet{kiley2002partial} demonstraram que a dinâmica agregada seria sensível à função risco subjacente à diferentes regras de precificação. Por esta razão, a função de risco agregado fornece uma nova métrica para selecionar modelos teóricos e identificar o mecanismo de propagação mais relevante para os choques de política monetária. 
+
+Apesar de seu uso, estudos empíricos da função de risco agregado são raros na literatura de macro. Por contraste, evidências do rápido crescimento de microdados se tornoram viáveis nos anos recentes. Contudo, autores argumentam que é a função de riscro agregado de grande interesse para macroeconomistas e ela é importante para distinguir entre as funções de risco macro e micro. O risco agregado é definido como a probabilidade do ajuste de preços reagir à choques agregados. Em modelos macroeconômicos teóricos, essas taxas de risco podem ser claramente mapeadas no impulso resposta das variáveis agregadas. Por contraste, o mapeamento entre funções de risco micro e a dinâmica macroeconômica é muito mais complicado. Por exemplo, \citet{caplin1987menu} demonstraram que quando o efeito seleção está presente, a economia agregada está completamente imune à rigidez de preços em nível micro e assim, não tem nenhum efeito real da política monetária. As funções de risco estimadas de microdados são portanto um susbstituo não perfeito para a função de risco agregado definida em modelos teóricos. Além dessa consideração teórica, existem também armadilhas empíricas que causam atenção na interpretação de taxas de risco micro. Primeiro, taxas de risco micro são tipicamente maiores do que taxas de risco agregado, porque preços individuais reagem tanto à choques agregados quanto choques idiossincráticos. E é muito difícil separá-los com um conjunto de microdados. Segundo, evidências da forma da função risco de estudos microeconométricos não são conclusivas. Microdados diferem substancialmente na quantidade de bens incluídos, os países e período temporal analisado e assim, torna difícil comprarar seus resultados e mesmo embora os microdados estão se tornando viáveis, eles ainda são de curto prazo comparado com séries temporais agregadas. É razoável pensar que a forma das funções de risco dependem das condições econômicas subjacentes e portanto, alterariam ao longo dos períodos dos dados coletados. 
+
+O objetivo deste ensaio é estimar as funções de risco de definição dos preços agregados diretamente das séries temporais. Para isto, primeiro será preciso construir um modelo DSGE completamente especificado apresentando rigidez nominal que permite uma função de risco flexível de definição de preços. Assim, derivar-se-á uma curva de Phillpis novo-keynesiana generalizada e então estmiraremos esse modelo com uma abordagem Bayesiana. A identificação de funções de risco agregado é possível dado que o fato de que a taxa de inflação pode ser decomposta em preços definidos no presente e no passado e sua composição é determinada pela função de risco agregado. A derivação da curva de Phillips novo-keynesiana generalizada vincula esse efeito de composição à função de risco de modo que apenas dados agregados são necessários para extrair informação sobre a função de risco de ajuste de preços. A vantagem deste método de identificação é que, primeiro, ele é baseado sobre uma hipótese genérica do comportamento do nível de preços das firmas, fazendo o mapeamento entre a função de risco e a dinâmica agregada robusto à modelagem de rigidez nos preços. Em adição, este método identifica funções de risco agregado a partir de flutuações do nível de preços agregado de modo que efeitos de choques idiossincráticos são removidos. Contudo, este método náo está livre de outros problemas de identificação que prevalecem na estimação de modelos Novo-Keynesianos como por exemplo, equivalência observacional da elasticidade da oferta de trabalho. 
+
+Para estimar a função de risco usaremos os dados mensais do Índice Nacional de Preços ao Consumidor Amplo (ICPA), taxa de crescimento do produto interno bruto (PIB) e a Selic.  
+
+
+\subsection*{JUSTIFICATIVA}
+
+A dinâmica do comportamento dos preços individuais proporciona vários desdobramentos que são bastante debatidos na literatura dado os impactos que podem causar. Não compreender este tipo de comportamento levou a distintas abordagens para a análise da velocidade e intensidade de transmissão da política monetária. Além disso, compreender as estratégias de definição de preços das firmas levaria ao aprimoramento de modelos teóricos cujas abordagens e conclusões podem sofrer alterações expressivas na presença de fatos estilizados. 
+
+A falta de estudos que gerassem empiricamente um diagnóstico da definição e grau de rigidez de preços individuais foi um limitador por diversas décadas em função da falta de informações estatísticas no nível de microdados que pudessem servir de base para estas análises. Porém, há alguns anos a disponibilização de preços coletados pelos órgãos governamentais tanto nacionais quanto internacionais, proporcionaram o surgimento de pesquisas que avaliassem o comportamento dos preços em nível de microdados (\citet{bils2004some,nakamura2008five,klenow2008state,dhyne2006price,gouvea2007nominal,matos2009comportamento,lopes2008rigidez,bunn2012examining}). 
+
+Porém, ainda existe um fator limitante nestes estudos, pois concentram-se em mercados específicos, não possibilitando análises generalizadas aos diversos setores da economia, pois as pesquisas são reféns das características dos dados utilizados. Também, dada a importância do tema para os tomadores de decisão em nível de política monetária, é preciso maior dinâmica na análise e não apenas um olhar para o passado. 
+
+Assim, o presente ensaio do projeto de tese apresenta o uso da tecnologia de \emph{web scraping} para coletar preços diretamente das páginas das empresas que possuem sites de vendas e por conseguinte, contribuir para a avaliação da rigidez de preços de uma forma mais dinâmica dadas as características do processo de coleta. Estudos empiricos já mostraram a importância de dados coletados da \emph{web} na avaliação dos pressupostos de rigidez de preços e proposição de medida de inflação oriunda de informações \emph{online} (\citet{cavallo2010scraped}).
+
+\subsection*{OBJETIVOS}
+
+O objetivo geral deste ensaio é avaliar empiricamente a rigidez nominal dos preços na economia brasileira por meio de dados coletados da \emph{web}, bem como, propor um índice de inflação oriundo da mesma fonte de dados que seja estatisticamente significante para o uso dos tomadores de decisões econômicas.
+
+Dentro deste escopo, os seguintes questionamentos pretendem ser avaliados:
+
+\begin{itemize}
+  \item Quão frequente os preços se alteram?
+  \item Como podemos lidar com o problema de censura e amostragem quando a função risco é estimada a partir dos dados coletados da internet?
+  \item A probabilidade de mudança dos preços pode variar ao longo da duração dos preços?
+  \item Como podemos derivar a distribuição entre firmas que seja consistente com uma dada frequência média de variações nos preços?
+  \item Como podemos avaliar o efeito de variáveis explicativas sobre a taxa de risco?
+  \item Como podemos controlar para heterogeneidade não observada quando a função risco é estimada?
+  \item Podemos construir um modelo $Ss$ tempo-variante que tenha implicações consistentes com as microevidências encontradas para os dados coletados da internet?
+  \item Os modelos DSGE sobre a hipóte de distribuição de Calvo se comportam de uma maneira similar aos modelos calibrados com os dados coletados da internet?
+\end{itemize}
+
+
