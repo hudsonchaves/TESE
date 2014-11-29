@@ -2,35 +2,72 @@
 \cleardoublepage
 \pagestyle{fancy}
 
-\chapter{METODOLOGIA}\label{cap3}
+\chapter{METODOLOGIA}\label{cap3en02}
 
-\section*{WEB SCRAPING}
+\section*{O MODELO}
 
-O surgimento da internet, em particular a Web (\emph{Web Wide Word}) trouxe um crescimento exponencial nas disposições de informações. Embora muitas dessas informações sejam úteis, elas raramente estão de uma forma que podemos utilizá-las, pois ainda é comum pessoas gastarem horas na coleta manual de dados de páginas da web. Especificamente, apesar de disponibilidade, poucos trabalhos acadêmicos em Economia utilizam desta fonte de dados para análise econômica empírica. Tal característica pode ser dada pela dificuldade dos pesquisadores na área em lidar com linguagem de programação que demandam maior conhecimento de computação. 
+Neste capítulo, apresentamos o modelo DSGE de preços rígidos devido à rigidez nominal. A base do modelo é oriunda do trabalho de \citet{yao2010aggregate} que introduziu rigidez nominal por meio de uma forma geral da função de risco. Na literatura teórica, o modelo geral de tempo-dependente foi delineado pela primeira vez em \citet{wolman1999sticky}, que estudaram alguns exemplos simples e encontraram que a dinâmica da inflação é sensível à diferentes regras de precificação. Modelos similares foram estudados por \citet{mash2004optimising} e \citet{yao2009cost}. Uma função risco de definição dos preços é definida como a probabilidade do ajuste no preço condicional ao período de tempo decorrido deste a última alteração no preço. Neste modelo, a função risco é uma função discreta que toma valores entre zero e um sobre seu domínio temporal. A maior parte de modelos conhecidos de precificação de preços na literatura podem ser mostrado de forma que as funções de risco Por exemplo, a hipótese de \citet{calvo1983staggered} implica uma função de risco constante ao longo de topo o horizonte infinito.
 
-Em recente publicação, \citet{varian2014big} salienta que as técnicas utilizadas na Ciência da Computação e outras áreas correlatas para manipular e analisar dados, têm muito a oferecer. \citet{varian2014big} defende que economistas deveriam conhecer melhor esses métodos e usá-los em seus trabalhos. Além disso, \citet{varian2014big} cita a comumente colaboração entre os departamentos de Ciência da Computação e Estatística nas universidades dos EUA. Porém, o autor espera que em um futuro próximo os estudantes de econometria tenham maior colaboração com esses perfis e assim, contribuir para a pesquisa econômica empírica.
+\subsection*{Familia Representativa}
 
-Uma metodologia que facilita o processo de coleta de dados da web é conhecida como \emph{web scraping} que envolve escrever algoritmos que executam automaticamente o que nós fazemos manualmente quando navegamos por uma página de um site de e-commerce, por exemplo. Além disso, necessita-se de pouco conhecimento em programação para iniciar o processo de coleta de dados da internet. Segundo \citet{manning2008introduction} \emph{web scraping} é o processo de tirar informações desestruturadas de páginas da web e transformá-las em informações estruturadas que podem ser usadas para análise. 
+Uma familia representativa que vive infinitamente obtém utilidade a partir do consumo composto do bem $C_{t}$ e sua oferta de trabalho $L_{t}$ e maximiza uma soma discontada da utilidade da forma:
 
-A maior parte das páginas de sites são construídas usando uma linguagem de codificação estruturada chamada de \emph{HyperText Markup Language} (HTML). Este código tem “\emph{tags}”, tais como $<center>$ e $<bold>$, que determinam o estilo e localização do texto em uma página. Estas \emph{tags} tendem a permanecer constantes ao longo do tempo, uma vez que proporcionam um “\emph{look and feel}” distinto para cada página. Por contraste, a informação dentro dessas \emph{tags}, tais como preço de produtos, mudam ao longo do tempo. O software de \emph{scraping} pode ser ensinado a utilizar as \emph{tags} em HTML pata localizar informações relevantes sobre um produto e guarda-las em um banco de dados. A repetição desse processo todos os dias produz um banco de dados em formato de painel com um registro por produto por dia. Em adição, o endereço da página (URL) onde cada produto é localizado pode ser usado para classificar produtos em categorias padronizadas. 
+\begin{equation}
+\max _{ \left\{ { C }_{ t },{ L }_{ t },{ B }_{ t } \right\}  }{ { E }_{ 0 }\left[ \sum _{ t=0 }^{ \infty  }{ { \beta  }^{ t }\left( \frac { { C }_{ t }^{ 1-\delta  } }{ 1-\delta  } -{ \chi  }_{ H }\frac { { L }_{ t }^{ 1+\phi  } }{ 1+\phi  }  \right)  }  \right]  } 
+\end{equation}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{WebScraping}
-  \caption[Figura Simples]{Arquitetura do Sistema de Coleta e Disponibilização dos Dados}
-  \label{fig:01}
-\end{figure}
+\noindent onde $C_{t}$ é um índice de consumo da família produzido usando bens indivíduais $C_{t}(i)$, 
 
-Através de um coletor é possível arquiteturar e executar de forma lógica e escalável todo esse processo. Para que um coletor seja funcional é necessário que o mesmo seja capaz de interagir com páginas da Web, extrair a informação de interesse e estruturar e armazenar os dados para futuras consultas. Em geral, exemplos corriqueiros de coletores podem ser citados como os desenvolvidos pelo Google e Microsoft para atuar na procura por páginas da internet ou outros mais específicos para coleta de preços de produtos como os portais de agregadores como Bom de Faro, Buscapé dentre outros. Assim, como \citet{cavallo2010scraped}, o presente projeto de tese busca de forma inovadora para a economia brasileira, explorar preços coletados de sites de supermercados, farmácias, companhia de energia elétrica, lojas de varelo online, lojas de roupas e calçados, entre outros, e propõe o uso de um sistema de coleta como o apresentado a seguir. 
+\begin{equation}
+{ C }_{ t }(i)={ \left[ \int _{ 0 }^{ 1 }{ { C }_{ t }{ (i) }^{ \frac { \eta -1 }{ \eta  }  } }  \right]  }^{ \frac { \eta  }{ \eta -1 }  }
+\end{equation}
 
-O sistema de coleta de preços está apresentado na Figura~\ref{fig:01}. O coletor recebe como entrada os templates dos sites que se deseja coletar e produz como resposta informações estruturadas com os atributos dos produtos. Para que o coletor seja capaz de realizar a tarefa de extração de informação, o mesmo deve apresentar os seguintes componentes: um componente centralizado capaz de ler instruções e aplicar regras para extração (1 - módulo coletor de dados); ter um conjunto de regras que descreva de forma não ambígua como realizar a coleta dos dados e os atributos de interesse (2 - templates dos webistes de supermercado, por exemplo); ter um banco de dados capaz de lidar com as características dos dados armazenados (3 - módulo de banco de dados); ter uma interface para facilitar o acesso aos dados por meio de outras aplicações ou sistemas web (4 - módulo de disponibilização da informação). Dessa forma, o coletor (1) é o centralizador do processo de coleta de dados, fazendo a interação com os templates (2), os webistes (A) e o módulo de banco de dados (3). Em resumo, o coletor através de um algoritmo inicia o processo de coleta carregando em uma lista os templates de coleta dos websites (2) e em seguida através de um processo iterativo visita o website, coleta os documentos de interesse e realiza a extração das informações indicadas pelo template. Ao final da coleta os dados são estruturados em um formato de documento denominado JSON e armazena-os em um banco de dados NoSQL adequado a essa estrutura de dados. O processo se repete para cada template até que todos os templates sejam avaliados. O algoritmo que descreve esse processo é apresentando em Algoritmo 1. Por fim, além da coleta em si, há um módulo para disponibilizar o acesso a informação coletada. Esse módulo (4) é responsável por permitir de forma segura e racional o uso dos dados coletados por diferentes sistemas e aplicações web existentes (C).
+\noindent onde $\eta>1$ e segue-se que a correspondente demanda que minimiza o custo para $C_{t}(i)$ e o índice de preços baseado em bem-estar, $P_{t}$, são dados por
 
-Segundo \citet{cavallo2010scraped}, preços coletados da internet possuem duas desvantagens: Primeiro, percentual menor de empresas disponibiliza seus produtos e preços na internet em comparação com as lojas físicas. Tal limitação pode ser minimizada ao longo do tempo com uma maior oferta de produtos e serviços na internet. Segundo, os preços coletados da internet não incluem informações sobre as quantidades vendidas o que impede de obter market share e estimativas de elasticidade.
+\begin{equation}
+{ C }_{ t }(i)={ \left( \frac { { P }_{ t }(i) }{ { P }_{ t } }  \right)  }^{ -\eta  }{ C }_{ t }
+\end{equation}
 
-Avaliações futuras precisarão ser feitas de forma que seja capaz explorar se os preços online e off-line se comportam similarmente. Preocupado com tal validação, \citet{cavallo2010scraped} fez pesquisa de preços nas lojas físicas dos supermercados utilizados para coleta de dados da internet. Desta forma, o autor examinou se os preços dos produtos nas lojas físicas eram similares aos preços nos sites. Uma importante característica é que um alto percentual de produtos vendidos nas lojas físicas também era comercializado nos sites em todos os países. O autor comparou os preços tanto em termo de nível quanto em tamanho e intervalo de tempo de alterações nos preços. Tal comportamento é muito importante para a avaliação de rigidez nos preços. Para tanto, o autor criou uma série de mudança de preços para cada produto que recebe valor 1 se o preço aumentou, 0 se o preço permaneceu constante e -1, caso contrário.  Assim, foi possível avaliar se os preços dos produtos nas lojas físicas são semelhantes em nível e em direção de mudança para cada produto e supermercado dos países avaliados por \citet{cavallo2010scraped}.
+\begin{equation}
+{ P }_{ t }={ \left[ \int _{ 0 }^{ 1 }{ { P }_{ t }{ (i) }^{ 1-\eta  } } di \right]  }^{ \frac { 1 }{ 1-\eta  }  }
+\end{equation}
 
-Não obstante, \citet{cavallo2010scraped} apresenta algumas vantagens dos preços coletados da internet que os fazem uma fonte única de informação para análise de rigidez nos preços. Primeiro, pode-se obter preços diários para os produtos e serviços e por conseguinte, reduzir medidas de erro em relação à frequência de cálculo da inflação, analisar promoções de produtos, controles e sincronização nos preços. Segundo, os dados estão disponíveis para vários países, com maior facilidade de acesso e possibilidade de comparação entre países. Terceiro, existem informações detalhadas sobre cada produto e não há substituições forçada de itens como ocorre em estatísticas oficiais de inflação. Por fim, preços coletados da internet estão viáveis em tempo real, sem qualquer atraso para acessá-los. Isto pode ser usado para providenciar estimativas de rigidez nos preços em tempo real.
-  
+Por simplicidade, assumimos que as famílias ofertam unidades homogêneas de trabalho $(L_{t})$ em uma economia de mercado de trabalho competitivo. O fluxo de restrição orçamentária da família no começo do período $t$ é:
+
+\begin{equation}
+{ P }_{ t }{ C }_{ t }+\frac { { B }_{ t } }{ { R }_{ t } } \le { W }_{ t }{ L }_{ t }+{ B }_{ t-1 }+\int _{ 0 }^{ 1 }{ { \pi  }_{ t }(i)di } 
+\end{equation}
+
+\noindent onde ${ B }_{ t }$ é um título de um período e $R_{t}$ denota o retorno nominal bruto no título. ${ \pi  }_{ t }(i)$ representa o lucro nominal de uma firma que vende o bem $i$. \citet{yao2010aggregate} assume que cada família é proprietária de uma porção igual de todas as firmas. Finalmente, esta sequência do fluxo de restrição orçamentária é suplementado com uma condição de transversalidade da forma $\lim _{ T\rightarrow \infty  }{ { E }_{ t }\left[ \frac { { B }_{ t } }{ \prod _{ s=1 }^{ T }{ R_{ s } }  }  \right]  } \ge 0$. A solução para o problema de otimização da família pode ser expressada em duas condições necessárias de primeira ordem. Primeiro, a oferta ótima de trabalho é realcionada ao salário real:
+
+\begin{equation}
+{ \chi  }_{ H }{ L }_{ t }^{ \phi  }{ C }_{ t }^{ \delta  }=\frac { { W }_{ t } }{ { P }_{ t } } 
+\end{equation}
+
+Segundo, a equação de Euler dá a relação entre o caminho de consumo ótimo e os preços dos ativos:
+
+\begin{equation}
+1=\beta { E }_{ t }\left[ { \left( \frac { { C }_{ t } }{ { C }_{ t+1 } }  \right)  }^{ \delta  }\frac { { R }_{ t }{ P }_{ t } }{ { P }_{ t+1 } }  \right] 
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section*{ÍNDICE DE PREÇOS ONLINE}
   
 Para calcular o índice de preços online que será comparado com o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e Índice Nacional de Preços ao Consumidor (INPC) divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE), utilizaremos a abordagem proposta por \citet{cavallo2010scraped}.
