@@ -119,7 +119,9 @@
 %% Referências bibliográficas e afins
 % Formatar as citações no texto e a lista de referências
 %\usepackage{natbib}
+%\usepackage[square,sort,comma,numbers]{natbib}
 \usepackage[authoryear,round,longnamesfirst]{natbib}
+
 % Adicionar bibliografia, índice e conteúdo na Tabela de conteúdo
 % Não inclui lista de tabelas e figuras no índice
 \usepackage[nottoc,notlof,notlot]{tocbibind}

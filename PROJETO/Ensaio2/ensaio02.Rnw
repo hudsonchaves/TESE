@@ -38,7 +38,7 @@
 % \SweaveInput{final.Rnw}
 
 % Formato da bibliografia
-\bibliographystyle{plainnat}
+\bibliographystyle{apalike}
 
 % Arquivo .bib
 \bibliography{projeto}

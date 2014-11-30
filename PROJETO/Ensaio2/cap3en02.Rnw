@@ -50,6 +50,7 @@ Segundo, a equação de Euler dá a relação entre o caminho de consumo ótimo 
 1=\beta {E}_{t}[{(\frac{{C}_{t}}{{C}_{t+1}})}^{\delta}\frac{{R}_{t}{P}_{t}}{{P}_{t+1}}] 
 \end{equation}
 
+
 \section*{Firmas na Economia}
 
 \subsection*{Custo Marginal Real}
@@ -110,16 +111,16 @@ Na economia os preços das firmas são heterogêneos com relação ao tempo dest
     $J$ & $h_{j}=1$ & $\alpha_{J}=0$ & $S_{J}=0$ & $\theta(J)$\tabularnewline
     \hline 
   \end{tabular}
-  \caption{Notações da dinâmica da distribuição da duração dos preços (\emph{vintage})} 
+  %\caption{Notações da dinâmica da distribuição da duração dos preços (\emph{vintage})} 
 \end{center}
 
-Usando a notação da tabela~\ref{tab01en02} é possível escrever a distribuição ex-post das firmas depois do ajustamento de preços $({\tilde{\theta}_{t})$ como:
+Usando a notação da tabela~\ref{tab01en02} é possível escrever a distribuição ex-post das firmas depois do ajustamento de preços $({\tilde{\theta}}_{t})$ como:
 
 \begin{equation}\label{eq13en02}
 {\tilde{\theta}}_{t}(j)=\begin{cases} \sum _{i=1}^{J}{{h}_{t}{\theta}_{t}(i)} ,j=0 \\ {\alpha}_{j}{\theta}_{t}(j),j=1,...,J \end{cases}
 \end{equation}
 
-As firmas que re-otimizam seus preços no período $t$ são caracterizadas com \emph{'Duration 0'} e a proporção destas firmas é dado pelas taxas de risco de todos os grupos de duração multiplicado pelo sua correspondente densidade. As firmas restantes em cada grupo de duração são as firmas que não ajustam seus preços. Quando o período $t$ é longo, esta distribuição ex-post se torna a distribuição ex-ante para o novo período, $({\tilde{\theta}_{t+1})$. Todos os grupos de duração de preços movem para o próximo, porque todos os preços tem idade de um período. Ela produz a distribuição de duração dos preços estacionária, ${\theta}(j)$, para $j=0,1,...,J-1$:
+As firmas que re-otimizam seus preços no período $t$ são caracterizadas com \emph{'Duration 0'} e a proporção destas firmas é dado pelas taxas de risco de todos os grupos de duração multiplicado pelo sua correspondente densidade. As firmas restantes em cada grupo de duração são as firmas que não ajustam seus preços. Quando o período $t$ é longo, esta distribuição ex-post se torna a distribuição ex-ante para o novo período, $({\tilde{\theta}}_{t+1})$. Todos os grupos de duração de preços movem para o próximo, porque todos os preços tem idade de um período. Ela produz a distribuição de duração dos preços estacionária, ${\theta}(j)$, para $j=0,1,...,J-1$:
 
 \begin{equation}\label{eq14en02}
 {\theta}_{j}=\frac{{S}_{j}}{\sum _{j=0}^{J-1}{{S}_{j}}} 
@@ -142,7 +143,7 @@ Dada a forma geral de rigidez nominal introduzida acima, a única heterogeneidad
 Isto produz a seguinte condição necessária de primeira ordem para o preço ótimo:
 
 \begin{equation}\label{eq17en02}
-{P}_{t}^{*}=\frac{\eta}{\eta -1}\frac{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j ^{\eta -1}{MC}_{t+j}]}}{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}]}} 
+{P}_{t}^{*}=\frac{\eta}{\eta -1}\frac{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}{MC}_{t+j}]}}{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}]}} 
 \end{equation}
 
 \noindent onde ${MC}_{t}$ dnota o custo marginal nominal. O preço ótimo é igual ao markup multiplicado por uma soma ponderada dos custos marginais futuros, cujos pesos dependem tas taxas de sobrevida. Em Calvo, onde $S_{j}={\alpha}^{j}$, esta equação reduz à condição de precificação ótima de Calvo.
@@ -155,7 +156,7 @@ Finalmente, dada a distribuição estacionária, ${\theta}(j)$, o preço agregad
 
 \subsection*{Curva de Phillips Novo-Keynesiana}
 
-Nesta seção, derivamos conforme \citet{yao2010aggregate} a Curva de Phillips Novo-Keynesiana para este modelo generalizado. Para isto, primeiro loglinearizamos a equação~\label{eq17en02} em torno do seu preço de \emph{steady state}. As equações de preço ótimo loglinearizadas são obtidas por:
+Nesta seção, derivamos conforme \citet{yao2010aggregate} a Curva de Phillips Novo-Keynesiana para este modelo generalizado. Para isto, primeiro loglinearizamos a equação~\ref{eq17en02} em torno do seu preço de \emph{steady state}. As equações de preço ótimo loglinearizadas são obtidas por:
 
 \begin{equation}\label{eq19en02}
 {\hat{p}}_{t}^{*}={E}_{t}[\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Omega}}({\hat{mc}}_{t+j}+{\hat{p}}_{t+j})] 
@@ -181,7 +182,7 @@ A partir de manipulações algébricas sobre as equações~\ref{eq19en02} e~\ref
 O sistema de equilíbrio geral consiste de condições de equilíbrio derivadas a partir dos problemas de otimização dos agentes economicos, condições de equilíbrio de mercado e uma equação de política monetária. As condições de equilíbrio de mercado requerem preços reais e bons mercados, enquanto a política monetária determina o valor nominal da economia real. A regra de Taylor para fechar o modelo será:
 
 \begin{equation}\label{eq22en02}
-{I}_{t}={I}_{t-1}^{{\rho}_{i}}{[{(\frac{{P}_{t}}{{P}_{t-1}\tilde{\pi}})}^{{\phi}_{\pi}}{(\frac{{Y}_{t}}{{Y}_{t-1}})}^{{\phi}_{y}} ]}^{1-{\rho}_{i}}{e}^{{q}_{t}}
+{I}_{t}={I}_{t-1}^{{\rho}_{i}}[(\frac{{P}_{t}}{{P}_{t-1}\tilde{\pi}})^{{\phi}_{\pi}}(\frac{{Y}_{t}}{{Y}_{t-1}})^{{\phi}_{y}}]^{1-{\rho}_{i}}{e}^{{q}_{t}}
 \end{equation}
 
 A equação~\ref{eq22en02} é motivada pela taxa de juros suavizada especificada para a regra de Taylor que especifica uma regra de política que o banco central usa para deteminar a taxa de juros nominal na economia, onde ${\phi}_{\pi}$ e ${\phi}_{y}$ denota a resposta de curto prazo da autoridade monetária aos desvios do log da inflação e taxa de crescimento do produto e $q_{t}$ é uma sequência de $i.i.d$ ruído branco com média zero e uma variância finita $(0,{\sigma}_{q}^{2})$. 
