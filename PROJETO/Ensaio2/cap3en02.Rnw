@@ -88,7 +88,7 @@ Além disso, usando a função de produção (~\ref{eq08en02}), a equação de d
 
 \subsection*{Decisão de Precificação sobre Rigidez Nominal}
 
-Nesta seção, introduzimos assim como \citet{yao2010aggregate} uma forma geral de rigidez nominal, que é caracterizada por um conjutno de taxas de risco dependendo do período de tempo desde o último reajuste de preços. \citet{yao2010aggregate} assume que firmas em concorrência monopolítica não podem ajustar seus preços quando quiserem. Ao contrário, oportunidades para re-otimizar os preços são ditadas pelas taxas de risco, $h_{j}$, onde $j$ denota o tempo desde o último ajuste e $j\epsilon {0,J}. $J$ é o número máximo de períodos em que um preço de uma firma pode estar fixo. 
+Nesta seção, introduzimos assim como \citet{yao2010aggregate} uma forma geral de rigidez nominal, que é caracterizada por um conjutno de taxas de risco dependendo do período de tempo desde o último reajuste de preços. \citet{yao2010aggregate} assume que firmas em concorrência monopolítica não podem ajustar seus preços quando quiserem. Ao contrário, oportunidades para re-otimizar os preços são ditadas pelas taxas de risco, $h_{j}$, onde $j$ denota o tempo desde o último ajuste e $j\epsilon {0,J}$. $J$ é o número máximo de períodos em que um preço de uma firma pode estar fixo. 
 
 Na economia os preços das firmas são heterogêneos com relação ao tempo deste sua última alteração e \citet{yao2010aggregate} os chama de \emph{price vintages}. A tabela tal apresenta algumas notações sobre a dinâmica destes preços. 
 
@@ -142,7 +142,7 @@ Dada a forma geral de rigidez nominal introduzida acima, a única heterogeneidad
 Isto produz a seguinte condição necessária de primeira ordem para o preço ótimo:
 
 \begin{equation}\label{eq17en02}
-{ P }_{ t }^{ * }=\frac { \eta  }{ \eta -1 } \frac { \sum _{ j=0 }^{ J-1 }{ { S }_{ j }{ E }_{ t }\left[ { Q }_{ t,t+j }{ Y }_{ t+j }{ P }_{ t+j }^{ \eta -1 }{ MC }_{ t+j } \right]  }  }{ \sum _{ j=0 }^{ J-1 }{ { S }_{ j }{ E }_{ t }\left[ { Q }_{ t,t+j }{ Y }_{ t+j }{ P }_{ t+j }^{ \eta -1 } \right]  }  } 
+{P}_{t}^{*}=\frac{\eta}{\eta -1}\frac{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j ^{\eta -1}{MC}_{t+j}]}}{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}]}} 
 \end{equation}
 
 \noindent onde ${MC}_{t}$ dnota o custo marginal nominal. O preço ótimo é igual ao markup multiplicado por uma soma ponderada dos custos marginais futuros, cujos pesos dependem tas taxas de sobrevida. Em Calvo, onde $S_{j}={\alpha}^{j}$, esta equação reduz à condição de precificação ótima de Calvo.
@@ -150,7 +150,7 @@ Isto produz a seguinte condição necessária de primeira ordem para o preço ó
 Finalmente, dada a distribuição estacionária, ${\theta}(j)$, o preço agregado pode ser escrito como uma soma distribuída de todos os preços ótimos. \citet{yao2010aggregate}, definem o preço ótimo que foi definido $j$ períodos atrás como $P_{t-j}^{*}$. Seguindo o índice de preço agregado da equação~\ref{eq04en02}, o preço agregado é então obtido por:
 
 \begin{equation}\label{eq18en02}
-{ P }_{ t }={ \left( \sum _{ j=0 }^{ J-1 }{ \theta (j){ P }_{ t-j }^{ *1-\eta  } }  \right)  }^{ \frac { 1 }{ 1-\eta  }  }
+{P}_{t}={(\sum_{j=0}^{J-1}{\theta(j){P}_{t-j}^{*1-\eta}})}^{\frac{1}{1-\eta}}
 \end{equation}
 
 \subsection*{Curva de Phillips Novo-Keynesiana}
@@ -158,22 +158,22 @@ Finalmente, dada a distribuição estacionária, ${\theta}(j)$, o preço agregad
 Nesta seção, derivamos conforme \citet{yao2010aggregate} a Curva de Phillips Novo-Keynesiana para este modelo generalizado. Para isto, primeiro loglinearizamos a equação~\label{eq17en02} em torno do seu preço de \emph{steady state}. As equações de preço ótimo loglinearizadas são obtidas por:
 
 \begin{equation}\label{eq19en02}
-{ \hat { p }  }_{ t }^{ * }={ E }_{ t }\left[ \sum _{ j=0 }^{ J-1 }{ \frac { { \beta  }^{ j }S(j) }{ \Omega  }  } \left( { \hat { mc }  }_{ t+j }+{ \hat { p }  }_{ t+j } \right)  \right] 
+{\hat{p}}_{t}^{*}={E}_{t}[\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Omega}}({\hat{mc}}_{t+j}+{\hat{p}}_{t+j})] 
 \end{equation}
 
-\noindent onde $\Omega =\sum _{ j=0 }^{ J-1 }{ { \beta  }^{ j }S(j) }$ e ${ \hat { mc }  }_{ t }=\left( \delta +\phi  \right) { \hat { y }  }_{ t }-\left( 1+\phi  \right) { \hat { z }  }_{ t }$. De um modo semelhante, é possível derivar o log dos desvios do preço agregado através da loglinearização da equação~\ref{eq18en02}.
+\noindent onde $\Omega=\sum_{j=0}^{J-1}{{\beta}^{j}S(j)}$ e ${\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}$. De um modo semelhante, é possível derivar o log dos desvios do preço agregado através da loglinearização da equação~\ref{eq18en02}.
 
 \begin{equation}\label{eq20en02}
-{ \hat { p }  }_{ t }=\sum _{ k=0 }^{ J-1 }{ \theta (k){ \hat { p }  }_{ t-k }^{ * } } 
+{\hat{p}}_{t}=\sum_{k=0}^{J-1}{\theta(k){\hat{p}}_{t-k}^{*}} 
 \end{equation}
 
 A partir de manipulações algébricas sobre as equações~\ref{eq19en02} e~\ref{eq20en02}, obtemos a Curva de Phillips Novo-Keynesiana como segue:
 
 \begin{equation}\label{eq21en02}
-{ \hat { \pi  }  }_{ t }=\sum _{ k=0 }^{ J-1 }{ \frac { \theta (k) }{ 1-\theta (0) } { E }_{ t-k }\left( \sum _{ j=0 }^{ J-1 }{ \frac { { \beta  }^{ j }S(j) }{ \Psi  } { \hat { mc }  }_{ t+j-k }+\sum _{ i=1 }^{ J-1 }{ \sum _{ i=1 }^{ J-1 }{ \frac { { \beta  }^{ j }S(j) }{ \Psi  }  }  } { \hat { \pi  }  }_{ t+i-k } }  \right) -\sum _{ k=2 }^{ J-1 }{ \Phi (k){ \hat { \pi  }  }_{ t-k+1 } }  } 
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{\frac{\theta(k)}{1-\theta(0)}{E}_{t-k}(\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Psi}{\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{\sum_{i=1}^{J-1}{\frac{{\beta}^{j}S(j)}{\Psi}}}{\hat{\pi}}_{t+i-k}})-\sum_{k=2}^{J-1}{\Phi(k){\hat{\pi}}_{t-k+1}}} 
 \end{equation}
 
-\noindent onde $\Phi (k)=\frac{\sum _{j=k}^{J-1}{S(j)}}{\sum _{j=1}^{J-1}{S(j)}}$ e $\Psi =\sum _{k=0}^{J-1}{{\beta}^{j}S(j)}$. Como podemos observar, todos os coeficientes na equação~\ref{eq21en02} são expressos em termos das taxas de não ajuste $({\alpha}_{j}=1-{h}_{j})$ e o fator de desconto subjetivo, $\beta$. Assim, os coeficientes na Curva de Phillips Novo-Keynesiana generalizada vinculam os efeitos dinâmicos de preços redefinidos sobre a inflação à função de risco. Como resultado, a informação sobre as taxas de risco de ajuste de preços podem ser extraídas a partir de dados agregados por meio da estrutura dinâmica da curva de Phillips.
+\noindent onde $\Phi(k)=\frac{\sum _{j=k}^{J-1}{S(j)}}{\sum _{j=1}^{J-1}{S(j)}}$ e $\Psi =\sum _{k=0}^{J-1}{{\beta}^{j}S(j)}$. Como podemos observar, todos os coeficientes na equação~\ref{eq21en02} são expressos em termos das taxas de não ajuste $({\alpha}_{j}=1-{h}_{j})$ e o fator de desconto subjetivo, $\beta$. Assim, os coeficientes na Curva de Phillips Novo-Keynesiana generalizada vinculam os efeitos dinâmicos de preços redefinidos sobre a inflação à função de risco. Como resultado, a informação sobre as taxas de risco de ajuste de preços podem ser extraídas a partir de dados agregados por meio da estrutura dinâmica da curva de Phillips.
 
 
 \section*{Sistema Final de Equações}
@@ -181,39 +181,39 @@ A partir de manipulações algébricas sobre as equações~\ref{eq19en02} e~\ref
 O sistema de equilíbrio geral consiste de condições de equilíbrio derivadas a partir dos problemas de otimização dos agentes economicos, condições de equilíbrio de mercado e uma equação de política monetária. As condições de equilíbrio de mercado requerem preços reais e bons mercados, enquanto a política monetária determina o valor nominal da economia real. A regra de Taylor para fechar o modelo será:
 
 \begin{equation}\label{eq22en02}
-{ I }_{ t }={ I }_{ t-1 }^{ { \rho  }_{ i } }{ \left[ { \left( \frac { { P }_{ t } }{ { P }_{ t-1 }\tilde { \pi  }  }  \right)  }^{ { \phi  }_{ \pi  } }{ \left( \frac { { Y }_{ t } }{ { Y }_{ t-1 } }  \right)  }^{ { \phi  }_{ y } } \right]  }^{ 1-{ \rho  }_{ i } }{ e }^{ { q }_{ t } }
+{I}_{t}={I}_{t-1}^{{\rho}_{i}}{[{(\frac{{P}_{t}}{{P}_{t-1}\tilde{\pi}})}^{{\phi}_{\pi}}{(\frac{{Y}_{t}}{{Y}_{t-1}})}^{{\phi}_{y}} ]}^{1-{\rho}_{i}}{e}^{{q}_{t}}
 \end{equation}
 
-A equação~\ref{eq22en02} é motivada pela taxa de juros suavizada especificada para a regra de Taylor que especifica uma regra de política que o banco central usa para deteminar a taxa de juros nominal na economia, onde ${\phi}_{ \pi}$ e ${\phi}_{y}$ denota a resposta de curto prazo da autoridade monetária aos desvios do log da inflação e taxa de crescimento do produto e $q_{t}$ é uma sequência de $i.i.d$ ruído branco com média zero e uma variância finita $(0,{\sigma}_{q}^{2})$. 
+A equação~\ref{eq22en02} é motivada pela taxa de juros suavizada especificada para a regra de Taylor que especifica uma regra de política que o banco central usa para deteminar a taxa de juros nominal na economia, onde ${\phi}_{\pi}$ e ${\phi}_{y}$ denota a resposta de curto prazo da autoridade monetária aos desvios do log da inflação e taxa de crescimento do produto e $q_{t}$ é uma sequência de $i.i.d$ ruído branco com média zero e uma variância finita $(0,{\sigma}_{q}^{2})$. 
 
 Depois de loglinearizar as equações de equilíbrio em torno do preço flexível de \emph{steady state}, o sistema de equilíbrio geral consiste da Curva de Phillips Novo-Keynesiana generalizada (~\ref{eq23en02}), custo marginal real (~\ref{eq24en02}), a condição intertemporal de otimização da família (~\ref{eq25en02}), a regra de Taylor (~\ref{eq22en02}) e os processos estocásticos exógenos. Na curva IS, é adicionado um choque exógeno, $d_{t}$, para representar disturbios da demanda agregada real.
 
 \begin{equation}\label{eq23en02}
-{ \hat { \pi  }  }_{ t }=\sum _{ k=0 }^{ J-1 }{ { W }_{ 1 }(k){ E }_{ t-k }\left( \sum _{ j=0 }^{ J-1 }{ { W }_{ 2 }(j){ \hat { mc }  }_{ t+j-k }+\sum _{ i=1 }^{ J-1 }{ { W }_{ 3 }(i){ \hat { \pi  }  }_{ t+i-k } }  }  \right) - } \sum _{ k=2 }^{ J-1 }{ { W }_{ 4 }(k){ \hat { \pi  }  }_{ t+1-k } } 
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
 \end{equation}
 
 \begin{equation}\label{eq24en02}
-{ \hat { mc }  }_{ t }=\left( \delta +\phi  \right) { \hat { y }  }_{ t }-\left( 1+\phi  \right) {\hat{z}}_{t}
+{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
 \end{equation}
 
 \begin{equation}\label{eq25en02}
-\delta { E }_{ t }\left[ { \hat { y }  }_{ t+1 } \right] =\delta { \hat { y }  }_{ t }+\left( { \hat { \iota  }  }_{ t }-{ E }_{ t }\left[ { \hat { \pi  }  }_{ t+1 } \right]  \right) +{ d }_{ t }
+\delta{E}_{t}[{\hat{y}}_{t+1}]=\delta{\hat{y}}_{t}+({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
 \end{equation}
 
 \begin{equation}\label{eq26en02}
-{ \hat { \iota  }  }_{ t }=\left( 1-{ \rho  }_{ i } \right) \left( { \phi  }_{ \pi  }{ \hat { \pi  }  }_{ t }+{ \phi  }_{ y }\left( { \hat { y }  }_{ t }-{ \hat { y }  }_{ t-1 } \right)  \right) +{ \rho  }_{ i }{ \hat { \iota  }  }_{ t-1 }+{ q }_{ t }
+{\hat{\iota}}_{t}=(1-{\rho}_{i})({\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}({\hat{y}}_{t}-{\hat{y}}_{t-1}))+{\rho}_{i}{\hat{\iota}}_{t-1}+{q}_{t}
 \end{equation}
 
 \begin{equation}\label{eq27en02}
-{ \hat { z }  }_{ t }={ \rho  }_{ z }\ast { z }_{ t-1 }+{ \epsilon  }_{ t }
+{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
 \end{equation}
 
 \begin{equation}\label{eq28en02}
-{ d }_{ t }={\rho}_{d}\ast { d }_{ t-1 }+{ \varepsilon  }_{ t }
+{d}_{t}={\rho}_{d}\ast {d}_{t-1}+{\varepsilon}_{t}
 \end{equation}
 
 \begin{equation}\label{eq29en02}
-{ q }_{ t }\sim N\left( 0,{ \sigma  }_{ q }^{ 2 } \right) 
+{q}_{t}\sim N\left(0,{\sigma}_{q}^{2}\right) 
 \end{equation}
 
 \noindent onde os pesos $(W_{1},W_{2},W_{3},W_{4})$ na curva de Phillips Novo-Keynesiana generalizada são definidos na equação~\ref{eq21en02}, ${\epsilon}_{t}\sim N\left( 0,{\sigma}_{z}^{2}\right)$ e ${\varepsilon}_{t}\sim N\left( 0,{\sigma}_{d}^{2}\right)$. Desta forma, os parâmetros estruturais são: $(\beta,\delta,\phi,\eta,\phi_{\pi},\phi_{y},\rho_{i},\alpha_{j}s,\rho_{z},\rho_{d},{\sigma}_{z}^{2},{\sigma}_{d}^{2},{\sigma}_{q}^{2})$. Empiricamente, estamos interessados em estimar os valores para esses parâmetros estruturais utilizando a abordagem Bayesiana.
@@ -229,30 +229,30 @@ Assim como \citet{yao2010aggregate}, aplicaremos a abordagem Bayesiana estabelec
 Primeiro, o modelo de expectativas racionais é resolvido por meio do uso de métodos numéricos (Veja \citet{sims2002solving} e \citet{uhlig1998toolkit}) para obter a forma reduzida das equações em suas variáveis predeteminadas e exógenas. Por exemplo, o modelo DSGE linearizado pode ser escrito com um sistema de expectavivas racionais na forma:
 
 \begin{equation}\label{eq30en02}
-{Y}_{0}\left(\mu \right){S}_{t}={Y}_{1}\left(\mu  \right){S}_{t-1}+{Y}_{\epsilon}\left(\mu\right){\epsilon_{t}} +{Y}_{\omega  }\left(\mu  \right) {\omega}_{t}
+{Y}_{0}(\mu){S}_{t}={Y}_{1}(\mu){S}_{t-1}+{Y}_{\epsilon}(\mu){\epsilon_{t}}+{Y}_{\omega  }(\mu) {\omega}_{t}
 \end{equation}
 
-Aqui, ${ S }_{ t }$ é um vetor de todas as variáveis endógenas no modelo, tais como ${\hat{y}}_{t},{\hat{\pi}}_{t},{ \hat{\iota}}_{t}, etc$. O vetor ${\epsilon_{t}}$ empilha os disturbios dos processos exógenos e ${\omega}_{t}$ é composto do erro de previsão das expectativas raionais um passo à frente. As entradas da matriz ${Y}(\mu)$ são funções dos parâmetros estruturais no modelo. A solução para~\ref{eq30en02} pode ser expressa como:
+Aqui, ${S}_{t}$ é um vetor de todas as variáveis endógenas no modelo, tais como ${\hat{y}}_{t},{\hat{\pi}}_{t},{\hat{\iota}}_{t}, etc$. O vetor ${\epsilon_{t}}$ empilha os disturbios dos processos exógenos e ${\omega}_{t}$ é composto do erro de previsão das expectativas raionais um passo à frente. As entradas da matriz ${Y}(\mu)$ são funções dos parâmetros estruturais no modelo. A solução para~\ref{eq30en02} pode ser expressa como:
 
 \begin{equation}\label{eq31en02}
-{ S }_{ t }={ \Psi  }_{ 1 }\left( \mu  \right) { S }_{ t-1 }+{ \Psi  }_{ \epsilon  }\left( \mu  \right) { \epsilon  }_{ t }
+{S}_{t}={\Psi}_{1}(\mu){S}_{t-1}+{\Psi}_{\epsilon}(\mu){\epsilon}_{t}
 \end{equation}
 
-O segundo passo envolve escrever o modelo na forma de espaço de estados. Para tanto, acrescentamos à equação de solução ~\ref{eq31en02} uma equação de medida, que relationa as variáveis teóricas ao vetor de $Y_obs{t}$ observáveis. 
+O segundo passo envolve escrever o modelo na forma de espaço de estados. Para tanto, acrescentamos à equação de solução~\ref{eq31en02} uma equação de medida, que relationa as variáveis teóricas ao vetor de ${Y\_ obs}_{t}$ observáveis. 
 
 \begin{equation}\label{eq32en02}
-{ Y\_ obs }_{ t }=A\left( \mu  \right) +B{ S }_{ t }+{ CV }_{ t }
+{Y\_ obs}_{t}=A(\mu)+B{S}_{t}+{CV}_{t}
 \end{equation}
 
-\noindent onde $A\left( \mu  \right)$ é um vetor de constantes capturando a média de $S_{t}$ e $V_{t}$ é um conjunto de choques às observáveis, incluindo medias de erro. 
+\noindent onde $A(\mu)$ é um vetor de constantes capturando a média de $S_{t}$ e $V_{t}$ é um conjunto de choques às observáveis, incluindo medias de erro. 
 
-Terceiro, quando assume-se que todos os choques na forma de espaço de estados são normalmente distribuídos, pode-se usar o filtro de Kalman (\citet{sargent1989two}) para avaliar a função de verossimilhança das observáveis ($\mu|Y\_ obs^{T}$). Em contraste aos métodos de máxima verossimilhança, a abordagem Bayesiana combina a função de verossimilhança com as densidades a priori $p\left( \mu  \right)$, que inclui todas as informações extra sobre os parâmetros de interesse. A densidade à posteriori $p\left( \mu |{ Y\_ obs }^{ T } \right)$ pode ser obtida pela aplicação do Teorema de Bayes:
+Terceiro, quando assume-se que todos os choques na forma de espaço de estados são normalmente distribuídos, pode-se usar o filtro de Kalman (\citet{sargent1989two}) para avaliar a função de verossimilhança das observáveis ($\mu|Y\_ obs^{T}$). Em contraste aos métodos de máxima verossimilhança, a abordagem Bayesiana combina a função de verossimilhança com as densidades a priori $p(\mu)$, que inclui todas as informações extra sobre os parâmetros de interesse. A densidade à posteriori $p(\mu |{Y\_ obs}^{T})$ pode ser obtida pela aplicação do Teorema de Bayes:
 
 \begin{equation}\label{eq33en02}
-p\left( \mu |{ Y\_ obs }^{ T } \right) \left( \mu |{ Y\_ obs }^{ T } \right) p\left( \mu  \right) 
+p(\mu |{Y\_ obs}^{T})(\mu |{Y\_ obs}^{T})p(\mu) 
 \end{equation}
 
-No último passo, $\mu$ é estimado pela maximização da função de verossimilhança dados os dados ($(\mu |{ Y\_ obs }^{ T } \right)$) reponderada pela densidade à priori $p\left( \mu  \right)$, em que métodos de otimização numérica são usados para encontrar a posteriori para $\mu$ e a inversa da matriz Hessiana. Finalmente, a distribuição a posteriori é gerada por meio do uso do algorítmo Metropolis.
+No último passo, $\mu$ é estimado pela maximização da função de verossimilhança dados os dados ($\mu |{Y\_ obs}^{T}$) reponderada pela densidade à priori $p(\mu)$, em que métodos de otimização numérica são usados para encontrar a posteriori para $\mu$ e a inversa da matriz Hessiana. Finalmente, a distribuição a posteriori é gerada por meio do uso do algorítmo Metropolis.
 
 
 

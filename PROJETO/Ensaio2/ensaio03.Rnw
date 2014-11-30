@@ -24,16 +24,16 @@
 \documentclass[twoside,a4paper,11pt]{report}
 
 % Pacotes e comandos customizados
-\SweaveInput{metaen01.Rnw}
+\SweaveInput{metaen02.Rnw}
 
 % Início do texto
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 \SweaveOpts{concordance=TRUE}
-\SweaveInput{preen01.Rnw}
-\SweaveInput{cap1en01.Rnw}
-\SweaveInput{cap2en01.Rnw}
-\SweaveInput{cap3en01.Rnw}
+\SweaveInput{preen02.Rnw}
+\SweaveInput{cap1en02.Rnw}
+\SweaveInput{cap2en02.Rnw}
+\SweaveInput{cap3en02.Rnw}
 % \SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 
