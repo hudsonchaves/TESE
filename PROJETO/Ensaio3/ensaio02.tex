@@ -1,0 +1,777 @@
+% Mestre em LaTeX - v0.5
+% Copyleft 2008-2013 Bruno C. Vellutini - http://organelas.com/
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+% THE SOFTWARE.
+%
+% Ou seja, utilize e modifique os arquivos como desejar.
+% 
+% Para mais informações visite http://nelas.github.com/mestre-em-latex/
+
+% Classe do documento
+\documentclass[twoside,a4paper,11pt]{report}
+
+% Pacotes e comandos customizados
+%%% Pacotes utilizados %%%
+
+%% Codificação e formatação básica do LaTeX
+% Suporte para português (hifenação e caracteres especiais)
+\usepackage[english,brazilian]{babel}
+
+% Codificação do arquivo
+\usepackage[utf8]{inputenx}
+
+% Mapear caracteres especiais no PDF
+\usepackage{cmap} 
+
+% Codificação da fonte
+\usepackage[T1]{fontenc}
+% Usa a lmodern por padrão (caso cm-super não esteja instalada).
+\usepackage{lmodern}
+
+%% Microtipografia
+% Utiliza recursos como espaçamento entre letras e entre linhas
+\usepackage{microtype}
+% Habilita protrusão e expansão, ignorando
+% compatibilidade (ver documentação do pacote)
+\microtypesetup{activate={true,nocompatibility}}
+% factor=1100 aumenta a protrusão (default 1000)
+% stretch=10 diminui o valor máximo de expansão (default 20)
+% shrink=10 diminui o valor máximo de encolhimento (default 20)
+\microtypesetup{factor=1100, stretch=10, shrink=10}
+% Tracking, espaçamento entre palavras, kerning
+\microtypesetup{tracking=true, spacing=true, kerning=true}
+% Remover tracking para Small Caps
+\SetTracking{encoding={T1}, shape=sc}{0}
+% Remove ligaduras para o 'f'. Se necessário, adicionar letras
+% separadas por vírgulas
+\DisableLigatures[f]{encoding={T1}}
+% Documento em versão "final", suporte para outros idiomas
+\microtypesetup{final, babel}
+
+% Essencial para colocar funções e outros símbolos matemáticos
+\usepackage{amsmath,amssymb,amsfonts,textcomp}
+
+%% Layout
+% Customização do layout da página, margens espelhadas
+\usepackage[twoside]{geometry}
+% Aumenta as margens internas para espiral
+\geometry{bindingoffset=10pt}
+% Só pra ajustar o layout
+\setlength{\marginparwidth}{90pt}
+%\usepackage{layout}
+
+% Para definir espaçamento entre as linhas
+\usepackage{setspace} 
+
+% Espaçamento do texto para o frame
+\setlength{\fboxsep}{1em}
+
+% Faz com que as margens tenham o mesmo tamanho horizontalmente
+%\geometry{hcentering}
+
+%% Elementos Gráficos
+% Para incluir figuras (pacote extendido)
+\usepackage[]{graphicx} 
+
+%% Suporte a cores
+\usepackage{color}
+% Os argumentos declaram nomes novos, como Cyan e Crimson
+% (ver documentação do pacote).
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+% Criar figura dividida em subfiguras
+\usepackage{subfig}
+\captionsetup[subfigure]{style=default, margin=0pt, parskip=0pt, hangindent=0pt, indention=0pt, singlelinecheck=true, labelformat=parens, labelsep=space}
+
+% Caso queira guardar as figuras em uma pasta separada
+% (descomente e) defina o caminho para o diretório:
+%\graphicspath{{./figuras/}}
+
+% Customizar as legendas de figuras e tabelas
+\usepackage{caption}
+
+% Criar ambientes com 2 ou mais colunas
+\usepackage{multicol}
+
+% Ative o comando abaixo se quiser colocar figuras de fundo (e.g., capa)
+%\usepackage{wallpaper}
+% Exemplo para inserir a figura na capa está no arquivo pre.tex (linha 7)
+% Ajuste da posição da figura no eixo Y
+%\addtolength{\wpYoffset}{-140pt}
+% Ajuste da posição da figura no eixo X
+%\addtolength{\wpXoffset}{36pt}
+
+%% Tabelas
+% Elementos extras para formatação de tabelas
+\usepackage{array}
+
+% Tabelas com qualidade de publicação
+\usepackage{booktabs}
+
+% Para criar tabelas maiores que uma página
+\usepackage{longtable}
+
+% adicionar tabelas e figuras como landscape
+\usepackage{lscape}
+
+%% Lista de Abreviações
+% Cria lista de abreviações
+\usepackage[notintoc,portuguese]{nomencl}
+\makenomenclature
+
+%% Notas de rodapé
+% Lidar com notas de rodapé em diversas situações
+\usepackage{footnote}
+
+% Notas criadas nas tabelas ficam no fim das tabelas
+\makesavenoteenv{tabular}
+
+% Conta o número de páginas
+\usepackage{lastpage}
+
+%% Referências bibliográficas e afins
+% Formatar as citações no texto e a lista de referências
+%\usepackage{natbib}
+\usepackage[authoryear,round,longnamesfirst]{natbib}
+% Adicionar bibliografia, índice e conteúdo na Tabela de conteúdo
+% Não inclui lista de tabelas e figuras no índice
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+
+%% Pontuação e unidades
+% Posicionar inteligentemente a vírgula como separador decimal
+\usepackage{icomma}
+
+% Formatar as unidades com as distâncias corretas
+\usepackage[tight]{units}
+
+%% Cabeçalho e rodapé
+% Controlar os cabeçalhos e rodapés
+\usepackage{fancyhdr}
+% Usar os estilos do pacote fancyhdr
+\pagestyle{fancy}
+\fancypagestyle{plain}{\fancyhf{}}
+% Limpar os campos do cabeçalho atual
+\fancyhead{}
+% Número da página do lado esquerdo [L] nas páginas ímpares [O] e do lado direito [R] nas páginas pares [E]
+\fancyhead[LO,RE]{\thepage}
+% Nome da seção do lado direito em páginas ímpares
+\fancyhead[RO]{\nouppercase{\rightmark}}
+% Nome do capítulo do lado esquerdo em páginas pares
+\fancyhead[LE]{\nouppercase{\leftmark}}
+% Limpar os campos do rodapé
+\fancyfoot{}
+% Omitir linha de separação entre cabeçalho e conteúdo
+\renewcommand{\headrulewidth}{0pt}
+% Omitir linha de separação entre rodapé e conteúdo
+\renewcommand{\footrulewidth}{0pt}
+% Altura do cabeçalho
+\headheight 15pt
+
+% Dados do projeto
+\newcommand{\nomedoaluno}{Hudson Chaves Costa}
+\newcommand{\titulo}{Três Ensaios em Comportamento dos Preços na Economia Brasileira}
+
+%% Links dinâmicos
+% Suporte para hipertexto, links para referências e figuras
+\usepackage{hyperref}
+% Configurações dos links e metatags do PDF a ser gerado
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, pagecolor=blue, urlcolor=green,
+            pdfauthor={\nomedoaluno},
+            pdftitle={\titulo},
+            pdfsubject={Assunto do Projeto},
+            pdfkeywords={palavra-chave, palavra-chave, palavra-chave},
+            pdfproducer={LaTeX},
+            pdfcreator={pdfTeX}}
+
+%% Inserir comentários no texto
+% Marcar mudanças e fazer comentários
+%\usepackage[margins]{trackchanges}
+% Iniciais do autor
+%\renewcommand{\initialsTwo}{bcv}
+% Notas na margem interna
+%\reversemarginpar
+
+%% Comandos customizados
+
+% Espécie e abreviação
+\newcommand{\subde}{\emph{Clypeaster subdepressus}}
+\newcommand{\subsus}{\emph{C.~subdepressus}}
+
+%% Pacotes não implementados
+% Para não sobrar espaços em branco estranhos
+%\widowpenalty=1000
+%\clubpenalty=1000
+\usepackage{listings}
+
+% Início do texto
+\usepackage{Sweave}
+\begin{document}
+\input{ensaio02-concordance}
+
+% Limpa cabeçalhos.
+% (solução para lidar com a númeração das páginas pré-textuais).
+\pagestyle{empty}
+
+%% Capa
+\begin{titlepage}
+
+% Se quiser uma figura de fundo na capa ative o pacote wallpaper
+% e descomente a linha abaixo.
+% \ThisCenterWallPaper{0.8}{nomedafigura}
+
+\begin{center}
+{\LARGE \nomedoaluno}
+\par
+\vspace{200pt}
+{\Huge \titulo}
+\par
+\vfill
+\textbf{{\large Porto Alegre}\\
+{\large \the\year}}
+\end{center}
+\end{titlepage}
+
+% Faz com que a página seguinte sempre seja ímpar (insere pg em branco)
+\cleardoublepage
+
+% Numeração em elementos pré-textuais é opcional (ativada por padrão).
+% Para desativá-la comente a linha abaixo.
+%\pagestyle{fancy}
+
+% Números das páginas em algarismos romanos
+\pagenumbering{roman}
+
+%% Página de Rosto
+
+% Numeração não deve aparecer na página de rosto.
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE \nomedoaluno}
+\par
+\vspace{200pt}
+{\Huge \titulo}
+\end{center}
+\par
+\vspace{90pt}
+\hspace*{175pt}\parbox{7.6cm}{{\large Projeto de Tese apresentado ao Programa de Pós-Graduação em Economia da Universidade Federal do Rio Grande do Sul na Área de Economia Aplicada.}}
+
+\par
+\vspace{1em}
+\hspace*{175pt}\parbox{7.6cm}{{\large Orientador: Prof. Dr. Sabino Porto da Silva Júnior}}
+
+\par
+\vfill
+\begin{center}
+\textbf{{\large Porto Alegre}\\
+{\large \the\year}}
+\end{center}
+
+\newpage
+
+% Ficha Catalográfica
+%\hspace{8em}\fbox{\begin{minipage}{10cm}
+%Aluno, Nome C.
+
+%\hspace{2em}\titulo
+
+%\hspace{2em}\pageref{LastPage} páginas
+
+%\hspace{2em}Dissertação (Mestrado) - Instituto de Biociências da Universidade de São Paulo. Departamento de XXXXXXXX.
+
+%\begin{enumerate}
+%\item Palavra-chave
+%\item Palavra-chave
+%\item Palavra-chave
+%\end{enumerate}
+%I. Universidade de São Paulo. Instituto de Biociências. Departamento de XXXXXXXX.
+
+%\end{minipage}}
+%\par
+%\vspace{2em}
+%\begin{center}
+%{\LARGE\textbf{Comissão Julgadora:}}
+
+%\par
+%\vspace{10em}
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l}
+%\rule{16em}{1px}   & \rule{16em}{1px} \\
+%Prof. Dr.   	& Prof. Dr. \\
+%Nome			& Nome
+%\end{tabular*}
+
+%\par
+%\vspace{10em}
+
+%\parbox{16em}{\rule{16em}{1px} \\
+%Prof. Dr. \\
+%Nome do Orientador}
+%\end{center}
+
+%\newpage
+
+% Dedicatória
+% Posição do texto na página
+%\vspace*{0.75\textheight}
+%\begin{flushright}
+  %\emph{Dedicatória...}
+%\end{flushright}
+
+%\newpage
+
+% Epígrafe
+%\vspace*{0.4\textheight}
+%\noindent{\LARGE\textbf{Exemplo de epígrafe}}
+% Tudo que você escreve no verbatim é renderizado literalmente (comandos não são interpretados e os espaços são respeitados)
+%\begin{verbatim}
+%O que é bonito?
+%É o que persegue o infinito;
+%Mas eu não sou
+%Eu não sou, não…
+%Eu gosto é do inacabado,
+%O imperfeito, o estragado, o que dançou
+%O que dançou…
+%Eu quero mais erosão
+%Menos granito.
+%Namorar o zero e o não,
+%Escrever tudo o que desprezo
+%E desprezar tudo o que acredito.
+%Eu não quero a gravação, não,
+%Eu quero o grito.
+%Que a gente vai, a gente vai
+%E fica a obra,
+%Mas eu persigo o que falta
+%Não o que sobra.
+%Eu quero tudo que dá e passa.
+%Quero tudo que se despe,
+%Se despede, e despedaça.
+%O que é bonito…
+%\end{verbatim}
+%\begin{flushright}
+%Lenine e Bráulio Tavares
+%\end{flushright}
+
+%\newpage
+
+% Agradecimentos
+
+% Espaçamento duplo
+%\doublespacing
+
+%\noindent{\LARGE\textbf{Agradecimentos}}
+
+%Agradeço ao meu orientador, ao meu co-orientador, aos meus colaboradores, aos técnicos, à seção administrativa, à fundação que liberou verba para minhas pesquisas, aos meus amigos, à minha família e ao meu grande amor.
+
+%\newpage
+
+%\vspace*{10pt}
+% Abstract
+%\begin{center}
+  %\emph{\begin{large}Resumo\end{large}}\label{resumo}
+%\vspace{2pt}
+%\end{center}
+% Pode parecer estranho, mas colocar uma frase por linha ajuda a organizar e reescrever o texto quando necessário.
+% Além disso, ajuda se você estiver comparando versões diferentes do mesmo texto.
+% Para separar parágrafos utilize uma linha em branco.
+%\noindent
+%Esta, quem sabe, é a parte mais importante do seu trabalho.
+%É o que a maioria das pessoas vai ler (além do título).
+%Seja objetivo sem perder conteúdo.
+%Um bom resumo explica porquê este trabalho é interessante, relata como foi feito, o que foi encontrado, contextualiza os resultados e delineia conclusões.
+%\par
+%\vspace{1em}
+%\noindent\textbf{Palavras-chave:} palavra1, palavra2, palavra3
+%\newpage
+
+% Criei a página do abstract na mão, por isso tem bem mais comandos do que o resumo acima, apesar de serem idênticas.
+%\vspace*{10pt}
+% Abstract
+%\begin{center}
+  %\emph{\begin{large}Abstract\end{large}}\label{abstract}
+%\vspace{2pt}
+%\end{center}
+
+% Selecionar a linguagem acerta os padrões de hifenação diferentes entre inglês e português.
+%\selectlanguage{english}
+%\noindent
+%This is the most important part of your work.
+%This is what most people will read.
+%Be concise without omitting content.
+%A good abstract explains why this is an interesting study, tells how it was done, what was found, contextualizes the results and set conclusions.
+%\par
+%\vspace{1em}
+%\noindent\textbf{Keywords:} word1, word2, word3
+
+% Voltando ao português...
+%\selectlanguage{brazilian}
+
+%\newpage
+
+% Desabilitar protrusão para listas e índice
+\microtypesetup{protrusion=false}
+
+% Lista de figuras
+%\listoffigures
+
+% Lista de tabelas
+%\listoftables
+
+% Abreviações
+% Para imprimir as abreviações siga as instruções em 
+% http://code.google.com/p/mestre-em-latex/wiki/ListaDeAbreviaturas
+%\printnomenclature
+
+% Índice
+\tableofcontents
+
+% Re-habilita protrusão novamente
+\microtypesetup{protrusion=true}
+% Faz com que o ínicio do capítulo sempre seja uma página ímpar
+\cleardoublepage
+
+% Inclui o cabeçalho definido no meta.tex
+\pagestyle{fancy}
+
+% Números das páginas em arábicos
+\pagenumbering{arabic}
+
+\chapter{INTRODUÇÃO/MOTIVAÇÃO}\label{introen02}
+
+Na atual geração de modelo monetários os efeitos de política monetária estão relacionados à velocidade da reação do nível de preços agregado à um disturbio nominal. O ajustamento dos preços agregados por sua vez, depende de dois fatores. Um é o preço definido ótimo que é o ajuste escolhido pelas empresas e o outro é a fração de firmas que estão alterando seus preços. Com a exceção de alguns modelos estado-dependentes microfundamentados, a maioria das pesquisas sobre rigidez de preços limita-se em abordar a decisão de alteração ótima nos preços, mas deixando o tempo de ajustamento ser exógeneamente dado por alguma hipótese simplificadora (ex.: modelos incorporando as hipótese de \citet{taylor1980aggregate} ou \citet{calvo1983staggered}). Em termos mais técnicos, isso equivale a restringir a função de risco de alterar os preços à uma forma específica e estudar outras características sobre as bases destas hipóteses. 
+
+Recentemente, a função de risco agregado de alteração nos preços permanece um tópico ignorado na literatura macroeconômica. Ela começa a chamar a atenção porque os concorrentes modelos teóricos de rigidez de preços fornecem uma clara correspondência entre específicas funções de risco agregadas e implicações para a dinâmica macroeconômica e política monetária. Um trabalho pioneiro de \citet{wolman1999sticky} e \citet{kiley2002partial} demonstraram que a dinâmica agregada seria sensível à função risco subjacente à diferentes regras de precificação. Por esta razão, a função de risco agregado fornece uma nova métrica para selecionar modelos teóricos e identificar o mecanismo de propagação mais relevante para os choques de política monetária. 
+
+Apesar de seu uso, estudos empíricos da função de risco agregado são raros na literatura de macro. Por contraste, evidências do rápido crescimento de microdados se tornoram viáveis nos anos recentes. Contudo, autores argumentam que é a função de riscro agregado de grande interesse para macroeconomistas e ela é importante para distinguir entre as funções de risco macro e micro. O risco agregado é definido como a probabilidade do ajuste de preços reagir à choques agregados. Em modelos macroeconômicos teóricos, essas taxas de risco podem ser claramente mapeadas no impulso resposta das variáveis agregadas. Por contraste, o mapeamento entre funções de risco micro e a dinâmica macroeconômica é muito mais complicado. Por exemplo, \citet{caplin1987menu} demonstraram que quando o efeito seleção está presente, a economia agregada está completamente imune à rigidez de preços em nível micro e assim, não tem nenhum efeito real da política monetária. As funções de risco estimadas de microdados são portanto um susbstituo não perfeito para a função de risco agregado definida em modelos teóricos. Além dessa consideração teórica, existem também armadilhas empíricas que causam atenção na interpretação de taxas de risco micro. Primeiro, taxas de risco micro são tipicamente maiores do que taxas de risco agregado, porque preços individuais reagem tanto à choques agregados quanto choques idiossincráticos. E é muito difícil separá-los com um conjunto de microdados. Segundo, evidências da forma da função risco de estudos microeconométricos não são conclusivas. Microdados diferem substancialmente na quantidade de bens incluídos, os países e período temporal analisado e assim, torna difícil comprarar seus resultados e mesmo embora os microdados estão se tornando viáveis, eles ainda são de curto prazo comparado com séries temporais agregadas. É razoável pensar que a forma das funções de risco dependem das condições econômicas subjacentes e portanto, alterariam ao longo dos períodos dos dados coletados. 
+
+O objetivo deste ensaio é estimar as funções de risco de definição dos preços agregados diretamente das séries temporais. Para isto, primeiro será preciso construir um modelo DSGE completamente especificado apresentando rigidez nominal que permite uma função de risco flexível de definição de preços. Assim, derivar-se-á uma curva de Phillpis novo-keynesiana generalizada e então estmiraremos esse modelo com uma abordagem Bayesiana. A identificação de funções de risco agregado é possível dado que o fato de que a taxa de inflação pode ser decomposta em preços definidos no presente e no passado e sua composição é determinada pela função de risco agregado. A derivação da curva de Phillips novo-keynesiana generalizada vincula esse efeito de composição à função de risco de modo que apenas dados agregados são necessários para extrair informação sobre a função de risco de ajuste de preços. A vantagem deste método de identificação é que, primeiro, ele é baseado sobre uma hipótese genérica do comportamento do nível de preços das firmas, fazendo o mapeamento entre a função de risco e a dinâmica agregada robusto à modelagem de rigidez nos preços. Em adição, este método identifica funções de risco agregado a partir de flutuações do nível de preços agregado de modo que efeitos de choques idiossincráticos são removidos. Contudo, este método náo está livre de outros problemas de identificação que prevalecem na estimação de modelos Novo-Keynesianos como por exemplo, equivalência observacional da elasticidade da oferta de trabalho. 
+
+Para estimar a função de risco usaremos os dados mensais do Índice Nacional de Preços ao Consumidor Amplo (ICPA), taxa de crescimento do produto interno bruto (PIB) e a Selic com o maior período possível. Além desta introdução que apresenta o problema, a motiviação e objetivos do ensaio, os demais capítulos são organizados da seguinte forma: no capítulo 2 apresentamos uma breve revisão bibliográfica, no capítulo 3 tem-se a metodoligia com o modelo a ser utilizado e o processo de estimação.
+
+
+\subsection*{JUSTIFICATIVA}
+
+A dinâmica do comportamento dos preços individuais proporciona vários desdobramentos que são bastante debatidos na literatura dado os impactos que podem causar. Não compreender este tipo de comportamento levou a distintas abordagens para a análise da velocidade e intensidade de transmissão da política monetária. Além disso, compreender as estratégias de definição de preços das firmas levaria ao aprimoramento de modelos teóricos cujas abordagens e conclusões podem sofrer alterações expressivas na presença de fatos estilizados. 
+
+A falta de estudos que gerassem empiricamente um diagnóstico da definição e grau de rigidez de preços individuais foi um limitador por diversas décadas em função da falta de informações estatísticas no nível de microdados que pudessem servir de base para estas análises. Porém, há alguns anos a disponibilização de preços coletados pelos órgãos governamentais tanto nacionais quanto internacionais, proporcionaram o surgimento de pesquisas que avaliassem o comportamento dos preços em nível de microdados (\citet{bils2004some,nakamura2008five,klenow2008state,dhyne2006price,gouvea2007nominal,matos2009comportamento,lopes2008rigidez,bunn2012examining}). 
+
+Porém, ainda existe um fator limitante nestes estudos, pois concentram-se em mercados específicos, não possibilitando análises generalizadas aos diversos setores da economia, pois as pesquisas são reféns das características dos dados utilizados. Também, dada a importância do tema para os tomadores de decisão em nível de política monetária, é preciso maior dinâmica na análise e não apenas um olhar para o passado. 
+
+Assim, o presente ensaio do projeto de tese apresenta o uso da tecnologia de \emph{web scraping} para coletar preços diretamente das páginas das empresas que possuem sites de vendas e por conseguinte, contribuir para a avaliação da rigidez de preços de uma forma mais dinâmica dadas as características do processo de coleta. Estudos empiricos já mostraram a importância de dados coletados da \emph{web} na avaliação dos pressupostos de rigidez de preços e proposição de medida de inflação oriunda de informações \emph{online} (\citet{cavallo2010scraped}).
+
+\subsection*{OBJETIVOS}
+
+O objetivo geral deste ensaio é avaliar empiricamente a rigidez nominal dos preços na economia brasileira por meio de dados coletados da \emph{web}, bem como, propor um índice de inflação oriundo da mesma fonte de dados que seja estatisticamente significante para o uso dos tomadores de decisões econômicas.
+
+Dentro deste escopo, os seguintes questionamentos pretendem ser avaliados:
+
+\begin{itemize}
+  \item Quão frequente os preços se alteram?
+  \item Como podemos lidar com o problema de censura e amostragem quando a função risco é estimada a partir dos dados coletados da internet?
+  \item A probabilidade de mudança dos preços pode variar ao longo da duração dos preços?
+  \item Como podemos derivar a distribuição entre firmas que seja consistente com uma dada frequência média de variações nos preços?
+  \item Como podemos avaliar o efeito de variáveis explicativas sobre a taxa de risco?
+  \item Como podemos controlar para heterogeneidade não observada quando a função risco é estimada?
+  \item Podemos construir um modelo $Ss$ tempo-variante que tenha implicações consistentes com as microevidências encontradas para os dados coletados da internet?
+  \item Os modelos DSGE sobre a hipóte de distribuição de Calvo se comportam de uma maneira similar aos modelos calibrados com os dados coletados da internet?
+\end{itemize}
+
+
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
+\chapter{REVISÃO BIBLIOGRÁFICA}\label{cap2en02}
+
+Este ensaio busca contribuir para o progresso de desenvolvimento de modelos empíricos de rigidez de preços baseado sobre o arcabouço Novo-Keynesiano. Os modelos iníciais empíricos de rigidez de preços baseavam-se exclusivamente sobre a Curva de Phillips Novo-Keynesiana com a hipótese de precificação conforme Calvo (Veja por exemplo, \citet{gali1999inflation,gali2001european,sbordone2002prices}). Esses autores estimaram a Curva de Phillips Novo-Keynesiana pelo Método dos Momentos Generalizado (GMM) e encontraram um considerável grau de rigidez nos preços nos dados agregados. A taxa de risco empírica de ajuste nos preços estava em torno de 20\% por trimestre para os EUA e 10\% para a Europa. Esses resultados, contudo, são em razão de possibilidades (\emph{odds ratio}) com microevidência em duas maneiras. Primeiro, recentes estudos micro geralmente concluíram que a frequência média de ajustamento nos preços ao nível de firmas não é apenas maior, mas também difere substancialmente entre setores na economia. Segundo, a hipótese de Calvo implica uma função de risco constante, significando que a probabilidade de ajuste nos preços é independente do tamanho do tempo desde a última alteração no preço e a forma da curva de risco foi rejeitada pelas evidências empíricas ao nível de microdados (Veja por exemplo, \citet{cecchetti1986frequency,campbell2005rigid,nakamura2008five}). 
+
+Dada a discrepância entre as evidências micro e macro, modelos empíricos permitindo maior flexibilidade na duração ou função de risco tem se tornado populares na literatura recente. \citet{jadresic1999sticky} apresentou um modelo de precificação escalonado caracterizando uma distribuição flexível sobre a duração dos preços e usou uma abordagem VAR (Vetor Auto-Regressivo) para demonstrar que o comportamento dinâmico da inflação e outras variáveis macroeconômicas fornecem informações sobre a dinâmica dos preços desagregados subjacente aos dados. Mais recentemente, \citet{sheedy2007inflation} construíram um modelo Calvo generalizado e parametrizaram a função risco de uma maneira que a Curva de Phillips Novo-Keynesiana resultante implica persistência inflacionária intrínseca quando a função risco foi positivamente inclinada. Baseado sobre esta especificação da função de risco, estimaram a Curva de Phillips Novo-Keynesiana usando GMM e encontraram evidências de uma função de risco positivamente inclinada. \citet{coenen2007identifying} desenvolveram um modelo nominal de contratos escalonados com durações tanto fixas quanto aleatórias e estimaram a Curva de Phillips Novo-Keynesiana generalizada com um método de inferença indireta. Seus resultados mostraram que a rigidez de preços é caracterizada por um maior grau de rigidez real em oposição à rigidez nominal modesta com uma duração média de aproximadamente 2 a 3 trimestres. 
+
+\citet{carvalho2009estimating} estimaram um modelo semi-estrutural de duração de preços múltiplos com a abordagem Bayesiana e encontraram que permitir que os preços durem mais do que 4 trimestres é crucial para evitar subestimar a importância relativa da rigidez nominal.
+
+
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
+\chapter{METODOLOGIA}\label{cap3en02}
+
+\section*{O MODELO}
+
+Neste capítulo, apresentamos o modelo DSGE de preços rígidos devido à rigidez nominal. A base do modelo é oriunda do trabalho de \citet{yao2010aggregate} que introduziu rigidez nominal por meio de uma forma geral da função de risco. Na literatura teórica, o modelo geral de tempo-dependente foi delineado pela primeira vez em \citet{wolman1999sticky}, que estudaram alguns exemplos simples e encontraram que a dinâmica da inflação é sensível à diferentes regras de precificação. Modelos similares foram estudados por \citet{mash2004optimising} e \citet{yao2009cost}. Uma função risco de definição dos preços é definida como a probabilidade do ajuste no preço condicional ao período de tempo decorrido deste a última alteração no preço. Neste modelo, a função risco é uma função discreta que toma valores entre zero e um sobre seu domínio temporal. A maior parte de modelos conhecidos de precificação de preços na literatura podem ser mostrado de forma que as funções de risco Por exemplo, a hipótese de \citet{calvo1983staggered} implica uma função de risco constante ao longo de topo o horizonte infinito.
+
+\subsection*{Familia Representativa}
+
+Uma familia representativa que vive infinitamente obtém utilidade a partir do consumo composto do bem $C_{t}$ e sua oferta de trabalho $L_{t}$ e maximiza uma soma discontada da utilidade da forma:
+
+\begin{equation}\label{eq01en02}
+\max_{{{C}_{t},{L}_{t},{B}_{t}}}{{E}_{0}[\sum _{t=0}^{\infty}{{\beta}^{t}(\frac{{C}_{t}^{1-\delta}}{1-\delta}-{\chi}_{H}\frac{{L}_{t}^{1+\phi}}{1+\phi})}]} 
+\end{equation}
+
+\noindent onde $C_{t}$ é um índice de consumo da família produzido usando bens indivíduais $C_{t}(i)$, 
+
+\begin{equation}\label{eq02en02}
+{C}_{t}(i)={[\int _{0}^{1}{{C}_{t}{(i)}^{\frac{\eta -1}{\eta}}}]}^{\frac{\eta}{\eta -1}}
+\end{equation}
+
+\noindent onde $\eta>1$ e segue-se que a correspondente demanda que minimiza o custo para $C_{t}(i)$ e o índice de preços baseado em bem-estar, $P_{t}$, são dados por
+
+\begin{equation}\label{eq03en02}
+{C}_{t}(i)={(\frac{{P}_{t}(i)}{{P}_{t}})}^{-\eta}{C}_{t}
+\end{equation}
+
+\begin{equation}\label{eq04en02}
+{P}_{t}={[\int _{0}^{1}{{P}_{t}{(i)}^{1-\eta}}di]}^{\frac{1}{1-\eta}}
+\end{equation}
+
+Por simplicidade, assumimos que as famílias ofertam unidades homogêneas de trabalho $(L_{t})$ em uma economia de mercado de trabalho competitivo. O fluxo de restrição orçamentária da família no começo do período $t$ é:
+
+\begin{equation}\label{eq05en02}
+{P}_{t}{C}_{t}+\frac{{B}_{t}}{{R}_{t}}\le{W}_{t}{L}_{t}+{B}_{t-1}+\int _{0}^{1}{{\pi}_{t}(i)di} 
+\end{equation}
+
+\noindent onde ${B}_{t}$ é um título de um período e $R_{t}$ denota o retorno nominal bruto no título. ${\pi}_{t}(i)$ representa o lucro nominal de uma firma que vende o bem $i$. \citet{yao2010aggregate} assume que cada família é proprietária de uma porção igual de todas as firmas. Finalmente, esta sequência do fluxo de restrição orçamentária é suplementado com uma condição de transversalidade da forma $\lim _{T\rightarrow \infty}{{E}_{t}[\frac{{B}_{t}}{\prod _{s=1}^{T}{R_{s}}}]} \ge 0$. A solução para o problema de otimização da família pode ser expressada em duas condições necessárias de primeira ordem. Primeiro, a oferta ótima de trabalho é realcionada ao salário real:
+
+\begin{equation}\label{eq06en02}
+{\chi}_{H}{L}_{t}^{\phi}{C}_{t}^{\delta}=\frac{{W}_{t}}{{P}_{t}} 
+\end{equation}
+
+Segundo, a equação de Euler dá a relação entre o caminho de consumo ótimo e os preços dos ativos:
+
+\begin{equation}\label{eq07en02}
+1=\beta {E}_{t}[{(\frac{{C}_{t}}{{C}_{t+1}})}^{\delta}\frac{{R}_{t}{P}_{t}}{{P}_{t+1}}] 
+\end{equation}
+
+\section*{Firmas na Economia}
+
+\subsection*{Custo Marginal Real}
+
+O lado de produção da economia é composto de uma série de firmas em competição monopolística, cada uma produzindo uma variedade do produto $i$ por meio do uso do trabalho. Cada firma maximima seus lucros reais sujeito à função de produção:
+
+\begin{equation}\label{eq08en02}
+Y_{t}(i)=Z_{t}L_{t}(i)
+\end{equation}
+
+\noindent onde $Z_{t}$ denota choque de produtividade. O logarítmo dos desvios dos choques, ${\hat{z}}_{t}$, segue um processo $AR(1)$ ${\hat{z}}_{t}={\rho}_{z}{\hat{z}}_{t-1}+{\varepsilon}_{z,t}$, e ${\varepsilon}_{z,t}$ é um ruído branco com ${\rho}_{z}\epsilon [0,1)$. $L_{t}(i)$ é a demanda de trabalho pela firma $i$. 
+
+Seguindo a equação~\ref{eq03en02}, a demanda por bens intermediários é dada por:
+
+\begin{equation}\label{eq09en02}
+{Y}_{t}(i)={\frac{{P}_{t}(i)}{{P}_{t}}}^{-\eta}{Y}_{t}
+\end{equation}
+
+Em cada período, as firmas escolhem a demanda ótima pelo insumo trabalho para maximizar seus lucros reais dado o salário nominal, demanda de mercado (~\ref{eq09en02}) e a tecnologia de produção (~\ref{eq08en02}):
+
+\begin{equation}\label{eq10en02}
+\max _{{L}_{t}(i)}{{{\Pi}_{t}(i)}}=\frac{{P}_{t}(i)}{{P}_{t}}{Y}_{t}(i)-\frac{{W}_{t}}{{P}_{t}}{L}_{t}(i)
+\end{equation}
+
+E o custo marginal real pode ser derivado deste problema de maximização da seguinte forma:
+
+\begin{equation}\label{eq11en02}
+{mc}_{t}=\frac{{{W}_{t}}/{{P}_{t}}}{(1-a){Z}_{t}} 
+\end{equation}
+
+Além disso, usando a função de produção (~\ref{eq08en02}), a equação de demanda por produto (~\ref{eq09en02}), a condição de oferta de trabalho (~\ref{eq06en02}) e o fato de que no equilíbrio $C_{t}=Y_{t}$, podemos expressar o custo marginal real apenas em termos do produto agregado e choque tecnológico, conforme \citet{yao2010aggregate}. 
+
+\begin{equation}\label{eq12en02}
+{mc}_{t}={Y}_{t}^{\phi +\delta}{Z}_{t}^{-(1+\phi)}
+\end{equation}
+
+\subsection*{Decisão de Precificação sobre Rigidez Nominal}
+
+Nesta seção, introduzimos assim como \citet{yao2010aggregate} uma forma geral de rigidez nominal, que é caracterizada por um conjutno de taxas de risco dependendo do período de tempo desde o último reajuste de preços. \citet{yao2010aggregate} assume que firmas em concorrência monopolítica não podem ajustar seus preços quando quiserem. Ao contrário, oportunidades para re-otimizar os preços são ditadas pelas taxas de risco, $h_{j}$, onde $j$ denota o tempo desde o último ajuste e $j\epsilon {0,J}$. $J$ é o número máximo de períodos em que um preço de uma firma pode estar fixo. 
+
+Na economia os preços das firmas são heterogêneos com relação ao tempo deste sua última alteração e \citet{yao2010aggregate} os chama de \emph{price vintages}. A tabela tal apresenta algumas notações sobre a dinâmica destes preços. 
+
+\begin{center}\label{tab01en02}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline 
+    Vintage$j$ & Taxa de Risco$h_{j}$ & Taxa de Não-Ajuste $\alpha_{j}$ & Taxa de Sobrevida $S_{j}$ & Distribuição $\theta(j)$\tabularnewline
+    \hline 
+    0 & 0 & 1 & 1 & $\theta(0)$\tabularnewline
+    \hline 
+    1 & $h_{1}$ & $\alpha_{1}=1-h_{1}$ & $S_{1}=\alpha_{1}$ & $\theta(1)$\tabularnewline
+    \hline 
+    $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$\tabularnewline
+    \hline 
+    $j$ & $h_{j}$ & $\alpha_{j}=1-h_{j}$ & $S_{j}=\prod\alpha_{i}$ & $\theta(j)$\tabularnewline
+    \hline 
+    $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$\tabularnewline
+    \hline 
+    $J$ & $h_{j}=1$ & $\alpha_{J}=0$ & $S_{J}=0$ & $\theta(J)$\tabularnewline
+    \hline 
+  \end{tabular}
+  \caption{Notações da dinâmica da distribuição da duração dos preços (\emph{vintage})} 
+\end{center}
+
+Usando a notação da tabela~\ref{tab01en02} é possível escrever a distribuição ex-post das firmas depois do ajustamento de preços $({\tilde{\theta}_{t})$ como:
+
+\begin{equation}\label{eq13en02}
+{\tilde{\theta}}_{t}(j)=\begin{cases} \sum _{i=1}^{J}{{h}_{t}{\theta}_{t}(i)} ,j=0 \\ {\alpha}_{j}{\theta}_{t}(j),j=1,...,J \end{cases}
+\end{equation}
+
+As firmas que re-otimizam seus preços no período $t$ são caracterizadas com \emph{'Duration 0'} e a proporção destas firmas é dado pelas taxas de risco de todos os grupos de duração multiplicado pelo sua correspondente densidade. As firmas restantes em cada grupo de duração são as firmas que não ajustam seus preços. Quando o período $t$ é longo, esta distribuição ex-post se torna a distribuição ex-ante para o novo período, $({\tilde{\theta}_{t+1})$. Todos os grupos de duração de preços movem para o próximo, porque todos os preços tem idade de um período. Ela produz a distribuição de duração dos preços estacionária, ${\theta}(j)$, para $j=0,1,...,J-1$:
+
+\begin{equation}\label{eq14en02}
+{\theta}_{j}=\frac{{S}_{j}}{\sum _{j=0}^{J-1}{{S}_{j}}} 
+\end{equation}
+
+Dada a forma geral de rigidez nominal introduzida acima, a única heterogeneidade entre as firmas é o momento quando elas ajustaram seus preços, $j$. Firmas no grupo de duração de preços $j$ partilham a mesma probabilidade de ajustar seus preços, $h_{t}$, e a distribuição de firmas entre as durações é dada por ${\theta}(j)$. Em um dado período quando é permitido a uma firma alterar seus preços, o preço ótimo escolhido reflete a possiblidade de que ela não ajustará novamente em um futuro próximo. Consequentemente, firmas ajustando os preços escolhem os preços ótimos que maximizam o somatório descontado dos lucroes reais ao longo do horizonte temporal no qual o novo preço será fixo. A probabilidade de que um novo preço seja fixado ao menos por $j$ períodos é dada pela função de sobrevida, $S_{j}$, definida na tabela~\ref{tab01en02}.
+
+\citet{yao2010aggregate} configurou o problema de maximização do ajustador de preços como segue:
+
+\begin{equation}\label{eq15en02}
+\max _{{P}_{t}^{*}}{{E}_{t}\sum _{j=0}^{J-1}{{S}_{j}{Q}_{t,t+j}[{Y}_{t+j|t}^{d}\frac{{P}_{t}^{*}}{{P}_{t+j}}-\frac{{TC}_{t+j }}{{P}_{t+j}}]}} 
+\end{equation}
+
+\noindent onde ${ E }_{ t }$ denota a expectativa condicional baseada sobre o conjunto de informações no período $t$ e ${ Q }_{ t,t+j }$ é o fator de disconto estocástico apropriado para descontar lucros reais de $t$ a $t+j$. Uma firma ajustando o preço maximiza o lucro sujetio à demanda para seu bem intermediário no período $t+j$ dado que a firma altera o preço no periodo $t$ e pode ser expressado como: 
+
+\begin{equation}\label{eq16en02}
+{ Y }_{ t+j|t }^{ d }={ \left( \frac { { P }_{ t }^{ * } }{ { P }_{ t+j } }  \right)  }^{ -\eta  }{ Y }_{ t+j }
+\end{equation}
+
+Isto produz a seguinte condição necessária de primeira ordem para o preço ótimo:
+
+\begin{equation}\label{eq17en02}
+{P}_{t}^{*}=\frac{\eta}{\eta -1}\frac{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j ^{\eta -1}{MC}_{t+j}]}}{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}]}} 
+\end{equation}
+
+\noindent onde ${MC}_{t}$ dnota o custo marginal nominal. O preço ótimo é igual ao markup multiplicado por uma soma ponderada dos custos marginais futuros, cujos pesos dependem tas taxas de sobrevida. Em Calvo, onde $S_{j}={\alpha}^{j}$, esta equação reduz à condição de precificação ótima de Calvo.
+
+Finalmente, dada a distribuição estacionária, ${\theta}(j)$, o preço agregado pode ser escrito como uma soma distribuída de todos os preços ótimos. \citet{yao2010aggregate}, definem o preço ótimo que foi definido $j$ períodos atrás como $P_{t-j}^{*}$. Seguindo o índice de preço agregado da equação~\ref{eq04en02}, o preço agregado é então obtido por:
+
+\begin{equation}\label{eq18en02}
+{P}_{t}={(\sum_{j=0}^{J-1}{\theta(j){P}_{t-j}^{*1-\eta}})}^{\frac{1}{1-\eta}}
+\end{equation}
+
+\subsection*{Curva de Phillips Novo-Keynesiana}
+
+Nesta seção, derivamos conforme \citet{yao2010aggregate} a Curva de Phillips Novo-Keynesiana para este modelo generalizado. Para isto, primeiro loglinearizamos a equação~\label{eq17en02} em torno do seu preço de \emph{steady state}. As equações de preço ótimo loglinearizadas são obtidas por:
+
+\begin{equation}\label{eq19en02}
+{\hat{p}}_{t}^{*}={E}_{t}[\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Omega}}({\hat{mc}}_{t+j}+{\hat{p}}_{t+j})] 
+\end{equation}
+
+\noindent onde $\Omega=\sum_{j=0}^{J-1}{{\beta}^{j}S(j)}$ e ${\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}$. De um modo semelhante, é possível derivar o log dos desvios do preço agregado através da loglinearização da equação~\ref{eq18en02}.
+
+\begin{equation}\label{eq20en02}
+{\hat{p}}_{t}=\sum_{k=0}^{J-1}{\theta(k){\hat{p}}_{t-k}^{*}} 
+\end{equation}
+
+A partir de manipulações algébricas sobre as equações~\ref{eq19en02} e~\ref{eq20en02}, obtemos a Curva de Phillips Novo-Keynesiana como segue:
+
+\begin{equation}\label{eq21en02}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{\frac{\theta(k)}{1-\theta(0)}{E}_{t-k}(\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Psi}{\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{\sum_{i=1}^{J-1}{\frac{{\beta}^{j}S(j)}{\Psi}}}{\hat{\pi}}_{t+i-k}})-\sum_{k=2}^{J-1}{\Phi(k){\hat{\pi}}_{t-k+1}}} 
+\end{equation}
+
+\noindent onde $\Phi(k)=\frac{\sum _{j=k}^{J-1}{S(j)}}{\sum _{j=1}^{J-1}{S(j)}}$ e $\Psi =\sum _{k=0}^{J-1}{{\beta}^{j}S(j)}$. Como podemos observar, todos os coeficientes na equação~\ref{eq21en02} são expressos em termos das taxas de não ajuste $({\alpha}_{j}=1-{h}_{j})$ e o fator de desconto subjetivo, $\beta$. Assim, os coeficientes na Curva de Phillips Novo-Keynesiana generalizada vinculam os efeitos dinâmicos de preços redefinidos sobre a inflação à função de risco. Como resultado, a informação sobre as taxas de risco de ajuste de preços podem ser extraídas a partir de dados agregados por meio da estrutura dinâmica da curva de Phillips.
+
+
+\section*{Sistema Final de Equações}
+
+O sistema de equilíbrio geral consiste de condições de equilíbrio derivadas a partir dos problemas de otimização dos agentes economicos, condições de equilíbrio de mercado e uma equação de política monetária. As condições de equilíbrio de mercado requerem preços reais e bons mercados, enquanto a política monetária determina o valor nominal da economia real. A regra de Taylor para fechar o modelo será:
+
+\begin{equation}\label{eq22en02}
+{I}_{t}={I}_{t-1}^{{\rho}_{i}}{[{(\frac{{P}_{t}}{{P}_{t-1}\tilde{\pi}})}^{{\phi}_{\pi}}{(\frac{{Y}_{t}}{{Y}_{t-1}})}^{{\phi}_{y}} ]}^{1-{\rho}_{i}}{e}^{{q}_{t}}
+\end{equation}
+
+A equação~\ref{eq22en02} é motivada pela taxa de juros suavizada especificada para a regra de Taylor que especifica uma regra de política que o banco central usa para deteminar a taxa de juros nominal na economia, onde ${\phi}_{\pi}$ e ${\phi}_{y}$ denota a resposta de curto prazo da autoridade monetária aos desvios do log da inflação e taxa de crescimento do produto e $q_{t}$ é uma sequência de $i.i.d$ ruído branco com média zero e uma variância finita $(0,{\sigma}_{q}^{2})$. 
+
+Depois de loglinearizar as equações de equilíbrio em torno do preço flexível de \emph{steady state}, o sistema de equilíbrio geral consiste da Curva de Phillips Novo-Keynesiana generalizada (~\ref{eq23en02}), custo marginal real (~\ref{eq24en02}), a condição intertemporal de otimização da família (~\ref{eq25en02}), a regra de Taylor (~\ref{eq22en02}) e os processos estocásticos exógenos. Na curva IS, é adicionado um choque exógeno, $d_{t}$, para representar disturbios da demanda agregada real.
+
+\begin{equation}\label{eq23en02}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
+\end{equation}
+
+\begin{equation}\label{eq24en02}
+{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
+\end{equation}
+
+\begin{equation}\label{eq25en02}
+\delta{E}_{t}[{\hat{y}}_{t+1}]=\delta{\hat{y}}_{t}+({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
+\end{equation}
+
+\begin{equation}\label{eq26en02}
+{\hat{\iota}}_{t}=(1-{\rho}_{i})({\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}({\hat{y}}_{t}-{\hat{y}}_{t-1}))+{\rho}_{i}{\hat{\iota}}_{t-1}+{q}_{t}
+\end{equation}
+
+\begin{equation}\label{eq27en02}
+{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
+\end{equation}
+
+\begin{equation}\label{eq28en02}
+{d}_{t}={\rho}_{d}\ast {d}_{t-1}+{\varepsilon}_{t}
+\end{equation}
+
+\begin{equation}\label{eq29en02}
+{q}_{t}\sim N\left(0,{\sigma}_{q}^{2}\right) 
+\end{equation}
+
+\noindent onde os pesos $(W_{1},W_{2},W_{3},W_{4})$ na curva de Phillips Novo-Keynesiana generalizada são definidos na equação~\ref{eq21en02}, ${\epsilon}_{t}\sim N\left( 0,{\sigma}_{z}^{2}\right)$ e ${\varepsilon}_{t}\sim N\left( 0,{\sigma}_{d}^{2}\right)$. Desta forma, os parâmetros estruturais são: $(\beta,\delta,\phi,\eta,\phi_{\pi},\phi_{y},\rho_{i},\alpha_{j}s,\rho_{z},\rho_{d},{\sigma}_{z}^{2},{\sigma}_{d}^{2},{\sigma}_{q}^{2})$. Empiricamente, estamos interessados em estimar os valores para esses parâmetros estruturais utilizando a abordagem Bayesiana.
+
+\section*{Estimação}
+
+Nesta seção apresentamos alguns pontos sobre o processo de estimação. Para a estimação do modelo Novo-Keynesiano descrito anteriormente, será usado a abordagem Bayesiana. O método tem algumas características atraentes em comparação aos métodos empregados na literatura. Como apontado por \citet{an2007bayesian}, este método é baseado em sistema significando que ele ajusta o modelo DSGE a um vetor de séries temporais agregadas. Embora uma caracterização completa do processo gerador dos dados, ele fornece um framework formal para avaliar modelos mal específicados sobre a base da densidade dos dados. Em adição, a abordagem Bayesiana também proporciona um método consistente para lidar com expectativas racionais, um dos elementos centrais dos modelos DSGE.
+
+\subsection*{Inferência Bayesiana}
+
+Assim como \citet{yao2010aggregate}, aplicaremos a abordagem Bayesiana estabelecida por \citet{dejong2000bayesian}, \citet{schorfheide2000loss} entre outros, para estimar os parâmetros estruturais do modelo DSGE. A estimação Bayesiana é baseada sobre combinar informações ganhadas da maximização da verossimilhança dos dados e informações adicionais sobre os parâmetros (as distribuições à priori). Os principais passos desta abordagem são os seguintes:
+
+Primeiro, o modelo de expectativas racionais é resolvido por meio do uso de métodos numéricos (Veja \citet{sims2002solving} e \citet{uhlig1998toolkit}) para obter a forma reduzida das equações em suas variáveis predeteminadas e exógenas. Por exemplo, o modelo DSGE linearizado pode ser escrito com um sistema de expectavivas racionais na forma:
+
+\begin{equation}\label{eq30en02}
+{Y}_{0}(\mu){S}_{t}={Y}_{1}(\mu){S}_{t-1}+{Y}_{\epsilon}(\mu){\epsilon_{t}}+{Y}_{\omega  }(\mu) {\omega}_{t}
+\end{equation}
+
+Aqui, ${S}_{t}$ é um vetor de todas as variáveis endógenas no modelo, tais como ${\hat{y}}_{t},{\hat{\pi}}_{t},{\hat{\iota}}_{t}, etc$. O vetor ${\epsilon_{t}}$ empilha os disturbios dos processos exógenos e ${\omega}_{t}$ é composto do erro de previsão das expectativas raionais um passo à frente. As entradas da matriz ${Y}(\mu)$ são funções dos parâmetros estruturais no modelo. A solução para~\ref{eq30en02} pode ser expressa como:
+
+\begin{equation}\label{eq31en02}
+{S}_{t}={\Psi}_{1}(\mu){S}_{t-1}+{\Psi}_{\epsilon}(\mu){\epsilon}_{t}
+\end{equation}
+
+O segundo passo envolve escrever o modelo na forma de espaço de estados. Para tanto, acrescentamos à equação de solução~\ref{eq31en02} uma equação de medida, que relationa as variáveis teóricas ao vetor de ${Y\_ obs}_{t}$ observáveis. 
+
+\begin{equation}\label{eq32en02}
+{Y\_ obs}_{t}=A(\mu)+B{S}_{t}+{CV}_{t}
+\end{equation}
+
+\noindent onde $A(\mu)$ é um vetor de constantes capturando a média de $S_{t}$ e $V_{t}$ é um conjunto de choques às observáveis, incluindo medias de erro. 
+
+Terceiro, quando assume-se que todos os choques na forma de espaço de estados são normalmente distribuídos, pode-se usar o filtro de Kalman (\citet{sargent1989two}) para avaliar a função de verossimilhança das observáveis ($\mu|Y\_ obs^{T}$). Em contraste aos métodos de máxima verossimilhança, a abordagem Bayesiana combina a função de verossimilhança com as densidades a priori $p(\mu)$, que inclui todas as informações extra sobre os parâmetros de interesse. A densidade à posteriori $p(\mu |{Y\_ obs}^{T})$ pode ser obtida pela aplicação do Teorema de Bayes:
+
+\begin{equation}\label{eq33en02}
+p(\mu |{Y\_ obs}^{T})(\mu |{Y\_ obs}^{T})p(\mu) 
+\end{equation}
+
+No último passo, $\mu$ é estimado pela maximização da função de verossimilhança dados os dados ($\mu |{Y\_ obs}^{T}$) reponderada pela densidade à priori $p(\mu)$, em que métodos de otimização numérica são usados para encontrar a posteriori para $\mu$ e a inversa da matriz Hessiana. Finalmente, a distribuição a posteriori é gerada por meio do uso do algorítmo Metropolis.
+
+
+
+% \SweaveInput{cap4.Rnw}
+% \SweaveInput{final.Rnw}
+
+% Formato da bibliografia
+\bibliographystyle{apalike}
+
+% Arquivo .bib
+\bibliography{ensaio2}
+
+% Apêndice(s)
+% \SweaveInput{apendice}
+% \SweaveInput{apendice2}
+
+% Fim do texto
+\end{document}
