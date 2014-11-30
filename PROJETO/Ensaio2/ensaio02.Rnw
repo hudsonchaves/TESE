@@ -38,10 +38,10 @@
 % \SweaveInput{final.Rnw}
 
 % Formato da bibliografia
-\bibliographystyle{apalike}
+\bibliographystyle{plainnat}
 
 % Arquivo .bib
-\bibliography{projetoen02}
+\bibliography{projeto}
 
 % Apêndice(s)
 % \SweaveInput{apendice}
