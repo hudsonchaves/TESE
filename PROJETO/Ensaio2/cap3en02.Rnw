@@ -13,7 +13,7 @@ Neste capítulo, apresentamos o modelo DSGE de preços rígidos devido à rigide
 Uma familia representativa que vive infinitamente obtém utilidade a partir do consumo composto do bem $C_{t}$ e sua oferta de trabalho $L_{t}$ e maximiza uma soma discontada da utilidade da forma:
 
 \begin{equation}\label{eq01en02}
-\max _{ \left\{ { C }_{ t },{ L }_{ t },{ B }_{ t } \right\}  }{ { E }_{ 0 }\left[ \sum _{ t=0 }^{ \infty  }{ { \beta  }^{ t }\left( \frac { { C }_{ t }^{ 1-\delta  } }{ 1-\delta  } -{ \chi  }_{ H }\frac { { L }_{ t }^{ 1+\phi  } }{ 1+\phi  }  \right)  }  \right]  } 
+\max_{{{C}_{t},{L}_{t},{B}_{t}}}{{E}_{0}[\sum _{t=0}^{\infty}{{\beta}^{t}(\frac{{C}_{t}^{1-\delta}}{1-\delta}-{\chi}_{H}\frac{{L}_{t}^{1+\phi}}{1+\phi})}]} 
 \end{equation}
 
 \noindent onde $C_{t}$ é um índice de consumo da família produzido usando bens indivíduais $C_{t}(i)$, 
@@ -109,8 +109,8 @@ Na economia os preços das firmas são heterogêneos com relação ao tempo dest
     \hline 
     $J$ & $h_{j}=1$ & $\alpha_{J}=0$ & $S_{J}=0$ & $\theta(J)$\tabularnewline
     \hline 
-  \caption{Notações da dinâmica da distribuição da duração dos preços (\emph{vintage})}  
   \end{tabular}
+  \caption{Notações da dinâmica da distribuição da duração dos preços (\emph{vintage})} 
 \end{center}
 
 Usando a notação da tabela~\ref{tab01en02} é possível escrever a distribuição ex-post das firmas depois do ajustamento de preços $({\tilde{\theta}_{t})$ como:

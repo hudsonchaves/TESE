@@ -41,7 +41,7 @@
 \bibliographystyle{apalike}
 
 % Arquivo .bib
-\bibliography{projeto}
+\bibliography{projetoen02}
 
 % Apêndice(s)
 % \SweaveInput{apendice}
