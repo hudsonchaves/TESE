@@ -218,6 +218,41 @@ Depois de loglinearizar as equações de equilíbrio em torno do preço flexíve
 
 \noindent onde os pesos $(W_{1},W_{2},W_{3},W_{4})$ na curva de Phillips Novo-Keynesiana generalizada são definidos na equação~\ref{eq21en02}, ${\epsilon}_{t}\sim N\left( 0,{\sigma}_{z}^{2}\right)$ e ${\varepsilon}_{t}\sim N\left( 0,{\sigma}_{d}^{2}\right)$. Desta forma, os parâmetros estruturais são: $(\beta,\delta,\phi,\eta,\phi_{\pi},\phi_{y},\rho_{i},\alpha_{j}s,\rho_{z},\rho_{d},{\sigma}_{z}^{2},{\sigma}_{d}^{2},{\sigma}_{q}^{2})$. Empiricamente, estamos interessados em estimar os valores para esses parâmetros estruturais utilizando a abordagem Bayesiana.
 
+\section*{Estimação}
+
+Nesta seção apresentamos alguns pontos sobre o processo de estimação. Para a estimação do modelo Novo-Keynesiano descrito anteriormente, será usado a abordagem Bayesiana. O método tem algumas características atraentes em comparação aos métodos empregados na literatura. Como apontado por \citet{an2007bayesian}, este método é baseado em sistema significando que ele ajusta o modelo DSGE a um vetor de séries temporais agregadas. Embora uma caracterização completa do processo gerador dos dados, ele fornece um framework formal para avaliar modelos mal específicados sobre a base da densidade dos dados. Em adição, a abordagem Bayesiana também proporciona um método consistente para lidar com expectativas racionais, um dos elementos centrais dos modelos DSGE.
+
+\subsection*{Inferência Bayesiana}
+
+Assim como \citet{yao2010aggregate}, aplicaremos a abordagem Bayesiana estabelecida por \citet{dejong2000bayesian}, \citet{schorfheide2000loss} entre outros, para estimar os parâmetros estruturais do modelo DSGE. A estimação Bayesiana é baseada sobre combinar informações ganhadas da maximização da verossimilhança dos dados e informações adicionais sobre os parâmetros (as distribuições à priori). Os principais passos desta abordagem são os seguintes:
+
+Primeiro, o modelo de expectativas racionais é resolvido por meio do uso de métodos numéricos (Veja \citet{sims2002solving} e \citet{uhlig1998toolkit}) para obter a forma reduzida das equações em suas variáveis predeteminadas e exógenas. Por exemplo, o modelo DSGE linearizado pode ser escrito com um sistema de expectavivas racionais na forma:
+
+\begin{equation}\label{eq30en02}
+{Y}_{0}\left(\mu \right){S}_{t}={Y}_{1}\left(\mu  \right){S}_{t-1}+{Y}_{\epsilon}\left(\mu\right){\epsilon_{t}} +{Y}_{\omega  }\left(\mu  \right) {\omega}_{t}
+\end{equation}
+
+Aqui, ${ S }_{ t }$ é um vetor de todas as variáveis endógenas no modelo, tais como ${\hat{y}}_{t},{\hat{\pi}}_{t},{ \hat{\iota}}_{t}, etc$. O vetor ${\epsilon_{t}}$ empilha os disturbios dos processos exógenos e ${\omega}_{t}$ é composto do erro de previsão das expectativas raionais um passo à frente. As entradas da matriz ${Y}(\mu)$ são funções dos parâmetros estruturais no modelo. A solução para~\ref{eq30en02} pode ser expressa como:
+
+\begin{equation}\label{eq31en02}
+{ S }_{ t }={ \Psi  }_{ 1 }\left( \mu  \right) { S }_{ t-1 }+{ \Psi  }_{ \epsilon  }\left( \mu  \right) { \epsilon  }_{ t }
+\end{equation}
+
+O segundo passo envolve escrever o modelo na forma de espaço de estados. Para tanto, acrescentamos à equação de solução ~\ref{eq31en02} uma equação de medida, que relationa as variáveis teóricas ao vetor de $Y_obs{t}$ observáveis. 
+
+\begin{equation}\label{eq32en02}
+{ Y\_ obs }_{ t }=A\left( \mu  \right) +B{ S }_{ t }+{ CV }_{ t }
+\end{equation}
+
+\noindent onde $A\left( \mu  \right)$ é um vetor de constantes capturando a média de $S_{t}$ e $V_{t}$ é um conjunto de choques às observáveis, incluindo medias de erro. 
+
+Terceiro, quando assume-se que todos os choques na forma de espaço de estados são normalmente distribuídos, pode-se usar o filtro de Kalman (\citet{sargent1989two}) para avaliar a função de verossimilhança das observáveis ($\mu|Y\_ obs^{T}$). Em contraste aos métodos de máxima verossimilhança, a abordagem Bayesiana combina a função de verossimilhança com as densidades a priori $p\left( \mu  \right)$, que inclui todas as informações extra sobre os parâmetros de interesse. A densidade à posteriori $p\left( \mu |{ Y\_ obs }^{ T } \right)$ pode ser obtida pela aplicação do Teorema de Bayes:
+
+\begin{equation}\label{eq33en02}
+p\left( \mu |{ Y\_ obs }^{ T } \right) \left( \mu |{ Y\_ obs }^{ T } \right) p\left( \mu  \right) 
+\end{equation}
+
+No último passo, $\mu$ é estimado pela maximização da função de verossimilhança dados os dados ($(\mu |{ Y\_ obs }^{ T } \right)$) reponderada pela densidade à priori $p\left( \mu  \right)$, em que métodos de otimização numérica são usados para encontrar a posteriori para $\mu$ e a inversa da matriz Hessiana. Finalmente, a distribuição a posteriori é gerada por meio do uso do algorítmo Metropolis.
 
 
 
