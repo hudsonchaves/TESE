@@ -19,35 +19,35 @@ Uma familia representativa que vive infinitamente obtém utilidade a partir do c
 \noindent onde $C_{t}$ é um índice de consumo da família produzido usando bens indivíduais $C_{t}(i)$, 
 
 \begin{equation}\label{eq02en02}
-{ C }_{ t }(i)={ \left[ \int _{ 0 }^{ 1 }{ { C }_{ t }{ (i) }^{ \frac { \eta -1 }{ \eta  }  } }  \right]  }^{ \frac { \eta  }{ \eta -1 }  }
+{C}_{t}(i)={[\int _{0}^{1}{{C}_{t}{(i)}^{\frac{\eta -1}{\eta}}}]}^{\frac{\eta}{\eta -1}}
 \end{equation}
 
 \noindent onde $\eta>1$ e segue-se que a correspondente demanda que minimiza o custo para $C_{t}(i)$ e o índice de preços baseado em bem-estar, $P_{t}$, são dados por
 
 \begin{equation}\label{eq03en02}
-{ C }_{ t }(i)={ \left( \frac { { P }_{ t }(i) }{ { P }_{ t } }  \right)  }^{ -\eta  }{ C }_{ t }
+{C}_{t}(i)={(\frac{{P}_{t}(i)}{{P}_{t}})}^{-\eta}{C}_{t}
 \end{equation}
 
 \begin{equation}\label{eq04en02}
-{ P }_{ t }={ \left[ \int _{ 0 }^{ 1 }{ { P }_{ t }{ (i) }^{ 1-\eta  } } di \right]  }^{ \frac { 1 }{ 1-\eta  }  }
+{P}_{t}={[\int _{0}^{1}{{P}_{t}{(i)}^{1-\eta}}di]}^{\frac{1}{1-\eta}}
 \end{equation}
 
 Por simplicidade, assumimos que as famílias ofertam unidades homogêneas de trabalho $(L_{t})$ em uma economia de mercado de trabalho competitivo. O fluxo de restrição orçamentária da família no começo do período $t$ é:
 
 \begin{equation}\label{eq05en02}
-{ P }_{ t }{ C }_{ t }+\frac { { B }_{ t } }{ { R }_{ t } } \le { W }_{ t }{ L }_{ t }+{ B }_{ t-1 }+\int _{ 0 }^{ 1 }{ { \pi  }_{ t }(i)di } 
+{P}_{t}{C}_{t}+\frac{{B}_{t}}{{R}_{t}}\le{W}_{t}{L}_{t}+{B}_{t-1}+\int _{0}^{1}{{\pi}_{t}(i)di} 
 \end{equation}
 
-\noindent onde ${ B }_{ t }$ é um título de um período e $R_{t}$ denota o retorno nominal bruto no título. ${ \pi  }_{ t }(i)$ representa o lucro nominal de uma firma que vende o bem $i$. \citet{yao2010aggregate} assume que cada família é proprietária de uma porção igual de todas as firmas. Finalmente, esta sequência do fluxo de restrição orçamentária é suplementado com uma condição de transversalidade da forma $\lim _{ T\rightarrow \infty  }{ { E }_{ t }\left[ \frac { { B }_{ t } }{ \prod _{ s=1 }^{ T }{ R_{ s } }  }  \right]  } \ge 0$. A solução para o problema de otimização da família pode ser expressada em duas condições necessárias de primeira ordem. Primeiro, a oferta ótima de trabalho é realcionada ao salário real:
+\noindent onde ${B}_{t}$ é um título de um período e $R_{t}$ denota o retorno nominal bruto no título. ${\pi}_{t}(i)$ representa o lucro nominal de uma firma que vende o bem $i$. \citet{yao2010aggregate} assume que cada família é proprietária de uma porção igual de todas as firmas. Finalmente, esta sequência do fluxo de restrição orçamentária é suplementado com uma condição de transversalidade da forma $\lim _{T\rightarrow \infty}{{E}_{t}[\frac{{B}_{t}}{\prod _{s=1}^{T}{R_{s}}}]} \ge 0$. A solução para o problema de otimização da família pode ser expressada em duas condições necessárias de primeira ordem. Primeiro, a oferta ótima de trabalho é realcionada ao salário real:
 
 \begin{equation}\label{eq06en02}
-{ \chi  }_{ H }{ L }_{ t }^{ \phi  }{ C }_{ t }^{ \delta  }=\frac { { W }_{ t } }{ { P }_{ t } } 
+{\chi}_{H}{L}_{t}^{\phi}{C}_{t}^{\delta}=\frac{{W}_{t}}{{P}_{t}} 
 \end{equation}
 
 Segundo, a equação de Euler dá a relação entre o caminho de consumo ótimo e os preços dos ativos:
 
 \begin{equation}\label{eq07en02}
-1=\beta { E }_{ t }\left[ { \left( \frac { { C }_{ t } }{ { C }_{ t+1 } }  \right)  }^{ \delta  }\frac { { R }_{ t }{ P }_{ t } }{ { P }_{ t+1 } }  \right] 
+1=\beta {E}_{t}[{(\frac{{C}_{t}}{{C}_{t+1}})}^{\delta}\frac{{R}_{t}{P}_{t}}{{P}_{t+1}}] 
 \end{equation}
 
 \section*{Firmas na Economia}
@@ -60,30 +60,30 @@ O lado de produção da economia é composto de uma série de firmas em competi�
 Y_{t}(i)=Z_{t}L_{t}(i)
 \end{equation}
 
-\noindent onde $Z_{t}$ denota choque de produtividade. O logarítmo dos desvios dos choques, ${\hat{z}}_{t}$, segue um processo $AR(1)$ ${\hat{z}}_{t}={\rho}_{z}{\hat{z}}_{t-1}+{ \varepsilon}_{z,t}$, e ${\varepsilon}_{z,t}$ é um ruído branco com ${\rho}_{z}\epsilon [0,1)$. $L_{t}(i)$ é a demanda de trabalho pela firma $i$. 
+\noindent onde $Z_{t}$ denota choque de produtividade. O logarítmo dos desvios dos choques, ${\hat{z}}_{t}$, segue um processo $AR(1)$ ${\hat{z}}_{t}={\rho}_{z}{\hat{z}}_{t-1}+{\varepsilon}_{z,t}$, e ${\varepsilon}_{z,t}$ é um ruído branco com ${\rho}_{z}\epsilon [0,1)$. $L_{t}(i)$ é a demanda de trabalho pela firma $i$. 
 
 Seguindo a equação~\ref{eq03en02}, a demanda por bens intermediários é dada por:
 
 \begin{equation}\label{eq09en02}
-{ Y }_{ t }(i)={ \left( \frac { { P }_{ t }(i) }{ { P }_{ t } }  \right)  }^{ -\eta  }{ Y }_{ t }
+{Y}_{t}(i)={\frac{{P}_{t}(i)}{{P}_{t}}}^{-\eta}{Y}_{t}
 \end{equation}
 
 Em cada período, as firmas escolhem a demanda ótima pelo insumo trabalho para maximizar seus lucros reais dado o salário nominal, demanda de mercado (~\ref{eq09en02}) e a tecnologia de produção (~\ref{eq08en02}):
 
 \begin{equation}\label{eq10en02}
-\max _{ { L }_{ t }(i) }{ { { \Pi  }_{ t }(i) } } =\frac { { P }_{ t }(i) }{ { P }_{ t } } { Y }_{ t }(i)-\frac { { W }_{ t } }{ { P }_{ t } } { L }_{ t }(i)
+\max _{{L}_{t}(i)}{{{\Pi}_{t}(i)}}=\frac{{P}_{t}(i)}{{P}_{t}}{Y}_{t}(i)-\frac{{W}_{t}}{{P}_{t}}{L}_{t}(i)
 \end{equation}
 
 E o custo marginal real pode ser derivado deste problema de maximização da seguinte forma:
 
 \begin{equation}\label{eq11en02}
-{ mc }_{ t }=\frac { { { W }_{ t } }/{ { P }_{ t } } }{ \left( 1-a \right) { Z }_{ t } } 
+{mc}_{t}=\frac{{{W}_{t}}/{{P}_{t}}}{(1-a){Z}_{t}} 
 \end{equation}
 
 Além disso, usando a função de produção (~\ref{eq08en02}), a equação de demanda por produto (~\ref{eq09en02}), a condição de oferta de trabalho (~\ref{eq06en02}) e o fato de que no equilíbrio $C_{t}=Y_{t}$, podemos expressar o custo marginal real apenas em termos do produto agregado e choque tecnológico, conforme \citet{yao2010aggregate}. 
 
 \begin{equation}\label{eq12en02}
-{ mc }_{ t }={ Y }_{ t }^{ \phi +\delta  }{ Z }_{ t }^{ -\left( 1+\phi  \right)  }
+{mc}_{t}={Y}_{t}^{\phi +\delta}{Z}_{t}^{-(1+\phi)}
 \end{equation}
 
 \subsection*{Decisão de Precificação sobre Rigidez Nominal}
@@ -116,13 +116,13 @@ Na economia os preços das firmas são heterogêneos com relação ao tempo dest
 Usando a notação da tabela~\ref{tab01en02} é possível escrever a distribuição ex-post das firmas depois do ajustamento de preços $({\tilde{\theta}_{t})$ como:
 
 \begin{equation}\label{eq13en02}
-{ \tilde { \theta  }  }_{ t }(j)=\begin{cases} \sum _{ i=1 }^{ J }{ { h }_{ t }{ \theta  }_{ t }(i) } ,j=0 \\ { \alpha  }_{ j }{ \theta  }_{ t }(j),j=1,...,J \end{cases}
+{\tilde{\theta}}_{t}(j)=\begin{cases} \sum _{i=1}^{J}{{h}_{t}{\theta}_{t}(i)} ,j=0 \\ {\alpha}_{j}{\theta}_{t}(j),j=1,...,J \end{cases}
 \end{equation}
 
 As firmas que re-otimizam seus preços no período $t$ são caracterizadas com \emph{'Duration 0'} e a proporção destas firmas é dado pelas taxas de risco de todos os grupos de duração multiplicado pelo sua correspondente densidade. As firmas restantes em cada grupo de duração são as firmas que não ajustam seus preços. Quando o período $t$ é longo, esta distribuição ex-post se torna a distribuição ex-ante para o novo período, $({\tilde{\theta}_{t+1})$. Todos os grupos de duração de preços movem para o próximo, porque todos os preços tem idade de um período. Ela produz a distribuição de duração dos preços estacionária, ${\theta}(j)$, para $j=0,1,...,J-1$:
 
 \begin{equation}\label{eq14en02}
-{ \theta  }_{ j }=\frac { { S }_{ j } }{ \sum _{ j=0 }^{ J-1 }{ { S }_{ j } }  } 
+{\theta}_{j}=\frac{{S}_{j}}{\sum _{j=0}^{J-1}{{S}_{j}}} 
 \end{equation}
 
 Dada a forma geral de rigidez nominal introduzida acima, a única heterogeneidade entre as firmas é o momento quando elas ajustaram seus preços, $j$. Firmas no grupo de duração de preços $j$ partilham a mesma probabilidade de ajustar seus preços, $h_{t}$, e a distribuição de firmas entre as durações é dada por ${\theta}(j)$. Em um dado período quando é permitido a uma firma alterar seus preços, o preço ótimo escolhido reflete a possiblidade de que ela não ajustará novamente em um futuro próximo. Consequentemente, firmas ajustando os preços escolhem os preços ótimos que maximizam o somatório descontado dos lucroes reais ao longo do horizonte temporal no qual o novo preço será fixo. A probabilidade de que um novo preço seja fixado ao menos por $j$ períodos é dada pela função de sobrevida, $S_{j}$, definida na tabela~\ref{tab01en02}.
@@ -130,7 +130,7 @@ Dada a forma geral de rigidez nominal introduzida acima, a única heterogeneidad
 \citet{yao2010aggregate} configurou o problema de maximização do ajustador de preços como segue:
 
 \begin{equation}\label{eq15en02}
-\max _{ { P }_{ t }^{ * } }{ { E }_{ t }\sum _{ j=0 }^{ J-1 }{ { S }_{ j }{ Q }_{ t,t+j }\left[ { Y }_{ t+j|t }^{ d }\frac { { P }_{ t }^{ * } }{ { P }_{ t+j } } -\frac { { TC }_{ t+j } }{ { P }_{ t+j } }  \right]  }  } 
+\max _{{P}_{t}^{*}}{{E}_{t}\sum _{j=0}^{J-1}{{S}_{j}{Q}_{t,t+j}[{Y}_{t+j|t}^{d}\frac{{P}_{t}^{*}}{{P}_{t+j}}-\frac{{TC}_{t+j }}{{P}_{t+j}}]}} 
 \end{equation}
 
 \noindent onde ${ E }_{ t }$ denota a expectativa condicional baseada sobre o conjunto de informações no período $t$ e ${ Q }_{ t,t+j }$ é o fator de disconto estocástico apropriado para descontar lucros reais de $t$ a $t+j$. Uma firma ajustando o preço maximiza o lucro sujetio à demanda para seu bem intermediário no período $t+j$ dado que a firma altera o preço no periodo $t$ e pode ser expressado como: 
