@@ -645,7 +645,7 @@ Assim, o índice de preços usa a combinação de dados online e as estruturas d
 O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
 Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$:
 
-\begin{equation}\label{eq1}
+\begin{equation}\label{eq01en01}
 R_{t,t-1}^{j}=\prod_{i}\left(\frac{p_{t}^{t}}{p_{t-1}^{i}}\right)^{\nicefrac{1}{n_{j,t}}}
 \end{equation}
 
@@ -653,13 +653,13 @@ R_{t,t-1}^{j}=\prod_{i}\left(\frac{p_{t}^{t}}{p_{t-1}^{i}}\right)^{\nicefrac{1}{
 
 O segundo passo é computar o índice em nível de categoria em $t$:
 
-\begin{equation}\label{eq2}
+\begin{equation}\label{eq02en01}
 I_{t}^{j}=R_{1,0}^{j}\ast{R}_{2,1}^{j}\ast{...}\ast{R}_{t,t-1}^{j}
 \end{equation}
 
 Finalmente, o índice de preços no tempo $t$ é a média aritmética ponderada de todos os índices das categorias:
 
-\begin{equation}\label{eq3}
+\begin{equation}\label{eq03en01}
 IPO_{t}=\sum_{j}{\frac{w_{j}}{w}I_{t}^{j}} 
 \end{equation}
 
@@ -683,13 +683,13 @@ A principal característica de dados de sobrevivência é a presença de censura
 
 Segundo \citet{colosimo2006analise}, a função de sobrevivência é definida como a probabilidade de uma observação não falhar até um certo tempo $t$, ou seja, a probabilidade de uma observação sobreviver (preço não se alterar) ao tempo $t$. Por outro lado, se $T$ é a variável aleatória que mede a duração do preço, com função densidade $f\left(t\right)$ e densidade acumulada $F\left(t\right)$, o risco $h\left(t\right)$ é a probabilidade limite de que a mudança no preço ocorra em $t$, condicional ao preço não se alterar até este momento. 
 
-\begin{equation}\label{eq4}
+\begin{equation}\label{eq04en01}
 h\left(t\right)=\lim_{\Delta t\rightarrow 0}{\frac{Pr\left(t<T<t+\Delta t|t<T\right)}{\Delta t}=\frac{f\left(t\right)}{1-F\left(t\right)}} 
 \end{equation}
 
 Esta função risco mede o risco instantâneo de um preço se alterar, condicionado à sobrevida. Podemos adicionar todas as taxas de risco ao longo do tempo e obter o risco total de um preço alterar acumulado até o tempo $t$. Isto é representado pelo função risco acumulado, $H(t)$:
 
-\begin{equation}\label{eq5}
+\begin{equation}\label{eq05en01}
 H\left(t\right)=\int_{0}^{t}{h\left(u\right)du=-\ln{\left(1-F\left(t\right)\right)}} 
 \end{equation}
 
@@ -697,7 +697,7 @@ $H(t)$ é um aumento, função ilimitada de $t$, que acumula a probabilidade con
 
 Para estimar $H(t)$ e $h(t)$ empiricamente, usaremos conforme \citet{cavallo2010scraped} uma abordagem não paramétrica dada por Nelson (1972) e Aalen (1978), que não requer hipóteses de distribuição de probabilidade. Métodos semi-paramétricos como o modelo Cox podem ser utilizados futuramente uma vez que permitem a incorporação de variáveis explicativas e a consideração da heterogeneidade não observável em nível de categoria de preços. Uma estimativa simples da função risco acumulado, $H(t)$, é dado por:
 
-\begin{equation}\label{eq6}
+\begin{equation}\label{eq06en01}
 \hat{H}\left(t\right)=\sum_{j|{t}_{j}\le t}{\frac{{c}_{j}}{{n}_{j}}} 
 \end{equation}
 
@@ -705,7 +705,7 @@ Para estimar $H(t)$ e $h(t)$ empiricamente, usaremos conforme \citet{cavallo2010
 
 Para obter a função risco suavizada $\hat{h}\left(t\right)$, pode-se usar a seguinte equação:
 
-\begin{equation}\label{eq7}
+\begin{equation}\label{eq07en01}
 \hat{h}\left(t \right)=\frac{1}{b}\sum_{j\epsilon D}{K}\left(\frac{t-{t}_{j}}{b}\right)\Delta \hat {H}\left({t}_{j}\right) 
 \end{equation}
 
@@ -737,7 +737,7 @@ A metodologia descrita nesta seção é baseada sobre \citet{aucremanne2005time}
 
 Para modelar a probabilidade de um preço mudar será preciso focar sobre os eventos de mudança nos preços enquanto ignoramos o tamanho da mudança nos preços. Assim, defina $Y_{jkt}$ como uma variável binária:
 
-\begin{equation}\label{eq8}
+\begin{equation}\label{eq08en01}
 Y_{jkt} =\begin{cases}1 &  P_{jkt} \neq P_{jk,t-1}\\0 & P_{jkt} = P_{jk,t-1}\end{cases}
 \end{equation}
 
@@ -745,27 +745,27 @@ Y_{jkt} =\begin{cases}1 &  P_{jkt} \neq P_{jk,t-1}\\0 & P_{jkt} = P_{jk,t-1}\end
 
 A escolha das variáveis explicativas para o modelo é depende sobre as hipóteses sobre o mecanismo de formação de preços subjacente. Se assumimos que os definidores de preço aplicam a regra de precificação de \citet{calvo1983staggered}, então a probabilidade de ajuste dos preços não depende do preço decorrido desde a última alteração no preço ou sobre o estado da economia e a única variável explicativa será uma constante. Neste caso, o modelo logit de probabilidade da firma $k$ alterar o preço do produto $j$ no começo do período $t$ é a seguinte:
 
-\begin{equation}\label{eq9}
+\begin{equation}\label{eq09en01}
 Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { \beta  }_{ 0 } \right)  }{ 1+exp\left( { \beta  }_{ 0 } \right)  } 
 \end{equation}
 
-Sobre a hipótese de uma regra de precificação conforme Calvo, a probabilidade do preço alterar é descrita apenas por ${ \beta  }_{ 0 }$. Quanto maior for ${ \beta  }_{ 0 }$ menos rígidos são os preços. A equação~\ref{eq9} pode ser transformada para incluir também os elementos do modelo de \citet{taylor1980aggregate}, que assume que as firmas ajustam seus preços depois de um número de períodos fixo desde a última mudança. Isto é feito afirmando que o truncamento ocorre depois de um número fixo de períodos.
+Sobre a hipótese de uma regra de precificação conforme Calvo, a probabilidade do preço alterar é descrita apenas por ${ \beta  }_{ 0 }$. Quanto maior for ${ \beta  }_{ 0 }$ menos rígidos são os preços. A equação~\ref{eq09en01} pode ser transformada para incluir também os elementos do modelo de \citet{taylor1980aggregate}, que assume que as firmas ajustam seus preços depois de um número de períodos fixo desde a última mudança. Isto é feito afirmando que o truncamento ocorre depois de um número fixo de períodos.
 
 Se for assumido uma regra de precificação, então, seguindo \citet{cecchetti1986frequency}, a firma $k$ mudará o preço do produto $j$ apenas se a diferença entre o preço desejado $P_{jkt}^{*}$ e o preço atual $P_{jkt}$ excede uma constante limiar $h_{jk}^{*}$ (especifica para cada produto e firma):
 
-\begin{equation}\label{eq10}
+\begin{equation}\label{eq10en01}
 Pr\left( { Y }_{ jkt }=1 \right) =Pr\left( \ln { \left( \frac { { P }_{ jkt }^{ * } }{ { P }_{ jkt } }  \right) \ge { h }_{ jk }^{ * } }  \right) 
 \end{equation}
 
 De acordo com \citet{cecchetti1986frequency}, a probabilidade de que a diferença entre o preço atual e desejado exceder um certo limiar pode ser expressa em termos de variáveis exploratórias: inflação acumulada até a última alteração do preço, tempo decorrido até a última alteração, tamanho da última alteração no preço e mudança acumulada na variável de demanda até o ajuste do preço anterior. Isso nos leva à seguinte representação logit do modelo de precificação estado-dependente:
 
-\begin{equation}\label{eq11}
+\begin{equation}\label{eq11en01}
 Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { \beta  }_{ 0 }+\sum _{ i=1 }^{ N }{ { \beta  }_{ i }{ X }_{ i,jkt } }  \right)  }{ 1+exp\left( { \beta  }_{ 0 }+\sum _{ i=1 }^{ N }{ { \beta  }_{ i }{ X }_{ i,jkt } }  \right)  } 
 \end{equation}
 
 \noindent onde ${ X }_{ i,jkt }$ denota uma variável exógena da listadas anteriormente.
 
-A equação~\ref{eq11} pode ser vista como uma extensão da equação~\ref{eq9}. Contudo, ela permite testar se todos os formadores de preços na economia são tempo-dependentes. Obviamente, se $\beta_{1},...,\beta_{N}$ não são significativamente diferentes de 0, podemos concluir que todas as firmas seguem um modelo de precificação de Calvo. Por outro lado, estimativas significantes para qualquer $\beta_{1},...,\beta_{N}$ poderia ser interpretada como uma rejeição ao modelo de Calvo. \citet{aucremanne2005time} argumentam que as estimativas de $\beta_{1},...,\beta_{N}$ capturam tanto o impacto das variáveis sobre a probabilidade do preço alterar e a participação deste particular comportamento. Portanto, a rejeição do modelo de Calvo não significará que não existem formadores de preço que seguem esta regra na economia. Ao contrário, indicará que existe uma participação significativa de firmas seguindo o modelo de precificação estado-dependente.
+A equação~\ref{eq11en01} pode ser vista como uma extensão da equação~\ref{eq09en01}. Contudo, ela permite testar se todos os formadores de preços na economia são tempo-dependentes. Obviamente, se $\beta_{1},...,\beta_{N}$ não são significativamente diferentes de 0, podemos concluir que todas as firmas seguem um modelo de precificação de Calvo. Por outro lado, estimativas significantes para qualquer $\beta_{1},...,\beta_{N}$ poderia ser interpretada como uma rejeição ao modelo de Calvo. \citet{aucremanne2005time} argumentam que as estimativas de $\beta_{1},...,\beta_{N}$ capturam tanto o impacto das variáveis sobre a probabilidade do preço alterar e a participação deste particular comportamento. Portanto, a rejeição do modelo de Calvo não significará que não existem formadores de preço que seguem esta regra na economia. Ao contrário, indicará que existe uma participação significativa de firmas seguindo o modelo de precificação estado-dependente.
 
 \subsection*{Determinantes para a probabilidade do preço alterar}
 
@@ -781,9 +781,9 @@ A seguir possíveis variáveis a serem utilizadas no modelo logit para investiga
   \item Variáveis setoriais: Finalmente, os mecanismos de formação dos preços podem diferir entre firmas e estabelecimentos por setor de atuação. Este efeito pode ser capturado por um conjunto de variáveis que incluirão \emph{dummies} para os principais setores da economia.
 \end{enumerate}
 
-Assim, a representação do modelo logit considerando a abordagem de precificação estado-dependente da equação~\ref{eq11} é agora estendido para permitir efeitos aleatórios $u_{jk}$ que são específicos para todos os pares de produto-firmas:
+Assim, a representação do modelo logit considerando a abordagem de precificação estado-dependente da equação~\ref{eq11en01} é agora estendido para permitir efeitos aleatórios $u_{jk}$ que são específicos para todos os pares de produto-firmas:
 
-\begin{equation}\label{eq12}
+\begin{equation}\label{eq12en01}
 Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { X }_{ jkt }\beta +{ u }_{ jk }+{ \varepsilon  }_{ jkt } \right)  }{ 1+exp\left( { X }_{ jkt }\beta +{ u }_{ jk }+{ \varepsilon  }_{ jkt } \right)  } 
 \end{equation}
 
@@ -801,7 +801,258 @@ Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { X }_{ jkt }\beta +{ u }_{ 
 \bibliography{projeto}
 
 % Apêndice(s)
-% \SweaveInput{apendice}
+\appendix
+
+\chapter{METODOLOGIA IBGE}\label{ap1}
+
+O Sistema Nacional de Preços ao Consumidor (SNIPC) efetua a produção e sistemática de índices de preços ao consumidor tendo como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para levantamento de aluguel e condomínio). O sistema abrange as regiões metropolitanas do Rio de Janeiro, Porto Alegre, Belo Horizonte, Recife, São Paulo, Belém, Fortaleza, Salvador e Curitiba, além do Distrito Federal e do município de Goiânia. A partir de janeiro de 2014, o SNIPC passou a incorporar a Regiâo Metropolitana de Vitória/ES e o município de Campo Grande/MS. 
+
+As motivações para criação do Índice Nacional de Preços ao Consumidor Amplo (IPCA) e Índice Nacional de Preços ao Consumidor (INPC) foram a obtenção de medida geral de inflação e a indexação salarial, respectivamente.
+
+% A partir de Janeiro de 2012, o IPCA passou a ser calculado com base nos valores de despesa obtidos na Pesquisa de Orçamentos Familiares (POF 2008-2009) . A POF é realizada a cada cinco anos pelo IBGE em todo o território brasileiro o que permite atualizar os pesos dos produtos e serviços nos orçamentos das famílias. Na tabela abaixo, os pesos antigos e atuais de cada produto e serviço.
+% 
+% 
+% \begin{table}[h]
+% \centering
+% \begin{tabular}{lcc}
+% \hline
+% \multicolumn{3}{c}{PESO POR GRUPO DE PRODUTO E SERVIÇO} \\ \hline
+% \multicolumn{1}{c}{TIPO DE GASTO} & \begin{tabular}[c]{@{}c@{}}ATÉ 31.12.2011\\ (\%)\end{tabular} & \begin{tabular}[c]{@{}c@{}}A PARTIR 01.01.2012\\ (\%)\end{tabular}  \\ \hline
+% Alimentação e Bebidas     & 23,46 & 23,12  \\
+% Transportes               & 18,69 & 20,54  \\
+% Habitação                 & 13,25 & 14,62  \\
+% Saúde e cuidados pessoais & 10,76 & 11,09  \\
+% Despesas Pessoais         & 10,54 & 9,94   \\
+% Vestuário                 & 6,94  & 6,67   \\
+% Comunicação               & 5,25  & 4,96   \\
+% Artigos de Residência     & 3,90  & 4,69   \\
+% Educação                  & 7,21  & 4,37   \\
+% \textbf{TOTAL}            & \textbf{100} & \textbf{100} \\ \hline                                                     
+% \end{tabular}
+% \caption{Pesos por tipo de gasto}
+% \label{table:03}
+% \end{table}
+
+As etapas para a construção dos índices de preços são elencadas abaixo. Para maiores detalhes, consultar \citet{ibgemetodos}.
+
+\begin{enumerate}
+  \item Definição da população objetivo: 
+  \begin{enumerate} 
+    \item Para o INPC são a famílias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 6 salários-mínimos e cujos chefes são assalariados; 
+    \item Para o IPCA, as familias residentes nas áreas urbanas das regiões de abrangência do SNIPC com rendimentos de 1 a 40 salários-mínimos, qualquer que seja a fonte de rendimentos.
+  \end{enumerate}
+  \item Obter estruturas de ponderação: O conjunto de bens e serviços representativos do consumo dos grupos e os valores de despesa que lhes são associados. 
+  \begin{enumerate}
+    \item Pode ser diferente para uma determinada população-objetivo;
+    \item São resultado da consolidação dos orçamentos familiares levantados pela POF;
+    \item São montadas de forma que categorias de consumo de mesma natureza fiquem juntas. Hierarquicamente \footnote[2]{Por exemplo, Laranja-pera é um subitem do item "Frutas" que conjuntamente com outros itens formam o subgrupo "Alimentação no Domicílio", o qual, unido ao subgrupo "Alimentação Fora do Domicílio" compõe o grupo "Alimentação e Bebidas". Retirado de \citet{ibgemetodos}}: 
+    \begin{enumerate}
+      \item Grupo
+      \item Subgrupo
+      \item Item
+      \item Subitem
+    \end{enumerate}
+  \end{enumerate}
+  \item Cálcular os Pesos:
+  \begin{enumerate}
+    \item Anualisar os valores de despesa com consumo oriúndas da POF que são coletados em diferentes períodos de referência;
+    \item Colocar as despesas anuais em preços constantes de 15 de janeiro de 2009;
+    \item Somar para cada subitem, despesas das familias pertencentes à população-objetivo;
+    \item A razão da soma anterior e a despesa total de todas as familias da região em questão gera o índice.
+  \end{enumerate}
+  \item Definir estruturas de consumo: A partir da participação dos subitens, define-se quais permanecerão para o cálculo do índice. Para tanto, utiliza-se o seguinte critério:
+    \begin{enumerate}
+    \item subitens com participação igual ou superior a 0,07\% fazem parte das estruturas;
+    \item subitens com participação inferior a 0,01\% em hipótese alguma fazem parte das estruturas;
+    \item subitens com ponderação igual ou superior a 0,01\% e inferior a 0,07\% podem fazer parte para assegurar que o item do qual fazem parte tenha cobertura de 70\% dos gastos realizados com os componentes do item.
+    \end{enumerate}
+  \item Cadastrar informantes: Por meio da Pesquisa de Locais de Compra (PLC) faz-se o cadastro dos estabelecimentos.
+  \item Cadastrar produtos: Por meio da Pesquisa de Especificação de Produtos e Serviços (PEPS) obtém-se os produtos.
+  \item Coletar preços: Tarefa contínua, realizada mensalmente, nas áreas de cobertura da pesquisa, ao longo do mês. Para viabilizá-la existem pesquisadores de campo dedicados à coleta de informações necessárias à produção dos índices. Questionário eletrônico de coleta instalado em computador de mão, no qual estão descritas as características dos produtos ou serviços nele investigados.
+\end{enumerate}
+
+A tabela~\ref{tab01ap01}, apresenta um resumo das fontes de informações relevantes para os índices de preços: Pesquisa de Orçamentos Familiares (POF), Pesquisa de Locais de Compra (PLC) e Pesquisa de Espicificação de Produtos e Serviços (PEPS).
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lc}
+\hline
+\multicolumn{2}{c}{PESQUISAS BÁSICAS}                                            \\ \hline
+POF & Fornece as estruturas de ponderação para cada grupo de bens e serviços).   \\
+PLC & Fornece o cadastro de informantes da pesquisa que tem manutenção constante.\\ 
+PEPS & Fornece o cadastro de produtos e serviços a serem pesquisados.            \\ \hline
+\end{tabular}
+\caption{Principais Pesquisas Utilizadas na Metodologia}
+\label{tab01ap01}
+\end{table}
+
+Por fim, temos a metodologia de cálculo dos índices de preços. Sinteticamente, partindo-se de milhares de preços coletados mensalmente, obtêm-se no primeiro processo-síntese, as estimativas dos movimentos de preços referentes a cada produto pesquisado. Estes resultados são agregados por uma fórmula elementar de cálculo e geram a estimativa para variação de preços de cada subitem; essas estimativas, por sua vez, por outro processo agregativo, produzem os índices referentes a itens, que, por fim, geram os índices regionais e nacional mensais de cada população-objetivo.
+
+\section*{Cálculo no nível de produto}
+
+Primeiro, calcula-se mensalmente o relativo de preços referentes a dois meses e temos a estimativa da variação mensal dos preços do produto $j$, ou relativo do produto $j$, conforme:
+
+\begin{equation}\label{eq01ap01}
+{R}_{t-1,t}^{j}=\frac{{\overline{P}}_{t}^{j}}{{\overline{P}}_{t-1}^{j}}=\frac{\frac{1}{{n}_{t}}\sum_{L=1}^{{n}_{t}}{{p}_{t}^{j,L}}}{\frac{1}{{n}_{t-1}}\sum_{L=1}^{{n}_{t-1}}{{p}_{t-1}^{j,L}}} 
+\end{equation}
+
+\noindent onde ${R}_{t-1,t}^{j}$ é a medida da variação de preços do produto $j$ entre os meses $t-1$ e $t$, ${\overline{P}}_{t}^{j}$ e ${\overline{P}}_{t-1}^{j}$ os preços médio do produto $j$ nos meses $t$ e $t-1$, respectivamente, assim como ${p}_{t}^{j,L}$ e ${p}_{t-1}^{j,L}$ são os preços do produto $j$ no local $L$ nos meses $t$e $t-1$. Por fim, ${n}_{t}$ e ${n}_{t-1}$ são os números de locais que compõem a amostra do produto nos meses $t$ e $t-1$.
+
+Por conseguinte, o próximo passo é a agregação no nível de subitem. Para tanto, calcula-se a média geométrica dos resultados obtidos para cada produto que compõe o subitem. Assim, 
+
+\begin{equation}\label{eq04ap01}
+{R}_{t-1,t}^{k}=\sqrt[{m}_{k}]{\prod_{j=1}^{{m}_{k}}{{R}_{t-1,t}^{j}}} 
+\end{equation}
+
+\noindent onde ${R}_{t-1,t}^{k}$ é a variação média de preços entre os meses $t-1$ e $t$ dos produtos que compõem o subitem $k$, ${R}_{t-1,t}^{j}$ é a variação do preço do produto $j$ entre os meses $t-1$ e $t$ (fórmula~\ref{eq03ap01) e $m_{k}$ é o número de produtos do subitem $k$. Como observa-se da equação~\ref{eq04ap01}, todos os produtos participam do resultado do subitem com a mesma ponderação.
+
+No que diz respeito aos resultados ao longo do tempo, evidencia-se a importância de manter-se o painel de produtos fixos, a exemplo do que ocorre com o painel de locais, sob pena de incorporar falsas variações de preços. Desta forma, o IBGE imputa o preço de um produto para determinado local ou subitem. Para maiores informações de como é feito esse processo, consultar \citet{ibgemetodos}.
+
+\section*{Cálculo no nível de item}
+
+Usa-se a fórmula de Laspeyres que expressa a razão entre o gasto efetuado no momento $t$, necessário para consumir as mesmas quantidades do momento $0$, e o gasto efetuado no momento $0$. A fórmula~\ref{eq05ap01} representa o índice:
+
+\begin{equation}\label{eq05ap01}
+{L}_{0,t}=\sum_{i=1}^{n}{\left(\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}\right)}\left(\frac{{p}_{t}^{i}}{{p}_{0}^{i}}\right) 
+\end{equation}
+
+\noindent onde $\frac{{p}_{t}^{i}}{{p}_{0}^{i}}=R_{0,t}^{i}$ é o estimador da variação de preços do subitem $i$ entre os momentos $0$ e $t$ e $\frac{{p}_{0}^{i}{q}_{0}^{i}}{\sum_{j=1}^{n}{{p}_{0}^{j}{q}_{0}^{j}}}=W_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF. Observe-se que tanto $R_{0,t}^{i}$ como $W_{0}^{i}$ referem-se, na prática, a pequenos agregados de produtos. Para se conhecer a variação de preços do item $m$ para uma determinada área e faixa de rendimento em ciclos mensais utiliza-se a fórmula~\ref{eq06ap01}.
+
+\begin{equation}\label{eq06ap01}
+{I}_{t-1,t}^{m}=\frac{\sum_{i=1}^{n}{{W}_{t-1}^{i}{R}_{t-1,t}^{i}}}{\sum_{i=1}^{n}{{W}_{t-1}^{i}}} 
+\end{equation}
+
+\noindent onde ${I}_{t-1,t}^{m}$ é o índice do item $m$ entre os meses $t-1$ e $t$, ${W}_{t-1}^{i}$ é o peso do subitem $i$ em $t-1$ e ${R}_{t-1,t}^{i}$ é o relativo do subitem $i$ entre $t-1$ e $t$. Além disso, o peso ${W}_{t-1}^{i}$ a partir de $t=2$ é dado por:
+
+\begin{equation}\label{eq07ap01}
+{W}_{t-1}^{i}={W}_{0}^{i}\prod_{j=0}^{t-2}{\frac{{R}_{j,j+1}^{i}}{{I}_{j,j+1}}} 
+\end{equation}
+
+\noindent onde ${W}_{0}^{i}$ é o peso do subitem $i$ obtido a partir da POF, ${R}_{j,j+1}^{i}$ é o relativo do subitem $i$ entre os meses $j$ e $j+1$ e ${I}_{j,j+1}$ é o resultado do índice geral entre os meses $j$ e $j+1$.
+
+\section*{Cálculo dos índices regionais}
+
+O resultado mensal para a área $A$ e população-objetivo $F$ é dado por:
+
+\begin{equation}\label{eq08ap01}
+{IPC}_{t-1,t}^{A,F}=\sum_{m}^{M}{{W}_{t-1}^{m}{I}_{t-1,t}^{m}} 
+\end{equation}
+
+\noindent onde ${I}_{t-1,t}^{m}$ é o índice do item $m$ obtido conforme a equação~\ref{eq06ap01} e ${W}_{t-1}^{m}$ corresponde ao peso de cada item e é obtido somando-se os pesos no período $t-1$ por meio da equação~\ref{eq07ap01} utilizando todos os subitens que compõem o respectivo item $m$.
+
+\section*{Cálculo dos índices nacionais}
+
+Os índices nacionais são obtidos a partir dos índices regionais. O método empregado para obtenção dos índices nacionais consiste no cálculo de uma média aritmética ponderada dos índices regionais mensais, conforme:
+
+\begin{equation}\label{eq09ap01}
+{INPC}_{t-1,t}=\sum_{A=1}^{11}{{W}^{A,F}{IPC}_{t-1,t}^{A,F}}
+\end{equation}
+
+\noindent onde ${INPC}_{t-1,t}$ é o índice nacional referente à variação de preços entre os meses $t-1$ e $t$, ${IPC}_{t-1,t}^{A,F}$ é o índice da área $A$, população-objetivo $F$, obtido via~\ref{eq08ap01}. Além disso, ${W}^{A,F}$ é o peso da área $A$, população-objetivo $F$. Na mais recente atualização, tendo como fonte a POF 2008-2009, os pesos das regiões foram obtidos com base nas estimativas da população urbana para os estados, Grandes Regiões e Brasil. A tabela~\ref{tab02ap01}, apresenta os índices regionais antes e após a alteração. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\hline
+\multicolumn{1}{l|}{Regiões} & \multicolumn{1}{l|}{IPCA} & INPC  \\ \hline
+Belém                      & 4,65                      & 7,03  \\
+Fortaleza                  & 3,49                      & 6,61  \\
+Recife                     & 5,05                      & 7,17  \\
+Salvador                   & 7,35                      & 10,67 \\
+Belo Horizonte             & 10,86                     & 10,60 \\
+Vitória                    & 1,78                      & 1,83  \\
+Rio de Janeiro             & 12,06                     & 9,51  \\
+São Paulo                  & 30,67                     & 24,24 \\
+Curitiva                   & 7,79                      & 7,29  \\
+Porto Alegre               & 8,40                      & 7,38  \\
+Campo Grande               & 1,51                      & 1,64  \\
+Goiânia                    & 3,59                      & 4,15  \\
+Brasília                   & 2,80                      & 1,88  \\ \hline
+\end{tabular}
+\caption{Participação do índice regional no agregado nacional}
+\label{tab02ap01}
+\end{table}
+
+\chapter{EXEMPLO DE COLETA}\label{ap2}
+
+\begin{small}
+\begin{Schunk}
+\begin{Sinput}
+> # library(devtools)
+> # install_github("hadley/rvest")
+> # 
+> # 
+> # library(rvest)
+> # 
+> # # biscoitos <- html("http://www.paodeacucar.com.br/secoes/C4228_C4371/biscoitos-salgados")
+> # # preco <-  biscoitos %>% 
+> # #   html_nodes("h3 a") %>% 
+> # #   html_text() # aqui, o valor final da tag a dentro de h3
+> # # preco
+> # 
+> # paoacucar <- html("http://www.paodeacucar.com.br/") # pegar o código html da página
+> # 
+> # secoes <-  paoacucar %>% 
+> #   html_nodes("li a") %>% # dentro do nó "li" pego a tag "a"
+> #   html_attr("href") # aqui extração de atributo da tag "a"
+> # secoes
+> # 
+> # # Porém, dentro do nó "li" pode existir outras coisas além das seções de produtos 
+> # do supermercado.Assim, utilizo o código abaixo para extrair de "secoes" apenas as 
+> # strings que têm a palavra secoes. Para tanto utilizo a função grepl.
+> # 
+> # filtered_secoes <- secoes[grepl(".*secoes.*", secoes)]
+> # 
+> # 
+> # # Agora, utilizo as seções filtradas para coletar os preços e os nomes dos produtos. 
+> # O for abaixo realiza essa tarefa. Cada seção pode ter um número x de páginas que contêm 
+> # os preços e nomes dos produtos. O código abaixo utiliza o "while" para realizar a 
+> # extração enquanto houver nova página, caso contrário, ele para. 
+> # 
+> # dataframe <- data.frame()
+> # line_index <- 0
+> # 
+> # for(url in filtered_secoes) {
+> #   page_number <- 0
+> #   while(TRUE) {
+>       # url's que serão utilizads na coleta 
+> #     url_formatted <- paste(paste(paste(url,'?p=',sep=''),page_number,sep=''),'&qt=36',sep='') 
+> #     print (url_formatted)
+> #     html_page <- html(url_formatted)
+> #     
+> #     preco <-  html_page %>% 
+>         # Navegação pelos nós "p" e "a" até a tag "span" 
+> #       html_nodes("p a span") %>% 
+> #       html_text() # extração do valor da "tag"
+> #     print(preco) # mostrar os preços da página
+> #     
+> #     name <-  html_page %>% 
+> #       html_nodes("h3 a") %>% # navegação pelo nó "h3"
+> #       html_text() # extrair os nomes de cada seção
+> #     print(name) # mostrar os nomes dos produtos
+> #     
+> #     if (length(preco) == 0) { # condição para parar a coleta da seção
+> #       break
+> #     }
+> #     
+> #     for(i in 1:length(preco)) {
+> #       line_index <- line_index + 1
+> #       dataframe[line_index,1]  <- name[i]
+> #       dataframe[line_index,2] <-  preco[i]
+> #     }
+> #     
+> #     page_number <- page_number + 1
+> #     
+> #     # Save data at MongDB
+> #     # Start mongodb
+> #     
+> #   }
+> # }
+> # 
+> # write.csv2(dataframe, file='dataframe2.csv')
+\end{Sinput}
+\end{Schunk}
+\end{small}
 % \SweaveInput{apendice2}
 
 % Fim do texto

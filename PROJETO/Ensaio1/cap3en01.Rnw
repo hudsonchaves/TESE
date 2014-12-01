@@ -40,7 +40,7 @@ Assim, o índice de preços usa a combinação de dados online e as estruturas d
 O índice de preço online será calculado utilizando os preços de todos os produtos disponíveis para compra em cada site. Isto implica que a cesta de bens muda dinamicamente ao longo do tempo podendo um produto aparecer ou desaparecer da cesta a qualquer momento devido à disponibilidade ou indisponibilidade no site. Além disso, o número de preços por produto tende a ser muito maior o que os coletados usualmente pelos órgãos governamentais. 
 Para construir o índice, mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregado entre categorias com uma média aritmética ponderada. Em particular, o primeiro passo é obter a média geométrica ponderada das mudanças nos preços na categoria $j$ para cada dia $t$:
 
-\begin{equation}\label{eq1}
+\begin{equation}\label{eq01en01}
 R_{t,t-1}^{j}=\prod_{i}\left(\frac{p_{t}^{t}}{p_{t-1}^{i}}\right)^{\nicefrac{1}{n_{j,t}}}
 \end{equation}
 
@@ -48,13 +48,13 @@ R_{t,t-1}^{j}=\prod_{i}\left(\frac{p_{t}^{t}}{p_{t-1}^{i}}\right)^{\nicefrac{1}{
 
 O segundo passo é computar o índice em nível de categoria em $t$:
 
-\begin{equation}\label{eq2}
+\begin{equation}\label{eq02en01}
 I_{t}^{j}=R_{1,0}^{j}\ast{R}_{2,1}^{j}\ast{...}\ast{R}_{t,t-1}^{j}
 \end{equation}
 
 Finalmente, o índice de preços no tempo $t$ é a média aritmética ponderada de todos os índices das categorias:
 
-\begin{equation}\label{eq3}
+\begin{equation}\label{eq03en01}
 IPO_{t}=\sum_{j}{\frac{w_{j}}{w}I_{t}^{j}} 
 \end{equation}
 
@@ -78,13 +78,13 @@ A principal característica de dados de sobrevivência é a presença de censura
 
 Segundo \citet{colosimo2006analise}, a função de sobrevivência é definida como a probabilidade de uma observação não falhar até um certo tempo $t$, ou seja, a probabilidade de uma observação sobreviver (preço não se alterar) ao tempo $t$. Por outro lado, se $T$ é a variável aleatória que mede a duração do preço, com função densidade $f\left(t\right)$ e densidade acumulada $F\left(t\right)$, o risco $h\left(t\right)$ é a probabilidade limite de que a mudança no preço ocorra em $t$, condicional ao preço não se alterar até este momento. 
 
-\begin{equation}\label{eq4}
+\begin{equation}\label{eq04en01}
 h\left(t\right)=\lim_{\Delta t\rightarrow 0}{\frac{Pr\left(t<T<t+\Delta t|t<T\right)}{\Delta t}=\frac{f\left(t\right)}{1-F\left(t\right)}} 
 \end{equation}
 
 Esta função risco mede o risco instantâneo de um preço se alterar, condicionado à sobrevida. Podemos adicionar todas as taxas de risco ao longo do tempo e obter o risco total de um preço alterar acumulado até o tempo $t$. Isto é representado pelo função risco acumulado, $H(t)$:
 
-\begin{equation}\label{eq5}
+\begin{equation}\label{eq05en01}
 H\left(t\right)=\int_{0}^{t}{h\left(u\right)du=-\ln{\left(1-F\left(t\right)\right)}} 
 \end{equation}
 
@@ -92,7 +92,7 @@ $H(t)$ é um aumento, função ilimitada de $t$, que acumula a probabilidade con
 
 Para estimar $H(t)$ e $h(t)$ empiricamente, usaremos conforme \citet{cavallo2010scraped} uma abordagem não paramétrica dada por Nelson (1972) e Aalen (1978), que não requer hipóteses de distribuição de probabilidade. Métodos semi-paramétricos como o modelo Cox podem ser utilizados futuramente uma vez que permitem a incorporação de variáveis explicativas e a consideração da heterogeneidade não observável em nível de categoria de preços. Uma estimativa simples da função risco acumulado, $H(t)$, é dado por:
 
-\begin{equation}\label{eq6}
+\begin{equation}\label{eq06en01}
 \hat{H}\left(t\right)=\sum_{j|{t}_{j}\le t}{\frac{{c}_{j}}{{n}_{j}}} 
 \end{equation}
 
@@ -100,7 +100,7 @@ Para estimar $H(t)$ e $h(t)$ empiricamente, usaremos conforme \citet{cavallo2010
 
 Para obter a função risco suavizada $\hat{h}\left(t\right)$, pode-se usar a seguinte equação:
 
-\begin{equation}\label{eq7}
+\begin{equation}\label{eq07en01}
 \hat{h}\left(t \right)=\frac{1}{b}\sum_{j\epsilon D}{K}\left(\frac{t-{t}_{j}}{b}\right)\Delta \hat {H}\left({t}_{j}\right) 
 \end{equation}
 
@@ -132,7 +132,7 @@ A metodologia descrita nesta seção é baseada sobre \citet{aucremanne2005time}
 
 Para modelar a probabilidade de um preço mudar será preciso focar sobre os eventos de mudança nos preços enquanto ignoramos o tamanho da mudança nos preços. Assim, defina $Y_{jkt}$ como uma variável binária:
 
-\begin{equation}\label{eq8}
+\begin{equation}\label{eq08en01}
 Y_{jkt} =\begin{cases}1 &  P_{jkt} \neq P_{jk,t-1}\\0 & P_{jkt} = P_{jk,t-1}\end{cases}
 \end{equation}
 
@@ -140,27 +140,27 @@ Y_{jkt} =\begin{cases}1 &  P_{jkt} \neq P_{jk,t-1}\\0 & P_{jkt} = P_{jk,t-1}\end
 
 A escolha das variáveis explicativas para o modelo é depende sobre as hipóteses sobre o mecanismo de formação de preços subjacente. Se assumimos que os definidores de preço aplicam a regra de precificação de \citet{calvo1983staggered}, então a probabilidade de ajuste dos preços não depende do preço decorrido desde a última alteração no preço ou sobre o estado da economia e a única variável explicativa será uma constante. Neste caso, o modelo logit de probabilidade da firma $k$ alterar o preço do produto $j$ no começo do período $t$ é a seguinte:
 
-\begin{equation}\label{eq9}
+\begin{equation}\label{eq09en01}
 Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { \beta  }_{ 0 } \right)  }{ 1+exp\left( { \beta  }_{ 0 } \right)  } 
 \end{equation}
 
-Sobre a hipótese de uma regra de precificação conforme Calvo, a probabilidade do preço alterar é descrita apenas por ${ \beta  }_{ 0 }$. Quanto maior for ${ \beta  }_{ 0 }$ menos rígidos são os preços. A equação~\ref{eq9} pode ser transformada para incluir também os elementos do modelo de \citet{taylor1980aggregate}, que assume que as firmas ajustam seus preços depois de um número de períodos fixo desde a última mudança. Isto é feito afirmando que o truncamento ocorre depois de um número fixo de períodos.
+Sobre a hipótese de uma regra de precificação conforme Calvo, a probabilidade do preço alterar é descrita apenas por ${ \beta  }_{ 0 }$. Quanto maior for ${ \beta  }_{ 0 }$ menos rígidos são os preços. A equação~\ref{eq09en01} pode ser transformada para incluir também os elementos do modelo de \citet{taylor1980aggregate}, que assume que as firmas ajustam seus preços depois de um número de períodos fixo desde a última mudança. Isto é feito afirmando que o truncamento ocorre depois de um número fixo de períodos.
 
 Se for assumido uma regra de precificação, então, seguindo \citet{cecchetti1986frequency}, a firma $k$ mudará o preço do produto $j$ apenas se a diferença entre o preço desejado $P_{jkt}^{*}$ e o preço atual $P_{jkt}$ excede uma constante limiar $h_{jk}^{*}$ (especifica para cada produto e firma):
 
-\begin{equation}\label{eq10}
+\begin{equation}\label{eq10en01}
 Pr\left( { Y }_{ jkt }=1 \right) =Pr\left( \ln { \left( \frac { { P }_{ jkt }^{ * } }{ { P }_{ jkt } }  \right) \ge { h }_{ jk }^{ * } }  \right) 
 \end{equation}
 
 De acordo com \citet{cecchetti1986frequency}, a probabilidade de que a diferença entre o preço atual e desejado exceder um certo limiar pode ser expressa em termos de variáveis exploratórias: inflação acumulada até a última alteração do preço, tempo decorrido até a última alteração, tamanho da última alteração no preço e mudança acumulada na variável de demanda até o ajuste do preço anterior. Isso nos leva à seguinte representação logit do modelo de precificação estado-dependente:
 
-\begin{equation}\label{eq11}
+\begin{equation}\label{eq11en01}
 Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { \beta  }_{ 0 }+\sum _{ i=1 }^{ N }{ { \beta  }_{ i }{ X }_{ i,jkt } }  \right)  }{ 1+exp\left( { \beta  }_{ 0 }+\sum _{ i=1 }^{ N }{ { \beta  }_{ i }{ X }_{ i,jkt } }  \right)  } 
 \end{equation}
 
 \noindent onde ${ X }_{ i,jkt }$ denota uma variável exógena da listadas anteriormente.
 
-A equação~\ref{eq11} pode ser vista como uma extensão da equação~\ref{eq9}. Contudo, ela permite testar se todos os formadores de preços na economia são tempo-dependentes. Obviamente, se $\beta_{1},...,\beta_{N}$ não são significativamente diferentes de 0, podemos concluir que todas as firmas seguem um modelo de precificação de Calvo. Por outro lado, estimativas significantes para qualquer $\beta_{1},...,\beta_{N}$ poderia ser interpretada como uma rejeição ao modelo de Calvo. \citet{aucremanne2005time} argumentam que as estimativas de $\beta_{1},...,\beta_{N}$ capturam tanto o impacto das variáveis sobre a probabilidade do preço alterar e a participação deste particular comportamento. Portanto, a rejeição do modelo de Calvo não significará que não existem formadores de preço que seguem esta regra na economia. Ao contrário, indicará que existe uma participação significativa de firmas seguindo o modelo de precificação estado-dependente.
+A equação~\ref{eq11en01} pode ser vista como uma extensão da equação~\ref{eq09en01}. Contudo, ela permite testar se todos os formadores de preços na economia são tempo-dependentes. Obviamente, se $\beta_{1},...,\beta_{N}$ não são significativamente diferentes de 0, podemos concluir que todas as firmas seguem um modelo de precificação de Calvo. Por outro lado, estimativas significantes para qualquer $\beta_{1},...,\beta_{N}$ poderia ser interpretada como uma rejeição ao modelo de Calvo. \citet{aucremanne2005time} argumentam que as estimativas de $\beta_{1},...,\beta_{N}$ capturam tanto o impacto das variáveis sobre a probabilidade do preço alterar e a participação deste particular comportamento. Portanto, a rejeição do modelo de Calvo não significará que não existem formadores de preço que seguem esta regra na economia. Ao contrário, indicará que existe uma participação significativa de firmas seguindo o modelo de precificação estado-dependente.
 
 \subsection*{Determinantes para a probabilidade do preço alterar}
 
@@ -176,9 +176,9 @@ A seguir possíveis variáveis a serem utilizadas no modelo logit para investiga
   \item Variáveis setoriais: Finalmente, os mecanismos de formação dos preços podem diferir entre firmas e estabelecimentos por setor de atuação. Este efeito pode ser capturado por um conjunto de variáveis que incluirão \emph{dummies} para os principais setores da economia.
 \end{enumerate}
 
-Assim, a representação do modelo logit considerando a abordagem de precificação estado-dependente da equação~\ref{eq11} é agora estendido para permitir efeitos aleatórios $u_{jk}$ que são específicos para todos os pares de produto-firmas:
+Assim, a representação do modelo logit considerando a abordagem de precificação estado-dependente da equação~\ref{eq11en01} é agora estendido para permitir efeitos aleatórios $u_{jk}$ que são específicos para todos os pares de produto-firmas:
 
-\begin{equation}\label{eq12}
+\begin{equation}\label{eq12en01}
 Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { X }_{ jkt }\beta +{ u }_{ jk }+{ \varepsilon  }_{ jkt } \right)  }{ 1+exp\left( { X }_{ jkt }\beta +{ u }_{ jk }+{ \varepsilon  }_{ jkt } \right)  } 
 \end{equation}
 
