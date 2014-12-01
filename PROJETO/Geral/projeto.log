@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  1 DEC 2014 21:08
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  1 DEC 2014 23:03
 entering extended mode
  %&-line parsing enabled.
 **projeto.tex
@@ -1333,178 +1333,180 @@ l.1130
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1166 \cleardoublepage
-                        [2]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.3}) has been already used, duplicate ignored
+l.1154 \end
+           {itemize} [2]pdfTeX warning (ext4): destination with the same identi
+fier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1178 
-        [3
+l.1158 \cleardoublepage
+                        [3]pdfTeX warning (ext4): destination with the same ide
+ntifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1158 \cleardoublepage
+                        [4
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
+]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1180 \cleardoublepage
-                        [4]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.5}) has been already used, duplicate ignored
+l.1170 
+        [5]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1204 
-        [5
+l.1172 \cleardoublepage
+                        [6]pdfTeX warning (ext4): destination with the same ide
+ntifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1196 
+        [7
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
+]pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1248 
-        [6]pdfTeX warning (ext4): destination with the same identifier (name{pa
-ge.7}) has been already used, duplicate ignored
+l.1240 
+        [8]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1285 \begin{center}
-                     \label{tab01en03} [7]
-Overfull \hbox (67.47475pt too wide) in paragraph at lines 1286--1304
+l.1277 \begin{center}
+                     \label{tab01en03} [9]
+Overfull \hbox (67.47475pt too wide) in paragraph at lines 1278--1296
  [] 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1324 \end{equation}
-                      [8]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.9}) has been already used, duplicate ignored
+l.1316 \end{equation}
+                      [10]pdfTeX warning (ext4): destination with the same iden
+tifier (name{page.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1361 
-        [9]pdfTeX warning (ext4): destination with the same identifier (name{pa
-ge.10}) has been already used, duplicate ignored
+l.1353 
+        [11]pdfTeX warning (ext4): destination with the same identifier (name{p
+age.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1405 
-        [10] (./projeto.bblpdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.11}) has been already used, duplicate ignored
+l.1397 
+        [12] (./projeto.bblpdfTeX warning (ext4): destination with the same ide
+ntifier (name{page.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \begin{thebibliography}{}
-                              [11]pdfTeX warning (ext4): destination with the s
-ame identifier (name{page.12}) has been already used, duplicate ignored
+                              [13]pdfTeX warning (ext4): destination with the s
+ame identifier (name{page.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74 
-      [12
+      [14
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.13}) ha
+]pdfTeX warning (ext4): destination with the same identifier (name{page.15}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.151 \bibitem[Fuhrer, 2005]{Fuhrer2005}
-                                         [13]pdfTeX warning (ext4): destination
- with the same identifier (name{page.14}) has been already used, duplicate igno
+                                         [15]pdfTeX warning (ext4): destination
+ with the same identifier (name{page.16}) has been already used, duplicate igno
 red
 <to be read again> 
                    \relax 
 l.237 
-       [14]pdfTeX warning (ext4): destination with the same identifier (name{pa
-ge.15}) has been already used, duplicate ignored
+       [16]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.17}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.320 \bibitem[Uhlig, 1998]{uhlig1998toolkit}
-                                              [15])pdfTeX warning (ext4): desti
-nation with the same identifier (name{page.16}) has been already used, duplicat
+                                              [17])pdfTeX warning (ext4): desti
+nation with the same identifier (name{page.18}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.1418 \chapter
-               {METODOLOGIA IBGE}\label{ap1} [16]
+l.1410 \chapter
+               {METODOLOGIA IBGE}\label{ap1} [18]
 Ap\^endice A.
-pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1462       \item G
-                    rupo [17
+l.1454       \item G
+                    rupo [19
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 1490--1497
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 1482--1489
  [][] 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1499 \end{table}
-                   [18]
+l.1491 \end{table}
+                   [20]
 Runaway argument?
 {eq03ap01) e $m_{k}$ é o número de produtos do subitem $k$. Como ob\ETC.
 ! Paragraph ended before \T@ref was complete.
 <to be read again> 
                    \par 
-l.1520 
+l.1512 
        
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1522 
-        [19]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.20}) has been already used, duplicate ignored
+l.1514 
+        [21]pdfTeX warning (ext4): destination with the same identifier (name{p
+age.22}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1558 
-        [20]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.21}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1588 \chapter
-               {EXEMPLO DE COLETA}\label{ap2} [21]
+l.1550 
+        [22] [23]
 Ap\^endice B.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 1592
+LaTeX Font Info:    Try loading font information for T1+aett on input line 1584
 .
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1629 > #   while(TRUE) {
-                           [22
+ [24
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+aett on input line 163
-0.
- (/usr/share/R/share/texmf/tex/latex/ts1aett.fd
+LaTeX Font Info:    Try loading font information for TS1+aett on input line 162
+2.
+
+(/usr/share/R/share/texmf/tex/latex/ts1aett.fd
 File: ts1aett.fd 
 )
-LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 163
-0.
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 162
+2.
+
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `TS1/aett/m/sl' in size <10> not available
-(Font)              Font shape `TS1/cmtt/m/sl' tried instead on input line 1630
+(Font)              Font shape `TS1/cmtt/m/sl' tried instead on input line 1622
 .
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 97.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [23] (./projeto.aux) ) 
+AED: lastpage setting LastPage [25] (./projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 13875 strings out of 493848
- 204532 string characters out of 1152823
- 322118 words of memory out of 3000000
+ 13884 strings out of 493848
+ 204602 string characters out of 1152823
+ 322127 words of memory out of 3000000
  16109 multiletter control sequences out of 15000+50000
- 95662 words of font info for 385 fonts, out of 3000000 for 9000
+ 96342 words of font info for 391 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  44i,12n,51p,2019b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/en
@@ -1528,9 +1530,9 @@ hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
 xmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfst1000.pfb>
-Output written on projeto.pdf (65 pages, 680916 bytes).
+Output written on projeto.pdf (67 pages, 683737 bytes).
 PDF statistics:
- 1196 PDF objects out of 1200 (max. 8388607)
- 270 named destinations out of 1000 (max. 500000)
+ 1208 PDF objects out of 1440 (max. 8388607)
+ 272 named destinations out of 1000 (max. 500000)
  55698 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -28,14 +28,14 @@
 \contentsline {section}{\numberline {3.1}INTRODU\IeC {\c C}\IeC {\~A}O/MOTIVA\IeC {\c C}\IeC {\~A}O}{1}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Justificativa}{2}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Objetivos}{2}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}{3}{section.3.2}
-\contentsline {section}{\numberline {3.3}METODOLOGIA}{5}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Persist\IeC {\^e}ncia da Infla\IeC {\c c}\IeC {\~a}o}{5}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}O Modelo}{5}{subsection.3.3.2}
-\contentsline {subsubsection}{Familia Representativa}{6}{section*.13}
-\contentsline {subsection}{\numberline {3.3.3}Firmas na Economia}{7}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Curva de Phillips Novo-Keynesiana}{9}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}A An\IeC {\'a}lise de Equil\IeC {\'\i }brio Geral}{10}{subsection.3.3.5}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{12}{section*.17}
-\contentsline {chapter}{\numberline {A}METODOLOGIA IBGE}{17}{appendix.A}
-\contentsline {chapter}{\numberline {B}EXEMPLO DE COLETA}{22}{appendix.B}
+\contentsline {section}{\numberline {3.2}REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}METODOLOGIA}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Persist\IeC {\^e}ncia da Infla\IeC {\c c}\IeC {\~a}o}{7}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}O Modelo}{7}{subsection.3.3.2}
+\contentsline {subsubsection}{Familia Representativa}{8}{section*.13}
+\contentsline {subsection}{\numberline {3.3.3}Firmas na Economia}{9}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Curva de Phillips Novo-Keynesiana}{11}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}A An\IeC {\'a}lise de Equil\IeC {\'\i }brio Geral}{12}{subsection.3.3.5}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{14}{section*.17}
+\contentsline {chapter}{\numberline {A}METODOLOGIA IBGE}{19}{appendix.A}
+\contentsline {chapter}{\numberline {B}EXEMPLO DE COLETA}{24}{appendix.B}
