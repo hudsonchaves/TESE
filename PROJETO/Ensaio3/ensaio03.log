@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  30 NOV 2014 15:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  1 DEC 2014 17:13
 entering extended mode
  %&-line parsing enabled.
-**ensaio02.tex
-(./ensaio02.tex
+**ensaio03.tex
+(./ensaio03.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
@@ -764,10 +764,10 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomitemsep=\skip60
 )
 \@nomenclaturefile=\write3
-\openout3 = `ensaio02.nlo'.
+\openout3 = `ensaio03.nlo'.
 
 
-Writing nomenclature file ensaio02.nlo
+Writing nomenclature file ensaio03.nlo
 (/usr/share/texmf-texlive/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box58
@@ -990,9 +990,8 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-))))
-No file ensaio02.aux.
-\openout1 = `ensaio02.aux'.
+)))) (./ensaio03.aux)
+\openout1 = `ensaio03.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
 LaTeX Font Info:    ... okay on input line 221.
@@ -1008,6 +1007,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 221.
 LaTeX Font Info:    ... okay on input line 221.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 221.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 221.
+
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -1111,13 +1111,14 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 221.
 LaTeX Info: Redefining \pageref on input line 221.
+ (./ensaio03.out)
+(./ensaio03.out)
 \@outlinefile=\write5
-\openout5 = `ensaio02.out'.
+\openout5 = `ensaio03.out'.
 
 \AtBeginShipoutBox=\box63
 \c@lstlisting=\count156
-
-(./ensaio02-concordance.tex) [1
+ (./ensaio03-concordance.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
@@ -1128,7 +1129,6 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 270.
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 270.
-
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1167,39 +1167,20 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 (/usr/share/texmf-texlive/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1]
+) [1] (./ensaio03.toc)
 \tf@toc=\write6
-\openout6 = `ensaio02.toc'.
+\openout6 = `ensaio03.toc'.
 
- [2
+
+[2
 
 ]
 Cap\'{\i }tulo 1.
-
-Package natbib Warning: Citation `taylor1980aggregate' on page 1 undefined on i
-nput line 453.
-
-
-Package natbib Warning: Citation `calvo1983staggered' on page 1 undefined on in
-put line 453.
-
-
-Package natbib Warning: Citation `wolman1999sticky' on page 1 undefined on inpu
-t line 455.
-
-
-Package natbib Warning: Citation `kiley2002partial' on page 1 undefined on inpu
-t line 455.
-
-
-Package natbib Warning: Citation `caplin1987menu' on page 1 undefined on input 
-line 457.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.458 
+l.459 
        [1
 
 
@@ -1207,241 +1188,79 @@ l.458
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.467 
+l.480 
        [2]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 484.
 
-Package natbib Warning: Citation `bils2004some' on page 3 undefined on input li
-ne 468.
-
-
-Package natbib Warning: Citation `nakamura2008five' on page 3 undefined on inpu
-t line 468.
-
-
-Package natbib Warning: Citation `klenow2008state' on page 3 undefined on input
- line 468.
-
-
-Package natbib Warning: Citation `dhyne2006price' on page 3 undefined on input 
-line 468.
-
-
-Package natbib Warning: Citation `gouvea2007nominal' on page 3 undefined on inp
-ut line 468.
-
-
-Package natbib Warning: Citation `matos2009comportamento' on page 3 undefined o
-n input line 468.
-
-
-Package natbib Warning: Citation `lopes2008rigidez' on page 3 undefined on inpu
-t line 468.
-
-
-Package natbib Warning: Citation `bunn2012examining' on page 3 undefined on inp
-ut line 468.
-
-
-Package natbib Warning: Citation `cavallo2010scraped' on page 3 undefined on in
-put line 472.
-
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 481.
-
-(/usr/share/R/share/texmf/tex/latex/ts1aer.fd
+ (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 481.
- [3] [4]
-Cap\'{\i }tulo 2.
-
-Package natbib Warning: Citation `gali1999inflation' on page 5 undefined on inp
-ut line 498.
-
-
-Package natbib Warning: Citation `gali2001european' on page 5 undefined on inpu
-t line 498.
-
-
-Package natbib Warning: Citation `sbordone2002prices' on page 5 undefined on in
-put line 498.
-
-
-Package natbib Warning: Citation `cecchetti1986frequency' on page 5 undefined o
-n input line 498.
-
-
-Package natbib Warning: Citation `campbell2005rigid' on page 5 undefined on inp
-ut line 498.
-
-
-Package natbib Warning: Citation `nakamura2008five' on page 5 undefined on inpu
-t line 498.
-
-
-Package natbib Warning: Citation `jadresic1999sticky' on page 5 undefined on in
-put line 500.
-
-
-Package natbib Warning: Citation `sheedy2007inflation' on page 5 undefined on i
-nput line 500.
-
-
-Package natbib Warning: Citation `coenen2007identifying' on page 5 undefined on
- input line 500.
-
-[5
-
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 484.
+ [3] [4
 
 ]
+Cap\'{\i }tulo 2.
+[5
 
-Package natbib Warning: Citation `carvalho2009estimating' on page 6 undefined o
-n input line 502.
-
-[6]
+] [6]
 Cap\'{\i }tulo 3.
-
-Package natbib Warning: Citation `yao2010aggregate' on page 7 undefined on inpu
-t line 513.
-
-
-Package natbib Warning: Citation `wolman1999sticky' on page 7 undefined on inpu
-t line 513.
-
-
-Package natbib Warning: Citation `mash2004optimising' on page 7 undefined on in
-put line 513.
-
-
-Package natbib Warning: Citation `yao2009cost' on page 7 undefined on input lin
-e 513.
-
-
-Package natbib Warning: Citation `calvo1983staggered' on page 7 undefined on in
-put line 513.
-
 [7
 
 
-]
-
-Package natbib Warning: Citation `yao2010aggregate' on page 8 undefined on inpu
-t line 545.
-
-
-LaTeX Warning: Reference `eq03en02' on page 8 undefined on input line 569.
-
-
-LaTeX Warning: Reference `eq09en02' on page 8 undefined on input line 575.
-
-
-LaTeX Warning: Reference `eq08en02' on page 8 undefined on input line 575.
-
-[8]
-
-LaTeX Warning: Reference `eq08en02' on page 9 undefined on input line 587.
-
-
-LaTeX Warning: Reference `eq09en02' on page 9 undefined on input line 587.
-
-
-LaTeX Warning: Reference `eq06en02' on page 9 undefined on input line 587.
-
-
-Package natbib Warning: Citation `yao2010aggregate' on page 9 undefined on inpu
-t line 587.
-
-
-Package natbib Warning: Citation `yao2010aggregate' on page 9 undefined on inpu
-t line 595.
-
-
-Package natbib Warning: Citation `yao2010aggregate' on page 9 undefined on inpu
-t line 595.
-
-
-Package natbib Warning: Citation `yao2010aggregate' on page 9 undefined on inpu
-t line 597.
-
-
-! Package caption Error: \caption outside float.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.617   \caption
-                {Notações da dinâmica da distribuição da duração dos ...
-
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (67.47475pt too wide) in paragraph at lines 600--618
+] [8] [9]
+Overfull \hbox (67.47475pt too wide) in paragraph at lines 617--635
  [] 
  []
 
+[10] [11] [12]
 
-LaTeX Warning: Reference `tab01en02' on page 9 undefined on input line 620.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.620 ...amento de preços $({\tilde{\theta}_{t})$
-                                                   como:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[9]
-! Missing } inserted.
-<inserted text> 
-                }
-l.626 ... novo período, $({\tilde{\theta}_{t+1})$
-                                                  . Todos os grupos de dura�...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Reference `eq26en03,eq27en03,eq28en03' on page 13 undefined on i
+nput line 735.
 
 
-LaTeX Warning: Reference `tab01en02' on page 10 undefined on input line 632.
+LaTeX Warning: Reference `eq29en03,eq30en03' on page 13 undefined on input line
+ 735.
 
+(./ensaio03.bbl [13] [14
 
-Package natbib Warning: Citation `yao2010aggregate' on page 10 undefined on inp
-ut line 634.
+])
 
-)
-Runaway argument?
-{\sum _{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j ^{\eta \ETC.
-! File ended while scanning use of \frac .
-<inserted text> 
-                \par 
-<*> ensaio02.tex
-                
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 97.
+See the caption package documentation for explanation.
 
-! Emergency stop.
-<*> ensaio02.tex
-                
-*** (job aborted, no legal \end found)
+AED: lastpage setting LastPage [15] (./ensaio03.aux)
 
- 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 13003 strings out of 493848
- 190753 string characters out of 1152823
- 312042 words of memory out of 3000000
- 15630 multiletter control sequences out of 15000+50000
- 68925 words of font info for 286 fonts, out of 3000000 for 9000
+ 13195 strings out of 493848
+ 194270 string characters out of 1152823
+ 315927 words of memory out of 3000000
+ 15743 multiletter control sequences out of 15000+50000
+ 70325 words of font info for 297 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,12n,43p,2131b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 44i,12n,43p,1670b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/c
+m-super/cm-super-ts1.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on ensaio03.pdf (19 pages, 316155 bytes).
+PDF statistics:
+ 380 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
+ 37461 words of extra memory for PDF output out of 42996 (max. 10000000)
+

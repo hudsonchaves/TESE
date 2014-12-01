@@ -24,16 +24,16 @@
 \documentclass[twoside,a4paper,11pt]{report}
 
 % Pacotes e comandos customizados
-\SweaveInput{metaen02.Rnw}
+\SweaveInput{metaen03.Rnw}
 
 % Início do texto
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 \SweaveOpts{concordance=TRUE}
-\SweaveInput{preen02.Rnw}
-\SweaveInput{cap1en02.Rnw}
-\SweaveInput{cap2en02.Rnw}
-\SweaveInput{cap3en02.Rnw}
+\SweaveInput{preen03.Rnw}
+\SweaveInput{cap1en03.Rnw}
+\SweaveInput{cap2en03.Rnw}
+\SweaveInput{cap3en03.Rnw}
 % \SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 
@@ -41,7 +41,7 @@
 \bibliographystyle{apalike}
 
 % Arquivo .bib
-\bibliography{ensaio2}
+\bibliography{projeto}
 
 % Apêndice(s)
 % \SweaveInput{apendice}
