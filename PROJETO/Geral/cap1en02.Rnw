@@ -1,0 +1,43 @@
+% Faz com que o ínicio do capítulo sempre seja uma página ímpar
+\cleardoublepage
+
+% Inclui o cabeçalho definido no meta.tex
+\pagestyle{fancy}
+
+% Números das páginas em arábicos
+\pagenumbering{arabic}
+
+\chapter{ENSAIO 2}\label{ensaio02}
+
+\section{INTRODUÇÃO/MOTIVAÇÃO}\label{introen02}
+
+Sabe-se que os efeitos da política monetária estão relacionados à velocidade da reação do nível de preços a um disturbio nominal sendo os preços uma variável macroeconômica. Seu ajuste depende de dois fatores: o preço ótimo que é definido pelas empresas e a fração de firmas que estão alterando seus preços. Com a exceção de alguns modelos estado-dependentes microfundamentados, a maioria das pesquisas sobre rigidez de preços limita-se em abordar a decisão de alteração dos preços de forma que o tempo até o ajuste seja exógeneamente determinado (ex.: modelos incorporando as hipótese de \citet{taylor1980aggregate} ou \citet{calvo1983staggered}). Ainda, isso equivale a restringir a função de risco, que define a chance de um preço se alterar, à uma forma específica e focar no estudo de outros comportamentos sobre as bases destas hipóteses. 
+
+A forma como a função risco agregado é definida no modelo macroeconômico e as implicação para a dinâmica macroeconômica é um tópico ainda pouco abordado na literatura macroeconômica. A função risco agregado começa a chamar a atenção porque os modelos teórciso de rigidez de preços fornecem uma clara correspondência entre funções risco agregado específicas e suas implicações para a dinâmica macroeconômica e a política monetária. \citet{Wolman1999} e \citet{kiley2002partial} demonstraram que a dinâmica agregada seria sensível à função risco subjacente à diferentes regras de precificação. Por esta razão, a função de risco agregado fornece uma nova métrica para selecionar modelos teóricos e identificar o mecanismo de propagação mais relevante para os choques de política monetária. 
+
+Apesar de seu uso, estudos empíricos da função de risco agregado são raros na literatura de macro. Por contraste,
+estudos que utilizam de microdados para avaliar empíricamente a rigidez nominal dos preços ganharam espasso na literatura em função da recente disponibilidade dos dados. O risco agregado é definido como a probabilidade do ajuste de preços reagir à choques agregados. Em modelos macroeconômicos teóricos, essas taxas de risco podem ser claramente mapeadas via funções impulso resposta das variáveis agregadas. Por contraste, o mapeamento entre funções de risco micro e a dinâmica macroeconômica é muito mais complicado. Por exemplo, \citet{caplin1987menu} demonstraram que quando o efeito seleção está presente, a economia agregada está completamente imune à rigidez de preços em nível micro e assim, não tem nenhum efeito real da política monetária. 
+
+As funções de risco estimadas de microdados são portanto um susbstituo não perfeito para a função risco agregado definida em modelos teóricos. Além dessa consideração teórica, existem também armadilhas empíricas que causam atenção na interpretação de taxas de risco micro. Primeiro, taxas de risco micro são tipicamente maiores do que taxas de risco agregado, porque preços individuais reagem tanto à choques agregados quanto a choques idiossincráticos. E é muito difícil separá-los com um conjunto de microdados. Segundo, evidências da forma da função risco de estudos microeconométricos não são conclusivas. Microdados diferem substancialmente na quantidade de bens incluídos, os países e período temporal analisado e assim, torna difícil comprarar seus resultados e mesmo embora os microdados estão se tornando viáveis, eles ainda são de curto prazo comparado com séries temporais agregadas. É razoável pensar que a forma das funções de risco dependem das condições econômicas subjacentes e portanto, alterariam ao longo dos períodos dos dados coletados. 
+
+O objetivo deste ensaio é estimar a função risco agregado por meio de séries temporais de variáveis macroeconômicas. Para isto, primeiro será preciso construir um modelo DSGE completamente especificado apresentando rigidez nominal que permite uma função de risco flexível. Assim, derivar-se-á uma curva de Phillpis novo-keynesiana generalizada e então estmiraremos esse modelo com uma abordagem Bayesiana. 
+
+Para estimar a função de risco usaremos os dados mensais do Índice Nacional de Preços ao Consumidor Amplo (ICPA), taxa de crescimento do produto interno bruto (PIB) e a Selic com o maior período possível. Além desta introdução que apresenta o problema, a motiviação e objetivos do ensaio, os demais capítulos são organizados da seguinte forma: no capítulo 2 apresentamos uma breve revisão bibliográfica, no capítulo 3 tem-se a metodoligia com o modelo a ser utilizado e o processo de estimação.
+
+\subsection{Justificativa}
+
+A identificação de funções de risco agregado é possível, pois a taxa de inflação pode ser decomposta em preços definidos no presente e no passado e sua composição é determinada pela função de risco agregado. A derivação da curva de Phillips novo-keynesiana generalizada vincula esse efeito de composição à função de risco de modo que apenas dados agregados são necessários para extrair informação sobre a função risco. A vantagem deste método de identificação é que, primeiro, ele é baseado sobre uma hipótese genérica do comportamento do nível de preços das firmas, fazendo o mapeamento entre a função de risco e a dinâmica agregada robusto à modelagem de rigidez nos preços. Em adição, este método identifica funções de risco agregado a partir de flutuações do nível de preços agregado de modo que efeitos de choques idiossincráticos são removidos. Contudo, este método náo está livre de outros problemas de identificação que prevalecem na estimação de modelos Novo-Keynesianos como por exemplo, equivalência observacional da elasticidade da oferta de trabalho. 
+
+\subsection{Objetivos}
+
+O objetivo geral deste ensaio é estimar a função risco agregado a partir do comportamento dinâmico conjunto da inflação e agregados macroeconômicos. Para tanto, os seguintes objetivos específicos e questionamentos pretendem ser analisados:
+
+\begin{itemize}
+  \item Qual o formato da função risco agregado? 
+  \item A função risco agregado é consistente com os resultados obtidos via dados coletados da internet?
+  \item O ajuste de preços é caracterizado por aspectos de modelos tempo-dependentes ou estado-dependentes?
+  \item Qual é a duração dos preços (média, mediana)?
+  \item O modelo DSGE proposto obtem resultados robustos?
+\end{itemize}
+
+

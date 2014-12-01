@@ -1,0 +1,227 @@
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
+\section{METODOLOGIA}\label{cap3en03}
+
+\subsection{Persistência da Inflação}
+
+Para estimar a persistência da inflação usaremos dados trimestrais do Índice de Preços ao Consumidor Amplo (ICPA) em período a ser definido. Primeiro, seguindo \citet{Andrews1994}, calcularemos a duma dos coeficientes de um processo AR como uma medida da persistência global da inflação. Segundo, seguindo \citet{Whelan2007}, estmiaremos a curva de Phillips na forma reduzida incluindo forças de condução real na regressão. A regressão da inflação em forma reduzida é especificada da seguinte forma, onde $\rho$ é uma medida da peristência da inflação:
+
+\begin{equation}\label{eq01en03}
+{\pi}_{t}=\eta +\rho{\pi}_{t-1}+\sum _{i=1}^{3}{{\beta}_{i}\Delta{\pi}_{t-i}} +\sum _{i=0}^{3}{{\eta}_{i}{y}_{t-i}} +{u}_{t}
+\end{equation}
+
+Para construir o \emph{inflation gap} é preciso primeiro calcular medidas de tendência na inflação. Para tanto, será retirado a tendência da inflação por meio do filtro HP (Hodrick-Prescott). A maior limitação deste método é que o filtro HP é baseado apenas sobre processos univariados. Como argumentado por \citet{Yao2010,Cogley2008}, quando a tendência na inflação é diferente de zero e flutuando ao longo do tempo, ela poderia também depender de outras variáveis reais, tal como a tendência do custo marginal real. Para considerar esssa característica aos dados, eles propuseram a estimação de um modelo VAR com parâmetros flutuantes e volatilidade estocástica para quatro variáveis (taxa de crescimento do produto, o logaritmo do custo unitário do trabalho, inflação e o fator de desconto nominal). Depois disso, eles calcularam uma aproximação da tendência na inflação definindo ela como o nível ao qual a inflação esperada se estabelece no longo prazo. Seguindo a mesma metodologia, será construído a tendência do IPCA para o período a ser definido. 
+
+Assim, teremos duas medidas de tendência da inflação que poderão ser comparadas de diversas formas. Por exemplo, a soma dos coeficientes de autocorrelação do processo AR e o coeficiente da defasagem da inflação na curva de Phillips em forma reduzida quando as forças que conduzem a economia real são oriundas do produto per capita.
+
+\subsection{O Modelo}
+
+Nesta seção apresentamos o modelo DSGE proposto por \citet{Yao2010} que será utilizado para anlisar a persistência do \emph{inflation gap} nos dados do IPCA. A principal característica do modelo é a imcorporação de um função risco geral para o ajuste de preços em um modelo padrão Novo Keynesiano. A função risco de ajuste dos preços é definida como a probabilidade do preço alterar condicional ao período temporal decorrido desde a última vez que o preço se alterou. Neste modelo, a função risco é uma função discreta tomando valores entre zero e um sobre seu domínio. 
+
+\subsubsection{Familia Representativa}
+
+Uma familia representativa que vive infinitamente obtém utilidade a partir do consumo composto do bem $C_{t}$ e sua oferta de trabalho $L_{t}$ e maximiza uma soma discontada da utilidade da forma:
+
+\begin{equation}\label{eq02en03}
+\max_{{{C}_{t},{L}_{t},{B}_{t}}}{{E}_{0}[\sum _{t=0}^{\infty}{{\beta}^{t}(\frac{{C}_{t}^{1-\delta}}{1-\delta}-{\chi}_{H}\frac{{L}_{t}^{1+\phi}}{1+\phi})}]} 
+\end{equation}
+
+\noindent onde $C_{t}$ é um índice de consumo da família produzido usando bens indivíduais $C_{t}(i)$, 
+
+\begin{equation}\label{eq03en03}
+{C}_{t}(i)={[\int _{0}^{1}{{C}_{t}{(i)}^{\frac{\eta -1}{\eta}}}]}^{\frac{\eta}{\eta -1}}
+\end{equation}
+
+\noindent onde $\eta>1$ e segue-se que a correspondente demanda que minimiza o custo para $C_{t}(i)$ e o índice de preços baseado em bem-estar, $P_{t}$, são dados por
+
+\begin{equation}\label{eq04en03}
+{C}_{t}(i)={(\frac{{P}_{t}(i)}{{P}_{t}})}^{-\eta}{C}_{t}
+\end{equation}
+
+\begin{equation}\label{eq05en03}
+{P}_{t}={[\int _{0}^{1}{{P}_{t}{(i)}^{1-\eta}}di]}^{\frac{1}{1-\eta}}
+\end{equation}
+
+Por simplicidade, assumimos que as famílias ofertam unidades homogêneas de trabalho $(L_{t})$ em uma economia de mercado de trabalho competitivo. O fluxo de restrição orçamentária da família no começo do período $t$ é:
+
+\begin{equation}\label{eq06en03}
+{P}_{t}{C}_{t}+\frac{{B}_{t}}{{R}_{t}}\le{W}_{t}{L}_{t}+{B}_{t-1}+\int _{0}^{1}{{\pi}_{t}(i)di} 
+\end{equation}
+
+\noindent onde ${B}_{t}$ é um título de um período e $R_{t}$ denota o retorno nominal bruto no título. ${\pi}_{t}(i)$ representa o lucro nominal de uma firma que vende o bem $i$. \citet{yao2010aggregate} assume que cada família é proprietária de uma porção igual de todas as firmas. Finalmente, esta sequência do fluxo de restrição orçamentária é suplementado com uma condição de transversalidade da forma $\lim _{T\rightarrow \infty}{{E}_{t}[\frac{{B}_{t}}{\prod _{s=1}^{T}{R_{s}}}]} \ge 0$. A solução para o problema de otimização da família pode ser expressada em duas condições necessárias de primeira ordem. Primeiro, a oferta ótima de trabalho é realcionada ao salário real:
+
+\begin{equation}\label{eq07en03}
+{\chi}_{H}{L}_{t}^{\phi}{C}_{t}^{\delta}=\frac{{W}_{t}}{{P}_{t}} 
+\end{equation}
+
+Segundo, a equação de Euler dá a relação entre o caminho de consumo ótimo e os preços dos ativos:
+
+\begin{equation}\label{eq08en03}
+1=\beta {E}_{t}[{(\frac{{C}_{t}}{{C}_{t+1}})}^{\delta}\frac{{R}_{t}{P}_{t}}{{P}_{t+1}}] 
+\end{equation}
+
+\subsection{Firmas na Economia}
+
+\subsubsection*{Custo Marginal Real}
+
+O lado de produção da economia é composto de uma série de firmas em competição monopolística, cada uma produzindo uma variedade do produto $i$ por meio do uso do trabalho. Cada firma maximima seus lucros reais sujeito à função de produção:
+
+\begin{equation}\label{eq09en03}
+Y_{t}(i)=Z_{t}L_{t}(i)
+\end{equation}
+
+\noindent onde $Z_{t}$ denota choque de produtividade. O logarítmo dos desvios dos choques, ${\hat{z}}_{t}$, segue um processo $AR(1)$ ${\hat{z}}_{t}={\rho}_{z}{\hat{z}}_{t-1}+{\varepsilon}_{z,t}$, e ${\varepsilon}_{z,t}$ é um ruído branco com ${\rho}_{z}\epsilon [0,1)$. $L_{t}(i)$ é a demanda de trabalho pela firma $i$. 
+
+Seguindo a equação~\ref{eq04en03}, a demanda por bens intermediários é dada por:
+
+\begin{equation}\label{eq10en03}
+{Y}_{t}(i)={\frac{{P}_{t}(i)}{{P}_{t}}}^{-\eta}{Y}_{t}
+\end{equation}
+
+Em cada período, as firmas escolhem a demanda ótima pelo insumo trabalho para maximizar seus lucros reais dado o salário nominal, demanda de mercado (~\ref{eq10en03}) e a tecnologia de produção (~\ref{eq09en03}):
+
+\begin{equation}\label{eq11en03}
+\max _{{L}_{t}(i)}{{{\Pi}_{t}(i)}}=\frac{{P}_{t}(i)}{{P}_{t}}{Y}_{t}(i)-\frac{{W}_{t}}{{P}_{t}}{L}_{t}(i)
+\end{equation}
+
+E o custo marginal real pode ser derivado deste problema de maximização da seguinte forma:
+
+\begin{equation}\label{eq12en03}
+{mc}_{t}=\frac{{{W}_{t}}/{{P}_{t}}}{(1-a){Z}_{t}} 
+\end{equation}
+
+Além disso, usando a função de produção (~\ref{eq09en03}), a equação de demanda por produto (~\ref{eq09en03}), a condição de oferta de trabalho (~\ref{eq07en03}) e o fato de que no equilíbrio $C_{t}=Y_{t}$, podemos expressar o custo marginal real apenas em termos do produto agregado e choque tecnológico, conforme \citet{yao2010aggregate}. 
+
+\begin{equation}\label{eq13en03}
+{mc}_{t}={Y}_{t}^{\phi +\delta}{Z}_{t}^{-(1+\phi)}
+\end{equation}
+
+\subsubsection*{Decisão de Precificação sobre Rigidez Nominal}
+
+Nesta seção, introduzimos assim como \citet{yao2010aggregate} uma forma geral de rigidez nominal, que é caracterizada por um conjutno de taxas de risco dependendo do período de tempo desde o último reajuste de preços. \citet{yao2010aggregate} assume que firmas em concorrência monopolítica não podem ajustar seus preços quando quiserem. Ao contrário, oportunidades para re-otimizar os preços são ditadas pelas taxas de risco, $h_{j}$, onde $j$ denota o tempo desde o último ajuste e $j\epsilon {0,J}$. $J$ é o número máximo de períodos em que um preço de uma firma pode estar fixo. 
+
+Na economia os preços das firmas são heterogêneos com relação ao tempo deste sua última alteração e \citet{yao2010aggregate} os chama de \emph{price vintages}. A tabela tal apresenta algumas notações sobre a dinâmica destes preços. 
+
+\begin{center}\label{tab01en03}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline 
+    Vintage$j$ & Taxa de Risco$h_{j}$ & Taxa de Não-Ajuste $\alpha_{j}$ & Taxa de Sobrevida $S_{j}$ & Distribuição $\theta(j)$\tabularnewline
+    \hline 
+    0 & 0 & 1 & 1 & $\theta(0)$\tabularnewline
+    \hline 
+    1 & $h_{1}$ & $\alpha_{1}=1-h_{1}$ & $S_{1}=\alpha_{1}$ & $\theta(1)$\tabularnewline
+    \hline 
+    $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$\tabularnewline
+    \hline 
+    $j$ & $h_{j}$ & $\alpha_{j}=1-h_{j}$ & $S_{j}=\prod\alpha_{i}$ & $\theta(j)$\tabularnewline
+    \hline 
+    $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$\tabularnewline
+    \hline 
+    $J$ & $h_{j}=1$ & $\alpha_{J}=0$ & $S_{J}=0$ & $\theta(J)$\tabularnewline
+    \hline 
+  \end{tabular}
+  %\caption{Notações da dinâmica da distribuição da duração dos preços (\emph{vintage})} 
+\end{center}
+
+Usando a notação da tabela~\ref{tab01en03} é possível escrever a distribuição ex-post das firmas depois do ajustamento de preços $({\tilde{\theta}}_{t})$ como:
+
+\begin{equation}\label{eq14en03}
+{\tilde{\theta}}_{t}(j)=\begin{cases} \sum _{i=1}^{J}{{h}_{t}{\theta}_{t}(i)} ,j=0 \\ {\alpha}_{j}{\theta}_{t}(j),j=1,...,J \end{cases}
+\end{equation}
+
+As firmas que re-otimizam seus preços no período $t$ são caracterizadas com \emph{'Duration 0'} e a proporção destas firmas é dado pelas taxas de risco de todos os grupos de duração multiplicado pelo sua correspondente densidade. As firmas restantes em cada grupo de duração são as firmas que não ajustam seus preços. Quando o período $t$ é longo, esta distribuição ex-post se torna a distribuição ex-ante para o novo período, $({\tilde{\theta}}_{t+1})$. Todos os grupos de duração de preços movem para o próximo, porque todos os preços tem idade de um período. Ela produz a distribuição de duração dos preços estacionária, ${\theta}(j)$, para $j=0,1,...,J-1$:
+
+\begin{equation}\label{eq15en03}
+{\theta}_{j}=\frac{{S}_{j}}{\sum _{j=0}^{J-1}{{S}_{j}}} 
+\end{equation}
+
+Dada a forma geral de rigidez nominal introduzida acima, a única heterogeneidade entre as firmas é o momento quando elas ajustaram seus preços, $j$. Firmas no grupo de duração de preços $j$ partilham a mesma probabilidade de ajustar seus preços, $h_{t}$, e a distribuição de firmas entre as durações é dada por ${\theta}(j)$. Em um dado período quando é permitido a uma firma alterar seus preços, o preço ótimo escolhido reflete a possiblidade de que ela não ajustará novamente em um futuro próximo. Consequentemente, firmas ajustando os preços escolhem os preços ótimos que maximizam o somatório descontado dos lucroes reais ao longo do horizonte temporal no qual o novo preço será fixo. A probabilidade de que um novo preço seja fixado ao menos por $j$ períodos é dada pela função de sobrevida, $S_{j}$, definida na tabela~\ref{tab01en03}.
+
+\citet{yao2010aggregate} configurou o problema de maximização do ajustador de preços como segue:
+
+\begin{equation}\label{eq16en03}
+\max _{{P}_{t}^{*}}{{E}_{t}\sum _{j=0}^{J-1}{{S}_{j}{Q}_{t,t+j}[{Y}_{t+j|t}^{d}\frac{{P}_{t}^{*}}{{P}_{t+j}}-\frac{{TC}_{t+j }}{{P}_{t+j}}]}} 
+\end{equation}
+
+\noindent onde ${ E }_{ t }$ denota a expectativa condicional baseada sobre o conjunto de informações no período $t$ e ${ Q }_{ t,t+j }$ é o fator de disconto estocástico apropriado para descontar lucros reais de $t$ a $t+j$. Uma firma ajustando o preço maximiza o lucro sujetio à demanda para seu bem intermediário no período $t+j$ dado que a firma altera o preço no periodo $t$ e pode ser expressado como: 
+
+\begin{equation}\label{eq17en03}
+{ Y }_{ t+j|t }^{ d }={ \left( \frac { { P }_{ t }^{ * } }{ { P }_{ t+j } }  \right)  }^{ -\eta  }{ Y }_{ t+j }
+\end{equation}
+
+Isto produz a seguinte condição necessária de primeira ordem para o preço ótimo:
+
+\begin{equation}\label{eq18en03}
+{P}_{t}^{*}=\frac{\eta}{\eta -1}\frac{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}{MC}_{t+j}]}}{\sum_{j=0}^{J-1}{{S}_{j}{E}_{t}[{Q}_{t,t+j}{Y}_{t+j}{P}_{t+j}^{\eta -1}]}} 
+\end{equation}
+
+\noindent onde ${MC}_{t}$ dnota o custo marginal nominal. O preço ótimo é igual ao markup multiplicado por uma soma ponderada dos custos marginais futuros, cujos pesos dependem tas taxas de sobrevida. Em Calvo, onde $S_{j}={\alpha}^{j}$, esta equação reduz à condição de precificação ótima de Calvo.
+
+Finalmente, dada a distribuição estacionária, ${\theta}(j)$, o preço agregado pode ser escrito como uma soma distribuída de todos os preços ótimos. \citet{yao2010aggregate}, definem o preço ótimo que foi definido $j$ períodos atrás como $P_{t-j}^{*}$. Seguindo o índice de preço agregado da equação~\ref{eq04en03}, o preço agregado é então obtido por:
+
+\begin{equation}\label{eq19en03}
+{P}_{t}={(\sum_{j=0}^{J-1}{\theta(j){P}_{t-j}^{*1-\eta}})}^{\frac{1}{1-\eta}}
+\end{equation}
+
+\subsection{Curva de Phillips Novo-Keynesiana}
+
+Nesta seção, derivamos conforme \citet{yao2010aggregate} a Curva de Phillips Novo-Keynesiana para este modelo generalizado. Para isto, primeiro loglinearizamos a equação~\ref{eq18en03} em torno do seu preço de \emph{steady state}. As equações de preço ótimo loglinearizadas são obtidas por:
+
+\begin{equation}\label{eq20en03}
+{\hat{p}}_{t}^{*}={E}_{t}[\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Omega}}({\hat{mc}}_{t+j}+{\hat{p}}_{t+j})] 
+\end{equation}
+
+\noindent onde $\Omega=\sum_{j=0}^{J-1}{{\beta}^{j}S(j)}$ e ${\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}$. De um modo semelhante, é possível derivar o log dos desvios do preço agregado através da loglinearização da equação~\ref{eq19en03}.
+
+\begin{equation}\label{eq21en03}
+{\hat{p}}_{t}=\sum_{k=0}^{J-1}{\theta(k){\hat{p}}_{t-k}^{*}} 
+\end{equation}
+
+A partir de manipulações algébricas sobre as equações~\ref{eq19en03} e~\ref{eq20en03}, obtemos a Curva de Phillips Novo-Keynesiana como segue:
+
+\begin{equation}\label{eq22en03}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{\frac{\theta(k)}{1-\theta(0)}{E}_{t-k}(\sum_{j=0}^{J-1}{\frac{{\beta}^{j}S(j)}{\Psi}{\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{\sum_{i=1}^{J-1}{\frac{{\beta}^{j}S(j)}{\Psi}}}{\hat{\pi}}_{t+i-k}})-\sum_{k=2}^{J-1}{\Phi(k){\hat{\pi}}_{t-k+1}}} 
+\end{equation}
+
+\noindent onde $\Phi(k)=\frac{\sum _{j=k}^{J-1}{S(j)}}{\sum _{j=1}^{J-1}{S(j)}}$ e $\Psi =\sum _{k=0}^{J-1}{{\beta}^{j}S(j)}$. Como podemos observar, todos os coeficientes na equação~\ref{eq22en03} são expressos em termos das taxas de não ajuste $({\alpha}_{j}=1-{h}_{j})$ e o fator de desconto subjetivo, $\beta$. Assim, os coeficientes na Curva de Phillips Novo-Keynesiana generalizada vinculam os efeitos dinâmicos de preços redefinidos sobre a inflação à função de risco. Como resultado, a informação sobre as taxas de risco de ajuste de preços podem ser extraídas a partir de dados agregados por meio da estrutura dinâmica da curva de Phillips.
+
+\subsection{A Análise de Equilíbrio Geral}
+
+Nesta seção, apresentamos o comportamento da dinâmica da inflação na configuração de equilíbrio geral, conforme \citet{Yao2010}. Para tanto, adicionamos ao modelo o lado da demanda agregada da economia e uma regra de política monetária. As equações de equilíbrio loglinearizadas são apresentadas abaixo:
+
+\begin{equation}\label{eq23en03}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
+\end{equation}
+
+\begin{equation}\label{eq24en03}
+{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
+\end{equation}
+
+\begin{equation}\label{eq25en03}
+{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
+\end{equation}
+
+\begin{equation}\label{eq26en03}
+{E}_{t}[{\hat{y}}_{t+1}]={\hat{y}}_{t}+\frac{1}{\delta}({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
+\end{equation}
+
+\begin{equation}\label{eq27en03}
+{\hat{y}}_{t} = \hat{m}_{t}+\hat{p}_{t}
+\end{equation}
+
+\begin{equation}\label{eq28en03}
+\hat{m}_{t} = {\delta}{\hat{y}}_{t} - \frac{\beta}{1- \beta}{\hat{\iota}_{t}}
+\end{equation}
+
+\begin{equation}\label{eq29en03}
+{\hat{\iota}}_{t}={\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}{\hat{y}}_{t}+{q}_{t}
+\end{equation}
+
+\begin{equation}\label{eq30en03}
+\hat{m}_{t} = \hat{m}_{t-1}-{\hat{\pi}}+g_{t}
+\end{equation}
+
+\noindent onde ${\epsilon}_{t}\sim N\left( 0,{\sigma}_{z}^{2}\right)$, ${q}_{t}\sim N\left( 0,{\sigma}_{q}^{2}\right)$ e ${g}_{t}\sim N\left( 0,{\sigma}_{g}^{2}\right)$. Todas as variáveis são expressadas em termos do log dos desvios do estado estacionário não estocástico. Os pesos $(W_{1},W_{2},W_{3},W_{4})$ na curva de Phillips Novo-Keynesiana generalizada são definidos na equação~\ref{eq22en03}. $\hat{m}_{t}$ é o saldo em dinheiro e $g_{t}$ denota a taxa de crescimento do choque monetário nominal. A demanda agregada (equações~\ref{eq26en03},~\ref{eq27en03} e~\ref{eq28en03}) é motivada tanto pelo problema de otimização intertemporal da familíria representativa quanto pela teoria da quantidade da moeda. A política monetária (equações~\ref{eq29en03} e~\ref{eq30en03}) é especificada tanto em termos de uma regra de crescimento monetário nominal quanto uma simples regra de Taylor.
+

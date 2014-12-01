@@ -1,0 +1,41 @@
+\select@language {brazilian}
+\contentsline {chapter}{\numberline {1}ENSAIO 1}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}INTRODU\IeC {\c C}\IeC {\~A}O/MOTIVA\IeC {\c C}\IeC {\~A}O}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Justificativa}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Objetivos}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}REFERENCIAL BIBLIOGR\IeC {\'A}FICO}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Modelos de Precifica\IeC {\c c}\IeC {\~a}o}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Pre\IeC {\c c}os R\IeC {\'\i }gidos e Pre\IeC {\c c}os Flex\IeC {\'\i }veis}{7}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Modelos Tempo-Dependente e Estado-Dependente}{8}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Estudos Emp\IeC {\'\i }ricos}{9}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}METODOLOGIA}{13}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Web Scraping}{13}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}\IeC {\'I}ndice de Pre\IeC {\c c}os Online}{16}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Rigidez de Pre\IeC {\c c}os}{17}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Modelo Logit}{19}{subsection.1.3.4}
+\contentsline {chapter}{\numberline {2}ENSAIO 2}{1}{chapter.2}
+\contentsline {section}{\numberline {2.1}INTRODU\IeC {\c C}\IeC {\~A}O/MOTIVA\IeC {\c C}\IeC {\~A}O}{1}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Justificativa}{2}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Objetivos}{3}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}METODOLOGIA}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}O Modelo}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Firmas na Economia}{8}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Curva de Phillips Novo-Keynesiana}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Sistema Final de Equa\IeC {\c c}\IeC {\~o}es}{11}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Estima\IeC {\c c}\IeC {\~a}o}{12}{subsection.2.3.5}
+\contentsline {chapter}{\numberline {3}ENSAIO 3}{1}{chapter.3}
+\contentsline {section}{\numberline {3.1}INTRODU\IeC {\c C}\IeC {\~A}O/MOTIVA\IeC {\c C}\IeC {\~A}O}{1}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Justificativa}{2}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Objetivos}{2}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}{3}{section.3.2}
+\contentsline {section}{\numberline {3.3}METODOLOGIA}{5}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Persist\IeC {\^e}ncia da Infla\IeC {\c c}\IeC {\~a}o}{5}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}O Modelo}{5}{subsection.3.3.2}
+\contentsline {subsubsection}{Familia Representativa}{6}{section*.13}
+\contentsline {subsection}{\numberline {3.3.3}Firmas na Economia}{7}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Curva de Phillips Novo-Keynesiana}{9}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}A An\IeC {\'a}lise de Equil\IeC {\'\i }brio Geral}{10}{subsection.3.3.5}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{12}{section*.17}
+\contentsline {chapter}{\numberline {A}METODOLOGIA IBGE}{17}{appendix.A}
+\contentsline {chapter}{\numberline {B}EXEMPLO DE COLETA}{22}{appendix.B}

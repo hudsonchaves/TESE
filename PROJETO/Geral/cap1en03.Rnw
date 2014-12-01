@@ -1,0 +1,54 @@
+% Faz com que o ínicio do capítulo sempre seja uma página ímpar
+\cleardoublepage
+
+% Inclui o cabeçalho definido no meta.tex
+\pagestyle{fancy}
+
+% Números das páginas em arábicos
+\pagenumbering{arabic}
+
+\chapter{ENSAIO 3}\label{ensaio03}
+
+\section{INTRODUÇÃO/MOTIVAÇÃO}\label{introen03}
+
+
+A natureza da persistência inflacionária é um fenômeno complexo em função de ser influenciado por muitos aspectos da economia. Em linhas gerais, tal fenômeno pode ser definido como a propensão de a inflação convergir lentamente à meta, por conta da influência dos preços defasados. \citet{Cogley2008} argumentam que é importante distinguir entre a persistência da tendência inflacionária e a persistência no \emph{inflation gap} que é definido como a diferença entre a inflação atual e a tendência da inflação. Enquanto a dinâmica da tendência da inflação resulta em grande parte a partir de desvios no longo prazo da regra de política monetária, o \emph{inflation gap} é influenciado pelo comportamento de precificação ao nível de firmas.  
+
+O foco deste ensaio é a dinâmica do \emph{inflation gap} assim como \citet{Yao2010}. A Curva de Phillips Novo-Keynesiana \emph{forward-looking} é frequentemente criticada por gerar pouca persistência inflacionária. Para superar essa fraqueza, várias generalizações da base da curva tem sido desenvolvidas na literatura. Elas oferecem, contudo, diferentes interpretações sobre a natureza da persistência do \emph{inflation gap}. A Curva de Phillips Novo-Keynesiana híbrida incorpora a inflação passada na curva padrão movitado pela dependência positiva da inflação sobre inflações passadas na forma reduzida da Curva de Phillips (\citet{gali1999inflation,Christiano2005}). De acordo com essa linha da literatura, a persistência do \emph{inflation gap} deveria ser interpretada como intrínseca (\citet{Fuhrer2005}) e a dependência entre a inflação corrente e suas defasagens deveria ser tratada como uma relação fixa, que é independente da política monetária. Por contraste, a maioria dos modelos gerais de precificação microfundamentados lançam novas luzes sobre o importante papel desempenhado pela inércia das expectativas em gerar a persistência do \emph{inflation gap}. De acordo com essa classe de modelos, tal persistência é herdada. Ainda, uma vez que o coeficiente da inflação passada depende de todo o modelo, incluindo a especificação da política monetária, ela implica que a Curva de Phillips Novo-Keynesiana híbrida poderia estar sujeita à crítica de Luca (\citet{lucas1972expectations}) e assim, não pode se usada na análise da política monetária.
+
+Apesar da solidez teórica do modelo de precificação geral, \citet{Whelan2007} rejeitou ele empiricamente. O autor mostrou que o modelo falha em replicar a dependência positiva da inflação das suas defasagens que é tipicamente encontrado empiricamente na forma reduzida da Curva de Phillips. Em equilíbrio parcial, \citet{Whelan2007} mostra que o coeficiente da defasagem da inflação é sempre negativo independentemente da forma da função risco de ajuste nos preços. Além disso, o autor usou um modelo DSGE simples para mostrar que mesmo em equilíbrio geral, este modelo ainda gera coeficientes negativos para as defasagens da inflação.
+
+Neste ensaio, replicaremos os resultados de \citet{Whelan2007} e avaliaremos a robustez à configurações alternativas do modelo. Em particular, testaremos os resultados usando diferentes funções risco, condições de demanda agregada e regras de política monetária. 
+
+% O objetivo deste ensaio é estimar as funções de risco de definição dos preços agregados diretamente das séries temporais. Para isto, primeiro será preciso construir um modelo DSGE completamente especificado apresentando rigidez nominal que permite uma função de risco flexível de definição de preços. Assim, derivar-se-á uma curva de Phillpis novo-keynesiana generalizada e então estmiraremos esse modelo com uma abordagem Bayesiana. A identificação de funções de risco agregado é possível dado que o fato de que a taxa de inflação pode ser decomposta em preços definidos no presente e no passado e sua composição é determinada pela função de risco agregado. A derivação da curva de Phillips novo-keynesiana generalizada vincula esse efeito de composição à função de risco de modo que apenas dados agregados são necessários para extrair informação sobre a função de risco de ajuste de preços. A vantagem deste método de identificação é que, primeiro, ele é baseado sobre uma hipótese genérica do comportamento do nível de preços das firmas, fazendo o mapeamento entre a função de risco e a dinâmica agregada robusto à modelagem de rigidez nos preços. Em adição, este método identifica funções de risco agregado a partir de flutuações do nível de preços agregado de modo que efeitos de choques idiossincráticos são removidos. Contudo, este método náo está livre de outros problemas de identificação que prevalecem na estimação de modelos Novo-Keynesianos como por exemplo, equivalência observacional da elasticidade da oferta de trabalho. 
+% 
+% Para estimar a função de risco usaremos os dados mensais do Índice Nacional de Preços ao Consumidor Amplo (ICPA), taxa de crescimento do produto interno bruto (PIB) e a Selic com o maior período possível. Além desta introdução que apresenta o problema, a motiviação e objetivos do ensaio, os demais capítulos são organizados da seguinte forma: no capítulo 2 apresentamos uma breve revisão bibliográfica, no capítulo 3 tem-se a metodoligia com o modelo a ser utilizado e o processo de estimação.
+
+\subsection{Justificativa}
+
+% A dinâmica do comportamento dos preços individuais proporciona vários desdobramentos que são bastante debatidos na literatura dado os impactos que podem causar. Não compreender este tipo de comportamento levou a distintas abordagens para a análise da velocidade e intensidade de transmissão da política monetária. Além disso, compreender as estratégias de definição de preços das firmas levaria ao aprimoramento de modelos teóricos cujas abordagens e conclusões podem sofrer alterações expressivas na presença de fatos estilizados. 
+% 
+% A falta de estudos que gerassem empiricamente um diagnóstico da definição e grau de rigidez de preços individuais foi um limitador por diversas décadas em função da falta de informações estatísticas no nível de microdados que pudessem servir de base para estas análises. Porém, há alguns anos a disponibilização de preços coletados pelos órgãos governamentais tanto nacionais quanto internacionais, proporcionaram o surgimento de pesquisas que avaliassem o comportamento dos preços em nível de microdados (\citet{bils2004some,nakamura2008five,klenow2008state,dhyne2006price,gouvea2007nominal,matos2009comportamento,lopes2008rigidez,bunn2012examining}). 
+% 
+% Porém, ainda existe um fator limitante nestes estudos, pois concentram-se em mercados específicos, não possibilitando análises generalizadas aos diversos setores da economia, pois as pesquisas são reféns das características dos dados utilizados. Também, dada a importância do tema para os tomadores de decisão em nível de política monetária, é preciso maior dinâmica na análise e não apenas um olhar para o passado. 
+% 
+% Assim, o presente ensaio do projeto de tese apresenta o uso da tecnologia de \emph{web scraping} para coletar preços diretamente das páginas das empresas que possuem sites de vendas e por conseguinte, contribuir para a avaliação da rigidez de preços de uma forma mais dinâmica dadas as características do processo de coleta. Estudos empiricos já mostraram a importância de dados coletados da \emph{web} na avaliação dos pressupostos de rigidez de preços e proposição de medida de inflação oriunda de informações \emph{online} (\citet{cavallo2010scraped}).
+
+\subsection{Objetivos}
+
+O objetivo geral deste ensaio é avaliar empiricamente a rigidez nominal dos preços na economia brasileira por meio de dados coletados da \emph{web}, bem como, propor um índice de inflação oriundo da mesma fonte de dados que seja estatisticamente significante para o uso dos tomadores de decisões econômicas.
+
+Dentro deste escopo, os seguintes questionamentos pretendem ser avaliados:
+
+\begin{itemize}
+  \item Quão frequente os preços se alteram?
+  \item Como podemos lidar com o problema de censura e amostragem quando a função risco é estimada a partir dos dados coletados da internet?
+  \item A probabilidade de mudança dos preços pode variar ao longo da duração dos preços?
+  \item Como podemos derivar a distribuição entre firmas que seja consistente com uma dada frequência média de variações nos preços?
+  \item Como podemos avaliar o efeito de variáveis explicativas sobre a taxa de risco?
+  \item Como podemos controlar para heterogeneidade não observada quando a função risco é estimada?
+  \item Podemos construir um modelo $Ss$ tempo-variante que tenha implicações consistentes com as microevidências encontradas para os dados coletados da internet?
+  \item Os modelos DSGE sobre a hipóte de distribuição de Calvo se comportam de uma maneira similar aos modelos calibrados com os dados coletados da internet?
+\end{itemize}
+
+

@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: projeto.aux
+The style file: apalike.bst
+Database file #1: geral.bib
+Warning--empty journal in aucremanne2005time
+Warning--empty journal in ball1994sticky
+Warning--empty institution in carvalho2009estimating
+Warning--empty journal in Fuhrer2005
+Warning--can't use both author and editor fields in ibgemetodos
+Warning--empty journal in lunnemann2005consumer
+Warning--empty journal in Mash2003
+Warning--empty journal in mash2004optimising
+Warning--empty journal in sheedy2007inflation
+Warning--empty journal in yao2009cost
+You've used 67 entries,
+            1935 wiz_defined-function locations,
+            844 strings with 13717 characters,
+and the built_in function-call counts, 24448 in all, are:
+= -- 2473
+> -- 774
+< -- 67
++ -- 261
+- -- 242
+* -- 1963
+:= -- 4246
+add.period$ -- 193
+call.type$ -- 67
+change.case$ -- 459
+chr.to.int$ -- 66
+cite$ -- 77
+duplicate$ -- 976
+empty$ -- 1773
+format.name$ -- 359
+if$ -- 4789
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 61
+newline$ -- 329
+num.names$ -- 201
+pop$ -- 352
+preamble$ -- 1
+purify$ -- 456
+quote$ -- 0
+skip$ -- 809
+stack$ -- 0
+substring$ -- 1847
+swap$ -- 129
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 394
+warning$ -- 10
+while$ -- 221
+width$ -- 0
+write$ -- 841
+(There were 10 warnings)

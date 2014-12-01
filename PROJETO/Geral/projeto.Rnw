@@ -30,9 +30,15 @@
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 \SweaveInput{pre.Rnw}
-\SweaveInput{cap1.Rnw}
-\SweaveInput{cap2.Rnw}
-\SweaveInput{cap3.Rnw}
+\SweaveInput{cap1en01.Rnw}
+\SweaveInput{cap2en01.Rnw}
+\SweaveInput{cap3en01.Rnw}
+\SweaveInput{cap1en02.Rnw}
+\SweaveInput{cap2en02.Rnw}
+\SweaveInput{cap3en02.Rnw}
+\SweaveInput{cap1en03.Rnw}
+\SweaveInput{cap2en03.Rnw}
+\SweaveInput{cap3en03.Rnw}
 % \SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 
@@ -40,7 +46,7 @@
 \bibliographystyle{apalike}
 
 % Arquivo .bib
-\bibliography{projeto}
+\bibliography{geral}
 
 % Apêndice(s)
 \SweaveInput{apendice}
