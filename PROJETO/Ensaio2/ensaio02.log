@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  30 NOV 2014 21:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  30 NOV 2014 23:59
 entering extended mode
  %&-line parsing enabled.
 **ensaio02.tex
@@ -1180,65 +1180,67 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.460 
-       [1
+l.462 A
+       s funções de risco estimadas de microdados são portanto um susbsti...
+[1
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5681) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.469 
+l.475 
        [2]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 483.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 477.
 
  (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 483.
- [3] [4]
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 477.
+ [3] [4
+
+]
 Cap\'{\i }tulo 2.
 [5
-
 
 ] [6]
 Cap\'{\i }tulo 3.
 
 Package natbib Warning: Citation `wolman1999sticky' on page 7 undefined on inpu
-t line 515.
+t line 508.
 
 [7
 
 
 ] [8]
-Overfull \hbox (67.47475pt too wide) in paragraph at lines 603--621
+Overfull \hbox (67.47475pt too wide) in paragraph at lines 596--614
  [] 
  []
 
 [9] [10] [11] [12] [13] (./ensaio02.bbl [14] [15
 
-] [16])
+])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 97.
 See the caption package documentation for explanation.
 
-AED: lastpage setting LastPage [17]
+AED: lastpage setting LastPage [16]
 
 Package natbib Warning: There were undefined citations.
 
 (./ensaio02.aux) ) 
 Here is how much of TeX's memory you used:
- 13253 strings out of 493848
- 195223 string characters out of 1152823
- 316260 words of memory out of 3000000
- 15777 multiletter control sequences out of 15000+50000
- 73851 words of font info for 305 fonts, out of 3000000 for 9000
+ 13184 strings out of 493848
+ 194081 string characters out of 1152823
+ 316006 words of memory out of 3000000
+ 15745 multiletter control sequences out of 15000+50000
+ 71131 words of font info for 281 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,12n,47p,2122b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,47p,1532b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
 xmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
 thex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/f
@@ -1255,9 +1257,9 @@ exmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ensaio02.pdf (21 pages, 330160 bytes).
+Output written on ensaio02.pdf (20 pages, 316934 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
  38485 words of extra memory for PDF output out of 42996 (max. 10000000)
 
