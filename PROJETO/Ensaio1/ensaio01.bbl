@@ -56,6 +56,18 @@ Cecchetti, S.~G. (1986).
   magazines.
 \newblock {\em Journal of Econometrics}, 31(3):255--274.
 
+\bibitem[Chari et~al., 2000]{chari2000sticky}
+Chari, V.~V., Kehoe, P.~J., and McGrattan, E.~R. (2000).
+\newblock Sticky price models of the business cycle: can the contract
+  multiplier solve the persistence problem?
+\newblock {\em Econometrica}, 68(5):1151--1179.
+
+\bibitem[Christiano et~al., 2005]{christiano2005nominal}
+Christiano, L.~J., Eichenbaum, M., and Evans, C.~L. (2005).
+\newblock Nominal rigidities and the dynamic effects of a shock to monetary
+  policy.
+\newblock {\em Journal of political Economy}, 113(1):1--45.
+
 \bibitem[Coenen et~al., 2007]{coenen2007identifying}
 Coenen, G., Levin, A.~T., and Christoffel, K. (2007).
 \newblock Identifying the influences of nominal and real rigidities in
@@ -73,6 +85,12 @@ Dhyne, E., Alvarez, L.~J., Le~Bihan, H., Veronese, G., Dias, D., Hoffmann, J.,
 \newblock Price changes in the euro area and the united states: Some facts from
   individual consumer price data.
 \newblock {\em The Journal of Economic Perspectives}, pages 171--192.
+
+\bibitem[Dixon and Le~Bihan, 2012]{dixon2012generalised}
+Dixon, H. and Le~Bihan, H. (2012).
+\newblock Generalised taylor and generalised calvo price and wage setting:
+  Micro-evidence with macro implications*.
+\newblock {\em The Economic Journal}, 122(560):532--554.
 
 \bibitem[Dotsey et~al., 1999]{dotsey1999state}
 Dotsey, M., King, R.~G., and Wolman, A.~L. (1999).
@@ -97,11 +115,22 @@ IBGE (2013).
 \newblock Diretoria de Pesquisas - Instituto Brasileiro de Geografia e
   Estat{\'i}stica (IBGE).
 
+\bibitem[II and Edward, 2010]{ii2010tale}
+II, K. and Edward, S. (2010).
+\newblock A tale of two rigidities: Sticky prices in a sticky-information
+  environment.
+\newblock {\em Journal of Money, Credit and Banking}, 42(8):1543--1564.
+
 \bibitem[Klenow and Kryvtsov, 2008]{klenow2008state}
 Klenow, P.~J. and Kryvtsov, O. (2008).
 \newblock State-dependent or time-dependent pricing: Does it matter for recent
   us inflation?
 \newblock {\em The Quarterly Journal of Economics}, 123(3):863--904.
+
+\bibitem[Klenow and Willis, 2007]{klenow2007sticky}
+Klenow, P.~J. and Willis, J.~L. (2007).
+\newblock Sticky information and sticky prices.
+\newblock {\em Journal of Monetary Economics}, 54:79--99.
 
 \bibitem[Lopes, 2008]{lopes2008rigidez}
 Lopes, L. (2008).
@@ -126,10 +155,21 @@ Mankiw, N.~G. (1985).
   monopoly.
 \newblock {\em The Quarterly Journal of Economics}, pages 529--537.
 
+\bibitem[Mankiw and Reis, 2001]{mankiw2001sticky}
+Mankiw, N.~G. and Reis, R. (2001).
+\newblock Sticky information versus sticky prices: a proposal to replace the
+  new keynesian phillips curve.
+\newblock Technical report, National Bureau of Economic Research.
+
 \bibitem[Manning et~al., 2008]{manning2008introduction}
 Manning, C.~D., Raghavan, P., and Sch{\"u}tze, H. (2008).
 \newblock {\em Introduction to information retrieval}, volume~1.
 \newblock Cambridge university press Cambridge.
+
+\bibitem[Mash, 2003]{mash2003new}
+Mash, R. (2003).
+\newblock New keynesian microfoundations revisited: A
+  calvo-taylor-rule-of-thumb model and optimal monetary policy delegation.
 
 \bibitem[Matos and Barros, 2009]{matos2009comportamento}
 Matos, S. and Barros, R. (2009).
@@ -147,10 +187,22 @@ Rotemberg, J.~J. (1982).
 \newblock Sticky prices in the united states.
 \newblock {\em The Journal of Political Economy}, pages 1187--1211.
 
+\bibitem[Rotemberg, 2005]{rotemberg2005customer}
+Rotemberg, J.~J. (2005).
+\newblock Customer anger at price increases, changes in the frequency of price
+  adjustment and monetary policy.
+\newblock {\em Journal of Monetary Economics}, 52(4):829--852.
+
 \bibitem[Sheshinski and Weiss, 1977]{sheshinski1977inflation}
 Sheshinski, E. and Weiss, Y. (1977).
 \newblock Inflation and costs of price adjustment.
 \newblock {\em The Review of Economic Studies}, pages 287--303.
+
+\bibitem[Smets and Wouters, 2003]{smets2003estimated}
+Smets, F. and Wouters, R. (2003).
+\newblock An estimated dynamic stochastic general equilibrium model of the euro
+  area.
+\newblock {\em Journal of the European economic association}, 1(5):1123--1175.
 
 \bibitem[Taylor, 1980]{taylor1980aggregate}
 Taylor, J.~B. (1980).
@@ -161,5 +213,9 @@ Taylor, J.~B. (1980).
 Varian, H.~R. (2014).
 \newblock Big data: New tricks for econometrics.
 \newblock {\em The Journal of Economic Perspectives}, 28(2):3--27.
+
+\bibitem[Woodford and WALSH, 2005]{woodford2005interest}
+Woodford, M. and WALSH, C.~E. (2005).
+\newblock Interest and prices: Foundations of a theory of monetary policy.
 
 \end{thebibliography}
