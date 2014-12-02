@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  1 DEC 2014 23:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  2 DEC 2014 16:22
 entering extended mode
  %&-line parsing enabled.
 **projeto.tex
@@ -280,7 +280,43 @@ Now handling font encoding U ...
 (/usr/share/texmf-texlive/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
 )
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+(/usr/share/texmf-texlive/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2005/10/04 v3.9 algorithms environments
+\c@AlgoLine=\count89
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+********************************************************
+Package `algorithm2e' Release 3.9 -- october 04 2005 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (fiorio@lirmm.fr)
+********************************************************
+\skiptotal=\skip43
+\skiprule=\skip44
+\skiphlne=\skip45
+\skiptext=\skip46
+\skiplength=\skip47
+\algomargin=\skip48
+\skipalgocfslide=\skip49
+\algowidth=\dimen104
+\inoutsize=\dimen105
+\inoutline=\dimen106
+\algocf@inoutbox=\box26
+\algocf@inputbox=\box27
+\AlCapSkip=\skip50
+\AlCapHSkip=\skip51
+\algocf@capbox=\box28
+\c@algocfline=\count90
+\c@algocf=\count91
+\algocf@algoframe=\box29
+\algocf@algobox=\box30
+) (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texmf-texlive/tex/latex/base/t1enc.def
@@ -330,12 +366,12 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 \MT@toks=\toks17
-\MT@count=\count89
+\MT@count=\count92
 LaTeX Info: Redefining \lsstyle on input line 1608.
 LaTeX Info: Redefining \lslig on input line 1608.
-\MT@outer@space=\skip43
+\MT@outer@space=\skip52
 LaTeX Info: Redefining \textls on input line 1616.
-\MT@outer@kern=\dimen104
+\MT@outer@kern=\dimen107
 LaTeX Info: Redefining \textmicrotypecontext on input line 2167.
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -344,7 +380,7 @@ File: microtype.cfg 2009/03/27 v2.3d microtype main configuration file (RS)
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip44
+\@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
@@ -353,49 +389,49 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
-\ex@=\dimen105
+\ex@=\dimen108
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen106
+\pmbraise@=\dimen109
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen107
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen110
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks19
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks20
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
 \@envbody=\toks21
-\multlinegap=\skip45
-\multlinetaggap=\skip46
+\multlinegap=\skip54
+\multlinetaggap=\skip55
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
@@ -562,13 +598,13 @@ Package ifpdf Info: pdfTeX in pdf mode detected.
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
 \Gm@dimlist=\toks23
 
 (/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
@@ -592,10 +628,10 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
-\Gread@gobject=\count105
+\Gread@gobject=\count108
 ))
-\Gin@req@height=\dimen118
-\Gin@req@width=\dimen119
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -638,56 +674,51 @@ Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 
 (/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
 Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
-\captionmargin=\dimen120
-\captionmargin@=\dimen121
-\captionwidth=\dimen122
-\caption@indent=\dimen123
-\caption@parindent=\dimen124
-\caption@hangindent=\dimen125
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
 )
-\c@ContinuedFloat=\count106
+\c@ContinuedFloat=\count109
 )
-\c@KVtest=\count107
-\sf@farskip=\skip47
-\sf@captopadj=\dimen126
-\sf@capskip=\skip48
-\sf@nearskip=\skip49
-\c@subfigure=\count108
-\c@subfigure@save=\count109
-\c@lofdepth=\count110
-\c@subtable=\count111
-\c@subtable@save=\count112
-\c@lotdepth=\count113
-\sf@top=\skip50
-\sf@bottom=\skip51
+\c@KVtest=\count110
+\sf@farskip=\skip56
+\sf@captopadj=\dimen129
+\sf@capskip=\skip57
+\sf@nearskip=\skip58
+\c@subfigure=\count111
+\c@subfigure@save=\count112
+\c@lofdepth=\count113
+\c@subtable=\count114
+\c@subtable@save=\count115
+\c@lotdepth=\count116
+\sf@top=\skip59
+\sf@bottom=\skip60
 )
 (/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count114
-\mult@box=\box28
-\multicol@leftmargin=\dimen127
-\c@unbalance=\count115
-\c@collectmore=\count116
-\doublecol@number=\count117
-\multicoltolerance=\count118
-\multicolpretolerance=\count119
-\full@width=\dimen128
-\page@free=\dimen129
-\premulticols=\dimen130
-\postmulticols=\dimen131
-\multicolsep=\skip52
-\multicolbaselineskip=\skip53
-\partial@page=\box29
-\last@line=\box30
-\mult@rightbox=\box31
-\mult@grightbox=\box32
-\mult@gfirstbox=\box33
-\mult@firstbox=\box34
-\@tempa=\box35
-\@tempa=\box36
-\@tempa=\box37
-\@tempa=\box38
-\@tempa=\box39
+\c@tracingmulticols=\count117
+\mult@box=\box33
+\multicol@leftmargin=\dimen130
+\c@unbalance=\count118
+\c@collectmore=\count119
+\doublecol@number=\count120
+\multicoltolerance=\count121
+\multicolpretolerance=\count122
+\full@width=\dimen131
+\page@free=\dimen132
+\premulticols=\dimen133
+\postmulticols=\dimen134
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box34
+\last@line=\box35
+\mult@rightbox=\box36
+\mult@grightbox=\box37
+\mult@gfirstbox=\box38
+\mult@firstbox=\box39
 \@tempa=\box40
 \@tempa=\box41
 \@tempa=\box42
@@ -700,58 +731,63 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count120
-\c@finalcolumnbadness=\count121
-\last@try=\dimen132
-\multicolovershoot=\dimen133
-\multicolundershoot=\dimen134
-\mult@nat@firstbox=\box52
-\colbreak@box=\box53
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\c@columnbadness=\count123
+\c@finalcolumnbadness=\count124
+\last@try=\dimen135
+\multicolovershoot=\dimen136
+\multicolundershoot=\dimen137
+\mult@nat@firstbox=\box57
+\colbreak@box=\box58
 )
 (/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen135
-\extrarowheight=\dimen136
+\col@sep=\dimen138
+\extrarowheight=\dimen139
 \NC@list=\toks24
-\extratabsurround=\skip54
-\backup@length=\skip55
+\extratabsurround=\skip63
+\backup@length=\skip64
 )
 (/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen137
-\lightrulewidth=\dimen138
-\cmidrulewidth=\dimen139
-\belowrulesep=\dimen140
-\belowbottomsep=\dimen141
-\aboverulesep=\dimen142
-\abovetopsep=\dimen143
-\cmidrulesep=\dimen144
-\cmidrulekern=\dimen145
-\defaultaddspace=\dimen146
-\@cmidla=\count122
-\@cmidlb=\count123
-\@aboverulesep=\dimen147
-\@belowrulesep=\dimen148
-\@thisruleclass=\count124
-\@lastruleclass=\count125
-\@thisrulewidth=\dimen149
+\heavyrulewidth=\dimen140
+\lightrulewidth=\dimen141
+\cmidrulewidth=\dimen142
+\belowrulesep=\dimen143
+\belowbottomsep=\dimen144
+\aboverulesep=\dimen145
+\abovetopsep=\dimen146
+\cmidrulesep=\dimen147
+\cmidrulekern=\dimen148
+\defaultaddspace=\dimen149
+\@cmidla=\count125
+\@cmidlb=\count126
+\@aboverulesep=\dimen150
+\@belowrulesep=\dimen151
+\@thisruleclass=\count127
+\@lastruleclass=\count128
+\@thisrulewidth=\dimen152
 )
 (/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip56
-\LTright=\skip57
-\LTpre=\skip58
-\LTpost=\skip59
-\LTchunksize=\count126
-\LTcapwidth=\dimen150
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@cols=\count127
-\LT@rows=\count128
-\c@LT@tables=\count129
-\c@LT@chunks=\count130
+\LTleft=\skip65
+\LTright=\skip66
+\LTpre=\skip67
+\LTpost=\skip68
+\LTchunksize=\count129
+\LTcapwidth=\dimen153
+\LT@head=\box59
+\LT@firsthead=\box60
+\LT@foot=\box61
+\LT@lastfoot=\box62
+\LT@cols=\count130
+\LT@rows=\count131
+\c@LT@tables=\count132
+\c@LT@chunks=\count133
 \LT@p@ftn=\toks25
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
@@ -759,9 +795,9 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texmf-texlive/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen151
-\nom@tempdim=\dimen152
-\nomitemsep=\skip60
+\nomlabelwidth=\dimen154
+\nom@tempdim=\dimen155
+\nomitemsep=\skip69
 )
 \@nomenclaturefile=\write3
 \openout3 = `projeto.nlo'.
@@ -770,8 +806,8 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 Writing nomenclature file projeto.nlo
 (/usr/share/texmf-texlive/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box58
-\fn@width=\dimen153
+\fn@notes=\box63
+\fn@width=\dimen156
 )
 (/usr/share/texmf-texlive/tex/latex/lastpage/lastpage.sty
 Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
@@ -779,10 +815,10 @@ Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
 )
 (/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
 Package: natbib 2009/07/16 8.31 (PWD, AO)
-\bibhang=\skip61
-\bibsep=\skip62
+\bibhang=\skip70
+\bibsep=\skip71
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count131
+\c@NAT@ctr=\count134
 )
 (/usr/share/texmf-texlive/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2009/09/04 v1.5i extra ToC listings
@@ -799,25 +835,22 @@ Package: icomma 2002/03/10 v2.0 (WaS)
 (/usr/share/texmf-texlive/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
 
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/share/texmf-texlive/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip63
-\L@UnitsRaiseTextstyle=\skip64
-\L@UnitsRaiseScriptstyle=\skip65
+\L@UnitsRaiseDisplaystyle=\skip72
+\L@UnitsRaiseTextstyle=\skip73
+\L@UnitsRaiseScriptstyle=\skip74
 ))
 (/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip66
-\f@ncyO@elh=\skip67
-\f@ncyO@erh=\skip68
-\f@ncyO@olh=\skip69
-\f@ncyO@orh=\skip70
-\f@ncyO@elf=\skip71
-\f@ncyO@erf=\skip72
-\f@ncyO@olf=\skip73
-\f@ncyO@orf=\skip74
+\fancy@headwidth=\skip75
+\f@ncyO@elh=\skip76
+\f@ncyO@erh=\skip77
+\f@ncyO@olh=\skip78
+\f@ncyO@orh=\skip79
+\f@ncyO@elf=\skip80
+\f@ncyO@erf=\skip81
+\f@ncyO@olf=\skip82
+\f@ncyO@orf=\skip83
 )
 (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
@@ -832,9 +865,9 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen154
-\Hy@linkcounter=\count132
-\Hy@pagecounter=\count133
+\@linkdim=\dimen157
+\Hy@linkcounter=\count135
+\Hy@pagecounter=\count136
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
@@ -901,9 +934,9 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count134
-\Field@Width=\dimen155
-\Fld@charsize=\dimen156
+\Fld@menulength=\count137
+\Field@Width=\dimen158
+\Fld@charsize=\dimen159
 \Field@toks=\toks26
 Package hyperref Info: Hyper figures OFF on input line 4377.
 Package hyperref Info: Link nesting OFF on input line 4382.
@@ -916,39 +949,39 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count135
-\c@Item=\count136
-\c@Hfootnote=\count137
+\Hy@abspage=\count138
+\c@Item=\count139
+\c@Hfootnote=\count140
 )
 *hyperref using default driver hpdftex*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count138
+\Fld@listcount=\count141
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 197.
+Package hyperref Info: Option `colorlinks' set `true' on input line 200.
 
 
 Package hyperref Warning: Option `pagecolor' is not available anymore.
 
 (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count139
-\lst@gtempboxa=\box59
+\lst@mode=\count142
+\lst@gtempboxa=\box64
 \lst@token=\toks27
-\lst@length=\count140
-\lst@currlwidth=\dimen157
-\lst@column=\count141
-\lst@pos=\count142
-\lst@lostspace=\dimen158
-\lst@width=\dimen159
-\lst@newlines=\count143
-\lst@lineno=\count144
-\lst@maxwidth=\dimen160
+\lst@length=\count143
+\lst@currlwidth=\dimen160
+\lst@column=\count144
+\lst@pos=\count145
+\lst@lostspace=\dimen161
+\lst@width=\dimen162
+\lst@newlines=\count146
+\lst@lineno=\count147
+\lst@maxwidth=\dimen163
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count145
-\lst@skipnumbers=\count146
-\lst@framebox=\box60
+\c@lstnumber=\count148
+\lst@skipnumbers=\count149
+\lst@framebox=\box65
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
@@ -963,11 +996,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count147
+\FV@CodeLineNo=\count150
 \FV@InFile=\read1
-\FV@TabBox=\box61
-\c@FancyVerbLine=\count148
-\FV@StepNumber=\count149
+\FV@TabBox=\box66
+\c@FancyVerbLine=\count151
+\FV@StepNumber=\count152
 \FV@OutFile=\write4
 ) (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -993,29 +1026,29 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))) (./projeto.aux)
 \openout1 = `projeto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 221.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 221.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 224.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 224.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Info: Redefining \microtypecontext on input line 221.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Info: Redefining \microtypecontext on input line 224.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1100.
@@ -1078,20 +1111,20 @@ driver: pdftex
 -----------------------
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
-\scratchdimen=\dimen161
-\scratchbox=\box62
-\nofMPsegments=\count151
-\nofMParguments=\count152
+\scratchcounter=\count153
+\scratchdimen=\dimen164
+\scratchbox=\box67
+\nofMPsegments=\count154
+\nofMParguments=\count155
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count153
-\MPscratchDim=\dimen162
-\MPnumerator=\count154
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen165
+\MPnumerator=\count157
 \everyMPtoPDFconversion=\toks29
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 221.
+LaTeX Info: Redefining \subref on input line 224.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1099,7 +1132,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2008/03/28 v1.2 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 221.
+Package hyperref Info: Link coloring ON on input line 224.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -1107,53 +1140,53 @@ Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count155
+\c@section@level=\count158
 )
-LaTeX Info: Redefining \ref on input line 221.
-LaTeX Info: Redefining \pageref on input line 221.
+LaTeX Info: Redefining \ref on input line 224.
+LaTeX Info: Redefining \pageref on input line 224.
  (./projeto.out)
 (./projeto.out)
 \@outlinefile=\write5
 \openout5 = `projeto.out'.
 
-\AtBeginShipoutBox=\box63
-\c@lstlisting=\count156
+\AtBeginShipoutBox=\box68
+\c@lstlisting=\count159
  (./projeto-concordance.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 269.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 272.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 269.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 272.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 269
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 272
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 269
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 272
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 269.
+(Font)              <10.95> on input line 272.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 269.
+(Font)              <8> on input line 272.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 269.
-LaTeX Font Info:    Try loading font information for U+msa on input line 269.
+(Font)              <6> on input line 272.
+LaTeX Font Info:    Try loading font information for U+msa on input line 272.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -1161,7 +1194,7 @@ File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 (/usr/share/texmf-texlive/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 269.
+LaTeX Font Info:    Try loading font information for U+msb on input line 272.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -1183,28 +1216,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.478 
+l.481 
        [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.490 
+l.493 
        [2]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 500.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 503.
 
  (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 500.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 503.
  [3] [4
 
 ] [5] [6]
 [7] [8] [9]
 ! Undefined control sequence.
-l.589 ... do \emph{Consumer Price Indices} e \epmh
+l.592 ... do \emph{Consumer Price Indices} e \epmh
                                                   {Harmonized Consumer Price...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1218,28 +1251,44 @@ Underfull \vbox (badness 1264) has occurred while \output is active []
  [10]
 [11] [12
 
-] <WebScraping.png, id=462, 1844.8925pt x 1324.95pt>
+] [13] <WebScraping.png, id=487, 1844.8925pt x 1324.95pt>
 File: WebScraping.png Graphic file (type png)
 
-<use WebScraping.png> [13] [14 <./WebScraping.png (PNG copy)>]
-Underfull \vbox (badness 3000) has occurred while \output is active []
+<use WebScraping.png>
+LaTeX Font Info:    Try loading font information for T1+aett on input line 648.
 
- [15]
+ (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Package hyperref Info: bookmark level for unknown algocf defaults to 0 on input
+ line 658.
+
+Underfull \hbox (badness 10000) detected at line 659
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--661
+
+ []
+
+[14] [15 <./WebScraping.png (PNG copy)>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 645.
+(Font)              <9> on input line 674.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 645.
+(Font)              <5> on input line 674.
+ [16] [17] [18] [19] [20] [21]
+Overfull \hbox (25.66463pt too wide) in paragraph at lines 809--821
+ [][] 
+ []
 
-Underfull \vbox (badness 2020) has occurred while \output is active []
-
- [16]
-[17] [18] [19] [20] [21] [22]
+[22]
 Cap\'{\i }tulo 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.815 
+l.844 
        [1
 
 
@@ -1247,43 +1296,43 @@ l.815
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.829 
+l.858 
        [2]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.840 \cleardoublepage
+l.869 \cleardoublepage
                        [3]pdfTeX warning (ext4): destination with the same iden
 tifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.840 \cleardoublepage
+l.869 \cleardoublepage
                        [4
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.852 
+l.881 
        [5]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.855 \cleardoublepage
+l.884 \cleardoublepage
                        [6]pdfTeX warning (ext4): destination with the same iden
 tifier (name{page.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.895 
+l.924 
        [7
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.937 
+l.966 
        [8]
-Overfull \hbox (67.47475pt too wide) in paragraph at lines 949--967
+Overfull \hbox (67.47475pt too wide) in paragraph at lines 978--996
  [] 
  []
 
@@ -1291,90 +1340,89 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.979 \end{equation}
-                     [9]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.10}) has been already used, duplicate ignored
+l.1008 \end{equation}
+                      [9]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1012 
+l.1041 
         [10]pdfTeX warning (ext4): destination with the same identifier (name{p
 age.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1041 D
+l.1070 D
         epois de loglinearizar as equações de equilíbrio em torno do pre�...
 [11]pdfTeX warning (ext4): destination with the same identifier (name{page.12})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1080 
+l.1109 
         [12]pdfTeX warning (ext4): destination with the same identifier (name{p
 age.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1112 \cleardoublepage
-                        [13]pdfTeX warning (ext4): destination with the same id
-entifier (name{page.14}) has been already used, duplicate ignored
+l.1142 
+        [13]pdfTeX warning (ext4): destination with the same identifier (name{p
+age.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1112 \cleardoublepage
-                        [14
-
-]
+l.1158 \cleardoublepage
+                        [14]
 Cap\'{\i }tulo 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1130 
+l.1176 
         [1
+
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1154 \end
-           {itemize} [2]pdfTeX warning (ext4): destination with the same identi
+l.1199 \end{itemize}
+                     [2]pdfTeX warning (ext4): destination with the same identi
 fier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1158 \cleardoublepage
+l.1203 \cleardoublepage
                         [3]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1158 \cleardoublepage
+l.1203 \cleardoublepage
                         [4
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1170 
+l.1215 
         [5]pdfTeX warning (ext4): destination with the same identifier (name{pa
 ge.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1172 \cleardoublepage
+l.1217 \cleardoublepage
                         [6]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{page.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1196 
+l.1241 
         [7
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1240 
+l.1285 
         [8]pdfTeX warning (ext4): destination with the same identifier (name{pa
 ge.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1277 \begin{center}
+l.1322 \begin{center}
                      \label{tab01en03} [9]
-Overfull \hbox (67.47475pt too wide) in paragraph at lines 1278--1296
+Overfull \hbox (67.47475pt too wide) in paragraph at lines 1323--1341
  [] 
  []
 
@@ -1382,17 +1430,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1316 \end{equation}
+l.1361 \end{equation}
                       [10]pdfTeX warning (ext4): destination with the same iden
 tifier (name{page.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1353 
+l.1398 
         [11]pdfTeX warning (ext4): destination with the same identifier (name{p
 age.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1397 
+l.1442 
         [12] (./projeto.bblpdfTeX warning (ext4): destination with the same ide
 ntifier (name{page.13}) has been already used, duplicate ignored
 <to be read again> 
@@ -1426,18 +1474,18 @@ nation with the same identifier (name{page.18}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.1410 \chapter
+l.1472 \chapter
                {METODOLOGIA IBGE}\label{ap1} [18]
 Ap\^endice A.
 pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1454       \item G
+l.1516       \item G
                     rupo [19
 
 ]
-Overfull \hbox (19.44579pt too wide) in paragraph at lines 1482--1489
+Overfull \hbox (19.44579pt too wide) in paragraph at lines 1544--1551
  [][] 
  []
 
@@ -1445,14 +1493,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1491 \end{table}
+l.1553 \end{table}
                    [20]
 Runaway argument?
 {eq03ap01) e $m_{k}$ é o número de produtos do subitem $k$. Como ob\ETC.
 ! Paragraph ended before \T@ref was complete.
 <to be read again> 
                    \par 
-l.1512 
+l.1574 
        
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1462,77 +1510,75 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1514 
+l.1576 
         [21]pdfTeX warning (ext4): destination with the same identifier (name{p
 age.22}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1550 
+l.1612 
         [22] [23]
 Ap\^endice B.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 1584
-.
-(/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
+
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
  [24
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+aett on input line 162
-2.
+LaTeX Font Info:    Try loading font information for TS1+aett on input line 168
+4.
 
 (/usr/share/R/share/texmf/tex/latex/ts1aett.fd
 File: ts1aett.fd 
 )
-LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 162
-2.
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 168
+4.
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `TS1/aett/m/sl' in size <10> not available
-(Font)              Font shape `TS1/cmtt/m/sl' tried instead on input line 1622
+(Font)              Font shape `TS1/cmtt/m/sl' tried instead on input line 1684
 .
 
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 97.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 100.
 See the caption package documentation for explanation.
 
 AED: lastpage setting LastPage [25] (./projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 13884 strings out of 493848
- 204602 string characters out of 1152823
- 322127 words of memory out of 3000000
- 16109 multiletter control sequences out of 15000+50000
- 96342 words of font info for 391 fonts, out of 3000000 for 9000
+ 14875 strings out of 493848
+ 217198 string characters out of 1152823
+ 358790 words of memory out of 3000000
+ 17082 multiletter control sequences out of 15000+50000
+ 98986 words of font info for 395 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 44i,12n,51p,2019b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,13n,51p,1650b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/en
 c/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-maths
 y.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/font
 s/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</u
 sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfst1000.pfb>
-Output written on projeto.pdf (67 pages, 683737 bytes).
+/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmsltt10.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfst1000
+.pfb>
+Output written on projeto.pdf (67 pages, 711215 bytes).
 PDF statistics:
- 1208 PDF objects out of 1440 (max. 8388607)
- 272 named destinations out of 1000 (max. 500000)
- 55698 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1236 PDF objects out of 1440 (max. 8388607)
+ 279 named destinations out of 1000 (max. 500000)
+ 56746 words of extra memory for PDF output out of 61914 (max. 10000000)
 

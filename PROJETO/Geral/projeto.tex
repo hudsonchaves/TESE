@@ -34,7 +34,10 @@
 \usepackage[utf8]{inputenx}
 
 % Mapear caracteres especiais no PDF
-\usepackage{cmap} 
+\usepackage{cmap}
+
+% Pacote para escrever algorítmos no Latex
+\usepackage[ruled,vlined]{algorithm2e}
 
 % Codificação da fonte
 \usepackage[T1]{fontenc}
@@ -476,7 +479,7 @@ Na mesma direção da preocução teórica em relação ao comportamento dos pre
 
 Por conseguinte, recentes estudos têm usado de grandes bancos de dados de preços individuais (microdados) para examinar como os preços ao consumidor comportam em nível de produto. Em particular, \citet{bils2004some}, \citet{nakamura2008five} e \citet{klenow2008state} para os EUA, \citet{dhyne2006price} para a Zona do Euro, \citet{gouvea2007nominal}, \citet{matos2009comportamento} e \citet{lopes2008rigidez} para o Brasil e \citet{bunn2012examining} para o Reino Unido. Apesar de pesquisas brasileiras terem utilizado de microdados para a avaliação empirica da rigidez dos preços, nenhuma delas conseguiu alta granularidade no que tange à periodicidade dos preços coletados bem como em relação às regiões em que a rigidez foi avaliada. Tal característica é oriunda da fontes de dados usadas (IBRE/FGV e IPC/FIPE). 
 
-Assim, pesquisas anteriores têm demonstrado a importância da avaliação da rigidez nominal dos preços usando microdados. Os fatos estilizados obtidos de microdados podem ajudar a examinar o comportamento dos preços em nível de firmas, onde as decisções de precificação são feitas. A informação individual sobre as definições de preços permite determinar em que medida as hipóteses usadas na derivação de modelos teóricos são atualmente realísticas, o que por sua vez refina as estratégias de modelagem. Motivado por tais apontamentos, o presente ensaio explorará preços coletados de sites (supermercados, farmácias, lojas de eletrodomésticos, construção civil, ....) como uma alternativa à dificuldade em obter microdados de preços. A teconologia de \emph{web scraping} que será utilizada tem se tornado uma alternativa para o acesso a diversas fontes de dados para análise econômica empírica. 
+Os fatos estilizados obtidos de microdados podem ajudar a examinar o comportamento dos preços em nível de firmas, onde as decisões de precificação são feitas. A informação individual sobre as definições de preços permite determinar em que medida as hipóteses usadas na derivação de modelos teóricos são atualmente realísticas, o que por sua vez refina as estratégias de modelagem. Motivado por tais apontamentos, o presente ensaio explorará preços coletados de sites (supermercados, farmácias, lojas de eletrodomésticos, construção civil, ....) como uma alternativa à dificuldade em obter microdados de preços. A teconologia de \emph{web scraping} que será utilizada tem se tornado uma alternativa para o acesso a diversas fontes de dados para análise econômica empírica. 
 
 Este ensaio é organizado da seguinte forma: além deste primeiro capítulo que faz uma breve apresentaçãoo do tema, justificativa e objetivos do ensaio, o capítulo 2 apresenta a revisão bibliográfica do tema e por fim no capítulo 3 a metodologia a ser utilizada bem como o cronograma da pesquisa são descritos.
 
@@ -621,6 +624,10 @@ Uma metodologia que facilita o processo de coleta de dados da web é conhecida c
 
 A maior parte das páginas de sites são construídas usando uma linguagem de codificação estruturada chamada de \emph{HyperText Markup Language} (HTML). Este código tem “\emph{tags}”, tais como $<center>$ e $<bold>$, que determinam o estilo e localização do texto em uma página. Estas \emph{tags} tendem a permanecer constantes ao longo do tempo, uma vez que proporcionam um “\emph{look and feel}” distinto para cada página. Por contraste, a informação dentro dessas \emph{tags}, tais como preço de produtos, mudam ao longo do tempo. O software de \emph{scraping} pode ser ensinado a utilizar as \emph{tags} em HTML pata localizar informações relevantes sobre um produto e guarda-las em um banco de dados. A repetição desse processo todos os dias produz um banco de dados em formato de painel com um registro por produto por dia. Em adição, o endereço da página (URL) onde cada produto é localizado pode ser usado para classificar produtos em categorias padronizadas. 
 
+Através de um coletor é possível arquiteturar e executar de forma lógica e escalável todo esse processo. Para que um coletor seja funcional é necessário que o mesmo seja capaz de interagir com páginas da Web, extrair a informação de interesse e estruturar e armazenar os dados para futuras consultas. Em geral, exemplos corriqueiros de coletores podem ser citados como os desenvolvidos pelo Google e Microsoft para atuar na procura por páginas da internet ou outros mais específicos para coleta de preços de produtos como os portais de agregadores como Bom de Faro, Buscapé dentre outros. Assim, como \citet{cavallo2010scraped}, o presente projeto de tese busca de forma inovadora para a economia brasileira, explorar preços coletados de sites de supermercados, farmácias, companhia de energia elétrica, lojas de varelo online, lojas de roupas e calçados, entre outros, e propõe o uso de um sistema de coleta como o apresentado a seguir. 
+
+O sistema de coleta de preços está apresentado na Figura~\ref{fig:01}. O coletor recebe como entrada os templates dos sites que se deseja coletar e produz como resposta informações estruturadas com os atributos dos produtos. Para que o coletor seja capaz de realizar a tarefa de extração de informação, o mesmo deve apresentar os seguintes componentes: um componente centralizado capaz de ler instruções e aplicar regras para extração (1 - módulo coletor de dados); ter um conjunto de regras que descreva de forma não ambígua como realizar a coleta dos dados e os atributos de interesse (2 - templates dos webistes de supermercado, por exemplo); ter um banco de dados capaz de lidar com as características dos dados armazenados (3 - módulo de banco de dados); ter uma interface para facilitar o acesso aos dados por meio de outras aplicações ou sistemas web (4 - módulo de disponibilização da informação). Dessa forma, o coletor (1) é o centralizador do processo de coleta de dados, fazendo a interação com os templates (2), os webistes (A) e o módulo de banco de dados (3). Em resumo, o coletor através de um algoritmo inicia o processo de coleta carregando em uma lista os templates de coleta dos websites (2) e em seguida através de um processo iterativo visita o website, coleta os documentos de interesse e realiza a extração das informações indicadas pelo template. 
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{WebScraping}
@@ -628,9 +635,31 @@ A maior parte das páginas de sites são construídas usando uma linguagem de co
   \label{fig:01}
 \end{figure}
 
-Através de um coletor é possível arquiteturar e executar de forma lógica e escalável todo esse processo. Para que um coletor seja funcional é necessário que o mesmo seja capaz de interagir com páginas da Web, extrair a informação de interesse e estruturar e armazenar os dados para futuras consultas. Em geral, exemplos corriqueiros de coletores podem ser citados como os desenvolvidos pelo Google e Microsoft para atuar na procura por páginas da internet ou outros mais específicos para coleta de preços de produtos como os portais de agregadores como Bom de Faro, Buscapé dentre outros. Assim, como \citet{cavallo2010scraped}, o presente projeto de tese busca de forma inovadora para a economia brasileira, explorar preços coletados de sites de supermercados, farmácias, companhia de energia elétrica, lojas de varelo online, lojas de roupas e calçados, entre outros, e propõe o uso de um sistema de coleta como o apresentado a seguir. 
+%\IncMargin{1em}
+\begin{algorithm}[H]
+ \Dados{T $\leftarrow$ (t)${^N_{i=1}}$; tal que T é uma lista de templates}
+ \Resultado{Armazenados produtos estruturados em um banco NoSQL}
+ \BlankLine
+ \SetKwFunction{conectarNoSQL}{conectarNoSQL}
+ \SetKwFunction{visitarWebsite}{visitarWebsite}
+ \SetKwFunction{extrairInfo}{extrairInfo}
+ \SetKwFunction{estruturarProduto}{estruturarProduto}
+ \SetKwFunction{armazenarEmNoSQL}{armazenarEmNoSQL}
+ \emph{Inicialização:} nosql $\leftarrow$ \conectarNoSQL{url, porta, ...}\;
+ \BlankLine
+ \For{(t, u) \textbf{in} T}{
+   rawHtml $\leftarrow$ \visitarWebsite{u}\;
+ 	P $\leftarrow$ \extrairInfo{rawHtml, t}\;
+ 	\For{p \textbf{in} P}{
+ 	ps $\leftarrow$ \estruturarProduto{p}\;
+ 	nosql.\armazenarEmNoSQL{ps}\;
+ 	}
+ }
+ \caption{Algoritmo para coleta de dados.}
+\end{algorithm}
+%\DecMargin{1em}
 
-O sistema de coleta de preços está apresentado na Figura~\ref{fig:01}. O coletor recebe como entrada os templates dos sites que se deseja coletar e produz como resposta informações estruturadas com os atributos dos produtos. Para que o coletor seja capaz de realizar a tarefa de extração de informação, o mesmo deve apresentar os seguintes componentes: um componente centralizado capaz de ler instruções e aplicar regras para extração (1 - módulo coletor de dados); ter um conjunto de regras que descreva de forma não ambígua como realizar a coleta dos dados e os atributos de interesse (2 - templates dos webistes de supermercado, por exemplo); ter um banco de dados capaz de lidar com as características dos dados armazenados (3 - módulo de banco de dados); ter uma interface para facilitar o acesso aos dados por meio de outras aplicações ou sistemas web (4 - módulo de disponibilização da informação). Dessa forma, o coletor (1) é o centralizador do processo de coleta de dados, fazendo a interação com os templates (2), os webistes (A) e o módulo de banco de dados (3). Em resumo, o coletor através de um algoritmo inicia o processo de coleta carregando em uma lista os templates de coleta dos websites (2) e em seguida através de um processo iterativo visita o website, coleta os documentos de interesse e realiza a extração das informações indicadas pelo template. Ao final da coleta os dados são estruturados em um formato de documento denominado JSON e armazena-os em um banco de dados NoSQL adequado a essa estrutura de dados. O processo se repete para cada template até que todos os templates sejam avaliados. O algoritmo que descreve esse processo é apresentando em Algoritmo 1. Por fim, além da coleta em si, há um módulo para disponibilizar o acesso a informação coletada. Esse módulo (4) é responsável por permitir de forma segura e racional o uso dos dados coletados por diferentes sistemas e aplicações web existentes (C).
+Ao final da coleta os dados são estruturados em um formato de documento denominado JSON e armazena-os em um banco de dados NoSQL adequado a essa estrutura de dados. O processo se repete para cada template até que todos os templates sejam avaliados. O algoritmo que descreve esse processo é apresentando em Algoritmo 1. Por fim, além da coleta em si, há um módulo para disponibilizar o acesso a informação coletada. Esse módulo (4) é responsável por permitir de forma segura e racional o uso dos dados coletados por diferentes sistemas e aplicações web existentes (C).
 
 Segundo \citet{cavallo2010scraped}, preços coletados da internet possuem duas desvantagens: Primeiro, percentual menor de empresas disponibiliza seus produtos e preços na internet em comparação com as lojas físicas. Tal limitação pode ser minimizada ao longo do tempo com uma maior oferta de produtos e serviços na internet. Segundo, os preços coletados da internet não incluem informações sobre as quantidades vendidas o que impede de obter market share e estimativas de elasticidade.
 
@@ -713,26 +742,6 @@ Para obter a função risco suavizada $\hat{h}\left(t\right)$, pode-se usar a se
 
 \noindent onde $K$ é um kernel com densidade simétrica, $b$ é a \emph{bandwidth} de suavização e $D$ é o conjunto de vezes com mudança de preços. 
 
-% \section*{CRONOGRAMA}
-% 
-% O começo do programa de doutorado se deu no início de 2012 e pretende-se acabá-lo em tempo regular, isto é, em março de 2016. Abaixo, segue o cronograma com as atividades previstas para cada trimestre.
-% 
-% \begin{table}[h]
-% \begin{tabular}{llllll}
-% \hline
-% \multicolumn{1}{c}{\textbf{Atividades}}             & 1º Trimestre 2015     & 2º Trimestre 2015     & 3º Trimestre 2015     & 4º Trimestre 2015     & 1º Trimestre 2016     \\ \hline
-% Pesquisa Bibliográfica                              & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
-% Mapeamento de sites                                 & \multicolumn{1}{c}{X} &                       &                       &                       &                       \\
-% Implementação do sistema de coleta                  & \multicolumn{1}{c}{X} &                       &                       &                       &                       \\
-% Criação dos Índices de Inflação                     &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{}  & \multicolumn{1}{c}{}  &                       \\
-% Análise de Rigidez                                  &                       &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{}  &                       \\
-% Avaliação dos Determinantes da Inflação nas Regiões &                       &                       &                       & \multicolumn{1}{c}{X} &                       \\
-% Redação Final da Tese                               &                       &                       &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} \\
-% Entrega da Tese para Defesa                         &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \hline
-% \end{tabular}
-% \end{table}
-% 
-
 \subsection{Modelo Logit}
 
 A metodologia descrita nesta seção é baseada sobre \citet{aucremanne2005time} que usaram uma abordagem de dados em painel para encontrar os fatores determinantes da probabilidade de um preço se alterar na Bélgica. Abordagem similar também foi usada por \citet{lunnemann2005consumer} para \citet{baumgartner2005frequently} para a Austria e \citet{baudry2004price} para a França.
@@ -790,6 +799,26 @@ Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { X }_{ jkt }\beta +{ u }_{ 
 \end{equation}
 
 \noindent onde ${ X }_{ jkt }$ é um vetor linha de variáveis exógenas, $\beta$ é um vetor coluna dos coeficientes do modelo logit e ${ \varepsilon  }_{ jkt }$ é um termo de erro. Por fim, pode-se distinguir a variável $Y_{jkt}$ entre alterações em todos os preços ou excluir as promoções da análise. 
+
+\section{CRONOGRAMA}
+ 
+O começo do programa de doutorado se deu no início de 2012 e pretende-se acabá-lo em tempo regular, isto é, em março de 2016. Abaixo, segue o cronograma com as atividades previstas para cada trimestre.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Atividades}}             & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \midrule
+Pesquisa Bibliográfica                              & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Mapeamento de sites                                 & \multicolumn{1}{c}{X} &                       &                       &                       &                       \\
+Implementação do sistema de coleta                  & \multicolumn{1}{c}{X} &                       &                       &                       &                       \\
+Criação dos Índices de Inflação                     &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{}  & \multicolumn{1}{c}{}  &                       \\
+Análise de Rigidez                                  &                       &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{}  &                       \\
+Determinantes da Inflação nas Regiões     		&                       &                       &                       & \multicolumn{1}{c}{X} &                       \\
+Redação Final da Tese                               &                       &                       &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa                         &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \bottomrule
+\end{tabular}
+\end{table}
 
 
 
@@ -1107,6 +1136,23 @@ p(\mu |{Y\_ obs}^{T})(\mu |{Y\_ obs}^{T})p(\mu)
 No último passo, $\mu$ é estimado pela maximização da função de verossimilhança dados os dados ($\mu |{Y\_ obs}^{T}$) reponderada pela densidade à priori $p(\mu)$, em que métodos de otimização numérica são usados para encontrar a posteriori para $\mu$ e a inversa da matriz Hessiana. Finalmente, a distribuição a posteriori é gerada por meio do uso do algorítmo Metropolis.
 
 
+\section{CRONOGRAMA}
+ 
+O começo do programa de doutorado se deu no início de 2012 e pretende-se acabá-lo em tempo regular, isto é, em março de 2016. Abaixo, segue o cronograma com as atividades previstas para cada trimestre.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Atividades}}             & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \midrule
+Pesquisa Bibliográfica                              & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Estudo dos Algorítmo/Pacotes                        &                       & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Implementação do Modelo                             &                       &                       & \multicolumn{1}{c}{X} &                       &                       \\
+Análise dos Resultados                              &                       &                       &                       & \multicolumn{1}{c}{}  &                       \\
+Redação Final do Ensio                              &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa                         &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \bottomrule
+\end{tabular}
+\end{table}
 
 % Faz com que o ínicio do capítulo sempre seja uma página ímpar
 \cleardoublepage
@@ -1150,7 +1196,6 @@ Dentro deste escopo, os seguintes questionamentos pretendem ser avaliados:
   \item A função risco exerce efeitos sobre o \emph{inflation gap}?
   \item Quais os mecanimos de propagação?
   \item Os resultados se mantêm quando utilizamos a função risco derivada do Ensaio 2 e outras formulações para esta função?
-  \item 
 \end{itemize}
 
 
@@ -1395,6 +1440,23 @@ Nesta seção, apresentamos o comportamento da dinâmica da inflação na config
 
 \noindent onde ${\epsilon}_{t}\sim N\left( 0,{\sigma}_{z}^{2}\right)$, ${q}_{t}\sim N\left( 0,{\sigma}_{q}^{2}\right)$ e ${g}_{t}\sim N\left( 0,{\sigma}_{g}^{2}\right)$. Todas as variáveis são expressadas em termos do log dos desvios do estado estacionário não estocástico. Os pesos $(W_{1},W_{2},W_{3},W_{4})$ na curva de Phillips Novo-Keynesiana generalizada são definidos na equação~\ref{eq22en03}. $\hat{m}_{t}$ é o saldo em dinheiro e $g_{t}$ denota a taxa de crescimento do choque monetário nominal. A demanda agregada (equações~\ref{eq26en03},~\ref{eq27en03} e~\ref{eq28en03}) é motivada tanto pelo problema de otimização intertemporal da familíria representativa quanto pela teoria da quantidade da moeda. A política monetária (equações~\ref{eq29en03} e~\ref{eq30en03}) é especificada tanto em termos de uma regra de crescimento monetário nominal quanto uma simples regra de Taylor.
 
+\section{CRONOGRAMA}
+ 
+O começo do programa de doutorado se deu no início de 2012 e pretende-se acabá-lo em tempo regular, isto é, em março de 2016. Abaixo, segue o cronograma com as atividades previstas para cada trimestre.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Atividades}}             & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \midrule
+Pesquisa Bibliográfica                              & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Estudo dos Algorítmo/Pacotes                        &                       & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Implementação do Modelo                             &                       &                       & \multicolumn{1}{c}{X} &                       &                       \\
+Análise dos Resultados                              &                       &                       &                       & \multicolumn{1}{c}{}  &                       \\
+Redação Final do Ensio                              &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa                         &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \bottomrule
+\end{tabular}
+\end{table}
 % \SweaveInput{cap4.Rnw}
 % \SweaveInput{final.Rnw}
 

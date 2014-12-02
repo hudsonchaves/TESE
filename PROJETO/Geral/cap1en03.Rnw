@@ -40,7 +40,6 @@ Dentro deste escopo, os seguintes questionamentos pretendem ser avaliados:
   \item A função risco exerce efeitos sobre o \emph{inflation gap}?
   \item Quais os mecanimos de propagação?
   \item Os resultados se mantêm quando utilizamos a função risco derivada do Ensaio 2 e outras formulações para esta função?
-  \item 
 \end{itemize}
 
 

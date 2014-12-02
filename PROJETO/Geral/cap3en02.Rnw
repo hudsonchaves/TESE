@@ -254,4 +254,21 @@ p(\mu |{Y\_ obs}^{T})(\mu |{Y\_ obs}^{T})p(\mu)
 No último passo, $\mu$ é estimado pela maximização da função de verossimilhança dados os dados ($\mu |{Y\_ obs}^{T}$) reponderada pela densidade à priori $p(\mu)$, em que métodos de otimização numérica são usados para encontrar a posteriori para $\mu$ e a inversa da matriz Hessiana. Finalmente, a distribuição a posteriori é gerada por meio do uso do algorítmo Metropolis.
 
 
+\section{CRONOGRAMA}
+ 
+O começo do programa de doutorado se deu no início de 2012 e pretende-se acabá-lo em tempo regular, isto é, em março de 2016. Abaixo, segue o cronograma com as atividades previstas para cada trimestre.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Atividades}}             & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \midrule
+Pesquisa Bibliográfica                              & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Estudo dos Algorítmo/Pacotes                        &                       & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Implementação do Modelo                             &                       &                       & \multicolumn{1}{c}{X} &                       &                       \\
+Análise dos Resultados                              &                       &                       &                       & \multicolumn{1}{c}{}  &                       \\
+Redação Final do Ensio                              &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa                         &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \bottomrule
+\end{tabular}
+\end{table}
 

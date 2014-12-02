@@ -8,7 +8,10 @@
 \usepackage[utf8]{inputenx}
 
 % Mapear caracteres especiais no PDF
-\usepackage{cmap} 
+\usepackage{cmap}
+
+% Pacote para escrever algorítmos no Latex
+\usepackage[ruled,vlined]{algorithm2e}
 
 % Codificação da fonte
 \usepackage[T1]{fontenc}
