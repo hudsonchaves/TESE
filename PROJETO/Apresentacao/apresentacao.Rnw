@@ -17,73 +17,166 @@
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 
-% \section{ENSAIO 1}
-% \subsection{Introdução/Motivação}
-% \subsection{Revisão Bibliográfica}
-% \subsection{Metodologia}
-% \subsection{Cronograma}
-% \section{ENSAIO 2}
-% \subsection{Introdução/Motivação}
-% \subsection{Revisão Bibliográfica}
-% \subsection{Metodologia}
-% \subsection{Cronograma}
-% \section{ENSAIO 3}
-% \subsection{Introdução/Motivação}
-% \subsection{Revisão Bibliográfica}
-% \subsection{Metodologia}
-% \subsection{Cronograma}
 
 \begin{frame}
   \titlepage
 Orientador: Prof. Dr. Sabino Porto da Silva Júnior
 \end{frame}
 
-\begin{frame}
-\tableofcontents
+\begin{frame}[plain]\frametitle{Sumário}
+\small\tableofcontents
 \end{frame}
 
-\begin{frame}
-\section{ENSAIO 1}
+\section{Ensaio 1}
+  
+\begin{frame}\frametitle{}
+	\begin{center}
+	{\Huge Ensaio 1}
+	\end{center}
+\end{frame}
+
 \subsection{Introdução/Motivação}
-\frametitle{Introdução/Motivação}
-\begin{itemize}
-\item Firmas individuais não ajustam seus preços em contrapartida de choques relevantes na economia:
+
+\begin{frame}\frametitle{Introdução/Motivação}
   \begin{itemize}
-  \item Hipótese em modelagem macroeconômica;
+  \item Firmas individuais não ajustam seus preços em contrapartida de choques relevantes na economia:
+    \begin{itemize}
+    \item Hipótese em modelagem macroeconômica;
+    \end{itemize}
+  \item Comportamento microeconômicos de determinação de preços adotado pelos agentes:
+    \begin{itemize}
+    \item Tempo-Dependente;
+    \item Estado-Dependente.
+    \end{itemize}
+  \item Bancos Centrais têm usado a política de metas de inflação:
+    \begin{itemize}
+    \item Meta definida em termos de um índice de preços agregado;
+    \item Rigidez x Flexibilidade nos preços.
+    \end{itemize}
+  \item A partir disso, foi natural o surgimento de pesquisas com o objetivo de diferir a análise empírica da rigidez nominal dos preços baseada em dados agregados da avaliação do comportamento dos preços por meio de microfundamentos.
   \end{itemize}
-\item Comportamento microeconômicos de determinação de preços adotado pelos agentes:
-  \begin{itemize}
-  \item Tempo-Dependente;
-  \item Estado-Dependente.
-  \end{itemize}
-\item Bancos Centrais têm usado a política de metas de inflação:
-  \begin{itemize}
-  \item Meta definida em termos de um índice de preços agregado;
-  \item Rigidez x Flexibilidade nos preços.
-  \end{itemize}
-\item A partir disso, foi natural o surgimento de pesquisas com o objetivo de diferir a análise empírica da rigidez nominal dos preços baseada em dados agregados da avaliação do comportamento dos preços por meio de microfundamentos.
-\end{itemize}
 \end{frame}
 
-\begin{frame}
 \subsubsection{Justificativa}
-\frametitle{Introdução/Motivação}
+
+\begin{frame}\frametitle{Introdução/Motivação}
 \textbf{Justificativa}
 \begin{itemize}
 % \item Em particular, \citet{bils2004some,nakamura2008five,klenow2008state,dhyne2006price,gouvea2007nominal,matos2009comportamento,lopes2008rigidez,bunn2012examining}.
-\item Hipótese padrão em modelagem macroeconômica;
-\item Comportamento microeconômicos de determinação de preços adotado pelos agentes:
+\item A dinâmica do comportamento dos preços individuais proporciona vários desdobramentos que são bastantes debatidos na literatura dado o impacto que podem causar;
   \begin{itemize}
-  \item Tempo-Dependente
-  \item Estado-Dependente
+  \item A sua não compreensão levou a distintas abordagens para a análise da velocidade e intensidade de transmissão da política monetária
   \end{itemize}
-\item Bancos Centrais têm adotado a política de metas de inflação
+\item A falta de estudos que gerassem empiricamente um diagnóstico da definição e grau de rigidez de preços individuais;
+\item Limitação de acesso a base de dados
+\end{itemize}
+\end{frame}
+
+\subsubsection{Objetivos}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+\textbf{Objetivos}
+\begin{itemize}
+\item Avaliar empiricamente a rigidez nominal dos preços na economia brasileira por meio de dados coletados da \emph{web}
+\item Propor um índice de inflação oriundo da mesma fonte de dados;
+\item Questinamentos:
   \begin{itemize}
-  \item Meta definida em termos de um índice de preços agregado
-  \item Rigidez x Flexibilidade nos preços
+  \item É possível utilizar os dados coletados da internet como \emph{proxy} para a inflação divulgada pelos órgãos públicos?
+  \item Quão frequentemente os preços se alteram?
+  \item Existe heterogeneidade da rigidez nominal entre setores?
+  \item A probabilidade de mudança dos preços pode variar ao longo da duração dos preços?
+  \item Quais são as variáveis condicionantes para o risco de alteração nos preços?
   \end{itemize}
 \end{itemize}
 \end{frame}
+
+\subsection{Referencial Bibliográfico}
+
+\begin{frame}\frametitle{Referencial Bibliográfico}
+  \begin{itemize}[<+->]
+  \item Modelos de Precificação
+    \begin{itemize}
+      \item Contratos de Calvo/Taylor
+      \item Custo de Menu
+      \item Informação Rígida
+      \item Ira do Cliente
+    \end{itemize}
+  \item Preços Rígidos e Preços Flexíveis
+  \item Modelos Tempo-Dependente e Estado-Dependente
+  \item Estudos Empíricos
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Modelos de Precificação}
+  \textbf{Contratos de Calvo/Taylor}
+  \begin{itemize}
+  \item No modelo de Calvo (1983) a probabilidade de um preço mudar é constante:
+    \begin{itemize}
+      \item Independe da última vez que uma firma mudou seu preço;
+      \item Função risco constante.
+    \end{itemize}
+  \item Taylor (1980) define que os preços nominais são fixos por um certo número de períodos:
+    \begin{itemize}
+      \item Os preços são fixos por N períodos;
+      \item Taxa de risco é zero para todas as durações exceto N.
+    \end{itemize}
+  \item Generalização dos modelos de Taylor e Calvo:
+    \begin{itemize}
+      \item Em Taylor, existem muitos setores com diferentes tamanhos de preços e dentro de cada setor há um processo de Taylor simples;
+      \item Em Calvo, a estratégia de definição dos preços considera múltiplos setores.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Modelos de Precificação}
+  \textbf{Custo de Menu}
+  \begin{itemize}
+  \item Assume que a mudança no preço é custosa e isto impede que as firmas alterem seus preços continuamente;
+  \item Os modelos usualmente são resolvidos usando métodos numéricos e assim, não há expressão analítica para a taxa de risco.
+  \end{itemize}
+  \textbf{Ira do Cliente}
+  \begin{itemize}
+  \item Modelo de Rotemberg (2005) salienta que os clientes sempre analisam as decisões de precificação das firmas;
+  \item Percepção de justiça;
+  \item Firmas podem abandonar alterações nos preços para evitar a ira do cliente;
+  \item Em rápido crescimento da inflação os clietnes aceitam os ajustes dos preços;
+  \item Empresas podem alterar seus preços dentro de um calendário de forma que os clientes desenvolvam suas crenças.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Modelos de Precificação}
+  \textbf{Informação Rígida}
+  \begin{itemize}
+  \item Firmas sofrem com o custo de coletar informações sobre as condições econômicas e concorrentes;
+  \item Em cada período, a partir de novas informações, define-se um novo padrão de preços ótimos;
+  \item Todas as firmas mudam seus preços em todo o tempo em modelos de rigidez de informação;
+  \item Contudo, é contraditório nas evidências empíricas baseadas em dados individuais;
+  \item Estudos combinaram este modelo com custo de menu (Klenov e Willis, 2007;II e Edward, 2010)
+  \item \textbf{Solução:} Pagar custos ou aprender com as ações das outras empresas.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Preços Rígidos e Preços Flexíveis}
+  \begin{itemize}
+  \item A alternativa aos modelos de preços rígidos é o modelo de \textbf{Lucas (1972)} onde os preços são flexíveis e a imperfeição nominal é informacional;
+    \begin{itemize}
+    \item Produtor observa uma mudança no preço do seu produto e não sabe distinguir se isso é resultado de alterações no preço relativo ou nível agregado de preços;
+    \item A partir de uma expansão monetária não-observada, o melhor que cada produtor pode fazer é admitir que uma parte do aumento da demanda por seu produto reflete um choque de preços relativos;
+    \item \textbf{Consequência:} Expansão monetária tem efeitos reais e não apenas nominais sobre os preços.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Preços Rígidos e Preços Flexíveis}
+  \begin{itemize}
+  \item A vertente \textbf{novo-keynesiana} estabelece a hipótese de existência de rigidez nominal tanto nos preços quanto nos salários;
+  \item Essas variáveis nominais têm dificultade de ajuste e provocam impactos reais sobre o produto;
+  \item \textbf{Consequência:} Expansão monetária pode causar diferentes impactos sobre cada preço da economia dependendo do grau de rigidez nominal de cada bem;
+  \item \textbf{Consequência:} Se a rigidez for diversificada, resultará em alterações nos preços relativos provocando impactos reais
+  \end{itemize}
+\end{frame}
+
+
 
 % %%%%%%% REFERÊNCIAL BIBLIOGRÁFICO
 % 

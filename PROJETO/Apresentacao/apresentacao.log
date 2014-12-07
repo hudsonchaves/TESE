@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  7 DEC 2014 01:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.5)  7 DEC 2014 13:40
 entering extended mode
  %&-line parsing enabled.
 **apresentacao.tex
@@ -1266,6 +1266,42 @@ LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
 
 ] [4
 
+] [5
+
+]
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 92.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 92.
+ [6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+]
+[12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
 ]
 \tf@nav=\write7
 \openout7 = `apresentacao.nav'.
@@ -1282,21 +1318,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16350 strings out of 493848
- 299580 string characters out of 1152823
- 363500 words of memory out of 3000000
- 19136 multiletter control sequences out of 15000+50000
- 25405 words of font info for 51 fonts, out of 3000000 for 9000
+ 16420 strings out of 493848
+ 300228 string characters out of 1152823
+ 363501 words of memory out of 3000000
+ 19162 multiletter control sequences out of 15000+50000
+ 34491 words of font info for 66 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 49i,16n,72p,470b,651s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,16n,72p,470b,696s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmssbx10.pfb>
-Output written on apresentacao.pdf (4 pages, 88213 bytes).
+xlive/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmss9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmssbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi10
+.pfb>
+Output written on apresentacao.pdf (19 pages, 208148 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
