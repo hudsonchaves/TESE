@@ -6,6 +6,9 @@
 % \usecolortheme{orchid}                  % cores
 \usefonttheme[onlymath]{serif}            % fonte modo matematico
 % \usepackage[authoryear,round,longnamesfirst]{natbib}
+\usepackage{graphicx}
+% Pacote para escrever algorítmos no Latex
+\usepackage[ruled,vlined]{algorithm2e}
 
 % Titulo
 \title[\sc{Três Ensaios em Comportamentos dos Preços}]{Três Ensaios em Comportamento dos Preços na Economia Brasileira}
@@ -177,6 +180,139 @@ Orientador: Prof. Dr. Sabino Porto da Silva Júnior
   \end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Referencial Bibliográfico - Modelos Tempo-Dependente e Estado-Dependente}
+\textbf{Tempo-Dependente}
+  \begin{itemize}
+  \item A probabilidade dos preços mudarem depende apenas do período pelo qual o preço está fixo;
+  \item Função risco tem um forma constante em relação à duração dos preços
+  \item Calvo (1983) assume uma função risco plana:
+    \begin{itemize}
+    \item Oportunidade de alterar os preços com uma probabilidade constante em cada período;
+    \item Curva de Phillips Novo-Keynesiana é derivada do modelo de Calvo com competição monopolística.
+    \end{itemize}
+  \item Taylor (1980) tem uma função risco constante:
+    \begin{itemize}
+    \item Preços mudam no começo do contrato e não se alterarm dentro do período de durabilidade;
+    \item Taxa de risco toma o valor da unidade no começo do contrato e 0, por conseguinte. 
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Modelos Tempo-Dependente e Estado-Dependente}
+\textbf{Estado-Dependente}
+  \begin{itemize}
+  \item Custo de Menu de Barro (1972) e Sheshinski e Weiss (1977);
+  \item Tendem a ter maior fundamentação microeconômica;
+  \item Probabilidade condicional do preço alterar depende das variáveis de estado, preços relativos e taxas de inflação;
+  \item Função risco pode mudar sua forma em resposta à choques reais ou monetários em transição;
+    \begin{itemize}
+    \item Forma constante em \emph{steady state}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Estudos Empíricos}
+  \begin{itemize}
+  \item Trabalhos utilizando microdados para analisar a rigidez nominal nos preços;
+  \item Viabilidade de avaliação da rigidez em vários níveis (setores, cidades, cesta de consumo, ...);
+  \item \textbf{Bils e Kenow (2004)}:
+    \begin{itemize}
+    \item Alterações nos preços mensais de 350 produtos e serviços que representavam em torno de 70\% da cesta de consumo do CPI no período de 1995 a 1997 nos EUA;
+    \item \textbf{Conclusão:} Os preços se alteravam tipicamente em torno de uma vez por ano
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Estudos Empíricos}
+  \begin{itemize}
+  \item \textbf{Nakamura e Steinsson (2008)}:
+    \begin{itemize}
+    \item Avaliaram os preços mensais de 270 produtos que representavam 70\% da cesta de consumo do CPI no período de 1998 a 2005 para os EUA;
+    \item \textbf{Conclusões:} 
+      \begin{itemize}
+      \item Um terço das alterações nos preços são em relação a quedas;
+      \item A frequência de aumento nos preços está fortemente relacionada com a inflação enquanto a queda não;
+      \item A frequência das alterações nos preços é altamente sazonal;
+      \item Função risco com inclinação ascendente para produtos individuais
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico - Estudos Empíricos}
+  \begin{itemize}
+  \item \textbf{Lopes (2008)}:
+    \begin{itemize}
+    \item Analisaram mais de 6 milhões de preços do índice de preços ao consumidor da FIPE
+    \item \textbf{Conclusões:} 
+      \begin{itemize}
+      \item A frequência média de mudança nos preços é de 32,35\% ao mês;
+      \item Os preços duram em média 2,5 meses;
+      \item Há grande heterogeneidade entre produtos quanto ao comportamento dos preços;
+      \item 40\% das mudanças são para baixo;
+      \item As funções de risco são decrescentes 
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Metodologia}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Web Scraping}
+  \begin{itemize}
+  \item Envolve escrever algoritmos que executam automaticamente o que nós fazemos manualmente quando navegamos por uma página;
+  \item É o processo de tirar informações desestruturadas de páginas da web e transformá-las em informações estruturadas;
+  \item As páginas são escritas em \emph{Hyper Text Markup Language}(HTML) e possuem \emph{tags} que permitem localizar e navegar dentro do código;
+  \item Através de um coletor é possível arquiteturar e executar de forma lógica e escalável todo esse processo
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \begin{figure}[hb]
+  \includegraphics[width=3in]{WebScraping.png}
+  \label{fig01en01}
+  \caption{Arquitetura do Sistema de Coleta e Disponibilização dos Dados}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{centering}
+\scalebox{0.95}{%
+\begin{algorithm}[H]
+ \Dados{T $\leftarrow$ (t)${^N_{i=1}}$; tal que T é uma lista de templates}
+ \Resultado{Armazenados produtos estruturados em um banco NoSQL}
+ \BlankLine
+ \SetKwFunction{conectarNoSQL}{conectarNoSQL}
+ \SetKwFunction{visitarWebsite}{visitarWebsite}
+ \SetKwFunction{extrairInfo}{extrairInfo}
+ \SetKwFunction{estruturarProduto}{estruturarProduto}
+ \SetKwFunction{armazenarEmNoSQL}{armazenarEmNoSQL}
+ \emph{Inicialização:} nosql $\leftarrow$ \conectarNoSQL{url, porta, ...}\;
+ \BlankLine
+ \For{(t, u) \textbf{in} T}{
+   rawHtml $\leftarrow$ \visitarWebsite{u}\;
+   P $\leftarrow$ \extrairInfo{rawHtml, t}\;
+ 	\For{p \textbf{in} P}{
+ 	ps $\leftarrow$ \estruturarProduto{p}\;
+ 	nosql.\armazenarEmNoSQL{ps}\;
+ 	}
+ }
+ \caption{Algoritmo para coleta de dados.}
+\end{algorithm}}
+\end{centering}
+\end{frame}
+
+% \begin{figure}[hb]
+%   \centering
+%   \includegraphics[width=4in]{gecko}
+%   \caption[Close up of \textit{Hemidactylus} sp.]
+%    {Close up of \textit{Hemidactylus} sp., which is
+%    part the genus of the gecko family. It is the
+%    second most speciose genus in the family.}
+% \end{figure}
+
+\end{document}
 
 
 % %%%%%%% REFERÊNCIAL BIBLIOGRÁFICO
