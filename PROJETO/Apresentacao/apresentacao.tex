@@ -9,6 +9,11 @@
 \usepackage{graphicx}
 % Pacote para escrever algorítmos no Latex
 \usepackage[ruled,vlined]{algorithm2e}
+\usepackage{lmodern}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+
 
 % Titulo
 \title[\sc{Três Ensaios em Comportamentos dos Preços}]{Três Ensaios em Comportamento dos Preços na Economia Brasileira}
@@ -303,14 +308,154 @@ Orientador: Prof. Dr. Sabino Porto da Silva Júnior
 \end{centering}
 \end{frame}
 
-% \begin{figure}[hb]
-%   \centering
-%   \includegraphics[width=4in]{gecko}
-%   \caption[Close up of \textit{Hemidactylus} sp.]
-%    {Close up of \textit{Hemidactylus} sp., which is
-%    part the genus of the gecko family. It is the
-%    second most speciose genus in the family.}
-% \end{figure}
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Índice de Preços Online}
+  \begin{itemize}
+  \item Combina dados coletados com as estruturas de ponderação oficiais do IBGE para as categorias de cestas de mercadorias de cada índice de inflação;
+  \item Dados diários serão utilizados para construir o índice de preços online o que é útil para observar padrões de curto prazo;
+  \item Utiliza os preços de todos os produtos disponíveis para compra em cada site:
+    \begin{itemize}
+    \item A cesta de bens muda dinamicamente ao longo do tempo;
+    \item Número de preços por produto tende a ser maior do que os coletados usualmente;
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Índice de Preços Online}
+  \begin{itemize}
+  \item As mudanças de preço são calculadas em nível de produto, então as médias dentro das categorias usando média geométrica ponderada e finalmente agregando entre as categorias com uma média aritmética ponderada. 
+  \end{itemize}
+  \begin{exampleblock}{Média Geométrica na Categoria}
+  \[
+  R_{t,t-1}^{j}=\prod_{i}(\frac{p_{t}^{i}}{p_{t-1}^{i}})^{\frac{1}{n_{j,t}}}
+  \]
+  \end{exampleblock}
+onde $p_{t}^{i}$ é o preço do bem $i$ no tempo $t$, ${n_{j,t}}$ é o número de produtos na categoria $j$ que estão presentes na amostra neste dia
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Índice de Preços Online}
+  \begin{exampleblock}{Índice em nível de Categoria}
+  \[
+  I_{t}^{j}=R_{1,0}^{j}\ast{R}_{2,1}^{j}\ast{...}\ast{R}_{t,t-1}^{j}
+  \]
+  \end{exampleblock}
+onde $I_{t}^{j}$ é o índice da categoria $j$ considerando as médias até o mês anterior.
+ \begin{exampleblock}{Índice de Preços}
+  \[
+  IPO_{t}=\sum_{j}{\frac{w_{j}}{w}I_{t}^{j}} 
+  \]
+  \end{exampleblock}
+onde $w_{j}$ é o peso oficial utilizado pelo IBGE e ${w}$ a soma dos pesos. 
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Rigidez de Preços}
+  \begin{itemize}
+  \item Diversas estatísticas poderão ser utilizadas para avaliar a rigidez de preços:
+    \begin{itemize}
+    \item Frequência de produtos com alterações diárias;
+    \item Frequência de alta e baixa em relação ao total de alterações nos preços em um dia;
+    \item Tamanho da mudança nos preços por meio do valor absoluto das alterações;
+    \item Avaliação da distribuição dos tamanhos (bimodal, assimetria).
+    \end{itemize}
+  \item Todas essas estatísticas refletem a \textbf{probabilidade incondicional}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Análise de Sobrevida}
+  \begin{itemize}
+  \item Em análise de sobrevivência a variável resposta é o tempo até a ocorrência de um evento de interesse (tempo de falha);
+  \item No contexto de preços, estamos interessados no tempo até o ajuste do preço;
+  \item Assim, tanto o aparecimento do risco e o evento de falha ocorrem quando uma firma muda seus preços;
+  \item Função de sobrevivência:
+    \begin{itemize}
+    \item Probabilidade de uma observação sobreviver (preço não se alterar) ao tempo $t$;
+    \end{itemize}
+  \item Função Risco:
+  \begin{itemize}
+    \item Probabilidade limite de que a mudança no preço ocorra em $t$, condicional ao preço não se alterar até este momento;
+    \item Mede o risco instantâneio de um preço se alterar
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Análise de Sobrevida}
+  \begin{exampleblock}{Risco}
+  \[
+  h(t)=\lim_{\Delta t\rightarrow 0}{\frac{Pr(t<T<t+\Delta t|t<T)}{\Delta t}=\frac{f(t)}{1-F(t)}} 
+  \]
+  \end{exampleblock}
+onde $T$ é a variável aleatória que mede a duração do preço, com função densidade $f(t)$ e densidade acumulada $F(t)$ e $h(t)$ o risco condicional ao preço não se alterar até este momento. 
+  \begin{exampleblock}{Função Risco Suavizada}
+  \[
+\hat{h}\left(t \right)=\frac{1}{b}\sum_{j\epsilon D}{K}\left(\frac{t-{t}_{j}}{b}\right)\Delta \hat {H}\left({t}_{j}\right) 
+  \]
+  \end{exampleblock}
+onde $K$ é um kernel com densidade simétrica, $b$ a \emph{bandwidth} de suavização e $D$ é o conjunto de vezes com mudanças nos preços.
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+Para modelar a probabilidade de um preço mudar será preciso focar sobre os eventos de mudança nos preços. Assim, defina a variável $Y_{jkt}$:
+  \begin{exampleblock}{Variável Binária}
+  \[
+Y_{jkt} =\begin{cases}1 &  P_{jkt} \neq P_{jk,t-1}\\0 & P_{jkt} = P_{jk,t-1}\end{cases}
+  \]
+  \end{exampleblock}
+onde ${Y}_{jkt}$ indica se o preço do produto $j$ vendido pela firma $k$ foi alterado no começo do período $t$, e ${P}_{jk,t-1}$ é o preço do produto $j$ vendido pela firma $k$ no período $t$.
+
+A escolha das variáveis explicativas para o modelo dependerá do mecanismo de formação de preços subjacente. Se assumimos Calvo (1983):
+
+  \begin{equation}
+  Pr({Y}_{jkt}=1)=\frac{exp({\beta}_{0})}{1+exp({\beta}_{0})} 
+  \end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Determinantes para a probabilidade do preço alterar}
+  \begin{itemize}
+  \item Inflação;
+  \item Tempo desde a última alteração;
+  \item Tamanho da alteração anterior;
+  \item Variável de demanda: montante de vendas, por exemplo. Será preciso definir uma variável que represente a demanda dos produtos;
+  \item Atratividade dos preços: preços finalizando com os dígitos 9, 5 ou 0;
+  \item Efeito sazonal e anual;
+  \item Variáveis setoriais.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+Assim, a representação do modelo logit será:
+  \begin{exampleblock}{Modelo Logit}
+  \[
+Pr\left( { Y }_{ jkt }=1 \right) =\frac { exp\left( { X }_{ jkt }\beta +{ u }_{ jk }+{ \varepsilon  }_{ jkt } \right)  }{ 1+exp\left( { X }_{ jkt }\beta +{ u }_{ jk }+{ \varepsilon  }_{ jkt } \right)  }
+  \]
+  \end{exampleblock}
+onde ${ X }_{ jkt }$ é um vetor linha de variáveis exógenas, $\beta$ é um vetor coluna dos coeficientes do modelo logit e ${ \varepsilon  }_{ jkt }$ é um termo de erro. Por fim, pode-se distinguir a variável $Y_{jkt}$ entre alterações em todos os preços ou excluir as promoções da análise.
+\end{frame}
+
+\subsection{Cronograma}
+
+\begin{frame}\frametitle{Cronograma}
+\begin{table}[h]
+\begin{tabular}{llllll}
+\hline
+\multicolumn{1}{c}{\textbf{Atividades}} & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \hline
+Pesquisa Bibliográfica                  & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Mapeamento de sites                     & \multicolumn{1}{c}{X} &                       &                       &                       &                       \\
+Implementação do sistema de coleta      & \multicolumn{1}{c}{X} &                       &                       &                       &                       \\
+Criação dos Índices de Inflação         &                       & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Análise de Rigidez                      &                       &                       & \multicolumn{1}{c}{X} &                       &                       \\
+Determinantes da Inflação nas Regiões   &                       &                       &                       & \multicolumn{1}{c}{X} &                       \\
+Redação Final da Tese                   &                       &                       &                       & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa             &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
 
 \end{document}
 

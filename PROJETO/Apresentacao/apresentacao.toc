@@ -6,3 +6,4 @@
 \beamer@subsubsectionintoc {1}{1}{2}{Objetivos}{6}{0}{1}
 \beamer@subsectionintoc {1}{2}{Referencial Bibliogr\IeC {\'a}fico}{7}{0}{1}
 \beamer@subsectionintoc {1}{3}{Metodologia}{25}{0}{1}
+\beamer@subsectionintoc {1}{4}{Cronograma}{37}{0}{1}
