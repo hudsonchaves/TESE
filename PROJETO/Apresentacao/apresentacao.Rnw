@@ -455,6 +455,331 @@ Entrega da Tese para Defesa             &                       &               
 \end{table}
 \end{frame}
 
+\section{Ensaio 2}
+  
+\begin{frame}\frametitle{}
+  \begin{center}
+	{\Huge Ensaio 2}
+	\end{center}
+\end{frame}
+
+\subsection{Introdução/Motivação}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+  \begin{itemize}
+  \item Sabe-se que os efeitos de política monetária estão relacionados à velocidade da reação do nível de preços a um disturbio nominal;
+  \item O ajuste dos preços depende de dois fatores:
+    \begin{itemize}
+    \item O preço ótimo que é definido pelas empresas;
+    \item Fração de firmas que estão alterando seus preços
+    \end{itemize}
+  \item Sabemos que a mariora das pesquisas sobre rigidez de preços abordam:
+    \begin{itemize}
+    \item Tempo até o ajuste é exógeno (modelos incorporando Taylor (1980) e Calvo (1983));
+    \item A função risco (chance de um preço se alterar) é restringida a uma forma específica.
+    \end{itemize}
+  \item A forma como a função risco agregado é definida no modelo macroeconômico e suas implicações para a dinâmica da economia é um tópico importante;
+    \begin{itemize}
+    \item Modelos teóricos de rigidez de preços fornecem uma correspondência entre a função risco agregado de forma específica e suas implicações para a política monetária
+    \item \textbf{Wolman (1999)} e \textbf{Kiley (2002)}.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsubsection{Justificativa}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+\textbf{Justificativa}
+\begin{itemize}
+
+\item A taxa de inflação permite a identificação de funções de risco agregado:
+  \begin{itemize}
+  \item Pode ser decomposta em preços definidos no presente e no passado;
+  \item Sua composição é determinada pela função de risco agregado.
+  \end{itemize}
+\item A derivação da Curva de Phillips Novo-Keynesiana generalizada vincula esse efeito de composição à função risco:
+  \begin{itemize}
+  \item Apenas dados agregados são necessários para extrair informação sobre a função risco
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsubsection{Objetivos}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+\textbf{Objetivos}
+\begin{itemize}
+\item Estimar a função risco agregado por meio de séries temporais de variáveis macroeconômicas (IPCA, PIB, SELIC)
+\item Questinamentos:
+  \begin{itemize}
+  \item Qual o formato da função risco agregado?
+  \item A função risco é consistente com os resultados obtidos via dados coletados da internet?
+  \item O ajuste de preços é caracterizado por aspectos de modelos tempo-dependentes ou estado-dependentes?
+  \item Qual é a duração dos preços (média, mediana)?
+  \item O modelo DSGE proposto obtem resultados robustos?
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{Referencial Bibliográfico}
+
+\begin{frame}\frametitle{Referencial Bibliográfico}
+  \begin{itemize}[<+->]
+  \item Modelos empíricos de rigidez de preços baseavam-se exclusivamente sobre a Curva de Phillips Novo-Keynesiana (CPNK) com a hipótese de precificação conforme Calvo
+    \begin{itemize}
+      \item Gali e Gertler (1999);
+      \item Gali et al. (2001);
+      \item Sbordone (2002)
+    \end{itemize}
+  \item Esses autores estimaram a CPNK por GMM e encontraram um considerável grau de rigidez nos preços agregados;
+  \item Porém, recentes estudos empíricos microfundamentados encontraram rigidez maior e com heterogeneidade entre setores;
+  \item Dada a discrepância entre as evidências micro e macro, modelos empíricos permitindo maior flexibilidade na função risco tem se tornado popúlares na literatura recente
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Referencial Bibliográfico}
+  \begin{itemize}[<+->]
+  \item Jadresic (1999) apresentou um modelo de precificação escalonado caracterizando uma distribuição flexível da função risco e usou uma abordagem VAR para demonstrar que o comportamento dinâmico da inflação e outras variáveis macroeconômicas fornecem informações sobre a dinâmica dos preços desagregados;
+  \item Carvalho e Dam (2009) estimaram um modelo semi-estrutural de duração dos preços múltiplos com a abordagem Bayesiana e encontraram que permitir que os preços durem mais do que 4 trimestres é crucial para evitar subestimar a importância relativa da rigidez nominal.
+   \end{itemize}
+\end{frame}
+
+\subsection{Metodologia}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{O Modelo}
+  \begin{itemize}
+  \item A base do modelo é oriunda do trabalho de Yao (2010a) que introduziu rigidez nominal por meio de uma forma geral para a função risco;
+  \item Uma função risco é definida como a probabilidade de ocorrer ajuste no preço condicional ao período de tempo decorrido desde a última alteração no preço;
+  \item Etapas do Modelo:
+    \begin{itemize}
+    \item Família Representativa;
+    \item Firmas;
+    \item Curva de Phillips Novo-Keynesiana;
+    \item Sistema Final de Equações
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[shrink=20]\frametitle{Metodologia}
+  \textbf{Sistema Final de Equações}
+
+\begin{equation}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
+\end{equation}
+
+\begin{equation}
+{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
+\end{equation}
+
+\begin{equation}
+\delta{E}_{t}[{\hat{y}}_{t+1}]=\delta{\hat{y}}_{t}+({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
+\end{equation}
+
+\begin{equation}
+{\hat{\iota}}_{t}=(1-{\rho}_{i})({\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}({\hat{y}}_{t}-{\hat{y}}_{t-1}))+{\rho}_{i}{\hat{\iota}}_{t-1}+{q}_{t}
+\end{equation}
+
+\begin{equation}
+{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
+\end{equation}
+
+\begin{equation}
+{d}_{t}={\rho}_{d}\ast {d}_{t-1}+{\varepsilon}_{t}
+\end{equation}
+
+\begin{equation}
+{q}_{t}\sim N\left(0,{\sigma}_{q}^{2}\right) 
+\end{equation}  
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Estimação}
+  \begin{itemize}
+  \item Baseada sobre combinar informações ganhadas da maximização da verossimilhança dos dados e informações adicionais sobre os parâmetros (distribuições à priori);
+  \item Principais Passos:
+    \begin{itemize}
+    \item O modelo é resolvido por meio do uso de métodos numéricos;
+    \item Escrever o modelo na forma de espaço de estados;
+    \item Caso seja assumido que todos os choques são normalmente distribuídos pode-se usar o Filtro de Kalman;
+    \item A abordagem Bayesiana combina a função de verossimilhança com as densidades a priori que inclui todas as informações extras sobre os parâmetros de interesse
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Cronograma}
+
+\begin{frame}\frametitle{Cronograma}
+\begin{table}[h]
+\begin{tabular}{llllll}
+\hline
+\multicolumn{1}{c}{\textbf{Atividades}} & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \hline
+Pesquisa Bibliográfica                  & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Estudo dos Algorítmo/Pacotes            &                       & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Implementação do Modelo                 &                       &                       & \multicolumn{1}{c}{X} &                       &                       \\
+Análise dos Resultados                  &                       &                       &                       & \multicolumn{1}{c}{X} &                       \\
+Redação Final do Ensaio                  &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa             &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\section{Ensaio 3}
+  
+\begin{frame}\frametitle{}
+  \begin{center}
+  {\Huge Ensaio 3}
+	\end{center}
+\end{frame}
+
+\subsection{Introdução/Motivação}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+  \begin{itemize}
+  \item A natureza da persistência inflacionária é um fenômeno complexo em função de ser influenciado por muitos aspectos da economia;
+    \begin{itemize}
+    \item Propensão da inflação convergir lentamente à meta por conta da influência dos preços defasados
+    \end{itemize}
+  \item Cogley e Sbordone (2008) argumentam que é importante distinguir entre a persistência da tendência inflacionária e a persistência do \emph{inflation gap};
+  \item \textbf{Definições:}
+    \begin{itemize}
+    \item Diferença entre a inflação atual e a tendência da inflação;
+    \end{itemize}
+  \item Enquanto a dinâmica da tendência da inflação resulta em grande parte a partir dos desvios no longo prazo da regra da política monetária, o \emph{inflation gap} é influenciado pelo comportamento de precificação ao nível de firmas
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+  \begin{itemize}
+  \item O foco deste ensaio será a dinâmica do \emph{inflation gap} assim como Yao (2010b);
+  \item A CPNK \emph{forward-looking} é frequentemente criticada por gerar pouca persistência inflacionária;
+  \item Porém, várias generalizações da base da curva tem sido desenvolvidas na literatura;
+  \item Elas oferecem, contudo, diferentes interpretações sobre a natureza da persistência do \emph{inflation gap}
+  \item De acordo com essa linha da literatura, a persistência do \emph{inflation gap} deveria ser interpretada como intrínseca e a dependência entre a inflação corrente e suas defasagens deveria ser tratada como uma relação fixa que é independente da política monetária.;
+  \end{itemize}
+\end{frame}
+
+\subsubsection{Justificativa}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+\textbf{Justificativa}
+\begin{itemize}
+\item O comportamento inercial da inflação é uma questão fundamental e está relacionado à dinâmica dos preços na economia;
+\item A análise deste fenômeno não é menos importante para o Brasil, pois tendo passado por um amplo processo de desinflação a partir da instituição do Plano Real, o país ainda guarda consigo resquícios de inércia nos preços;
+\item O foco deste ensaio é a dinâmica do \emph{inflation gap} dado que conforme salientaram Cogley e Sbordone (2008), é importante distinguir esta dinâmica do comportamento da tendência inflacionária;
+\item Para tanto, utilizaremos um modelo DSGE que incorpora uma função risco de forma geral.
+\end{itemize}
+\end{frame}
+
+\subsubsection{Objetivos}
+
+\begin{frame}\frametitle{Introdução/Motivação}
+\textbf{Objetivos}
+\begin{itemize}
+\item Avaliar se um modelo de precificação geral com a função risco definida empiricamente pode explicar bem a persistência do \emph{inflation gap} no período da análise:
+\item Questinamentos:
+  \begin{itemize}
+  \item É a Curva de Phillips Novo-Keynesiana capaz de explicar a persistência do \emph{inflation gap}?
+  \item A função risco exerce efeitos sobre o \emph{inflation gap}?
+  \item Quais os mecanismos de propagação?
+  \item Os resultados se mantêm quando utilizamos a função risco derivada do Ensaio 2 e outras formulações para esta função?
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{Referencial Bibliográfico}
+
+\begin{frame}\frametitle{Referencial Bibliográfico}
+  \begin{itemize}
+  \item Os modelos gerais de precificação têm sido estudados na literatura macro para entender as consequências de diferentes funções risco para a dinâmica macroeconômica;
+  \item Estudos recentes usando microdados alcançaram que ao contrário de ter a economia uma única forma rigidez, a frequência dos ajustes nos preços diferem substancialmente entre setores, por exemplo;
+  \item Wolman (1999) levantou a questão de que a dinâmica da inflação poderia ser sensível à função risco subjacente às diferentes regras de precificação;
+  \item Kiley (2002) comparou os modelos de Calvo e Taylor e mostrou que a dinâmica do produto seguida de choques monetários são ambos diferentes quantitativamente e qualitativamente entre as duas especificações de precificação;
+  \item Carvalho (2006) construiu um modelo de rigidez de preços que permite heterogeneidade na rigidez de preços conforme Calvo em setores;
+  \item O autor encontrou que a existência de heterogeneidade na rigidez dos preços gera efeitos reais grandes e persistentes da política monetária.
+  \end{itemize}
+\end{frame}
+
+\subsection{Metodologia}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{O Modelo}
+  \begin{itemize}
+  \item A base do modelo é oriunda do trabalho de Yao (2010a) que introduziu rigidez nominal por meio de uma forma geral para a função risco;
+  \item Uma função risco é definida como a probabilidade de ocorrer ajuste no preço condicional ao período de tempo decorrido desde a última alteração no preço;
+  \item Etapas do Modelo:
+    \begin{itemize}
+    \item Família Representativa;
+    \item Firmas;
+    \item Curva de Phillips Novo-Keynesiana;
+    \item Sistema Final de Equações
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[shrink=20]\frametitle{Metodologia}
+  \textbf{Sistema Final de Equações}
+
+\begin{equation}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
+\end{equation}
+
+\begin{equation}
+{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
+\end{equation}
+
+\begin{equation}
+\delta{E}_{t}[{\hat{y}}_{t+1}]=\delta{\hat{y}}_{t}+({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
+\end{equation}
+
+\begin{equation}
+{\hat{\iota}}_{t}=(1-{\rho}_{i})({\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}({\hat{y}}_{t}-{\hat{y}}_{t-1}))+{\rho}_{i}{\hat{\iota}}_{t-1}+{q}_{t}
+\end{equation}
+
+\begin{equation}
+{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
+\end{equation}
+
+\begin{equation}
+{d}_{t}={\rho}_{d}\ast {d}_{t-1}+{\varepsilon}_{t}
+\end{equation}
+
+\begin{equation}
+{q}_{t}\sim N\left(0,{\sigma}_{q}^{2}\right) 
+\end{equation}  
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Estimação}
+  \begin{itemize}
+  \item Baseada sobre combinar informações ganhadas da maximização da verossimilhança dos dados e informações adicionais sobre os parâmetros (distribuições à priori);
+  \item Principais Passos:
+    \begin{itemize}
+    \item O modelo é resolvido por meio do uso de métodos numéricos;
+    \item Escrever o modelo na forma de espaço de estados;
+    \item Caso seja assumido que todos os choques são normalmente distribuídos pode-se usar o Filtro de Kalman;
+    \item A abordagem Bayesiana combina a função de verossimilhança com as densidades a priori que inclui todas as informações extras sobre os parâmetros de interesse
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Cronograma}
+
+\begin{frame}\frametitle{Cronograma}
+\begin{table}[h]
+\begin{tabular}{llllll}
+\hline
+\multicolumn{1}{c}{\textbf{Atividades}} & 2015/01               & 2015/02               & 2015/03               & 2015/04               & 2016/01               \\ \hline
+Pesquisa Bibliográfica                  & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Estudo dos Algorítmo/Pacotes            &                       & \multicolumn{1}{c}{X} &                       &                       &                       \\
+Implementação do Modelo                 &                       &                       & \multicolumn{1}{c}{X} &                       &                       \\
+Análise dos Resultados                  &                       &                       &                       & \multicolumn{1}{c}{X} &                       \\
+Redação Final do Ensaio                  &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\
+Entrega da Tese para Defesa             &                       &                       &                       &                       & \multicolumn{1}{c}{X} \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
 
 \end{document}
 
@@ -466,4 +791,3 @@ Entrega da Tese para Defesa             &                       &               
 % \bibliographystyle{apalike}
 % \bibliography{geral}
  
-\end{document}
