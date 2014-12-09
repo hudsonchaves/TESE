@@ -525,7 +525,7 @@ Entrega da Tese para Defesa             &                       &               
 \subsection{Referencial Bibliográfico}
 
 \begin{frame}\frametitle{Referencial Bibliográfico}
-  \begin{itemize}[<+->]
+  \begin{itemize}
   \item Modelos empíricos de rigidez de preços baseavam-se exclusivamente sobre a Curva de Phillips Novo-Keynesiana (CPNK) com a hipótese de precificação conforme Calvo
     \begin{itemize}
       \item Gali e Gertler (1999);
@@ -592,6 +592,87 @@ Entrega da Tese para Defesa             &                       &               
 \begin{equation}
 {q}_{t}\sim N\left(0,{\sigma}_{q}^{2}\right) 
 \end{equation}  
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item A CPNK que assume a função risco de forma geral difere da CPNK padrão em dois aspectos:
+    \begin{itemize}
+    \item A CPNK geral tem não apenas termos correntes e \emph{forward-looking}, mas também variáveis defasadas;
+    \item Também, todos os coeficientes são funções não lineares da taxa de risco de ajuste dos preços ($\alpha_{j}=1-h_{j}$) e o fator de desconto $\beta$;
+    \end{itemize}
+  \item Assim, a dinâmica de curto prazo do \emph{inflation gap} é afetada pela forma e magnitude da fução risco.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[shrink=20]\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item Para ver a estrutura da dinâmica mais claramente, abaixo um simples exemplo da CPNK com $J=3$:
+  \end{itemize}
+  \begin{align*}
+{ \hat { \pi  }  }_{ t }
+&=\frac { 1 }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right) \Psi  } { \hat { mc }  }_{ t }+\frac { { \alpha  }_{ 1 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right) \Psi  } { \hat { mc }  }_{ t-1 }+\frac { { \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right) \Psi  } { \hat { mc }  }_{ t-2 } \\
+&+\frac { 1 }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { E }_{ t }\left( \frac { \beta { \alpha  }_{ 1 } }{ \Psi  } { \hat { mc }  }_{ t+1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { mc }  }_{ t+2 }+\frac { { \beta { \alpha  }_{ 1 }+\beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t+1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t+2 } \right) \\
+&+\frac { { \alpha  }_{ 1 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { E }_{ t-1 }\left( \frac { \beta { \alpha  }_{ 1 } }{ \Psi  } { \hat { mc }  }_{ t }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { mc }  }_{ t+1 }+\frac { { \beta { \alpha  }_{ 1 }+\beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t+1 } \right) \\
+&+\frac { { \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { E }_{ t-2 }\left( \frac { \beta { \alpha  }_{ 1 } }{ \Psi  } { \hat { mc }  }_{ t-1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { mc }  }_{ t }+\frac { { \beta { \alpha  }_{ 1 }+\beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t-1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t } \right) \\
+&-\frac { { \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { \hat { \pi  }  }_{ t-1 }
+  \end{align*}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item Apesar da diferença, elas compartilham a mesma intuição econômica:
+    \begin{itemize}
+    \item A função risco poderia ser constante ao longo de um horizonte infinito e a CPNK se reduziria à CPNK de Calvo:
+    \end{itemize}
+    \begin{exampleblock}{}
+  \[
+{ \hat { \pi  }  }_{ t }=\frac { \left( 1-\alpha  \right) \left( 1-\alpha \beta  \right)  }{ \alpha  } { mc }_{ t }+\beta { E }_{ t }{ \hat { \pi  }  }_{ t+1 }
+  \]
+  \end{exampleblock}
+  \item A CPNK relaciona com a CPNK Calvo de forma que sobre uma função risco constante, os termos de defasagem da inflação cancelam as expectativas defasadas, deixando apenas as variáveis correntes e expectativas \emph{forward-looking} da inflação
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item Para entender a intuição econômica da CPNK geral precisamos categorizar seus componentes dinâmicos e examinar os efeitos de cada um sobre a inflação;
+  \item A CPNK geral pode ser decomposta em três partes:
+    \begin{itemize}
+    \item Todos os termos \emph{forward-looking} e correntes;
+    \item Expectativas defasadas;
+    \item Inflação defasada;
+    \end{itemize}
+  \item Essas partes são representadas pelos termos ${E}_{t}(.)$, ${E}_{t-j}(.)$ e $\hat{\pi}_{t-k}$. $W_{x}(h_{j})$ denota os coeficientes destes termos:
+    \begin{equation}
+{ \hat { \pi  }  }_{ t }={ \hat { p }  }_{ t }-{ \hat { p }  }_{ t-1 }
+    \end{equation}
+    \begin{equation}
+{ \hat { \pi  }  }_{ t }=\theta \left( 0 \right) { \hat { p }  }_{ t }^{ * }+\theta \left( 1 \right) { \hat { p }  }_{ t-1 }^{ * }+...+\theta \left( J-1 \right) { \hat { p }  }_{ t-J-1 }^{ * }-{ \hat { p }  }_{ t-1 }
+    \end{equation}
+    \begin{equation}
+{ \hat { \pi  }  }_{ t }={ W }_{ 1 }\left( { h }_{ j } \right) { E }_{ t }\left( . \right) +{ W }_{ 2 }\left( { h }_{ j } \right) { E }_{ t-j }\left( . \right) -{ W }_{ 3 }\left( { h }_{ j } \right) { \hat { \pi  }  }_{ t-k }
+    \end{equation}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item As razões econômicas porque esses três componentes devem aparecer na CPNK é que:
+    \begin{itemize}
+    \item Os termos correntes e \emph{forward-looking}, ${E}_{t}(.)$, entram na curva de Phillips por meio de sua influência sobre o preço corrente definido;
+    \item A decisão de preço ótimo é baseada na soma dos custos marginais reais correntes e futuros em relação ao tempo que pretende-se deixar fixo o preço definido;
+    \item A diferença agora é que o horizonte temporal de decisão para a definição do preço não é infinito, mas depende da função risco;
+    \item Além disso, dada a rigidez de preços, alguma fração do preço definido anteriormente continua a afetar o preço agregado corrente;
+    \item Os termos defasados de expectativas, ${E}_{t-j}(.)$, representam a influência dos preços definidos no passado sobre a inflação corrente;
+    \item Por último, a inflação passada entra na CPNK porque ela afeta o preço agregado defasado ${ \hat { p }  }_{ t-1 }$
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Metodologia}
@@ -703,63 +784,133 @@ Entrega da Tese para Defesa             &                       &               
 
 \subsection{Metodologia}
 
+\begin{frame}[shrink=20]\frametitle{Metodologia}
+  \textbf{Sistema Final de Equações}
+
+\begin{equation}\label{eq23en03}
+{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
+\end{equation}
+
+\begin{equation}\label{eq24en03}
+{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
+\end{equation}
+
+\begin{equation}\label{eq25en03}
+{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
+\end{equation}
+
+\begin{equation}\label{eq26en03}
+{E}_{t}[{\hat{y}}_{t+1}]={\hat{y}}_{t}+\frac{1}{\delta}({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
+\end{equation}
+
+\begin{equation}\label{eq27en03}
+{\hat{y}}_{t} = \hat{m}_{t}+\hat{p}_{t}
+\end{equation}
+
+\begin{equation}\label{eq28en03}
+\hat{m}_{t} = {\delta}{\hat{y}}_{t} - \frac{\beta}{1- \beta}{\hat{\iota}_{t}}
+\end{equation}
+
+\begin{equation}\label{eq29en03}
+{\hat{\iota}}_{t}={\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}{\hat{y}}_{t}+{q}_{t}
+\end{equation}
+
+\begin{equation}\label{eq30en03}
+\hat{m}_{t} = \hat{m}_{t-1}-{\hat{\pi}}+g_{t}
+\end{equation}
+\end{frame}
+
 \begin{frame}\frametitle{Metodologia}
-  \textbf{O Modelo}
+  \textbf{Intuição Econômica}
   \begin{itemize}
-  \item A base do modelo é oriunda do trabalho de Yao (2010a) que introduziu rigidez nominal por meio de uma forma geral para a função risco;
-  \item Uma função risco é definida como a probabilidade de ocorrer ajuste no preço condicional ao período de tempo decorrido desde a última alteração no preço;
-  \item Etapas do Modelo:
+  \item A CPNK que assume a função risco de forma geral difere da CPNK padrão em dois aspectos:
     \begin{itemize}
-    \item Família Representativa;
-    \item Firmas;
-    \item Curva de Phillips Novo-Keynesiana;
-    \item Sistema Final de Equações
+    \item A CPNK geral tem não apenas termos correntes e \emph{forward-looking}, mas também variáveis defasadas;
+    \item Também, todos os coeficientes são funções não lineares da taxa de risco de ajuste dos preços ($\alpha_{j}=1-h_{j}$) e o fator de desconto $\beta$;
     \end{itemize}
+  \item Assim, a dinâmica de curto prazo do \emph{inflation gap} é afetada pela forma e magnitude da fução risco.
   \end{itemize}
 \end{frame}
 
 \begin{frame}[shrink=20]\frametitle{Metodologia}
-  \textbf{Sistema Final de Equações}
-
-\begin{equation}
-{\hat{\pi}}_{t}=\sum_{k=0}^{J-1}{{W}_{1}(k)}{E}_{t-k}(\sum_{j=0}^{J-1}{{W}_{2}(j){\hat{mc}}_{t+j-k}+\sum_{i=1}^{J-1}{{W}_{3}(i){\hat{\pi}}_{t+i-k}}})-\sum_{k=2}^{J-1}{{W}_{4}(k){\hat{\pi}}_{t+1-k}} 
-\end{equation}
-
-\begin{equation}
-{\hat{mc}}_{t}=(\delta +\phi){\hat{y}}_{t}-(1+\phi){\hat{z}}_{t}
-\end{equation}
-
-\begin{equation}
-\delta{E}_{t}[{\hat{y}}_{t+1}]=\delta{\hat{y}}_{t}+({\hat{\iota}}_{t}-{E}_{t}[{\hat{\pi}}_{t+1}])+{d}_{t}
-\end{equation}
-
-\begin{equation}
-{\hat{\iota}}_{t}=(1-{\rho}_{i})({\phi}_{\pi}{\hat{\pi}}_{t}+{\phi}_{y}({\hat{y}}_{t}-{\hat{y}}_{t-1}))+{\rho}_{i}{\hat{\iota}}_{t-1}+{q}_{t}
-\end{equation}
-
-\begin{equation}
-{\hat{z}}_{t}={\rho}_{z}\ast {z}_{t-1}+{\epsilon}_{t}
-\end{equation}
-
-\begin{equation}
-{d}_{t}={\rho}_{d}\ast {d}_{t-1}+{\varepsilon}_{t}
-\end{equation}
-
-\begin{equation}
-{q}_{t}\sim N\left(0,{\sigma}_{q}^{2}\right) 
-\end{equation}  
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item Para ver a estrutura da dinâmica mais claramente, abaixo um simples exemplo da CPNK com $J=3$:
+  \end{itemize}
+  \begin{align*}
+{ \hat { \pi  }  }_{ t }
+&=\frac { 1 }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right) \Psi  } { \hat { mc }  }_{ t }+\frac { { \alpha  }_{ 1 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right) \Psi  } { \hat { mc }  }_{ t-1 }+\frac { { \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right) \Psi  } { \hat { mc }  }_{ t-2 } \\
+&+\frac { 1 }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { E }_{ t }\left( \frac { \beta { \alpha  }_{ 1 } }{ \Psi  } { \hat { mc }  }_{ t+1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { mc }  }_{ t+2 }+\frac { { \beta { \alpha  }_{ 1 }+\beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t+1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t+2 } \right) \\
+&+\frac { { \alpha  }_{ 1 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { E }_{ t-1 }\left( \frac { \beta { \alpha  }_{ 1 } }{ \Psi  } { \hat { mc }  }_{ t }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { mc }  }_{ t+1 }+\frac { { \beta { \alpha  }_{ 1 }+\beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t+1 } \right) \\
+&+\frac { { \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { E }_{ t-2 }\left( \frac { \beta { \alpha  }_{ 1 } }{ \Psi  } { \hat { mc }  }_{ t-1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { mc }  }_{ t }+\frac { { \beta { \alpha  }_{ 1 }+\beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t-1 }+\frac { { \beta  }^{ 2 }{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \Psi  } { \hat { \pi  }  }_{ t } \right) \\
+&-\frac { { \alpha  }_{ 1 }{ \alpha  }_{ 2 } }{ \left( { \alpha  }_{ 1 }+{ \alpha  }_{ 1 }{ \alpha  }_{ 2 } \right)  } { \hat { \pi  }  }_{ t-1 }
+  \end{align*}
 \end{frame}
 
 \begin{frame}\frametitle{Metodologia}
-  \textbf{Estimação}
+  \textbf{Intuição Econômica}
   \begin{itemize}
-  \item Baseada sobre combinar informações ganhadas da maximização da verossimilhança dos dados e informações adicionais sobre os parâmetros (distribuições à priori);
-  \item Principais Passos:
+  \item Apesar da diferença, elas compartilham a mesma intuição econômica:
     \begin{itemize}
-    \item O modelo é resolvido por meio do uso de métodos numéricos;
-    \item Escrever o modelo na forma de espaço de estados;
-    \item Caso seja assumido que todos os choques são normalmente distribuídos pode-se usar o Filtro de Kalman;
-    \item A abordagem Bayesiana combina a função de verossimilhança com as densidades a priori que inclui todas as informações extras sobre os parâmetros de interesse
+    \item A função risco poderia ser constante ao longo de um horizonte infinito e a CPNK se reduziria à CPNK de Calvo:
+    \end{itemize}
+    \begin{exampleblock}{}
+  \[
+{ \hat { \pi  }  }_{ t }=\frac { \left( 1-\alpha  \right) \left( 1-\alpha \beta  \right)  }{ \alpha  } { mc }_{ t }+\beta { E }_{ t }{ \hat { \pi  }  }_{ t+1 }
+  \]
+  \end{exampleblock}
+  \item A CPNK relaciona com a CPNK Calvo de forma que sobre uma função risco constante, os termos de defasagem da inflação cancelam as expectativas defasadas, deixando apenas as variáveis correntes e expectativas \emph{forward-looking} da inflação
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item Para entender a intuição econômica da CPNK geral precisamos categorizar seus componentes dinâmicos e examinar os efeitos de cada um sobre a inflação;
+  \item A CPNK geral pode ser decomposta em três partes:
+    \begin{itemize}
+    \item Todos os termos \emph{forward-looking} e correntes;
+    \item Expectativas defasadas;
+    \item Inflação defasada;
+    \end{itemize}
+  \item Essas partes são representadas pelos termos ${E}_{t}(.)$, ${E}_{t-j}(.)$ e $\hat{\pi}_{t-k}$. $W_{x}(h_{j})$ denota os coeficientes destes termos:
+    \begin{equation}
+{ \hat { \pi  }  }_{ t }={ \hat { p }  }_{ t }-{ \hat { p }  }_{ t-1 }
+    \end{equation}
+    \begin{equation}
+{ \hat { \pi  }  }_{ t }=\theta \left( 0 \right) { \hat { p }  }_{ t }^{ * }+\theta \left( 1 \right) { \hat { p }  }_{ t-1 }^{ * }+...+\theta \left( J-1 \right) { \hat { p }  }_{ t-J-1 }^{ * }-{ \hat { p }  }_{ t-1 }
+    \end{equation}
+    \begin{equation}
+{ \hat { \pi  }  }_{ t }={ W }_{ 1 }\left( { h }_{ j } \right) { E }_{ t }\left( . \right) +{ W }_{ 2 }\left( { h }_{ j } \right) { E }_{ t-j }\left( . \right) -{ W }_{ 3 }\left( { h }_{ j } \right) { \hat { \pi  }  }_{ t-k }
+    \end{equation}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Intuição Econômica}
+  \begin{itemize}
+  \item As razões econômicas porque esses três componentes devem aparecer na CPNK é que:
+    \begin{itemize}
+    \item Os termos correntes e \emph{forward-looking}, ${E}_{t}(.)$, entram na curva de Phillips por meio de sua influência sobre o preço corrente definido;
+    \item A decisão de preço ótimo é baseada na soma dos custos marginais reais correntes e futuros em relação ao tempo que pretende-se deixar fixo o preço definido;
+    \item A diferença agora é que o horizonte temporal de decisão para a definição do preço não é infinito, mas depende da função risco;
+    \item Além disso, dada a rigidez de preços, alguma fração do preço definido anteriormente continua a afetar o preço agregado corrente;
+    \item Os termos defasados de expectativas, ${E}_{t-j}(.)$, representam a influência dos preços definidos no passado sobre a inflação corrente;
+    \item Por último, a inflação passada entra na CPNK porque ela afeta o preço agregado defasado ${ \hat { p }  }_{ t-1 }$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Metodologia}
+  \textbf{Implicações para a persistência do \emph{inflation gap}}
+  \begin{itemize}
+   \item A CPNK puramente \emph{foward-looking} é criticada por gerar puoca persistência ao \emph{inflation gap}
+   \item Em resposta, a CPNK híbrida foi desenvolvida para capturar a dependência positiva da inflação à suas defasagens;
+   \item Por contraste, o modelo de preços rígidos de Calvo captura a \emph{backward-dependency} da inflação de uma maneira mais microfundamentada;
+   \item No contexto deste ensaio, a persistência é resultado de dois canais:
+    \begin{itemize}
+    \item Canal frontal que enfraquece a persistência e sua magnitude é puramente determinada pela função risco;
+    \item O segundo canal é indireto, onde as defasagens da inflação afetam a inflação corrente apenas através dos termos de expectativa na CPNK (canal de expectativa
     \end{itemize}
   \end{itemize}
 \end{frame}
