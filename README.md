@@ -8,5 +8,5 @@ Esta página tem como objetivo faciliar a gestão da construção da minha Tese 
 - Artigos
 - Gestão da Tese
 
-Por favor, qualquer material disponibilizado aqui e utilizado de qualquer forma deve ser referenciado da maneira correta. 
+Por favor, qualquer material disponibilizado aqui e que pode ser utilizado desde que referenciado da maneira correta. 
 
