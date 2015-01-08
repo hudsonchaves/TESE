@@ -3,6 +3,6 @@ O PGGE/UFRGS recomenda aos alunos a submissão de papers para publicação em re
 Para tanto, a lista abaixo apresenta os principais encontros em economia aplicada no Brasil que serão alvo de possíveis apresentações do andamento da tese em formato de papers:
 
 * [ANPEC](http://www.anpec.org.br/novosite/br/encontro-2014) 
-* [ANPEC SUL](http://www.anpec.org.br/novosite/br/xvii-encontro-de-economia-da-regiao-sul)
+* [ANPEC/SUL](http://www.anpec.org.br/novosite/br/xvii-encontro-de-economia-da-regiao-sul)
 * [ENCONTRO BRASILEIRO DE ECONOMETRIA](http://www.sbe.org.br/site)
 * [ENCONTRO BRASILEIRO DE FINANÇAS](http://www.sbfin.org.br/site)
