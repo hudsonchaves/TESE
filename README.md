@@ -7,7 +7,7 @@ Esta página tem como objetivo faciliar a gestão da construção da minha Tese 
 - [Tese](https://github.com/hudsonchaves/TESE/tree/master/TESE)
 - Artigos
 - Gestão da Tese
-- [Datas Importantes](https://github.com/hudsonchaves/TESE/tree/master/Datas)
+- [Datas Importantes](https://github.com/hudsonchaves/TESE/tree/master/DATAS)
 
 Por favor, qualquer material disponibilizado aqui e que pode ser utilizado desde que referenciado da maneira correta. 
 
