@@ -6,7 +6,7 @@ Para a gestão de todo o processo de desenvolvimento da tese será utilizado o [
 ![SCRUM Image](https://cloud.githubusercontent.com/assets/7033078/5713739/9c231194-9aa6-11e4-9947-03905756efb0.png)
 
 
-Assim, cada etapa terá os seguintes papéis:
+Assim, cada etapa passará a ter os seguintes nomes e papéis:
 
 - Thesis Backlog
 - Sprint Backlog
