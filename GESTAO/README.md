@@ -8,7 +8,7 @@ Para a gestão de todo o processo de desenvolvimento da tese será utilizado o [
 
 Assim, cada etapa passará a ter os seguintes nomes e papéis:
 
-- Thesis Backlog
-- Sprint Backlog
-- Sprint
-- Working increment of the thesis
+- Thesis Backlog: Lista contendo todos os objetivos que a tese pretende atingir. O conteúdo desta lista é definido pelo Thesis Owner e não precisa estar completo no início da tese, pois com o tempo novos objetivos podem surgir.
+- Sprint Backlog: Lista de tarefas que o orientando se compromete a fazer em um Sprint. Os itens são extraídos do Thesis Backlog.
+- Sprint: Intervalo de dias dedicado para a realização das tarefas do Sprint Backlog (geralmente, 15 dias).
+- Working increment of the thesis: É o incremento atingido na Sprint para se alcançar os objetivos da tese.
