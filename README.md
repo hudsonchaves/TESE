@@ -10,5 +10,5 @@ Este projeto tem como objetivo faciliar a gestão da construção da minha Tese 
 - [Datas Importantes](https://github.com/hudsonchaves/TESE/tree/master/DATAS)
 - [Ambiente]()
 
-Por favor, qualquer material disponibilizado aqui pode ser utilizado desde que referenciado.
+Qualquer material disponibilizado aqui pode ser utilizado desde que referenciado.
 
