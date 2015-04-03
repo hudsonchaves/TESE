@@ -5,9 +5,9 @@ Este projeto tem como objetivo faciliar a gestão da construção da minha Tese 
 
 - [Projeto de Tese](https://github.com/hudsonchaves/TESE/tree/master/PROJETO)
 - [Tese](https://github.com/hudsonchaves/TESE/tree/master/TESE)
-- Artigos
-- [Gestão da Tese](https://github.com/hudsonchaves/TESE/tree/master/GESTAO)
-- [Datas Importantes](https://github.com/hudsonchaves/TESE/tree/master/DATAS)
+- Artigos;
+- Gestão da Tese;
+- Datas Importantes;
 - Ambiente
 
 Qualquer material disponibilizado aqui pode ser utilizado desde que referenciado.
